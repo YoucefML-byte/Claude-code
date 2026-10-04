@@ -6,6 +6,13 @@
       "headers": {
         "x-api-key": "${TWENTYFIRST_API_KEY}"
       }
+    },
+    "magicuidesign-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@magicuidesign/mcp@latest"
+      ]
     }
   }
 }
