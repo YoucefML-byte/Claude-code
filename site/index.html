@@ -22,6 +22,8 @@
   --sale: #B42318;
   --ok: #15803D;
   --scrim: rgba(28, 25, 23, .45);
+  --stage: #E6E0D6;
+  --stage-hi: #F8F5EF;
   --display: "Cormorant", "Cormorant Garamond", Georgia, "Times New Roman", serif;
   --body: "Montserrat", "Helvetica Neue", Arial, sans-serif;
   --radius: 2px;
@@ -31,14 +33,14 @@
   :root:not([data-theme="light"]) {
     --paper: #141210; --surface: #1D1A17; --ink: #F2EEE8; --ink-soft: #B8AFA4;
     --line: #38332D; --tile: #D8D1C6; --accent: #DDA94A; --accent-ink: #1C1917;
-    --sale: #F97066; --ok: #4ADE80; --scrim: rgba(0, 0, 0, .6);
+    --sale: #F97066; --ok: #4ADE80; --scrim: rgba(0, 0, 0, .6); --stage: #1B1815; --stage-hi: #2E2924;
     color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
   --paper: #141210; --surface: #1D1A17; --ink: #F2EEE8; --ink-soft: #B8AFA4;
   --line: #38332D; --tile: #D8D1C6; --accent: #DDA94A; --accent-ink: #1C1917;
-  --sale: #F97066; --ok: #4ADE80; --scrim: rgba(0, 0, 0, .6);
+  --sale: #F97066; --ok: #4ADE80; --scrim: rgba(0, 0, 0, .6); --stage: #1B1815; --stage-hi: #2E2924;
   color-scheme: dark;
 }
 
@@ -302,6 +304,57 @@ tbody tr:last-child th, tbody tr:last-child td { border-bottom: 0; }
 }
 .toast.show { opacity: 1; transform: translate(-50%, 0); }
 
+
+/* Atelier 3D : tissu suspendu, simulé en temps réel */
+.atelier { display: grid; grid-template-columns: 1.15fr .85fr; gap: clamp(1.5rem, 4vw, 4rem); align-items: center; }
+.stage {
+  position: relative; min-width: 0; aspect-ratio: 5 / 6; max-width: 100%; max-height: 680px; width: 100%;
+  background: radial-gradient(120% 80% at 50% 10%, var(--stage-hi), var(--stage) 70%);
+  border: 1px solid var(--line); overflow: hidden;
+}
+.stage canvas { position: absolute; inset: 0; width: 100%; height: 100%; touch-action: pan-y; }
+.stage canvas.grabbing { cursor: grabbing !important; }
+.stage-hint {
+  position: absolute; left: 1rem; bottom: 1rem; display: inline-flex; align-items: center; gap: .5rem;
+  padding: .45rem .8rem; background: var(--surface); color: var(--ink); border: 1px solid var(--line);
+  font-size: .75rem; letter-spacing: .04em; pointer-events: none; transition: opacity .4s var(--ease);
+}
+.stage-hint svg { width: 16px; height: 16px; }
+.stage-hint.gone { opacity: 0; }
+.stage-tag {
+  position: absolute; right: 1rem; bottom: 1rem; padding: .35rem .7rem; font-size: .68rem; font-weight: 600;
+  letter-spacing: .12em; text-transform: uppercase; color: var(--ink-soft); border: 1px solid var(--line); background: var(--surface);
+  pointer-events: none;
+}
+.stage-fallback { position: absolute; inset: 0; display: grid; place-items: center; padding: 2rem; text-align: center; color: var(--ink-soft); font-size: .875rem; }
+.atelier-panel { display: grid; gap: 1.5rem; min-width: 0; }
+.atelier-panel h2 { font-size: clamp(2.25rem, 5vw, 3.75rem); }
+.atelier-panel > p { color: var(--ink-soft); max-width: 44ch; }
+.fabrics { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .5rem; }
+.fabric {
+  display: flex; align-items: center; gap: .65rem; min-height: 52px; padding: .5rem .85rem; text-align: left;
+  background: transparent; border: 1px solid var(--line); border-radius: var(--radius); font-size: .875rem; font-weight: 500;
+  transition: border-color .2s, background-color .2s;
+}
+.fabric:hover { border-color: var(--ink); }
+.fabric[aria-pressed="true"] { border-color: var(--ink); background: var(--surface); box-shadow: inset 0 -2px 0 var(--accent); }
+.fabric i { width: 22px; height: 22px; border-radius: 50%; flex: none; border: 1px solid var(--line); }
+.spec { display: grid; gap: 1rem; padding-top: 1.25rem; border-top: 1px solid var(--line); }
+.weight { display: grid; gap: .4rem; }
+.weight-val { font-family: var(--display); font-size: 2.75rem; line-height: 1; font-variant-numeric: tabular-nums; }
+.weight-val small { font-family: var(--body); font-size: .8rem; color: var(--ink-soft); margin-left: .35rem; }
+.weight-scale { position: relative; height: 6px; background: var(--line); border-radius: 999px; }
+.weight-scale span { position: absolute; inset: 0 auto 0 0; background: var(--ink); border-radius: 999px; transition: width .6s var(--ease); }
+.weight-ticks { display: flex; justify-content: space-between; font-size: .7rem; color: var(--ink-soft); font-variant-numeric: tabular-nums; }
+.spec dl { display: grid; grid-template-columns: auto 1fr; gap: .5rem 1.25rem; margin: 0; font-size: .875rem; }
+.spec dt { font-size: .7rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-soft); padding-top: .2rem; }
+.spec dd { margin: 0; min-width: 0; }
+@media (max-width: 860px) {
+  .atelier { grid-template-columns: 1fr; }
+  .stage { aspect-ratio: 1 / 1; }
+  .stage-tag { display: none; }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
 }
@@ -361,6 +414,7 @@ tbody tr:last-child th, tbody tr:last-child td { border-bottom: 0; }
       <a href="#collection" data-goto="femme">Femme</a>
       <a href="#collection" data-goto="homme">Homme</a>
       <a href="#collection" data-goto="accessoires">Accessoires</a>
+      <a href="#matieres">Matières</a>
       <a href="#guide">Guide des tailles</a>
     </nav>
     <button class="cart-btn" type="button" id="open-cart" aria-haspopup="dialog" aria-controls="drawer">
@@ -403,6 +457,39 @@ tbody tr:last-child th, tbody tr:last-child td { border-bottom: 0; }
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 17h16l-2-7H9c-3 0-5 3-5 7z"/><circle cx="12" cy="14" r="1" fill="currentColor"/></svg>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="12" r="8"/><text x="12" y="16" text-anchor="middle" font-size="10" fill="currentColor" stroke="none" font-family="Arial">P</text></svg>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="matieres" aria-labelledby="matieres-title" style="padding-top:0">
+    <div class="wrap atelier">
+      <div class="stage" id="stage">
+        <span class="stage-tag">Atelier 3D</span>
+        <p class="stage-fallback" id="stage-fallback" hidden>L'aperçu 3D n'a pas pu se charger. Les fiches matières restent disponibles à côté.</p>
+        <span class="stage-hint" id="stage-hint">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M8 13V5.5a1.5 1.5 0 0 1 3 0V12m0-1.5a1.5 1.5 0 0 1 3 0V12m0-.5a1.5 1.5 0 0 1 3 0V13m0-.5a1.5 1.5 0 0 1 3 0V16a6 6 0 0 1-6 6h-1.5a6 6 0 0 1-4.6-2.2L4 16.3a1.6 1.6 0 0 1 2.5-2L8 16"/></svg>
+          Attrapez le tissu et tirez-le
+        </span>
+      </div>
+      <div class="atelier-panel">
+        <p class="eyebrow">Les matières</p>
+        <h2 id="matieres-title">Touchez avant d'acheter.</h2>
+        <p>Chaque tissu est simulé avec son poids réel. Une laine bouillie tombe lourdement, un lin lavé flotte au moindre souffle. Saisissez le tissu pour sentir la différence.</p>
+        <div class="fabrics" role="group" aria-label="Choisir une matière" id="fabrics"></div>
+        <div class="spec" aria-live="polite">
+          <div class="weight">
+            <span class="eyebrow">Grammage</span>
+            <span class="weight-val" id="f-weight"></span>
+            <div class="weight-scale" aria-hidden="true"><span id="f-bar"></span></div>
+            <div class="weight-ticks" aria-hidden="true"><span>100 g/m²</span><span>Léger</span><span>Lourd</span><span>500 g/m²</span></div>
+          </div>
+          <dl>
+            <dt>Origine</dt><dd id="f-origin"></dd>
+            <dt>Toucher</dt><dd id="f-feel"></dd>
+            <dt>Entretien</dt><dd id="f-care"></dd>
+            <dt>Pièce</dt><dd><a href="#collection" id="f-piece" data-goto="femme"></a></dd>
+          </dl>
         </div>
       </div>
     </div>
@@ -790,6 +877,290 @@ tbody tr:last-child th, tbody tr:last-child td { border-bottom: 0; }
 
   renderGrid();
   renderCart();
+})();
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+/* Atelier 3D : un coupon de tissu suspendu à une tringle, simulé par intégration de Verlet. */
+(function () {
+  var FABRICS = [
+    { id: 'laine', name: 'Laine bouillie', color: '#B08155', gsm: 480, weave: 'knit',
+      origin: 'Biella, Italie', feel: 'Dense et chaud, ne s\'effiloche pas à la coupe.', care: 'Lavage à la main 30 °C, séchage à plat.',
+      piece: 'Manteau droit', rayon: 'femme', stiff: 0.9, wind: 0.35 },
+    { id: 'lin', name: 'Lin lavé', color: '#6B7A4B', gsm: 190, weave: 'linen',
+      origin: 'Guimarães, Portugal', feel: 'Sec, frais, froissé naturel.', care: 'Machine 40 °C, pas de sèche-linge.',
+      piece: 'Robe midi en lin', rayon: 'femme', stiff: 0.55, wind: 1.25 },
+    { id: 'cachemire', name: 'Cachemire', color: '#9A4A2A', gsm: 280, weave: 'twill',
+      origin: 'Hawick, Écosse', feel: 'Très doux, fluide, garde la chaleur.', care: 'Lavage à la main 30 °C, à plat.',
+      piece: 'Écharpe en cachemire', rayon: 'accessoires', stiff: 0.45, wind: 0.8 },
+    { id: 'oxford', name: 'Coton oxford', color: '#8FADD3', gsm: 140, weave: 'oxford',
+      origin: 'Barcelos, Portugal', feel: 'Ferme, respirant, se patine au lavage.', care: 'Machine 40 °C, repassage vapeur.',
+      piece: 'Chemise oxford', rayon: 'homme', stiff: 0.7, wind: 1.1 }
+  ];
+
+  var stage = document.getElementById('stage');
+  var list = document.getElementById('fabrics');
+  var hint = document.getElementById('stage-hint');
+  var current = FABRICS[0];
+
+  /* Panneau de fiches (fonctionne même sans 3D) */
+  list.innerHTML = FABRICS.map(function (f, i) {
+    return '<button class="fabric" type="button" data-f="' + i + '" aria-pressed="' + (i === 0) + '"><i style="background:' + f.color + '"></i>' + f.name + '</button>';
+  }).join('');
+  function showSpec(f) {
+    document.getElementById('f-weight').innerHTML = f.gsm + '<small>g/m²</small>';
+    document.getElementById('f-bar').style.width = ((f.gsm - 100) / 400 * 100) + '%';
+    document.getElementById('f-origin').textContent = f.origin;
+    document.getElementById('f-feel').textContent = f.feel;
+    document.getElementById('f-care').textContent = f.care;
+    var a = document.getElementById('f-piece');
+    a.textContent = f.piece + ' →';
+    a.dataset.goto = f.rayon;
+  }
+  showSpec(current);
+
+  var setFabric = function () {};
+  list.addEventListener('click', function (e) {
+    var b = e.target.closest('.fabric'); if (!b) return;
+    list.querySelectorAll('.fabric').forEach(function (x) { x.setAttribute('aria-pressed', String(x === b)); });
+    current = FABRICS[+b.dataset.f];
+    showSpec(current);
+    setFabric(current);
+  });
+
+  if (!window.THREE) { document.getElementById('stage-fallback').hidden = false; hint.hidden = true; return; }
+  var canvasProbe = document.createElement('canvas');
+  if (!(canvasProbe.getContext('webgl') || canvasProbe.getContext('experimental-webgl'))) { document.getElementById('stage-fallback').hidden = false; hint.hidden = true; return; }
+
+  var reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* Textures procédurales : armure de chaque tissu dessinée sur un canvas */
+  function shade(hex, amt) {
+    var n = parseInt(hex.slice(1), 16), r = n >> 16, g = (n >> 8) & 255, b = n & 255;
+    function c(v) { return Math.max(0, Math.min(255, Math.round(v + amt))); }
+    return 'rgb(' + c(r) + ',' + c(g) + ',' + c(b) + ')';
+  }
+  function makeTexture(f) {
+    var S = 512, cv = document.createElement('canvas'); cv.width = cv.height = S;
+    var g = cv.getContext('2d');
+    g.fillStyle = f.color; g.fillRect(0, 0, S, S);
+    var x, y, i;
+    if (f.weave === 'knit') {
+      for (y = 0; y < S; y += 16) for (x = 0; x < S; x += 16) {
+        g.strokeStyle = shade(f.color, 22); g.lineWidth = 4;
+        g.beginPath(); g.moveTo(x + 2, y + 2); g.lineTo(x + 8, y + 14); g.lineTo(x + 14, y + 2); g.stroke();
+        g.strokeStyle = shade(f.color, -28); g.lineWidth = 1.5;
+        g.beginPath(); g.moveTo(x + 8, y + 15); g.lineTo(x + 8, y + 16); g.stroke();
+      }
+      for (i = 0; i < 2500; i++) { g.fillStyle = 'rgba(255,255,255,' + Math.random() * 0.08 + ')'; g.fillRect(Math.random() * S, Math.random() * S, 2, 2); }
+    } else if (f.weave === 'linen') {
+      for (y = 0; y < S; y += 3) { g.fillStyle = shade(f.color, (Math.random() - 0.5) * 34); g.globalAlpha = 0.55; g.fillRect(0, y, S, 1 + Math.random() * 1.6); }
+      for (x = 0; x < S; x += 3) { g.fillStyle = shade(f.color, (Math.random() - 0.5) * 30); g.globalAlpha = 0.45; g.fillRect(x, 0, 1 + Math.random() * 1.4, S); }
+      g.globalAlpha = 1;
+      for (i = 0; i < 70; i++) { g.fillStyle = shade(f.color, 30); g.fillRect(Math.random() * S, Math.random() * S, 20 + Math.random() * 60, 2); }
+    } else if (f.weave === 'twill') {
+      g.lineWidth = 2;
+      for (i = -S; i < S * 2; i += 6) { g.strokeStyle = shade(f.color, i % 12 === 0 ? 14 : -10); g.beginPath(); g.moveTo(i, 0); g.lineTo(i - S, S); g.stroke(); }
+      for (i = 0; i < 9000; i++) { g.fillStyle = 'rgba(255,255,255,' + Math.random() * 0.07 + ')'; g.fillRect(Math.random() * S, Math.random() * S, 1, 3); }
+    } else {
+      for (y = 0; y < S; y += 8) for (x = 0; x < S; x += 8) {
+        var on = ((x + y) / 8) % 2 === 0;
+        g.fillStyle = on ? shade(f.color, 26) : shade(f.color, -12);
+        g.fillRect(x + 1, y + 1, 6, 6);
+      }
+    }
+    var t = new THREE.CanvasTexture(cv);
+    t.encoding = THREE.sRGBEncoding; t.wrapS = t.wrapT = THREE.RepeatWrapping; t.repeat.set(3, 3.6); t.anisotropy = 4;
+    return t;
+  }
+
+  /* Scène */
+  var renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+  renderer.outputEncoding = THREE.sRGBEncoding;
+  stage.insertBefore(renderer.domElement, stage.firstChild);
+  var scene = new THREE.Scene();
+  var camera = new THREE.PerspectiveCamera(32, 1, 0.1, 50);
+  scene.add(new THREE.HemisphereLight(0xfff6ea, 0x4a3f36, 0.75));
+  var key = new THREE.DirectionalLight(0xffffff, 0.85); key.position.set(-3, 4, 6); scene.add(key);
+  var rim = new THREE.DirectionalLight(0xffe2b8, 0.45); rim.position.set(4, 2, -4); scene.add(rim);
+
+  var W = 3.2, H = 4.0, COLS = 28, ROWS = 34, TOP = 2.05;
+  var geo = new THREE.PlaneGeometry(W, H, COLS - 1, ROWS - 1);
+  geo.translate(0, TOP - H / 2, 0);
+  var pos = geo.attributes.position.array, N = COLS * ROWS;
+  var prev = new Float32Array(pos), rest = new Float32Array(pos);
+  var pinned = new Uint8Array(N);
+  for (var c = 0; c < COLS; c++) if (c % 3 === 0 || c === COLS - 1) pinned[c] = 1;
+  /* Les anneaux non épinglés tombent un peu : effet festonné sous la tringle */
+
+  var cons = [];
+  function link(a, b) {
+    var dx = pos[a * 3] - pos[b * 3], dy = pos[a * 3 + 1] - pos[b * 3 + 1];
+    cons.push(a, b, Math.sqrt(dx * dx + dy * dy));
+  }
+  for (var r = 0; r < ROWS; r++) for (c = 0; c < COLS; c++) {
+    var i0 = r * COLS + c;
+    if (c < COLS - 1) link(i0, i0 + 1);
+    if (r < ROWS - 1) link(i0, i0 + COLS);
+    if (c < COLS - 1 && r < ROWS - 1) { link(i0, i0 + COLS + 1); link(i0 + 1, i0 + COLS); }
+    if (c < COLS - 2) link(i0, i0 + 2);
+    if (r < ROWS - 2) link(i0, i0 + COLS * 2);
+  }
+  cons = new Float32Array(cons);
+
+  var mat = new THREE.MeshStandardMaterial({ side: THREE.DoubleSide, roughness: 0.92, metalness: 0 });
+  var cloth = new THREE.Mesh(geo, mat);
+  cloth.frustumCulled = false;
+  scene.add(cloth);
+  geo.boundingSphere = new THREE.Sphere(new THREE.Vector3(0, 0, 0), 6);
+
+  var brass = new THREE.MeshStandardMaterial({ color: 0xb08d57, metalness: 0.85, roughness: 0.3 });
+  var rail = new THREE.Mesh(new THREE.CylinderGeometry(0.035, 0.035, W + 0.7, 24), brass);
+  rail.rotation.z = Math.PI / 2; rail.position.y = TOP + 0.1; scene.add(rail);
+  [-1, 1].forEach(function (s) {
+    var cap = new THREE.Mesh(new THREE.SphereGeometry(0.07, 20, 16), brass);
+    cap.position.set(s * (W / 2 + 0.35), TOP + 0.1, 0); scene.add(cap);
+  });
+  for (c = 0; c < COLS; c++) if (pinned[c]) {
+    var ring = new THREE.Mesh(new THREE.TorusGeometry(0.06, 0.012, 8, 24), brass);
+    ring.position.set(pos[c * 3], TOP + 0.08, 0); scene.add(ring);
+  }
+
+  var textures = {};
+  var stiffness = current.stiff, windAmt = current.wind, gravity = 9.8;
+  setFabric = function (f) {
+    if (!textures[f.id]) textures[f.id] = makeTexture(f);
+    mat.map = textures[f.id]; mat.bumpMap = textures[f.id]; mat.bumpScale = 0.012; mat.needsUpdate = true;
+    stiffness = f.stiff; windAmt = reduced ? 0 : f.wind;
+    gravity = 6 + f.gsm / 60;
+    gust = 1.6;
+  };
+  var gust = 0;
+  setFabric(current);
+
+  /* Interaction */
+  var ray = new THREE.Raycaster(), ndc = new THREE.Vector2();
+  var dragPlane = new THREE.Plane(new THREE.Vector3(0, 0, 1), -0.7);
+  var hitPoint = new THREE.Vector3();
+  var grabbed = -1, hovering = false, pointerIn = false;
+  var look = { x: 0, y: 0 }, lookTarget = { x: 0, y: 0 };
+
+  function toNdc(e) {
+    var rc = renderer.domElement.getBoundingClientRect();
+    ndc.set(((e.clientX - rc.left) / rc.width) * 2 - 1, -((e.clientY - rc.top) / rc.height) * 2 + 1);
+    lookTarget.x = ndc.x; lookTarget.y = ndc.y;
+  }
+  var el = renderer.domElement;
+  el.setAttribute('aria-hidden', 'true');
+  el.addEventListener('pointermove', function (e) {
+    toNdc(e); pointerIn = true;
+    if (grabbed < 0) {
+      ray.setFromCamera(ndc, camera);
+      hovering = ray.intersectObject(cloth).length > 0;
+      el.style.cursor = hovering ? 'grab' : 'default';
+    }
+  });
+  el.addEventListener('pointerleave', function () { pointerIn = false; lookTarget.x = lookTarget.y = 0; });
+  el.addEventListener('pointerdown', function (e) {
+    toNdc(e);
+    ray.setFromCamera(ndc, camera);
+    var hits = ray.intersectObject(cloth);
+    if (!hits.length) return;
+    var p = hits[0].point, best = -1, bd = 1e9;
+    for (var i = 0; i < N; i++) {
+      if (pinned[i]) continue;
+      var dx = pos[i * 3] - p.x, dy = pos[i * 3 + 1] - p.y, dz = pos[i * 3 + 2] - p.z, d = dx * dx + dy * dy + dz * dz;
+      if (d < bd) { bd = d; best = i; }
+    }
+    grabbed = best;
+    el.classList.add('grabbing');
+    try { el.setPointerCapture(e.pointerId); } catch (err) {}
+    hint.classList.add('gone');
+  });
+  function release() { grabbed = -1; el.classList.remove('grabbing'); }
+  el.addEventListener('pointerup', release);
+  el.addEventListener('pointercancel', release);
+
+  /* Simulation */
+  var t = 0, DT = 1 / 60;
+  function step() {
+    t += DT;
+    gust *= 0.97;
+    var dt2 = DT * DT, damp = 0.985 - (1 - stiffness) * 0.01;
+    for (var i = 0; i < N; i++) {
+      var k = i * 3;
+      if (pinned[i]) { pos[k] = rest[k]; pos[k + 1] = rest[k + 1]; pos[k + 2] = rest[k + 2]; continue; }
+      var x = pos[k], y = pos[k + 1], z = pos[k + 2];
+      var vx = (x - prev[k]) * damp, vy = (y - prev[k + 1]) * damp, vz = (z - prev[k + 2]) * damp;
+      prev[k] = x; prev[k + 1] = y; prev[k + 2] = z;
+      var w = (windAmt + gust) * (Math.sin(t * 1.3 + x * 1.7 + y * 0.6) * 0.6 + Math.sin(t * 2.9 + y * 2.1) * 0.4 + 0.35);
+      pos[k] = x + vx + w * 0.6 * dt2;
+      pos[k + 1] = y + vy - gravity * dt2;
+      pos[k + 2] = z + vz + w * 3.2 * dt2;
+    }
+    if (grabbed >= 0) {
+      ray.setFromCamera(ndc, camera);
+      if (ray.ray.intersectPlane(dragPlane, hitPoint)) {
+        var g = grabbed * 3;
+        pos[g] += (hitPoint.x - pos[g]) * 0.5; pos[g + 1] += (hitPoint.y - pos[g + 1]) * 0.5; pos[g + 2] += (hitPoint.z - pos[g + 2]) * 0.5;
+      }
+    }
+    var iters = 4 + Math.round(stiffness * 4);
+    for (var it = 0; it < iters; it++) {
+      for (var j = 0; j < cons.length; j += 3) {
+        var a = cons[j] * 3, b = cons[j + 1] * 3, restLen = cons[j + 2];
+        var dx = pos[b] - pos[a], dy = pos[b + 1] - pos[a + 1], dz = pos[b + 2] - pos[a + 2];
+        var d = Math.sqrt(dx * dx + dy * dy + dz * dz) || 1e-6;
+        var diff = (d - restLen) / d;
+        var pa = pinned[cons[j]] || cons[j] === grabbed, pb = pinned[cons[j + 1]] || cons[j + 1] === grabbed;
+        if (pa && pb) continue;
+        var sa = pa ? 0 : (pb ? 1 : 0.5), sb = pb ? 0 : (pa ? 1 : 0.5);
+        pos[a] += dx * diff * sa; pos[a + 1] += dy * diff * sa; pos[a + 2] += dz * diff * sa;
+        pos[b] -= dx * diff * sb; pos[b + 1] -= dy * diff * sb; pos[b + 2] -= dz * diff * sb;
+      }
+    }
+  }
+
+  function resize() {
+    var w = stage.clientWidth, h = stage.clientHeight;
+    renderer.setSize(w, h, false);
+    camera.aspect = w / h;
+    var tan = Math.tan(THREE.MathUtils.degToRad(camera.fov / 2));
+    var dist = Math.max(5.0 / (2 * tan), (W + 1.2) / (2 * tan * camera.aspect));
+    camera.userData.dist = dist;
+    camera.updateProjectionMatrix();
+  }
+  if (window.ResizeObserver) new ResizeObserver(resize).observe(stage); else window.addEventListener('resize', resize);
+  resize();
+
+  /* Le tissu se pose avant le premier rendu : la page est complète au repos */
+  for (var s0 = 0; s0 < 240; s0++) step();
+
+  var visible = true, raf = 0, acc = 0, last = performance.now();
+  function frame(now) {
+    raf = requestAnimationFrame(frame);
+    acc += Math.min(0.1, (now - last) / 1000); last = now;
+    var steps = 0;
+    while (acc >= DT && steps < 3) { step(); acc -= DT; steps++; }
+    if (steps === 3) acc = 0;
+    geo.attributes.position.needsUpdate = true;
+    geo.computeVertexNormals();
+    var ease = reduced ? 1 : 0.06;
+    look.x += (lookTarget.x - look.x) * ease; look.y += (lookTarget.y - look.y) * ease;
+    var dist = camera.userData.dist, ang = look.x * 0.35;
+    camera.position.set(Math.sin(ang) * dist, 0.15 + look.y * 0.6, Math.cos(ang) * dist);
+    camera.lookAt(0, 0.1, 0);
+    renderer.render(scene, camera);
+  }
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(function (en) {
+      visible = en[0].isIntersecting;
+      if (visible && !raf) { last = performance.now(); raf = requestAnimationFrame(frame); }
+      if (!visible && raf) { cancelAnimationFrame(raf); raf = 0; }
+    }).observe(stage);
+  }
+  raf = requestAnimationFrame(frame);
 })();
 </script>
 </body>
