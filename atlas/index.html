@@ -1,0 +1,1185 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Atlas Torréfacteurs</title>
+<meta name="description" content="Atlas Torréfacteurs : cafés de spécialité torréfiés en petits lots le mardi, expédiés en 48 h, avec la courbe de torréfaction de chaque lot.">
+<link rel="icon" href="assets/logo/atlas-mark.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil:wght@700;800&family=IBM+Plex+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="assets/design-tokens.css">
+<style>
+/* Layout : fiche d'atelier — titre au pochoir à gauche, fiche de torréfaction vivante à droite ;
+   la boutique reprend les étiquettes de sacs de jute, les recettes un carnet de dosage. */
+:root {
+  /* Repris de assets/design-tokens.css (design-system), redéclarés ici pour le thème sombre. */
+  --color-background: #ECEEE2;
+  --color-surface: #F8F9F2;
+  --color-foreground: #1F1A14;
+  --color-muted-foreground: #5A5348;
+  --color-border: #C9CCB8;
+  --color-primary: #2340A8;
+  --color-primary-hover: #182E7E;
+  --color-primary-soft: #DCE2F6;
+  --color-on-primary: #FFFFFF;
+  --color-secondary: #6E7A3C;
+  --color-secondary-soft: #DDE2C4;
+  --color-accent: #C8861A;
+  --color-scrim: rgba(20, 17, 13, .5);
+  /* Échelle Agtron : couleurs réelles du grain, identiques dans les deux thèmes. */
+  --agtron-95: #C9A877;
+  --agtron-70: #8A5A33;
+  --agtron-45: #3B2416;
+
+  --font-display: 'Big Shoulders Stencil', 'Arial Narrow', 'Helvetica Neue', sans-serif;
+  --font-body: 'Instrument Sans', 'Helvetica Neue', Arial, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace;
+
+  --step--1: .8125rem;
+  --step-0: 1.0625rem;
+  --step-1: 1.375rem;
+  --step-2: clamp(2.4rem, 5vw, 3.5rem);
+  --step-3: clamp(3.4rem, 8vw, 6rem);
+
+  --radius-sm: 2px;
+  --radius-md: 6px;
+  --gutter: clamp(16px, 4vw, 48px);
+  --ease: cubic-bezier(.2, .7, .2, 1);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --color-background: #14110D; --color-surface: #1E1A15; --color-foreground: #ECEADF;
+    --color-muted-foreground: #B3AC9C; --color-border: #3A342B; --color-primary: #8FA3F5;
+    --color-primary-hover: #B4C2F8; --color-primary-soft: #232B4A; --color-on-primary: #0F1430;
+    --color-secondary: #A9B56E; --color-secondary-soft: #2A2E1C; --color-accent: #E2A443;
+    --color-scrim: rgba(0, 0, 0, .65);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --color-background: #14110D; --color-surface: #1E1A15; --color-foreground: #ECEADF;
+  --color-muted-foreground: #B3AC9C; --color-border: #3A342B; --color-primary: #8FA3F5;
+  --color-primary-hover: #B4C2F8; --color-primary-soft: #232B4A; --color-on-primary: #0F1430;
+  --color-secondary: #A9B56E; --color-secondary-soft: #2A2E1C; --color-accent: #E2A443;
+  --color-scrim: rgba(0, 0, 0, .65);
+  color-scheme: dark;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 84px; }
+body {
+  margin: 0;
+  background: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-body);
+  font-size: var(--step-0);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+[hidden] { display: none !important; }
+img, svg { max-width: 100%; display: block; }
+a { color: var(--color-primary); }
+button, input, select { font: inherit; color: inherit; }
+button { cursor: pointer; }
+:focus-visible { outline: 2px solid var(--color-primary); outline-offset: 3px; }
+h1, h2, h3 { margin: 0; text-wrap: balance; }
+p { margin: 0; }
+.wrap { width: 100%; max-width: 1240px; margin-inline: auto; padding-inline: var(--gutter); }
+.label {
+  font-family: var(--font-mono);
+  font-size: .75rem;
+  font-weight: 500;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--color-muted-foreground);
+}
+.num { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
+.visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+/* ---------- Boutons ---------- */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: .5rem;
+  min-height: 48px; padding: .7rem 1.4rem;
+  border: 2px solid var(--color-primary); border-radius: var(--radius-sm);
+  background: var(--color-primary); color: var(--color-on-primary);
+  font-weight: 600; text-decoration: none; letter-spacing: .01em;
+  transition: background-color .2s var(--ease), border-color .2s var(--ease), color .2s var(--ease), transform .15s var(--ease);
+}
+.btn:hover { background: var(--color-primary-hover); border-color: var(--color-primary-hover); }
+.btn:active { transform: translateY(1px); }
+.btn--ghost { background: transparent; color: var(--color-primary); }
+.btn--ghost:hover { background: var(--color-primary-soft); color: var(--color-primary); border-color: var(--color-primary); }
+.btn--small { min-height: 44px; padding: .5rem 1rem; font-size: .9375rem; }
+.icon-btn {
+  display: inline-grid; place-items: center; width: 44px; height: 44px;
+  border: 1px solid var(--color-border); border-radius: var(--radius-sm);
+  background: transparent; transition: background-color .2s var(--ease);
+}
+.icon-btn:hover { background: var(--color-surface); }
+.icon-btn svg { width: 20px; height: 20px; }
+
+/* ---------- En-tête ---------- */
+.site-header {
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20;
+  background: color-mix(in srgb, var(--color-background) 92%, transparent);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--color-border);
+}
+.site-header .wrap { display: flex; align-items: center; gap: 1.5rem; min-height: 68px; }
+.brand { display: flex; align-items: center; gap: .65rem; text-decoration: none; color: var(--color-foreground); }
+.brand svg { width: 40px; height: 40px; }
+.brand-name { font-family: var(--font-display); font-weight: 800; font-size: 1.75rem; letter-spacing: .06em; line-height: 1; }
+.brand-sub { display: block; font-family: var(--font-mono); font-size: .625rem; letter-spacing: .2em; color: var(--color-muted-foreground); margin-top: 2px; }
+.nav { display: flex; gap: 1.5rem; margin-left: auto; }
+.nav a { color: var(--color-foreground); text-decoration: none; font-weight: 500; font-size: .9375rem; padding-block: .5rem; border-bottom: 2px solid transparent; }
+.nav a:hover { border-color: var(--color-primary); }
+.header-actions { display: flex; gap: .5rem; }
+.cart-btn { position: relative; }
+.cart-count {
+  position: absolute; top: -6px; right: -6px; min-width: 20px; height: 20px; padding: 0 5px;
+  border-radius: 999px; background: var(--color-primary); color: var(--color-on-primary);
+  font: 600 .6875rem/20px var(--font-mono); text-align: center;
+}
+@media (max-width: 820px) { .nav { display: none; } .header-actions { margin-left: auto; } }
+
+/* ---------- Ouverture ---------- */
+.hero { padding-block: clamp(2.5rem, 6vw, 5rem) clamp(3rem, 6vw, 5rem); }
+.hero .wrap { display: grid; grid-template-columns: 1fr; gap: clamp(2rem, 4vw, 3.5rem); align-items: start; }
+@media (min-width: 980px) { .hero .wrap { grid-template-columns: minmax(0, 1fr) minmax(0, 1.08fr); } }
+.hero-copy { display: flex; flex-direction: column; gap: 1.5rem; min-width: 0; }
+.stamp {
+  align-self: flex-start;
+  display: inline-flex; gap: .75rem; padding: .35rem .7rem;
+  border: 2px solid var(--color-primary); color: var(--color-primary);
+  font: 500 .75rem/1.4 var(--font-mono); letter-spacing: .1em; text-transform: uppercase;
+  transform: rotate(-2.5deg);
+}
+.hero h1 {
+  font-family: var(--font-display); font-weight: 800; font-size: var(--step-3);
+  line-height: .92; letter-spacing: .01em; text-transform: uppercase;
+}
+.hero h1 em { font-style: normal; color: var(--color-primary); }
+.hero-lead { max-width: 34rem; font-size: 1.1875rem; color: var(--color-muted-foreground); }
+.hero-ctas { display: flex; flex-wrap: wrap; gap: .75rem; }
+.facts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; padding-top: 1.5rem; border-top: 1px solid var(--color-border); max-width: 34rem; }
+.facts dt { font-family: var(--font-mono); font-size: .6875rem; letter-spacing: .08em; text-transform: uppercase; color: var(--color-muted-foreground); }
+.facts dd { margin: .2rem 0 0; font-family: var(--font-display); font-weight: 800; font-size: 2rem; line-height: 1; }
+
+/* Fiche de torréfaction */
+.roastlog {
+  min-width: 0;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: clamp(1rem, 2.5vw, 1.5rem);
+  display: flex; flex-direction: column; gap: 1rem;
+}
+.roastlog-head { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; flex-wrap: wrap; }
+.roastlog-title { font-family: var(--font-display); font-weight: 800; font-size: 1.9rem; line-height: 1; text-transform: uppercase; letter-spacing: .02em; }
+.chips { display: flex; flex-wrap: wrap; gap: .4rem; }
+.chip {
+  min-height: 36px; padding: .3rem .75rem; border: 1px solid var(--color-border); border-radius: 999px;
+  background: transparent; font-size: .8125rem; font-weight: 500;
+  transition: background-color .2s var(--ease), border-color .2s var(--ease), color .2s var(--ease);
+}
+.chip:hover { border-color: var(--color-primary); }
+.chip[aria-pressed="true"] { background: var(--color-primary); border-color: var(--color-primary); color: var(--color-on-primary); }
+.chart-box { width: 100%; }
+.chart-box svg { width: 100%; height: auto; overflow: visible; }
+.chart-grid line { stroke: var(--color-border); stroke-width: 1; }
+.chart-axis text { fill: var(--color-muted-foreground); font: 400 13px var(--font-mono); }
+.chart-curve { fill: none; stroke: var(--color-foreground); stroke-width: 2.5; stroke-linejoin: round; stroke-linecap: round; }
+.chart-event line { stroke: var(--color-muted-foreground); stroke-width: 1; stroke-dasharray: 3 4; }
+.chart-event text { fill: var(--color-foreground); font: 500 13px var(--font-mono); }
+.chart-event.is-crack line { stroke: var(--color-accent); stroke-dasharray: none; stroke-width: 1.5; }
+.chart-dot { fill: var(--color-accent); stroke: var(--color-surface); stroke-width: 2; }
+.chart-probe { fill: var(--color-primary); }
+.chart-hover-line { stroke: var(--color-foreground); stroke-width: 1; }
+.chart-hover-box { fill: var(--color-foreground); }
+.chart-hover-text { fill: var(--color-background); font: 500 13px var(--font-mono); }
+.phases { display: flex; height: 30px; border-radius: var(--radius-sm); overflow: hidden; font: 500 .6875rem/30px var(--font-mono); letter-spacing: .04em; }
+.phases span { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; padding-inline: .5rem; transition: flex-basis .5s var(--ease); }
+.phase-dry { background: var(--color-secondary-soft); }
+.phase-maillard { background: color-mix(in srgb, var(--color-accent) 24%, var(--color-surface)); }
+.phase-dev { background: var(--color-primary-soft); }
+.roast-stats { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: .5rem; border-top: 1px solid var(--color-border); padding-top: .9rem; }
+.roast-stats div { min-width: 0; }
+.roast-stats dt { font: 500 .625rem/1.3 var(--font-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--color-muted-foreground); }
+.roast-stats dd { margin: .25rem 0 0; font: 500 1.0625rem/1.2 var(--font-mono); font-variant-numeric: tabular-nums; }
+@media (max-width: 560px) { .roast-stats { grid-template-columns: repeat(3, minmax(0, 1fr)); row-gap: .9rem; } }
+.roastlog-note { font-size: .875rem; color: var(--color-muted-foreground); }
+
+/* ---------- Sections ---------- */
+.section { padding-block: clamp(3.5rem, 8vw, 6rem); border-top: 1px solid var(--color-border); }
+.section-head { display: grid; gap: .75rem; margin-bottom: clamp(2rem, 4vw, 3rem); max-width: 46rem; }
+.section-head h2 { font-family: var(--font-display); font-weight: 800; font-size: var(--step-2); line-height: 1; text-transform: uppercase; letter-spacing: .01em; }
+.section-head p { color: var(--color-muted-foreground); max-width: 40rem; }
+
+/* Engagements */
+.pledges { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 0; border-block: 1px solid var(--color-border); }
+.pledge { padding: 1.5rem 1.25rem; display: grid; gap: .5rem; align-content: start; }
+.pledge + .pledge { border-left: 1px solid var(--color-border); }
+@media (max-width: 1040px) { .pledge + .pledge { border-left: 0; border-top: 1px solid var(--color-border); } }
+.pledge svg { width: 28px; height: 28px; color: var(--color-primary); }
+.pledge h3 { font-size: 1.0625rem; font-weight: 600; }
+.pledge p { font-size: .9375rem; color: var(--color-muted-foreground); }
+
+/* Boutique */
+.shop-bar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem; margin-bottom: 1.5rem; }
+.segmented { display: inline-flex; border: 1px solid var(--color-border); border-radius: var(--radius-sm); padding: 3px; gap: 3px; background: var(--color-surface); }
+.segmented button { min-height: 40px; padding: .3rem 1rem; border: 0; border-radius: var(--radius-sm); background: transparent; font-size: .9375rem; font-weight: 500; }
+.segmented button[aria-pressed="true"] { background: var(--color-foreground); color: var(--color-background); }
+.results-count { font-family: var(--font-mono); font-size: .8125rem; color: var(--color-muted-foreground); }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 330px), 1fr)); gap: 1.25rem; }
+.sack {
+  min-width: 0;
+  display: flex; flex-direction: column; gap: 1rem;
+  background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-md);
+  padding: 1.25rem;
+}
+.sack-top { display: flex; justify-content: space-between; align-items: start; gap: .75rem; }
+.sack-origin { font-family: var(--font-display); font-weight: 800; font-size: 2.6rem; line-height: .9; text-transform: uppercase; color: var(--color-primary); letter-spacing: .02em; }
+.sack-name { margin-top: .35rem; font-weight: 600; }
+.sack-lot { flex-shrink: 0; font: 500 .6875rem/1.3 var(--font-mono); letter-spacing: .06em; padding: .25rem .45rem; border: 1px solid var(--color-primary); color: var(--color-primary); text-align: center; }
+.sack-specs { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .6rem 1rem; margin: 0; padding-block: .9rem; border-block: 1px dashed var(--color-border); }
+.sack-specs dt { font: 500 .625rem/1.3 var(--font-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--color-muted-foreground); }
+.sack-specs dd { margin: .15rem 0 0; font-size: .9375rem; }
+.sack-notes { font-size: 1rem; }
+.sack-notes strong { font-weight: 600; }
+.agtron { display: grid; gap: .35rem; }
+.agtron-head { display: flex; justify-content: space-between; font: 500 .6875rem/1.2 var(--font-mono); letter-spacing: .06em; text-transform: uppercase; color: var(--color-muted-foreground); }
+.agtron-bar { position: relative; height: 10px; border-radius: 999px; background: linear-gradient(90deg, var(--agtron-95), var(--agtron-70), var(--agtron-45)); }
+.agtron-bar i { position: absolute; top: 50%; width: 16px; height: 16px; border-radius: 50%; transform: translate(-50%, -50%); background: var(--color-surface); border: 3px solid var(--color-foreground); }
+.tags { display: flex; flex-wrap: wrap; gap: .4rem; }
+.tag { font: 500 .6875rem/1 var(--font-mono); letter-spacing: .06em; text-transform: uppercase; padding: .4rem .55rem; border-radius: var(--radius-sm); background: var(--color-secondary-soft); color: var(--color-foreground); }
+.sack-buy { margin-top: auto; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .6rem; }
+.field { display: grid; gap: .3rem; min-width: 0; }
+.field label { font: 500 .625rem/1.2 var(--font-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--color-muted-foreground); }
+select, input[type="number"], input[type="email"] {
+  width: 100%; min-height: 44px; padding: .5rem .7rem;
+  border: 1px solid var(--color-border); border-radius: var(--radius-sm);
+  background: var(--color-background); font-size: .9375rem;
+}
+select:focus-visible, input:focus-visible { outline: 2px solid var(--color-primary); outline-offset: 1px; }
+.sack-foot { grid-column: 1 / -1; display: flex; align-items: center; justify-content: space-between; gap: .75rem; flex-wrap: wrap; }
+.price { font: 500 1.375rem/1 var(--font-mono); font-variant-numeric: tabular-nums; }
+.price small { font-size: .75rem; color: var(--color-muted-foreground); margin-left: .25rem; }
+.sack-actions { display: flex; gap: .5rem; flex-wrap: wrap; }
+.link-btn { min-height: 44px; border: 0; background: none; padding: 0 .25rem; color: var(--color-primary); font-weight: 600; font-size: .9375rem; text-decoration: underline; text-underline-offset: 3px; }
+
+/* Recettes */
+.brew { display: grid; grid-template-columns: 1fr; gap: 1.5rem; }
+@media (min-width: 900px) { .brew { grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); } }
+.tabs { display: flex; flex-wrap: wrap; gap: .4rem; margin-bottom: 1.25rem; }
+.panel { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: clamp(1rem, 2.5vw, 1.5rem); min-width: 0; display: grid; gap: 1.25rem; align-content: start; }
+.dose { display: grid; gap: .5rem; }
+.dose-row { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; }
+input[type="range"] { width: 100%; accent-color: var(--color-primary); min-height: 32px; }
+.recipe { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin: 0; }
+.recipe dt { font: 500 .625rem/1.3 var(--font-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--color-muted-foreground); }
+.recipe dd { margin: .2rem 0 0; font: 500 1.5rem/1.1 var(--font-mono); font-variant-numeric: tabular-nums; }
+.recipe dd small { font-size: .8125rem; color: var(--color-muted-foreground); }
+.ratio-line { font-size: .9375rem; color: var(--color-muted-foreground); }
+.timer { display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+.timer-clock { font: 500 3rem/1 var(--font-mono); font-variant-numeric: tabular-nums; letter-spacing: -.02em; }
+.timer-btns { display: flex; gap: .5rem; }
+.steps { list-style: none; margin: 0; padding: 0; display: grid; }
+.steps li { display: grid; grid-template-columns: 4.2rem minmax(0, 1fr) auto; gap: .75rem; align-items: baseline; padding: .8rem .5rem; border-top: 1px solid var(--color-border); transition: background-color .25s var(--ease); }
+.steps li:last-child { border-bottom: 1px solid var(--color-border); }
+.steps .t { font: 500 .875rem var(--font-mono); font-variant-numeric: tabular-nums; color: var(--color-muted-foreground); }
+.steps .w { font: 500 .875rem var(--font-mono); font-variant-numeric: tabular-nums; text-align: right; white-space: nowrap; }
+.steps li.is-now { background: var(--color-primary-soft); }
+.steps li.is-now .t { color: var(--color-primary); }
+.steps li.is-done { color: var(--color-muted-foreground); }
+
+/* Abonnement */
+.sub { display: grid; grid-template-columns: 1fr; gap: 1.5rem; align-items: start; }
+@media (min-width: 900px) { .sub { grid-template-columns: minmax(0, 1.3fr) minmax(0, .7fr); } }
+fieldset { border: 0; margin: 0; padding: 0; min-width: 0; }
+legend { padding: 0; margin-bottom: .6rem; font: 500 .75rem/1.3 var(--font-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--color-muted-foreground); }
+.options { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 150px), 1fr)); gap: .6rem; }
+.option { position: relative; }
+.option input { position: absolute; opacity: 0; inset: 0; margin: 0; cursor: pointer; }
+.option span {
+  display: grid; gap: .15rem; min-height: 64px; padding: .75rem .9rem;
+  border: 1px solid var(--color-border); border-radius: var(--radius-sm); background: var(--color-surface);
+  transition: border-color .2s var(--ease), background-color .2s var(--ease);
+}
+.option b { font-weight: 600; }
+.option small { font-size: .8125rem; color: var(--color-muted-foreground); }
+.option input:checked + span { border: 2px solid var(--color-primary); background: var(--color-primary-soft); padding: calc(.75rem - 1px) calc(.9rem - 1px); }
+.option input:focus-visible + span { outline: 2px solid var(--color-primary); outline-offset: 2px; }
+.sub-form { display: grid; gap: 1.5rem; }
+.ticket {
+  background: var(--color-foreground); color: var(--color-background);
+  border-radius: var(--radius-md); padding: 1.5rem; display: grid; gap: 1rem;
+}
+.ticket .label { color: color-mix(in srgb, var(--color-background) 70%, var(--color-foreground)); }
+.ticket-price { font: 800 3.4rem/1 var(--font-display); }
+.ticket-price small { font: 500 .875rem var(--font-mono); margin-left: .3rem; }
+.ticket ul { list-style: none; margin: 0; padding: 1rem 0 0; display: grid; gap: .45rem; border-top: 1px dashed color-mix(in srgb, var(--color-background) 35%, var(--color-foreground)); font-size: .9375rem; }
+.ticket li { display: flex; justify-content: space-between; gap: 1rem; }
+.ticket li span:last-child { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
+.ticket .btn { background: var(--color-background); border-color: var(--color-background); color: var(--color-foreground); }
+.ticket .btn:hover { background: var(--color-primary-soft); border-color: var(--color-primary-soft); }
+.ticket-note { font-size: .875rem; }
+
+/* Atelier */
+.atelier { display: grid; grid-template-columns: 1fr; gap: 2rem; }
+@media (min-width: 900px) { .atelier { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); } }
+.sessions { list-style: none; margin: 0; padding: 0; display: grid; }
+.session { display: grid; grid-template-columns: 5.5rem minmax(0, 1fr) auto; gap: 1rem; align-items: center; padding-block: 1rem; border-top: 1px solid var(--color-border); }
+.session:last-child { border-bottom: 1px solid var(--color-border); }
+.session-date { font-family: var(--font-display); font-weight: 800; font-size: 2.2rem; line-height: .9; text-transform: uppercase; }
+.session-date small { display: block; font: 500 .6875rem/1.4 var(--font-mono); letter-spacing: .08em; color: var(--color-muted-foreground); }
+.session h3 { font-size: 1.0625rem; font-weight: 600; }
+.session p { font-size: .875rem; color: var(--color-muted-foreground); }
+@media (max-width: 520px) { .session { grid-template-columns: 4.5rem minmax(0, 1fr); } .session .btn { grid-column: 1 / -1; } }
+.newsletter { display: grid; gap: 1rem; align-content: start; padding: 1.5rem; border: 2px solid var(--color-primary); border-radius: var(--radius-md); }
+.newsletter h3 { font-family: var(--font-display); font-weight: 800; font-size: 2rem; line-height: 1; text-transform: uppercase; }
+.newsletter p { color: var(--color-muted-foreground); }
+.nl-row { display: flex; gap: .5rem; flex-wrap: wrap; }
+.nl-row input { flex: 1 1 220px; }
+.field-error { color: var(--color-accent); font-size: .875rem; font-weight: 500; }
+.form-ok { font-size: .9375rem; font-weight: 500; color: var(--color-secondary); }
+
+/* Pied de page */
+.site-footer { border-top: 1px solid var(--color-border); padding-block: 3rem; }
+.site-footer .wrap { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); gap: 2rem; }
+.site-footer h4 { margin: 0 0 .6rem; font: 500 .75rem/1.3 var(--font-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--color-muted-foreground); }
+.site-footer p, .site-footer li { font-size: .9375rem; }
+.site-footer ul { list-style: none; margin: 0; padding: 0; display: grid; gap: .3rem; }
+.footer-legal { grid-column: 1 / -1; padding-top: 1.5rem; border-top: 1px solid var(--color-border); font-size: .8125rem; color: var(--color-muted-foreground); }
+
+/* Panier */
+.scrim { position: fixed; inset: 0; z-index: 40; background: var(--color-scrim); opacity: 0; transition: opacity .25s var(--ease); }
+.scrim.is-open { opacity: 1; }
+.drawer {
+  position: fixed; z-index: 50; top: 0; right: 0; bottom: 0; width: min(420px, 100%);
+  display: flex; flex-direction: column;
+  padding: calc(1.25rem + env(safe-area-inset-top, 0px)) 1.25rem calc(1.25rem + env(safe-area-inset-bottom, 0px));
+  background: var(--color-surface); border-left: 1px solid var(--color-border);
+  transform: translateX(100%); transition: transform .3s var(--ease);
+}
+.drawer.is-open { transform: none; }
+.drawer-head { display: flex; justify-content: space-between; align-items: center; padding-bottom: 1rem; border-bottom: 1px solid var(--color-border); }
+.drawer-head h2 { font-family: var(--font-display); font-weight: 800; font-size: 2rem; text-transform: uppercase; line-height: 1; }
+.ship { padding-block: 1rem; display: grid; gap: .5rem; font-size: .875rem; }
+.ship-bar { height: 6px; border-radius: 999px; background: var(--color-border); overflow: hidden; }
+.ship-bar i { display: block; height: 100%; background: var(--color-secondary); transition: width .3s var(--ease); }
+.lines { flex: 1; overflow-y: auto; list-style: none; margin: 0; padding: 0; }
+.line { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: .35rem 1rem; padding-block: 1rem; border-top: 1px solid var(--color-border); }
+.line-name { font-weight: 600; }
+.line-meta { font-size: .8125rem; color: var(--color-muted-foreground); grid-column: 1; }
+.line-price { font-family: var(--font-mono); font-variant-numeric: tabular-nums; text-align: right; }
+.qty { display: inline-flex; align-items: center; border: 1px solid var(--color-border); border-radius: var(--radius-sm); }
+.qty button { width: 40px; height: 40px; border: 0; background: none; display: grid; place-items: center; }
+.qty button svg { width: 16px; height: 16px; }
+.qty span { min-width: 2rem; text-align: center; font-family: var(--font-mono); }
+.line-qty { grid-column: 2; grid-row: 2 / span 2; align-self: end; justify-self: end; }
+.empty { padding-block: 2.5rem; color: var(--color-muted-foreground); display: grid; gap: 1rem; justify-items: start; }
+.drawer-foot { border-top: 1px solid var(--color-border); padding-top: 1rem; display: grid; gap: .75rem; }
+.totals { display: grid; gap: .3rem; font-size: .9375rem; }
+.totals div { display: flex; justify-content: space-between; }
+.totals span:last-child { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
+.totals .total { font-weight: 600; font-size: 1.0625rem; }
+.demo-note { font-size: .8125rem; color: var(--color-muted-foreground); }
+
+.toast {
+  position: fixed; left: 50%; bottom: calc(1.25rem + env(safe-area-inset-bottom, 0px)); z-index: 60;
+  transform: translate(-50%, 140%); padding: .8rem 1.1rem; max-width: calc(100% - 32px);
+  background: var(--color-foreground); color: var(--color-background); border-radius: var(--radius-sm);
+  font-size: .9375rem; font-weight: 500; visibility: hidden; transition: transform .3s var(--ease), visibility 0s .3s;
+}
+.toast.is-on { transform: translate(-50%, 0); visibility: visible; transition: transform .3s var(--ease); }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; }
+}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-bag" viewBox="0 0 24 24"><path d="M6 7h12l-1 13H7L6 7Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 10V6a3 3 0 0 1 6 0v4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="i-minus" viewBox="0 0 24 24"><path d="M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="i-flame" viewBox="0 0 24 24"><path d="M12 3c1 3.5 5 5.5 5 10a5 5 0 0 1-10 0c0-2.2 1-3.6 2.2-4.8.3 1.6 1 2.6 2 2.8C10.6 8.3 11 5.5 12 3Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="12" cy="9.5" r="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+    <symbol id="i-truck" viewBox="0 0 24 24"><path d="M3 6h11v10H3zM14 10h4l3 3v3h-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="7" cy="17.5" r="1.8" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17" cy="17.5" r="1.8" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+    <symbol id="i-scale" viewBox="0 0 24 24"><rect x="3" y="14" width="18" height="6" rx="1" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M7 14V9h10v5M12 9V5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M5 19C5 10 10 5 20 4c-.5 9-5.5 15-15 15Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M5 19 13 11" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="M8 5v14l11-7L8 5Z" fill="currentColor"/></symbol>
+    <symbol id="i-pause" viewBox="0 0 24 24"><path d="M7 5h3.5v14H7zM13.5 5H17v14h-3.5z" fill="currentColor"/></symbol>
+    <symbol id="i-reset" viewBox="0 0 24 24"><path d="M4 12a8 8 0 1 0 2.4-5.7L4 8.5M4 4v4.5h4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="atlas-mark" viewBox="0 0 64 64">
+      <clipPath id="bean-clip"><ellipse cx="32" cy="32" rx="28" ry="20" transform="rotate(-18 32 32)"/></clipPath>
+      <ellipse cx="32" cy="32" rx="28" ry="20" transform="rotate(-18 32 32)" fill="var(--color-primary)"/>
+      <g clip-path="url(#bean-clip)"><path d="M2 41 L15 32 L22 36 L32 21 L40 31 L45 27 L62 37" fill="none" stroke="var(--color-background)" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/></g>
+    </symbol>
+  </defs>
+</svg>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Atlas Torréfacteurs, accueil">
+      <svg aria-hidden="true"><use href="#atlas-mark"/></svg>
+      <span><span class="brand-name">ATLAS</span><span class="brand-sub">TORRÉFACTEURS</span></span>
+    </a>
+    <nav class="nav" aria-label="Navigation principale">
+      <a href="#cafes">Cafés</a>
+      <a href="#recettes">Recettes</a>
+      <a href="#abonnement">Abonnement</a>
+      <a href="#atelier">Atelier</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" id="theme-toggle" type="button" aria-label="Passer au thème sombre">
+        <svg aria-hidden="true"><use href="#i-moon"/></svg>
+      </button>
+      <button class="icon-btn cart-btn" id="cart-open" type="button" aria-label="Ouvrir le panier, 0 article" aria-controls="drawer" aria-expanded="false">
+        <svg aria-hidden="true"><use href="#i-bag"/></svg>
+        <span class="cart-count" id="cart-count" hidden>0</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap">
+      <div class="hero-copy">
+        <span class="stamp" id="lot-stamp">Lot 41 · Torréfié le 29.09.2026</span>
+        <h1 id="hero-title">Torréfié mardi. <em>Dans votre tasse</em> jeudi.</h1>
+        <p class="hero-lead">Nous torréfions des cafés de ferme par lots de 12 kg, une fois par semaine. Chaque sachet indique sa ferme, son altitude, son procédé et la courbe de sa torréfaction.</p>
+        <div class="hero-ctas">
+          <a class="btn" href="#cafes">Choisir un café</a>
+          <a class="btn btn--ghost" href="#abonnement">Composer un abonnement</a>
+        </div>
+        <dl class="facts">
+          <div><dt>Par lot</dt><dd class="num">12 kg</dd></div>
+          <div><dt>Prochaine sortie</dt><dd id="next-roast">Mar. 6</dd></div>
+          <div><dt>Livraison</dt><dd>48 h</dd></div>
+        </dl>
+      </div>
+
+      <article class="roastlog" aria-labelledby="log-title">
+        <div class="roastlog-head">
+          <div>
+            <p class="label">Fiche de torréfaction</p>
+            <h2 class="roastlog-title" id="log-title">Éthiopie · Hambela</h2>
+          </div>
+          <span class="label num" id="log-batch">Lot 41-A · 12,0 kg</span>
+        </div>
+        <div class="chips" role="group" aria-label="Choisir le café affiché" id="log-chips"></div>
+        <div class="chart-box" id="chart" role="img" aria-label="Courbe de température du grain pendant la torréfaction"></div>
+        <div class="phases" id="phases" aria-label="Répartition des phases de torréfaction"></div>
+        <dl class="roast-stats" id="roast-stats"></dl>
+        <p class="roastlog-note">Température du grain relevée par sonde, toutes les secondes. Le temps de développement (DTR) est la part de la torréfaction après le premier crack.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="pledge-title" style="padding-block: 0; border-top: 0;">
+    <div class="wrap">
+      <h2 class="visually-hidden" id="pledge-title">Nos engagements</h2>
+      <div class="pledges">
+        <div class="pledge"><svg aria-hidden="true"><use href="#i-flame"/></svg><h3>Une torréfaction par semaine</h3><p>Le mardi, sur un torréfacteur de 15 kg. Rien ne reste en stock plus de sept jours.</p></div>
+        <div class="pledge"><svg aria-hidden="true"><use href="#i-pin"/></svg><h3>La ferme sur le sachet</h3><p>Producteur, altitude, variété et procédé. Nous achetons directement à quatre des six fermes.</p></div>
+        <div class="pledge"><svg aria-hidden="true"><use href="#i-truck"/></svg><h3>Expédié le mercredi</h3><p>En lettre suivie, livré en 48 h en France métropolitaine. Gratuit dès 45 €.</p></div>
+        <div class="pledge"><svg aria-hidden="true"><use href="#i-leaf"/></svg><h3>Sachets compostables</h3><p>Papier kraft et film végétal, avec valve de dégazage. À mettre au compost domestique.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="cafes" aria-labelledby="cafes-title" style="border-top: 0;">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="label">Lot 41 · Six cafés cette semaine</p>
+        <h2 id="cafes-title">Les cafés du lot</h2>
+        <p>Chaque café est torréfié pour une méthode. Les cafés « filtre » sont plus clairs et gardent leur acidité ; les cafés « espresso » sont développés plus longtemps pour plus de corps.</p>
+      </div>
+      <div class="shop-bar">
+        <div class="segmented" role="group" aria-label="Filtrer par méthode" id="filters">
+          <button type="button" data-filter="all" aria-pressed="true">Tous</button>
+          <button type="button" data-filter="filtre" aria-pressed="false">Filtre</button>
+          <button type="button" data-filter="espresso" aria-pressed="false">Espresso</button>
+        </div>
+        <p class="results-count" id="results-count" aria-live="polite">6 cafés</p>
+      </div>
+      <div class="grid" id="grid"></div>
+    </div>
+  </section>
+
+  <section class="section" id="recettes" aria-labelledby="brew-title">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="label">Carnet de dosage</p>
+        <h2 id="brew-title">La recette, au gramme près</h2>
+        <p>Choisissez une méthode et votre dose de café. Les quantités d'eau, la mouture et chaque versement s'ajustent. Lancez le minuteur pour suivre les étapes.</p>
+      </div>
+      <div class="tabs" role="group" aria-label="Méthode d'extraction" id="methods"></div>
+      <div class="brew">
+        <div class="panel">
+          <div class="dose">
+            <div class="dose-row">
+              <label class="label" for="dose">Café moulu</label>
+              <span class="num" style="font-size:1.5rem;font-weight:500"><span id="dose-out">15</span> g</span>
+            </div>
+            <input type="range" id="dose" min="10" max="40" step="1" value="15">
+          </div>
+          <dl class="recipe" id="recipe"></dl>
+          <p class="ratio-line" id="ratio-line"></p>
+        </div>
+        <div class="panel">
+          <div class="timer">
+            <div>
+              <p class="label">Minuteur</p>
+              <p class="timer-clock" id="clock" aria-live="off">0:00</p>
+            </div>
+            <div class="timer-btns">
+              <button class="btn btn--small" type="button" id="timer-toggle"><svg width="18" height="18" aria-hidden="true"><use href="#i-play"/></svg><span>Démarrer</span></button>
+              <button class="icon-btn" type="button" id="timer-reset" aria-label="Remettre le minuteur à zéro"><svg aria-hidden="true"><use href="#i-reset"/></svg></button>
+            </div>
+          </div>
+          <ol class="steps" id="steps"></ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="abonnement" aria-labelledby="sub-title">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="label">Abonnement · sans engagement</p>
+        <h2 id="sub-title">Le lot du mardi, chez vous chaque mois</h2>
+        <p>Vous choisissez le rythme et la quantité. Nous choisissons le café dans le lot de la semaine, selon votre méthode. 10 % de remise et livraison offerte.</p>
+      </div>
+      <div class="sub">
+        <form class="sub-form" id="sub-form">
+          <fieldset>
+            <legend>Votre méthode</legend>
+            <div class="options">
+              <label class="option"><input type="radio" name="kind" value="filtre" checked><span><b>Filtre</b><small>Torréfactions claires</small></span></label>
+              <label class="option"><input type="radio" name="kind" value="espresso"><span><b>Espresso</b><small>Plus de corps</small></span></label>
+              <label class="option"><input type="radio" name="kind" value="mix"><span><b>Au choix du torréfacteur</b><small>Un café différent à chaque fois</small></span></label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Quantité par livraison</legend>
+            <div class="options">
+              <label class="option"><input type="radio" name="qty" value="1"><span><b>250 g</b><small>≈ 16 tasses</small></span></label>
+              <label class="option"><input type="radio" name="qty" value="2" checked><span><b>500 g</b><small>≈ 33 tasses</small></span></label>
+              <label class="option"><input type="radio" name="qty" value="4"><span><b>1 kg</b><small>≈ 66 tasses</small></span></label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Rythme</legend>
+            <div class="options">
+              <label class="option"><input type="radio" name="freq" value="1"><span><b>Chaque semaine</b><small>Le jeudi</small></span></label>
+              <label class="option"><input type="radio" name="freq" value="2" checked><span><b>Toutes les 2 semaines</b><small>Le plus choisi</small></span></label>
+              <label class="option"><input type="radio" name="freq" value="4"><span><b>Toutes les 4 semaines</b><small>Petite consommation</small></span></label>
+            </div>
+          </fieldset>
+        </form>
+        <aside class="ticket" aria-live="polite" aria-labelledby="ticket-title">
+          <p class="label" id="ticket-title">Votre abonnement</p>
+          <p class="ticket-price"><span id="sub-price">24,30 €</span><small>par livraison</small></p>
+          <ul>
+            <li><span>Café</span><span id="sub-kind">Filtre, 500 g</span></li>
+            <li><span>Livraisons par mois</span><span id="sub-per-month">≈ 2,2</span></li>
+            <li><span>Budget mensuel</span><span id="sub-month">≈ 52,60 €</span></li>
+            <li><span>Remise abonné</span><span id="sub-saving">−2,70 €</span></li>
+            <li><span>Livraison</span><span>Offerte</span></li>
+          </ul>
+          <button class="btn" type="button" id="sub-cta">Commencer l'abonnement</button>
+          <p class="ticket-note" id="sub-note">Modifiable ou suspendu à tout moment, jusqu'au lundi soir avant l'expédition.</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="atelier" aria-labelledby="atelier-title">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="label">Atelier · Lyon 7ᵉ</p>
+        <h2 id="atelier-title">Venez goûter le lot</h2>
+        <p>Le samedi matin, nous ouvrons l'atelier pour une dégustation à l'aveugle (cupping) des cafés de la semaine. 8 personnes, 1 h 30, 15 €.</p>
+      </div>
+      <div class="atelier">
+        <ul class="sessions" id="sessions"></ul>
+        <form class="newsletter" id="newsletter" novalidate>
+          <h3>La lettre du mardi</h3>
+          <p>Un e-mail par semaine, le jour de la torréfaction : les cafés du lot, leurs courbes, et les places libres à l'atelier.</p>
+          <div class="field">
+            <label for="nl-email">Adresse e-mail</label>
+            <div class="nl-row">
+              <input type="email" id="nl-email" name="email" autocomplete="email" placeholder="prenom@exemple.fr" aria-describedby="nl-msg">
+              <button class="btn" type="submit">S'inscrire</button>
+            </div>
+          </div>
+          <p id="nl-msg" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div>
+      <a class="brand" href="#top" aria-label="Atlas Torréfacteurs, haut de page">
+        <svg aria-hidden="true"><use href="#atlas-mark"/></svg>
+        <span><span class="brand-name">ATLAS</span><span class="brand-sub">TORRÉFACTEURS</span></span>
+      </a>
+    </div>
+    <div>
+      <h4>Atelier</h4>
+      <p>Lyon 7ᵉ<br>Comptoir ouvert du mercredi au samedi, 9 h – 18 h</p>
+    </div>
+    <div>
+      <h4>Calendrier</h4>
+      <ul><li>Mardi : torréfaction</li><li>Mercredi : expédition</li><li>Samedi : dégustation</li></ul>
+    </div>
+    <div>
+      <h4>Aide</h4>
+      <ul><li><a href="#recettes">Recettes et mouture</a></li><li><a href="#abonnement">Gérer un abonnement</a></li><li><a href="#cafes">Cafés de la semaine</a></li><li><a href="presentation/index.html">Présentation de la marque</a></li></ul>
+    </div>
+    <p class="footer-legal">Atlas Torréfacteurs est une marque fictive créée pour une démonstration. Aucune commande, réservation ou inscription n'est réellement transmise.</p>
+  </div>
+</footer>
+
+<div class="scrim" id="scrim" hidden></div>
+<aside class="drawer" id="drawer" aria-labelledby="drawer-title" aria-modal="true" role="dialog" hidden>
+  <div class="drawer-head">
+    <h2 id="drawer-title">Panier</h2>
+    <button class="icon-btn" type="button" id="cart-close" aria-label="Fermer le panier"><svg aria-hidden="true"><use href="#i-x"/></svg></button>
+  </div>
+  <div class="ship" id="ship"></div>
+  <ul class="lines" id="lines"></ul>
+  <div class="drawer-foot" id="drawer-foot"></div>
+</aside>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+(() => {
+  'use strict';
+
+  /* ---------- Données ---------- */
+  // Repères de torréfaction en secondes : jaunissement (150 °C), premier crack (196 °C), sortie.
+  const COFFEES = [
+    { id: 'eth', origin: 'Éthiopie', name: 'Hambela, station Dimtu', region: 'Guji', altitude: '2 100 m', process: 'Lavé', variety: 'Heirloom', notes: 'Pêche blanche, jasmin, bergamote', methods: ['filtre'], agtron: 84, price: 14.5, lot: '41-A', roast: { yellow: 262, crack: 452, drop: 545, end: 202 } },
+    { id: 'ken', origin: 'Kenya', name: 'Nyeri, Gatomboya AA', region: 'Nyeri', altitude: '1 800 m', process: 'Lavé', variety: 'SL28, SL34', notes: 'Cassis, pamplemousse rose, sucre roux', methods: ['filtre'], agtron: 79, price: 16.9, lot: '41-B', roast: { yellow: 270, crack: 468, drop: 565, end: 204 } },
+    { id: 'col', origin: 'Colombie', name: 'Huila, Finca El Mirador', region: 'Huila', altitude: '1 750 m', process: 'Honey', variety: 'Caturra', notes: 'Pomme rouge, caramel, cacao', methods: ['filtre', 'espresso'], agtron: 68, price: 13.2, lot: '41-C', roast: { yellow: 280, crack: 488, drop: 600, end: 207 } },
+    { id: 'rwa', origin: 'Rwanda', name: 'Nyamasheke, station Kanzu', region: 'Nyamasheke', altitude: '1 900 m', process: 'Nature', variety: 'Red Bourbon', notes: 'Fraise, hibiscus, rhubarbe', methods: ['filtre'], agtron: 81, price: 15.4, lot: '41-D', roast: { yellow: 258, crack: 450, drop: 548, end: 203 } },
+    { id: 'bra', origin: 'Brésil', name: 'Cerrado, Fazenda Pantano', region: 'Cerrado Mineiro', altitude: '1 150 m', process: 'Nature', variety: 'Catuaí jaune', notes: 'Noisette, chocolat au lait, praliné', methods: ['espresso'], agtron: 58, price: 11.8, lot: '41-E', roast: { yellow: 292, crack: 500, drop: 640, end: 211 } },
+    { id: 'tiz', origin: 'Tizi', name: 'Assemblage espresso', region: 'Brésil 60 % · Colombie 40 %', altitude: '1 150 – 1 750 m', process: 'Nature + honey', variety: 'Catuaí, Caturra', notes: 'Chocolat noir, datte, épices douces', methods: ['espresso'], agtron: 52, price: 12.4, lot: '41-F', roast: { yellow: 300, crack: 510, drop: 680, end: 214 } }
+  ];
+  const SIZES = { '250': { label: '250 g', mult: 1 }, '1000': { label: '1 kg', mult: 3.6 } };
+  const GRINDS = ['Grains', 'Filtre', 'Espresso', 'Piston'];
+  const FREE_SHIP = 45, SHIP = 4.9;
+
+  const $ = (s, el = document) => el.querySelector(s);
+  const euro = n => n.toLocaleString('fr-FR', { style: 'currency', currency: 'EUR' });
+  const mmss = s => `${Math.floor(s / 60)}:${String(Math.round(s % 60)).padStart(2, '0')}`;
+  const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const store = {
+    get(k, d) { try { const v = localStorage.getItem(k); return v ? JSON.parse(v) : d; } catch { return d; } },
+    set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch {} }
+  };
+
+  /* ---------- Thème ---------- */
+  const themeBtn = $('#theme-toggle');
+  const isDark = () => {
+    const t = document.documentElement.dataset.theme;
+    return t ? t === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+  };
+  const syncThemeBtn = () => {
+    const dark = isDark();
+    themeBtn.setAttribute('aria-label', dark ? 'Passer au thème clair' : 'Passer au thème sombre');
+    $('use', themeBtn).setAttribute('href', dark ? '#i-sun' : '#i-moon');
+  };
+  const savedTheme = store.get('atlas-theme', null);
+  if (savedTheme) document.documentElement.dataset.theme = savedTheme;
+  syncThemeBtn();
+  themeBtn.addEventListener('click', () => {
+    const next = isDark() ? 'light' : 'dark';
+    document.documentElement.dataset.theme = next;
+    store.set('atlas-theme', next);
+    syncThemeBtn();
+  });
+
+  /* ---------- Dates du lot ---------- */
+  (() => {
+    const today = new Date();
+    const day = today.getDay(); // 0 = dimanche, 2 = mardi
+    const last = new Date(today); last.setDate(today.getDate() - ((day - 2 + 7) % 7));
+    const next = new Date(last); next.setDate(last.getDate() + 7);
+    const fmt = d => d.toLocaleDateString('fr-FR', { day: '2-digit', month: '2-digit', year: 'numeric' }).replace(/\//g, '.');
+    $('#lot-stamp').textContent = `Lot 41 · Torréfié le ${fmt(last)}`;
+    $('#next-roast').textContent = `Mar. ${next.getDate()}`;
+  })();
+
+  /* ---------- Courbe de torréfaction ---------- */
+  // Interpolation cubique monotone (Fritsch–Carlson) entre les repères relevés.
+  function monotone(xs, ys) {
+    const n = xs.length, d = [], m = new Array(n);
+    for (let i = 0; i < n - 1; i++) d.push((ys[i + 1] - ys[i]) / (xs[i + 1] - xs[i]));
+    m[0] = d[0]; m[n - 1] = d[n - 2];
+    for (let i = 1; i < n - 1; i++) m[i] = d[i - 1] * d[i] <= 0 ? 0 : (d[i - 1] + d[i]) / 2;
+    for (let i = 0; i < n - 1; i++) {
+      if (d[i] === 0) { m[i] = m[i + 1] = 0; continue; }
+      const a = m[i] / d[i], b = m[i + 1] / d[i], h = a * a + b * b;
+      if (h > 9) { const t = 3 / Math.sqrt(h); m[i] = t * a * d[i]; m[i + 1] = t * b * d[i]; }
+    }
+    return x => {
+      let i = 0; while (i < n - 2 && x > xs[i + 1]) i++;
+      const h = xs[i + 1] - xs[i], t = (x - xs[i]) / h, t2 = t * t, t3 = t2 * t;
+      return (2 * t3 - 3 * t2 + 1) * ys[i] + (t3 - 2 * t2 + t) * h * m[i] + (-2 * t3 + 3 * t2) * ys[i + 1] + (t3 - t2) * h * m[i + 1];
+    };
+  }
+
+  const W = 640, H = 340, M = { l: 48, r: 20, t: 34, b: 40 };
+  const X0 = 0, X1 = 720, Y0 = 75, Y1 = 225;
+  const sx = s => M.l + (s - X0) / (X1 - X0) * (W - M.l - M.r);
+  const sy = c => H - M.b - (c - Y0) / (Y1 - Y0) * (H - M.t - M.b);
+  const NS = 'http://www.w3.org/2000/svg';
+  const el = (tag, attrs = {}, text) => {
+    const e = document.createElementNS(NS, tag);
+    for (const k in attrs) e.setAttribute(k, attrs[k]);
+    if (text != null) e.textContent = text;
+    return e;
+  };
+
+  const svg = el('svg', { viewBox: `0 0 ${W} ${H}`, 'aria-hidden': 'true' });
+  const grid = el('g', { class: 'chart-grid' }), axis = el('g', { class: 'chart-axis' });
+  for (let c = 100; c <= Y1; c += 25) {
+    grid.append(el('line', { x1: M.l, x2: W - M.r, y1: sy(c), y2: sy(c) }));
+    axis.append(el('text', { x: M.l - 8, y: sy(c) + 4, 'text-anchor': 'end' }, c));
+  }
+  for (let s = 0; s <= X1; s += 60) {
+    axis.append(el('text', { x: sx(s), y: H - M.b + 22, 'text-anchor': 'middle' }, s / 60));
+  }
+  axis.append(el('text', { x: W - M.r, y: H - 2, 'text-anchor': 'end' }, 'min'));
+  axis.append(el('text', { x: M.l - 8, y: M.t - 14, 'text-anchor': 'end' }, '°C'));
+  const events = el('g');
+  const curve = el('path', { class: 'chart-curve' });
+  const probe = el('circle', { class: 'chart-probe', r: 5, visibility: 'hidden' });
+  const hover = el('g', { visibility: 'hidden' });
+  const hLine = el('line', { class: 'chart-hover-line', y1: M.t, y2: H - M.b });
+  const hDot = el('circle', { class: 'chart-dot', r: 5 });
+  const hBox = el('rect', { class: 'chart-hover-box', rx: 3, height: 26, y: M.t + 4 });
+  const hText = el('text', { class: 'chart-hover-text', y: M.t + 21 });
+  hover.append(hLine, hDot, hBox, hText);
+  const hit = el('rect', { x: M.l, y: M.t, width: W - M.l - M.r, height: H - M.t - M.b, fill: 'transparent' });
+  svg.append(grid, axis, events, curve, probe, hover, hit);
+  $('#chart').append(svg);
+  let curF = null, curDrop = 0;
+  hit.addEventListener('pointermove', e => {
+    if (!curF) return;
+    const pt = svg.createSVGPoint(); pt.x = e.clientX; pt.y = e.clientY;
+    const x = pt.matrixTransform(svg.getScreenCTM().inverse()).x;
+    const t = Math.max(0, Math.min(curDrop, (x - M.l) / (W - M.l - M.r) * (X1 - X0)));
+    const c = curF(t), px = sx(t);
+    hLine.setAttribute('x1', px); hLine.setAttribute('x2', px);
+    hDot.setAttribute('cx', px); hDot.setAttribute('cy', sy(c));
+    hText.textContent = `${mmss(t)} · ${Math.round(c)} °C`;
+    const w = 112, left = px + 10 + w > W - M.r ? px - 10 - w : px + 10;
+    hBox.setAttribute('x', left); hBox.setAttribute('width', w); hText.setAttribute('x', left + 10);
+    hover.setAttribute('visibility', 'visible');
+  });
+  hit.addEventListener('pointerleave', () => hover.setAttribute('visibility', 'hidden'));
+
+  let probeRaf = 0;
+  function showRoast(id) {
+    const c = COFFEES.find(x => x.id === id);
+    const r = c.roast;
+    const xs = [0, 90, r.yellow, r.crack, r.drop];
+    const ys = [200, 92, 150, 196, r.end];
+    const f = monotone(xs, ys);
+    curF = f; curDrop = r.drop;
+    let d = '';
+    for (let s = 0; s <= r.drop; s += 3) d += (s ? 'L' : 'M') + sx(s).toFixed(1) + ' ' + sy(f(s)).toFixed(1);
+    d += 'L' + sx(r.drop).toFixed(1) + ' ' + sy(r.end).toFixed(1);
+    curve.setAttribute('d', d);
+
+    events.replaceChildren();
+    const marks = [
+      { s: 90, c: 92, label: 'Point bas', below: true },
+      { s: r.yellow, c: 150, label: 'Jaune' },
+      { s: r.crack, c: 196, label: '1er crack', crack: true },
+      { s: r.drop, c: r.end, label: 'Sortie' }
+    ];
+    for (const m of marks) {
+      const g = el('g', { class: 'chart-event' + (m.crack ? ' is-crack' : '') });
+      if (m.below) {
+        g.append(el('text', { x: sx(m.s), y: sy(m.c) + 20, 'text-anchor': 'middle' }, m.label));
+      } else {
+        g.append(el('line', { x1: sx(m.s), x2: sx(m.s), y1: M.t - 6, y2: H - M.b }));
+        g.append(el('text', { x: sx(m.s), y: M.t - 12, 'text-anchor': m.label === 'Sortie' ? 'start' : 'middle', dx: m.label === 'Sortie' ? 4 : 0 }, m.label));
+      }
+      g.append(el('circle', { class: 'chart-dot', cx: sx(m.s), cy: sy(m.c), r: 4.5 }));
+      events.append(g);
+    }
+
+    const dry = r.yellow / r.drop, mai = (r.crack - r.yellow) / r.drop, dev = (r.drop - r.crack) / r.drop;
+    const pct = v => Math.round(v * 100) + ' %';
+    $('#phases').innerHTML =
+      `<span class="phase-dry" style="flex-basis:${dry * 100}%" title="Séchage">Séchage ${pct(dry)}</span>` +
+      `<span class="phase-maillard" style="flex-basis:${mai * 100}%" title="Maillard">Maillard ${pct(mai)}</span>` +
+      `<span class="phase-dev" style="flex-basis:${dev * 100}%" title="Développement">Dév. ${pct(dev)}</span>`;
+
+    $('#roast-stats').innerHTML = [
+      ['Durée', mmss(r.drop)], ['1er crack', mmss(r.crack)], ['Sortie', r.end + ' °C'],
+      ['DTR', (dev * 100).toFixed(1).replace('.', ',') + ' %'], ['Agtron', c.agtron]
+    ].map(([k, v]) => `<div><dt>${k}</dt><dd>${v}</dd></div>`).join('');
+
+    $('#log-title').textContent = `${c.origin} · ${c.name.split(',')[0]}`;
+    $('#log-batch').textContent = `Lot ${c.lot} · 12,0 kg`;
+    $('#chart').setAttribute('aria-label',
+      `Courbe de torréfaction ${c.origin} : point bas à 92 °C à 1:30, jaunissement à ${mmss(r.yellow)}, premier crack à ${mmss(r.crack)}, sortie à ${r.end} °C à ${mmss(r.drop)}.`);
+    document.querySelectorAll('#log-chips .chip').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.id === id)));
+
+    cancelAnimationFrame(probeRaf);
+    probe.setAttribute('visibility', 'hidden');
+    if (reduced) return;
+    const start = performance.now(), dur = 2200;
+    const tick = now => {
+      const p = Math.min(1, (now - start) / dur), s = p * r.drop;
+      probe.setAttribute('cx', sx(s)); probe.setAttribute('cy', sy(f(s))); probe.setAttribute('visibility', 'visible');
+      if (p < 1) probeRaf = requestAnimationFrame(tick);
+      else probe.setAttribute('visibility', 'hidden');
+    };
+    probeRaf = requestAnimationFrame(tick);
+  }
+
+  $('#log-chips').innerHTML = COFFEES.map(c => `<button class="chip" type="button" data-id="${c.id}" aria-pressed="false">${c.origin}</button>`).join('');
+  $('#log-chips').addEventListener('click', e => { const b = e.target.closest('.chip'); if (b) showRoast(b.dataset.id); });
+  showRoast('eth');
+
+  /* ---------- Boutique ---------- */
+  const agtronPos = a => Math.max(0, Math.min(100, (95 - a) / (95 - 45) * 100));
+  $('#grid').innerHTML = COFFEES.map(c => `
+    <article class="sack" data-methods="${c.methods.join(' ')}" aria-labelledby="t-${c.id}">
+      <div class="sack-top">
+        <div>
+          <h3 class="sack-origin" id="t-${c.id}">${c.origin}</h3>
+          <p class="sack-name">${c.name}</p>
+        </div>
+        <span class="sack-lot">LOT<br>${c.lot}</span>
+      </div>
+      <dl class="sack-specs">
+        <div><dt>Région</dt><dd>${c.region}</dd></div>
+        <div><dt>Altitude</dt><dd>${c.altitude}</dd></div>
+        <div><dt>Procédé</dt><dd>${c.process}</dd></div>
+        <div><dt>Variété</dt><dd>${c.variety}</dd></div>
+      </dl>
+      <p class="sack-notes"><strong>Notes :</strong> ${c.notes}</p>
+      <div class="agtron">
+        <div class="agtron-head"><span>Clair</span><span>Agtron ${c.agtron}</span><span>Foncé</span></div>
+        <div class="agtron-bar" role="img" aria-label="Couleur de torréfaction : Agtron ${c.agtron} sur une échelle de 95 (clair) à 45 (foncé)"><i style="left:${agtronPos(c.agtron)}%"></i></div>
+      </div>
+      <div class="tags">${c.methods.map(m => `<span class="tag">${m === 'filtre' ? 'Filtre' : 'Espresso'}</span>`).join('')}</div>
+      <div class="sack-buy">
+        <div class="field"><label for="size-${c.id}">Format</label>
+          <select id="size-${c.id}" data-role="size">${Object.entries(SIZES).map(([k, s]) => `<option value="${k}">${s.label}</option>`).join('')}</select></div>
+        <div class="field"><label for="grind-${c.id}">Mouture</label>
+          <select id="grind-${c.id}" data-role="grind">${GRINDS.map(g => `<option${g === (c.methods[0] === 'espresso' ? 'Espresso' : 'Grains') ? ' selected' : ''}>${g}</option>`).join('')}</select></div>
+        <div class="sack-foot">
+          <p class="price" data-role="price">${euro(c.price)}</p>
+          <div class="sack-actions">
+            <button class="link-btn" type="button" data-curve="${c.id}">Voir la courbe</button>
+            <button class="btn btn--small" type="button" data-add="${c.id}">Ajouter</button>
+          </div>
+        </div>
+      </div>
+    </article>`).join('');
+
+  const priceOf = (c, size) => Math.round(c.price * SIZES[size].mult * 10) / 10;
+  $('#grid').addEventListener('change', e => {
+    if (e.target.dataset.role !== 'size') return;
+    const card = e.target.closest('.sack'), c = COFFEES.find(x => x.id === card.querySelector('[data-add]').dataset.add);
+    card.querySelector('[data-role="price"]').textContent = euro(priceOf(c, e.target.value));
+  });
+  $('#grid').addEventListener('click', e => {
+    const curveBtn = e.target.closest('[data-curve]');
+    if (curveBtn) {
+      showRoast(curveBtn.dataset.curve);
+      $('.roastlog').scrollIntoView({ behavior: reduced ? 'auto' : 'smooth', block: 'center' });
+      return;
+    }
+    const add = e.target.closest('[data-add]');
+    if (!add) return;
+    const card = add.closest('.sack');
+    addToCart(add.dataset.add, card.querySelector('[data-role="size"]').value, card.querySelector('[data-role="grind"]').value);
+  });
+
+  $('#filters').addEventListener('click', e => {
+    const b = e.target.closest('button'); if (!b) return;
+    const f = b.dataset.filter;
+    $('#filters').querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', String(x === b)));
+    let n = 0;
+    document.querySelectorAll('.sack').forEach(card => {
+      const show = f === 'all' || card.dataset.methods.split(' ').includes(f);
+      card.hidden = !show; if (show) n++;
+    });
+    $('#results-count').textContent = `${n} café${n > 1 ? 's' : ''}`;
+  });
+
+  /* ---------- Panier ---------- */
+  let cart = store.get('atlas-cart', []);
+  const drawer = $('#drawer'), scrim = $('#scrim'), openBtn = $('#cart-open');
+  let lastFocus = null;
+
+  function addToCart(id, size, grind) {
+    const key = `${id}|${size}|${grind}`;
+    const line = cart.find(l => l.key === key);
+    if (line) line.qty++; else cart.push({ key, id, size, grind, qty: 1 });
+    saveCart();
+    const c = COFFEES.find(x => x.id === id);
+    toast(`${c.origin} ${SIZES[size].label} ajouté au panier`);
+  }
+  function saveCart() { store.set('atlas-cart', cart); renderCart(); }
+  function renderCart() {
+    const count = cart.reduce((a, l) => a + l.qty, 0);
+    const sub = cart.reduce((a, l) => a + priceOf(COFFEES.find(x => x.id === l.id), l.size) * l.qty, 0);
+    const badge = $('#cart-count');
+    badge.textContent = count; badge.hidden = count === 0;
+    openBtn.setAttribute('aria-label', `Ouvrir le panier, ${count} article${count > 1 ? 's' : ''}`);
+
+    const left = Math.max(0, FREE_SHIP - sub);
+    $('#ship').innerHTML = `<p>${left > 0 ? `Plus que <strong>${euro(left)}</strong> pour la livraison offerte.` : '<strong>Livraison offerte.</strong>'}</p><div class="ship-bar"><i style="width:${Math.min(100, sub / FREE_SHIP * 100)}%"></i></div>`;
+
+    if (!cart.length) {
+      $('#lines').innerHTML = `<li class="empty"><p>Votre panier est vide. Les cafés du lot sont torréfiés mardi.</p><a class="btn btn--small btn--ghost" href="#cafes" data-close>Voir les cafés</a></li>`;
+      $('#drawer-foot').innerHTML = '';
+      return;
+    }
+    $('#lines').innerHTML = cart.map(l => {
+      const c = COFFEES.find(x => x.id === l.id);
+      return `<li class="line">
+        <span class="line-name">${c.origin} · ${SIZES[l.size].label}</span>
+        <span class="line-price">${euro(priceOf(c, l.size) * l.qty)}</span>
+        <span class="line-meta">${c.name.split(',')[0]} · Mouture ${l.grind.toLowerCase()}</span>
+        <span class="qty line-qty">
+          <button type="button" data-dec="${l.key}" aria-label="Retirer un sachet de ${c.origin}"><svg aria-hidden="true"><use href="#i-minus"/></svg></button>
+          <span aria-label="Quantité">${l.qty}</span>
+          <button type="button" data-inc="${l.key}" aria-label="Ajouter un sachet de ${c.origin}"><svg aria-hidden="true"><use href="#i-plus"/></svg></button>
+        </span>
+      </li>`;
+    }).join('');
+    const ship = sub >= FREE_SHIP ? 0 : SHIP;
+    $('#drawer-foot').innerHTML = `
+      <div class="totals">
+        <div><span>Sous-total</span><span>${euro(sub)}</span></div>
+        <div><span>Livraison</span><span>${ship ? euro(ship) : 'Offerte'}</span></div>
+        <div class="total"><span>Total</span><span>${euro(sub + ship)}</span></div>
+      </div>
+      <button class="btn" type="button" id="checkout">Passer commande</button>
+      <p class="demo-note" id="checkout-note">Expédition mercredi, livraison jeudi.</p>`;
+  }
+  $('#lines').addEventListener('click', e => {
+    if (e.target.closest('[data-close]')) { closeCart(); return; }
+    const inc = e.target.closest('[data-inc]'), dec = e.target.closest('[data-dec]');
+    const key = (inc || dec)?.dataset[inc ? 'inc' : 'dec'];
+    if (!key) return;
+    const line = cart.find(l => l.key === key);
+    line.qty += inc ? 1 : -1;
+    if (line.qty <= 0) cart = cart.filter(l => l !== line);
+    saveCart();
+  });
+  $('#drawer-foot').addEventListener('click', e => {
+    if (e.target.closest('#checkout')) $('#checkout-note').textContent = 'Site de démonstration : aucune commande n’est passée et aucun paiement n’est demandé.';
+  });
+
+  function openCart() {
+    lastFocus = document.activeElement;
+    drawer.hidden = false; scrim.hidden = false;
+    requestAnimationFrame(() => { drawer.classList.add('is-open'); scrim.classList.add('is-open'); });
+    openBtn.setAttribute('aria-expanded', 'true');
+    $('#cart-close').focus();
+  }
+  function closeCart() {
+    drawer.classList.remove('is-open'); scrim.classList.remove('is-open');
+    openBtn.setAttribute('aria-expanded', 'false');
+    setTimeout(() => { drawer.hidden = true; scrim.hidden = true; }, reduced ? 0 : 300);
+    (lastFocus || openBtn).focus();
+  }
+  openBtn.addEventListener('click', openCart);
+  $('#cart-close').addEventListener('click', closeCart);
+  scrim.addEventListener('click', closeCart);
+  document.addEventListener('keydown', e => {
+    if (drawer.hidden) return;
+    if (e.key === 'Escape') closeCart();
+    if (e.key === 'Tab') {
+      const f = [...drawer.querySelectorAll('button, a[href], select, input')].filter(x => !x.disabled && x.offsetParent !== null);
+      if (!f.length) return;
+      if (e.shiftKey && document.activeElement === f[0]) { e.preventDefault(); f[f.length - 1].focus(); }
+      else if (!e.shiftKey && document.activeElement === f[f.length - 1]) { e.preventDefault(); f[0].focus(); }
+    }
+  });
+  renderCart();
+
+  let toastTimer = 0;
+  function toast(msg) {
+    const t = $('#toast');
+    t.textContent = msg; t.classList.add('is-on');
+    clearTimeout(toastTimer); toastTimer = setTimeout(() => t.classList.remove('is-on'), 2600);
+  }
+
+  /* ---------- Recettes ---------- */
+  // Versements exprimés en part de l'eau totale ; temps en secondes.
+  const METHODS = {
+    v60: { name: 'V60', ratio: 16, dose: [10, 30, 15], grind: 'Moyenne-fine', temp: 94, time: 180,
+      steps: [[0, .12, 'Pré-infusion : mouillez toute la mouture'], [45, .5, 'Versez en spirale jusqu’à'], [75, .8, 'Deuxième versement jusqu’à'], [105, 1, 'Dernier versement jusqu’à'], [180, null, 'Fin de l’écoulement, servez']] },
+    chemex: { name: 'Chemex', ratio: 15, dose: [20, 40, 30], grind: 'Moyenne', temp: 94, time: 270,
+      steps: [[0, .13, 'Pré-infusion'], [45, .45, 'Versez lentement jusqu’à'], [100, .75, 'Versez jusqu’à'], [150, 1, 'Complétez jusqu’à'], [270, null, 'Retirez le filtre, servez']] },
+    piston: { name: 'Piston', ratio: 15, dose: [15, 40, 30], grind: 'Grosse', temp: 95, time: 240,
+      steps: [[0, 1, 'Versez toute l’eau jusqu’à'], [60, null, 'Cassez la croûte, retirez la mousse'], [240, null, 'Abaissez le piston, servez aussitôt']] },
+    espresso: { name: 'Espresso', ratio: 2, dose: [14, 22, 18], grind: 'Fine', temp: 93, time: 28,
+      steps: [[0, null, 'Lancez l’extraction'], [6, null, 'Premières gouttes'], [28, 1, 'Coupez à la tasse :']] },
+    moka: { name: 'Moka', ratio: 7, dose: [10, 25, 15], grind: 'Fine à moyenne', temp: 'Eau chaude', time: 300,
+      steps: [[0, 1, 'Remplissez la base d’eau chaude :'], [10, null, 'Feu moyen, couvercle ouvert'], [240, null, 'Le café monte : baissez le feu'], [300, null, 'Au premier gargouillis, retirez du feu']] }
+  };
+  let method = store.get('atlas-method', 'v60');
+  if (!METHODS[method]) method = 'v60';
+  let dose = METHODS[method].dose[2];
+  const doseInput = $('#dose');
+
+  $('#methods').innerHTML = Object.entries(METHODS).map(([k, m]) => `<button class="chip" type="button" data-method="${k}" aria-pressed="${k === method}">${m.name}</button>`).join('');
+  $('#methods').addEventListener('click', e => {
+    const b = e.target.closest('[data-method]'); if (!b) return;
+    method = b.dataset.method; store.set('atlas-method', method);
+    $('#methods').querySelectorAll('.chip').forEach(x => x.setAttribute('aria-pressed', String(x === b)));
+    dose = METHODS[method].dose[2];
+    resetTimer(); renderRecipe();
+  });
+  doseInput.addEventListener('input', () => { dose = +doseInput.value; renderRecipe(); });
+
+  function renderRecipe() {
+    const m = METHODS[method];
+    doseInput.min = m.dose[0]; doseInput.max = m.dose[1]; doseInput.value = dose;
+    $('#dose-out').textContent = dose;
+    const water = Math.round(dose * m.ratio);
+    const isEsp = method === 'espresso';
+    $('#recipe').innerHTML = [
+      [isEsp ? 'En tasse' : 'Eau', `${water} <small>g</small>`],
+      ['Température', typeof m.temp === 'number' ? `${m.temp} <small>°C</small>` : `<small>${m.temp}</small>`],
+      ['Mouture', `<small style="font-size:1rem;color:inherit">${m.grind}</small>`],
+      ['Temps total', mmss(m.time)]
+    ].map(([k, v]) => `<div><dt>${k}</dt><dd>${v}</dd></div>`).join('');
+    $('#ratio-line').textContent = isEsp
+      ? `Ratio 1:${m.ratio} : ${dose} g de café donnent ${water} g d'espresso en ${m.time} secondes environ.`
+      : `Ratio 1:${m.ratio} : ${dose} g de café pour ${water} g d'eau, soit environ ${Math.max(1, Math.round(water * 0.9 / 150))} tasse${water * 0.9 / 150 >= 1.5 ? 's' : ''} de 150 ml.`;
+    $('#steps').innerHTML = m.steps.map(([t, part, txt]) =>
+      `<li data-t="${t}"><span class="t">${mmss(t)}</span><span>${txt}</span><span class="w">${part ? Math.round(water * part) + ' g' : ''}</span></li>`).join('');
+    paintSteps();
+  }
+
+  let elapsed = 0, running = false, timerId = 0, startedAt = 0;
+  const toggleBtn = $('#timer-toggle');
+  function paintSteps() {
+    $('#clock').textContent = mmss(Math.floor(elapsed));
+    const items = [...document.querySelectorAll('#steps li')];
+    let current = -1;
+    items.forEach((li, i) => { if (elapsed >= +li.dataset.t) current = i; });
+    items.forEach((li, i) => {
+      li.classList.toggle('is-now', (running || elapsed > 0) && i === current);
+      li.classList.toggle('is-done', i < current);
+    });
+  }
+  function setToggle() {
+    $('use', toggleBtn).setAttribute('href', running ? '#i-pause' : '#i-play');
+    $('span', toggleBtn).textContent = running ? 'Pause' : (elapsed > 0 ? 'Reprendre' : 'Démarrer');
+  }
+  function resetTimer() { clearInterval(timerId); running = false; elapsed = 0; setToggle(); paintSteps(); }
+  toggleBtn.addEventListener('click', () => {
+    running = !running;
+    if (running) {
+      startedAt = performance.now() - elapsed * 1000;
+      timerId = setInterval(() => {
+        elapsed = (performance.now() - startedAt) / 1000;
+        const end = METHODS[method].time;
+        if (elapsed >= end) { elapsed = end; running = false; clearInterval(timerId); setToggle(); toast('Recette terminée'); }
+        paintSteps();
+      }, 250);
+    } else clearInterval(timerId);
+    setToggle();
+  });
+  $('#timer-reset').addEventListener('click', resetTimer);
+  renderRecipe();
+
+  /* ---------- Abonnement ---------- */
+  const BASE_250 = 13.5, DISCOUNT = .1;
+  function renderSub() {
+    const fd = new FormData($('#sub-form'));
+    const kind = fd.get('kind'), qty = +fd.get('qty'), freq = +fd.get('freq');
+    const full = BASE_250 * qty, price = Math.round(full * (1 - DISCOUNT) * 100) / 100;
+    const perMonth = 52 / 12 / freq;
+    const kindLabel = { filtre: 'Filtre', espresso: 'Espresso', mix: 'Au choix' }[kind];
+    const qtyLabel = { 1: '250 g', 2: '500 g', 4: '1 kg' }[qty];
+    $('#sub-price').textContent = euro(price);
+    $('#sub-kind').textContent = `${kindLabel}, ${qtyLabel}`;
+    $('#sub-per-month').textContent = '≈ ' + perMonth.toFixed(1).replace('.', ',');
+    $('#sub-month').textContent = '≈ ' + euro(price * perMonth);
+    $('#sub-saving').textContent = '−' + euro(full - price);
+    $('#sub-note').textContent = 'Modifiable ou suspendu à tout moment, jusqu’au lundi soir avant l’expédition.';
+  }
+  $('#sub-form').addEventListener('change', renderSub);
+  $('#sub-cta').addEventListener('click', () => {
+    $('#sub-note').textContent = 'Site de démonstration : aucun abonnement n’est créé et aucun paiement n’est demandé.';
+  });
+  renderSub();
+
+  /* ---------- Atelier ---------- */
+  (() => {
+    const out = [], d = new Date();
+    d.setDate(d.getDate() + ((6 - d.getDay() + 7) % 7 || 7)); // samedi suivant
+    const seats = [3, 6, 8];
+    const themes = ['Les lavés d’Afrique de l’Est', 'Nature contre lavé', 'Réglage de l’espresso'];
+    for (let i = 0; i < 3; i++) {
+      const day = new Date(d); day.setDate(d.getDate() + i * 7);
+      out.push({ id: 's' + i, date: day, seats: seats[i], theme: themes[i] });
+    }
+    $('#sessions').innerHTML = out.map(s => `
+      <li class="session">
+        <p class="session-date">${s.date.getDate()}<small>${s.date.toLocaleDateString('fr-FR', { month: 'short' }).replace('.', '').toUpperCase()} · 10 H</small></p>
+        <div><h3>${s.theme}</h3><p data-seats="${s.id}">${s.seats} place${s.seats > 1 ? 's' : ''} sur 8</p></div>
+        <button class="btn btn--small btn--ghost" type="button" data-book="${s.id}" data-left="${s.seats}">Réserver</button>
+      </li>`).join('');
+    $('#sessions').addEventListener('click', e => {
+      const b = e.target.closest('[data-book]'); if (!b) return;
+      const booked = b.dataset.booked === '1';
+      const left = +b.dataset.left - (booked ? 0 : 1);
+      b.dataset.booked = booked ? '0' : '1';
+      b.dataset.left = booked ? +b.dataset.left + 1 : left;
+      b.textContent = booked ? 'Réserver' : 'Annuler';
+      const n = +b.dataset.left;
+      $(`[data-seats="${b.dataset.book}"]`).textContent = booked
+        ? `${n} place${n > 1 ? 's' : ''} sur 8`
+        : `Place notée (démo) · ${n} restante${n > 1 ? 's' : ''}`;
+    });
+  })();
+
+  /* ---------- Lettre ---------- */
+  $('#newsletter').addEventListener('submit', e => {
+    e.preventDefault();
+    const input = $('#nl-email'), msg = $('#nl-msg');
+    const ok = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(input.value.trim());
+    input.setAttribute('aria-invalid', String(!ok));
+    msg.className = ok ? 'form-ok' : 'field-error';
+    msg.textContent = ok
+      ? 'Merci. Sur ce site de démonstration, aucun e-mail n’est enregistré ni envoyé.'
+      : 'Cette adresse semble incomplète. Vérifiez le format, par exemple prenom@exemple.fr.';
+    if (!ok) input.focus();
+  });
+})();
+</script>
+</body>
+</html>

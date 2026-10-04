@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Atlas — bannières de lancement</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil:wght@800&family=IBM+Plex+Mono:wght@500&family=Instrument+Sans:wght@500;600&display=swap">
+<link rel="stylesheet" href="../../design-tokens.css">
+<style>
+  /* Bannières de lancement — 3 directions : pochoir (bleu plein), courbe (fiche claire), en-tête X. */
+  body { margin: 0; padding: 40px; display: grid; gap: 40px; justify-items: start; background: #888; }
+  .banner { position: relative; overflow: hidden; font-family: var(--primitive-font-body); }
+  .mono { font-family: var(--primitive-font-mono); font-weight: 500; letter-spacing: .1em; text-transform: uppercase; }
+  .stencil { font-family: var(--primitive-font-display); font-weight: 800; text-transform: uppercase; line-height: .9; margin: 0; }
+  .mark { width: 72px; height: 72px; flex-shrink: 0; }
+
+  /* 1. Pochoir — Instagram 1080 × 1080 */
+  #pochoir-1080x1080 { width: 1080px; height: 1080px; background: var(--color-primary); color: #fff; }
+  #pochoir-1080x1080 .inner { position: absolute; inset: 108px; display: flex; flex-direction: column; justify-content: space-between; }
+  #pochoir-1080x1080 h1 { font-size: 178px; }
+  #pochoir-1080x1080 .row { display: flex; justify-content: space-between; align-items: center; font-size: 26px; }
+  #pochoir-1080x1080 .stamp { border: 4px solid #fff; padding: 12px 20px; transform: rotate(-3deg); font-size: 28px; }
+  #pochoir-1080x1080 .cta { background: var(--color-background); color: var(--color-foreground); padding: 22px 34px; font-size: 30px; font-weight: 600; font-family: var(--primitive-font-body); }
+
+  /* 2. Courbe — Instagram 1080 × 1080 */
+  #courbe-1080x1080 { width: 1080px; height: 1080px; background: var(--color-background); color: var(--color-foreground); }
+  #courbe-1080x1080 .inner { position: absolute; inset: 108px; display: grid; grid-template-rows: auto 1fr auto; gap: 36px; }
+  #courbe-1080x1080 h1 { font-size: 112px; }
+  #courbe-1080x1080 h1 em { font-style: normal; color: var(--color-primary); }
+  #courbe-1080x1080 .stats { display: flex; justify-content: space-between; font-size: 24px; color: var(--color-muted-foreground); }
+  #courbe-1080x1080 .stats b { display: block; color: var(--color-foreground); font-size: 44px; letter-spacing: 0; margin-top: 6px; }
+
+  /* 3. En-tête X 1500 × 500 — contenu à droite, la photo de profil masque le bas gauche */
+  #entete-x-1500x500 { width: 1500px; height: 500px; background: var(--color-foreground); color: var(--color-background); }
+  #entete-x-1500x500 svg.curve { position: absolute; left: 0; top: 0; }
+  #entete-x-1500x500 .inner { position: absolute; right: 120px; top: 90px; bottom: 90px; width: 760px; display: flex; flex-direction: column; justify-content: center; gap: 24px; }
+  #entete-x-1500x500 h1 { font-size: 104px; }
+  #entete-x-1500x500 h1 em { font-style: normal; color: var(--primitive-color-cobalt-300); }
+  #entete-x-1500x500 p { margin: 0; font-size: 24px; color: var(--primitive-color-roast-200); }
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute"><defs>
+  <symbol id="mark" viewBox="0 0 64 64"><clipPath id="bc"><ellipse cx="32" cy="32" rx="28" ry="20" transform="rotate(-18 32 32)"/></clipPath>
+    <ellipse cx="32" cy="32" rx="28" ry="20" transform="rotate(-18 32 32)" fill="var(--bean)"/>
+    <g clip-path="url(#bc)"><path d="M2 41 L15 32 L22 36 L32 21 L40 31 L45 27 L62 37" fill="none" stroke="var(--crease)" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/></g></symbol>
+</defs></svg>
+
+<section class="banner" id="pochoir-1080x1080">
+  <div class="inner">
+    <div class="row"><svg class="mark" style="--bean:#fff;--crease:var(--color-primary)"><use href="#mark"/></svg><span class="stamp mono">Lot 41 · Mardi</span></div>
+    <h1 class="stencil">Torréfié mardi. Chez vous jeudi.</h1>
+    <div class="row"><span class="mono">Atlas Torréfacteurs</span><span class="cta">Voir le lot</span></div>
+  </div>
+</section>
+
+<section class="banner" id="courbe-1080x1080">
+  <div class="inner">
+    <h1 class="stencil">Éthiopie<br><em>Hambela</em></h1>
+    <svg viewBox="0 0 864 420" width="864" height="420" aria-hidden="true">
+      <g stroke="var(--color-border)" stroke-width="2"><line x1="0" x2="864" y1="60" y2="60"/><line x1="0" x2="864" y1="180" y2="180"/><line x1="0" x2="864" y1="300" y2="300"/><line x1="0" x2="864" y1="418" y2="418"/></g>
+      <path d="M0 40 C 40 250, 90 380, 130 384 C 170 388, 330 250, 400 200 C 470 150, 560 92, 620 72 C 680 56, 720 54, 760 52" fill="none" stroke="var(--color-foreground)" stroke-width="6" stroke-linecap="round"/>
+      <line x1="620" x2="620" y1="0" y2="418" stroke="var(--color-accent)" stroke-width="3"/>
+      <circle cx="620" cy="72" r="12" fill="var(--color-accent)"/>
+      <circle cx="760" cy="52" r="12" fill="var(--color-primary)"/>
+      <text x="632" y="140" font-family="IBM Plex Mono" font-size="24" fill="var(--color-foreground)">1ER CRACK 7:32</text>
+    </svg>
+    <div class="stats mono"><span>Sortie<b>202 °C</b></span><span>DTR<b>17,1 %</b></span><span>Agtron<b>84</b></span><span>Notes<b>Pêche</b></span></div>
+  </div>
+</section>
+
+<section class="banner" id="entete-x-1500x500">
+  <svg class="curve" viewBox="0 0 1500 500" width="1500" height="500" aria-hidden="true">
+    <path d="M-10 60 C 50 300, 120 430, 190 436 C 290 442, 380 380, 450 340 C 500 312, 530 300, 560 296" fill="none" stroke="var(--primitive-color-roast-500)" stroke-width="5" stroke-linecap="round"/>
+  </svg>
+  <div class="inner">
+    <svg class="mark" style="--bean:var(--primitive-color-cobalt-300);--crease:var(--color-foreground)"><use href="#mark"/></svg>
+    <h1 class="stencil">Torréfié mardi. <em>Chez vous jeudi.</em></h1>
+    <p class="mono">Atlas Torréfacteurs · Lots de 12 kg</p>
+  </div>
+</section>
+
+</body>
+</html>

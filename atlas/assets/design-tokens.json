@@ -1,0 +1,82 @@
+{
+  "$schema": "https://design-tokens.org/schema.json",
+  "brand": "Atlas Torréfacteurs",
+  "primitive": {
+    "color": {
+      "cobalt": {
+        "100": { "$value": "#DCE2F6", "$type": "color" },
+        "300": { "$value": "#8FA3F5", "$type": "color" },
+        "600": { "$value": "#2340A8", "$type": "color" },
+        "800": { "$value": "#182E7E", "$type": "color" }
+      },
+      "green-bean": {
+        "100": { "$value": "#DDE2C4", "$type": "color" },
+        "300": { "$value": "#A9B56E", "$type": "color" },
+        "600": { "$value": "#6E7A3C", "$type": "color" }
+      },
+      "crack": {
+        "400": { "$value": "#E2A443", "$type": "color" },
+        "600": { "$value": "#C8861A", "$type": "color" }
+      },
+      "roast": {
+        "50": { "$value": "#F8F9F2", "$type": "color" },
+        "100": { "$value": "#ECEEE2", "$type": "color" },
+        "200": { "$value": "#C9CCB8", "$type": "color" },
+        "500": { "$value": "#5A5348", "$type": "color" },
+        "900": { "$value": "#1F1A14", "$type": "color" },
+        "950": { "$value": "#14110D", "$type": "color" }
+      },
+      "white": { "$value": "#FFFFFF", "$type": "color" }
+    },
+    "font": {
+      "display": { "$value": "'Big Shoulders Stencil', 'Arial Narrow', sans-serif", "$type": "fontFamily" },
+      "body": { "$value": "'Instrument Sans', 'Helvetica Neue', Arial, sans-serif", "$type": "fontFamily" },
+      "mono": { "$value": "'IBM Plex Mono', ui-monospace, Menlo, monospace", "$type": "fontFamily" }
+    },
+    "spacing": {
+      "1": { "$value": "0.25rem", "$type": "dimension" },
+      "2": { "$value": "0.5rem", "$type": "dimension" },
+      "3": { "$value": "0.75rem", "$type": "dimension" },
+      "4": { "$value": "1rem", "$type": "dimension" },
+      "6": { "$value": "1.5rem", "$type": "dimension" },
+      "8": { "$value": "2rem", "$type": "dimension" },
+      "12": { "$value": "3rem", "$type": "dimension" },
+      "16": { "$value": "4rem", "$type": "dimension" },
+      "24": { "$value": "6rem", "$type": "dimension" }
+    },
+    "radius": {
+      "sm": { "$value": "2px", "$type": "dimension" },
+      "md": { "$value": "6px", "$type": "dimension" },
+      "pill": { "$value": "999px", "$type": "dimension" }
+    }
+  },
+  "semantic": {
+    "color": {
+      "background": { "$value": "{primitive.color.roast.100}", "$type": "color" },
+      "surface": { "$value": "{primitive.color.roast.50}", "$type": "color" },
+      "foreground": { "$value": "{primitive.color.roast.900}", "$type": "color" },
+      "muted-foreground": { "$value": "{primitive.color.roast.500}", "$type": "color" },
+      "border": { "$value": "{primitive.color.roast.200}", "$type": "color" },
+      "primary": { "$value": "{primitive.color.cobalt.600}", "$type": "color" },
+      "primary-hover": { "$value": "{primitive.color.cobalt.800}", "$type": "color" },
+      "primary-soft": { "$value": "{primitive.color.cobalt.100}", "$type": "color" },
+      "on-primary": { "$value": "{primitive.color.white}", "$type": "color" },
+      "secondary": { "$value": "{primitive.color.green-bean.600}", "$type": "color" },
+      "secondary-soft": { "$value": "{primitive.color.green-bean.100}", "$type": "color" },
+      "accent": { "$value": "{primitive.color.crack.600}", "$type": "color" }
+    }
+  },
+  "component": {
+    "button": {
+      "bg": { "$value": "{semantic.color.primary}", "$type": "color" },
+      "bg-hover": { "$value": "{semantic.color.primary-hover}", "$type": "color" },
+      "fg": { "$value": "{semantic.color.on-primary}", "$type": "color" },
+      "radius": { "$value": "{primitive.radius.sm}", "$type": "dimension" }
+    },
+    "card": {
+      "bg": { "$value": "{semantic.color.surface}", "$type": "color" },
+      "border": { "$value": "{semantic.color.border}", "$type": "color" },
+      "radius": { "$value": "{primitive.radius.md}", "$type": "dimension" }
+    }
+  }
+}

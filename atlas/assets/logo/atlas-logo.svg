@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 72" role="img" aria-label="Atlas Torréfacteurs"><style>@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil:wght@800&amp;family=IBM+Plex+Mono:wght@500&amp;display=swap');</style>
+<rect width="300" height="72" fill="#ECEEE2"/>
+<g transform="translate(4 4)"><defs><clipPath id="bean"><ellipse cx="32" cy="32" rx="28" ry="20" transform="rotate(-18 32 32)"/></clipPath></defs><ellipse cx="32" cy="32" rx="28" ry="20" transform="rotate(-18 32 32)" fill="#2340A8"/><g clip-path="url(#bean)"><path d="M2 41 L15 32 L22 36 L32 21 L40 31 L45 27 L62 37" fill="none" stroke="#ECEEE2" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/></g></g>
+<text x="78" y="44" font-family="'Big Shoulders Stencil','Arial Narrow',sans-serif" font-weight="800" font-size="46" letter-spacing="2" fill="#1F1A14">ATLAS</text>
+<text x="80" y="62" font-family="'IBM Plex Mono',monospace" font-weight="500" font-size="11" letter-spacing="2.6" fill="#1F1A14">TORRÉFACTEURS</text>
+</svg>

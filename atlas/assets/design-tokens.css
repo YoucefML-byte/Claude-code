@@ -1,0 +1,64 @@
+/* Design Tokens - Auto-generated */
+/* Do not edit directly - modify tokens.json instead */
+
+/* === PRIMITIVES === */
+:root {
+  --primitive-color-cobalt-100: #DCE2F6;
+  --primitive-color-cobalt-300: #8FA3F5;
+  --primitive-color-cobalt-600: #2340A8;
+  --primitive-color-cobalt-800: #182E7E;
+  --primitive-color-green-bean-100: #DDE2C4;
+  --primitive-color-green-bean-300: #A9B56E;
+  --primitive-color-green-bean-600: #6E7A3C;
+  --primitive-color-crack-400: #E2A443;
+  --primitive-color-crack-600: #C8861A;
+  --primitive-color-roast-50: #F8F9F2;
+  --primitive-color-roast-100: #ECEEE2;
+  --primitive-color-roast-200: #C9CCB8;
+  --primitive-color-roast-500: #5A5348;
+  --primitive-color-roast-900: #1F1A14;
+  --primitive-color-roast-950: #14110D;
+  --primitive-color-white: #FFFFFF;
+  --primitive-font-display: 'Big Shoulders Stencil', 'Arial Narrow', sans-serif;
+  --primitive-font-body: 'Instrument Sans', 'Helvetica Neue', Arial, sans-serif;
+  --primitive-font-mono: 'IBM Plex Mono', ui-monospace, Menlo, monospace;
+  --primitive-spacing-1: 0.25rem;
+  --primitive-spacing-2: 0.5rem;
+  --primitive-spacing-3: 0.75rem;
+  --primitive-spacing-4: 1rem;
+  --primitive-spacing-6: 1.5rem;
+  --primitive-spacing-8: 2rem;
+  --primitive-spacing-12: 3rem;
+  --primitive-spacing-16: 4rem;
+  --primitive-spacing-24: 6rem;
+  --primitive-radius-sm: 2px;
+  --primitive-radius-md: 6px;
+  --primitive-radius-pill: 999px;
+}
+
+/* === SEMANTIC === */
+:root {
+  --color-background: #ECEEE2;
+  --color-surface: #F8F9F2;
+  --color-foreground: #1F1A14;
+  --color-muted-foreground: #5A5348;
+  --color-border: #C9CCB8;
+  --color-primary: #2340A8;
+  --color-primary-hover: #182E7E;
+  --color-primary-soft: #DCE2F6;
+  --color-on-primary: #FFFFFF;
+  --color-secondary: #6E7A3C;
+  --color-secondary-soft: #DDE2C4;
+  --color-accent: #C8861A;
+}
+
+/* === COMPONENTS === */
+:root {
+  --button-bg: #2340A8;
+  --button-bg-hover: #182E7E;
+  --button-fg: #FFFFFF;
+  --button-radius: 2px;
+  --card-bg: #F8F9F2;
+  --card-border: #C9CCB8;
+  --card-radius: 6px;
+}
