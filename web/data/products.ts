@@ -1,0 +1,226 @@
+import type { Product, SizeOption } from "./types";
+
+// Catalogue de démonstration : uniquement les paires fournies avec photos.
+// Prix, pointures et états sont fictifs.
+// Photos : public/products/<slug>/1.webp … 5.webp
+
+const neuf = (size: string, stock = 1): SizeOption => ({ size, condition: "Neuf", stock });
+const occ = (size: string, grade: number, stock = 1): SizeOption => ({
+  size,
+  condition: "Occasion",
+  grade,
+  stock,
+});
+
+const PHOTO_VIEWS = [
+  { view: "side", label: "Profil" },
+  { view: "pair", label: "Vue latérale" },
+  { view: "detail", label: "Vue avant" },
+  { view: "detail", label: "Vue arrière" },
+  { view: "detail", label: "Semelle" },
+] as const;
+
+type Seed = Omit<Product, "images">;
+/** `views`: how many of the views above exist for this pair (1 = profile only) */
+const photoProduct = (seed: Seed, views: number = PHOTO_VIEWS.length): Product => ({
+  ...seed,
+  images: PHOTO_VIEWS.slice(0, views).map((v, i) => ({ ...v, src: `/products/${seed.slug}/${i + 1}.webp` })),
+});
+
+export const PRODUCTS: Product[] = [
+  photoProduct({
+    slug: "air-jordan-1-low-travis-scott-reverse-mocha",
+    name: "Air Jordan 1 Low OG",
+    brand: "jordan",
+    collab: "Travis Scott",
+    colorway: "Travis Scott · Reverse Mocha",
+    silhouette: "low",
+    colors: {
+      upper: "#efe9dc",
+      overlay: "#5b4636",
+      accent: "#e6d4b2",
+      midsole: "#efe2c6",
+      outsole: "#3f2e24",
+      laces: "#e6d4b2",
+      lining: "#3f2e24",
+    },
+    price: 1190,
+    retail: 150,
+    sizes: [occ("42,5", 8), occ("44", 9)],
+    arrivedAt: "2026-09-14",
+    releaseYear: 2022,
+    description:
+      "Daim moka, cuir voile et swoosh inversé couleur sable, logo Wings rouge au talon. Une des Travis les plus recherchées.",
+    featured: true,
+  }),
+  photoProduct({
+    slug: "off-white-nike-rubber-dunk-university-blue",
+    name: "Air Rubber Dunk",
+    brand: "nike",
+    collab: "Off-White",
+    colorway: "Off-White · University Blue",
+    silhouette: "low",
+    colors: {
+      upper: "#f4f4f2",
+      overlay: "#c7cacd",
+      accent: "#4a90d9",
+      midsole: "#c08a4e",
+      outsole: "#a8763f",
+      laces: "#4a90d9",
+      lining: "#f4f4f2",
+    },
+    price: 290,
+    retail: 150,
+    sizes: [neuf("41"), occ("43", 9)],
+    arrivedAt: "2026-09-14",
+    releaseYear: 2020,
+    description:
+      "Empiècements argentés, swoosh bleu University en relief et semelle gomme : la Rubber Dunk dessinée par Virgil Abloh.",
+    featured: true,
+  }),
+  photoProduct({
+    slug: "corteiz-air-max-95-gutta-green",
+    name: "Air Max 95 SP",
+    brand: "nike",
+    collab: "Corteiz",
+    colorway: "Corteiz · Gutta Green",
+    silhouette: "runner",
+    colors: {
+      upper: "#4f5a32",
+      overlay: "#2f3a24",
+      accent: "#e1b400",
+      midsole: "#1b1b1b",
+      outsole: "#1b1b1b",
+      laces: "#a8956a",
+      lining: "#3a2a22",
+    },
+    price: 390,
+    retail: 200,
+    sizes: [occ("42", 9), neuf("44")],
+    arrivedAt: "2026-09-14",
+    releaseYear: 2023,
+    description:
+      "Dégradé kaki, mesh filet et touches jaune « Gutta » sur les bulles Air. Logo Alcatraz brodé sur l'avant du pied.",
+    featured: true,
+  }),
+  photoProduct({
+    slug: "asics-gel-kayano-14-black-silver",
+    name: "Gel-Kayano 14",
+    brand: "asics",
+    colorway: "Black / Pure Silver",
+    silhouette: "runner",
+    colors: {
+      upper: "#141414",
+      overlay: "#2a2a2a",
+      accent: "#c9ccd0",
+      midsole: "#1b1b1b",
+      outsole: "#111111",
+      laces: "#141414",
+      lining: "#141414",
+    },
+    price: 189,
+    retail: 160,
+    sizes: [neuf("40,5"), neuf("42"), occ("43", 9)],
+    arrivedAt: "2026-09-13",
+    releaseYear: 2023,
+    description:
+      "Le running Y2K remis au goût du jour : mesh noir, overlays argentés et amorti Gel visible au talon.",
+  }),
+  photoProduct({
+    slug: "nocta-hot-step-2-black",
+    name: "Hot Step 2",
+    brand: "nike",
+    collab: "NOCTA",
+    colorway: "NOCTA · Black",
+    silhouette: "runner",
+    colors: {
+      upper: "#141414",
+      overlay: "#222222",
+      accent: "#c8c8c8",
+      midsole: "#141414",
+      outsole: "#c49a5a",
+      laces: "#141414",
+      lining: "#141414",
+    },
+    price: 249,
+    retail: 230,
+    sizes: [neuf("42"), neuf("43"), occ("44", 9)],
+    arrivedAt: "2026-09-13",
+    releaseYear: 2023,
+    description:
+      "Tige texturée façon vagues, verni noir et bulle Air visible. La deuxième collaboration running de Drake avec Nike.",
+    featured: true,
+  }),
+  photoProduct(
+    {
+      slug: "new-balance-2002r-protection-pack-pink",
+      name: "2002R",
+      brand: "new-balance",
+      colorway: "Protection Pack · Rose / Bordeaux",
+      silhouette: "runner",
+      colors: {
+        upper: "#c98ea0",
+        overlay: "#8c2f55",
+        accent: "#f2dde3",
+        midsole: "#f1ece2",
+        outsole: "#5c3a4a",
+        laces: "#f4f1ea",
+        lining: "#d8a7b5",
+      },
+      price: 219,
+      retail: 160,
+      sizes: [neuf("38"), occ("40", 9)],
+      arrivedAt: "2026-09-13",
+      releaseYear: 2022,
+      description:
+        "Suède effiloché aux bords bruts dans des tons rose et bordeaux : le Protection Pack, la série qui a relancé la 2002R.",
+    },
+    1,
+  ),
+  photoProduct({
+    slug: "prada-americas-cup-red",
+    name: "America's Cup",
+    brand: "prada",
+    colorway: "Rouge / Argent",
+    silhouette: "low",
+    colors: {
+      upper: "#b5121b",
+      overlay: "#b5b8bb",
+      accent: "#b5121b",
+      midsole: "#f1efe9",
+      outsole: "#e8e6e0",
+      laces: "#f4f4f2",
+      lining: "#9a9da0",
+    },
+    price: 590,
+    retail: 850,
+    sizes: [occ("42", 9), neuf("43")],
+    arrivedAt: "2026-09-12",
+    releaseYear: 2024,
+    description:
+      "Cuir verni rouge, mesh technique argenté et semelle en caoutchouc texturé. L'icône Prada inspirée de la voile.",
+  }),
+  photoProduct({
+    slug: "maison-margiela-replica-gat",
+    name: "Replica GAT",
+    brand: "maison-margiela",
+    colorway: "Blanc / Gris · semelle gomme",
+    silhouette: "low",
+    colors: {
+      upper: "#f1eee6",
+      overlay: "#b9b4ab",
+      accent: "#f1eee6",
+      midsole: "#a8692f",
+      outsole: "#8e5626",
+      laces: "#e8dcc0",
+      lining: "#c8a46c",
+    },
+    price: 420,
+    retail: 495,
+    sizes: [neuf("41"), occ("43", 9, 0)],
+    arrivedAt: "2026-09-11",
+    releaseYear: 2024,
+    description:
+      "Réplique de la basket d'entraînement de l'armée allemande : cuir blanc, daim gris et semelle gomme.",
+  }),
+];

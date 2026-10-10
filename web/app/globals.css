@@ -1,0 +1,104 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* Eliott SNKRS — fond blanc, vert néon de la marque en accent
+   (aplats uniquement ; le texte vert utilise --acc-ink), Oswald / IBM Plex. */
+@theme inline {
+  --color-ground: var(--ground);
+  --color-surface: var(--surface);
+  --color-raised: var(--raised);
+  --color-line: var(--line);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-dim: var(--dim);
+  --color-acc: var(--acc);
+  --color-acc-ink: var(--acc-ink);
+  --color-on-acc: var(--on-acc);
+  --color-warm: var(--warm);
+  --color-tile: var(--tile);
+  --color-tile-ink: var(--tile-ink);
+
+  --font-display: var(--font-oswald), "Arial Narrow", sans-serif;
+  --font-sans: var(--font-plex-sans), "Segoe UI", system-ui, sans-serif;
+  --font-mono: var(--font-plex-mono), ui-monospace, Menlo, monospace;
+
+  /* shadcn tokens mapped onto the brand palette */
+  --color-background: var(--ground);
+  --color-foreground: var(--ink);
+  --color-card: var(--surface);
+  --color-card-foreground: var(--ink);
+  --color-popover: var(--raised);
+  --color-popover-foreground: var(--ink);
+  --color-primary: var(--acc);
+  --color-primary-foreground: var(--ground);
+  --color-secondary: var(--raised);
+  --color-secondary-foreground: var(--ink);
+  --color-muted-foreground: var(--muted);
+  --color-accent: var(--raised);
+  --color-accent-foreground: var(--ink);
+  --color-destructive: #ff6b5c;
+  --color-border: var(--line);
+  --color-input: var(--line);
+  --color-ring: var(--acc);
+
+  --radius-sm: 2px;
+  --radius-md: 3px;
+  --radius-lg: 4px;
+  --radius-xl: 6px;
+}
+
+:root {
+  --ground: #ffffff;
+  --surface: #f5f6f4;
+  --raised: #eceeeb;
+  --line: #e2e5e2;
+  --ink: #0b100d;
+  --muted: #59645d;
+  --dim: #7c867f;
+  /* neon brand green: fills only */
+  --acc: #00fc54;
+  /* readable green for text on white */
+  --acc-ink: #007f2a;
+  --on-acc: #04140a;
+  --warm: #ffa043;
+  /* studio backdrop behind the sneakers */
+  --tile: #eceeeb;
+  --tile-ink: #0b120d;
+  color-scheme: light;
+}
+
+@layer base {
+  * {
+    @apply border-line outline-acc/60;
+  }
+  html {
+    -webkit-tap-highlight-color: transparent;
+  }
+  body {
+    @apply bg-ground font-sans text-ink antialiased;
+  }
+  :focus-visible {
+    outline: 2px solid var(--acc);
+    outline-offset: 2px;
+  }
+  ::selection {
+    background: var(--acc);
+    color: var(--on-acc);
+  }
+}
+
+@utility label {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+@utility no-scrollbar {
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
