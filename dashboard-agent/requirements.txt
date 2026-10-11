@@ -1,0 +1,5 @@
+anthropic>=1.13
+pandas>=2.2
+pydantic>=2.7
+openpyxl>=3.1   # lecture Excel
+pytest>=8       # tests

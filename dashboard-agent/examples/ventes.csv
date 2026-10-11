@@ -1,0 +1,2015 @@
+date_commande;commande_id;client_id;region;canal;categorie;produit;quantite;remise_pct;chiffre_affaires;marge;note_satisfaction
+13/02/2025;CMD-100000;CLI-0423;Hauts-de-France;Magasin;Informatique;Ordinateur portable;1;0;899,00;169,60;4
+01/10/2024;CMD-100001;CLI-0404;Île-de-France;Web;Téléphonie;Smartphone;3;0;1947,00;433,72;5
+21/06/2025;CMD-100002;CLI-0462;Île-de-France;Web;Téléphonie;Smartphone;1;0;649,00;151,34;3
+12/03/2025;CMD-100003;CLI-0404;Île-de-France;Web;Téléphonie;Coque;1;5;18,05;1,27;4
+06/05/2024;CMD-100004;CLI-0803;Île-de-France;Marketplace;Informatique;Clavier;2;0;118,00;22,86;4
+25/11/2024;CMD-100005;CLI-0032;Occitanie;Magasin;Téléphonie;Smartphone;3;20;1557,60;189,47;5
+02/09/2025;CMD-100006;CLI-0756;Île-de-France;Web;Téléphonie;Écouteurs;1;0;129,00;28,03;3
+07/05/2025;CMD-100007;CLI-0788;Île-de-France;Web;Informatique;Clavier;1;5;56,05;14,53;3
+17/11/2024;CMD-100008;CLI-0394;Nouvelle-Aquitaine;Magasin;Maison;Cafetière;3;5;253,65;82,56;3
+09/06/2025;CMD-100009;CLI-0629;Occitanie;Magasin;Informatique;Clavier;3;0;177,00;26,21;4
+08/10/2024;CMD-100010;CLI-0399;Hauts-de-France;Marketplace;Téléphonie;Smartphone;2;0;1298,00;283,99;3
+09/11/2024;CMD-100011;CLI-0674;Île-de-France;Web;Téléphonie;Coque;2;10;34,20;5,34;4
+20/08/2024;CMD-100012;CLI-0777;Occitanie;Web;Loisirs;Console;3;20;1077,60;201,40;4
+07/02/2025;CMD-100013;CLI-0899;Auvergne-Rhône-Alpes;Web;Informatique;Ordinateur portable;2;20;1438,40;113,76;3
+08/09/2024;CMD-100014;CLI-0016;Île-de-France;Web;Informatique;Ordinateur portable;1;5;854,05;133,41;5
+30/05/2025;CMD-100015;CLI-0779;Île-de-France;Web;Informatique;Ordinateur portable;1;10;809,10;106,02;5
+07/12/2024;CMD-100016;CLI-0459;Île-de-France;Marketplace;Téléphonie;Écouteurs;1;5;122,55;23,86;4
+04/10/2024;CMD-100017;CLI-0221;Île-de-France;Magasin;Informatique;Ordinateur portable;3;20;2157,60;174,27;4
+08/10/2024;CMD-100018;CLI-0012;Grand Est;Magasin;Maison;Aspirateur;1;10;224,10;71,75;5
+22/05/2024;CMD-100019;CLI-0609;Île-de-France;Marketplace;Informatique;"Écran 27""";2;10;502,20;59,11;4
+27/02/2024;CMD-100020;CLI-0110;Nouvelle-Aquitaine;Magasin;Informatique;"Écran 27""";1;5;265,05;42,33;4
+13/12/2024;CMD-100021;CLI-0186;Auvergne-Rhône-Alpes;Magasin;Téléphonie;Coque;2;5;36,10;-3,49;4
+09/07/2025;CMD-100022;CLI-0825;Auvergne-Rhône-Alpes;Magasin;Maison;Aspirateur;1;20;199,20;58,42;4
+09/02/2024;CMD-100023;CLI-0469;Auvergne-Rhône-Alpes;Magasin;Loisirs;Jeu vidéo;2;0;118,00;29,19;5
+30/01/2025;CMD-100024;CLI-0299;Grand Est;Web;Maison;Aspirateur;1;5;236,55;67,02;4
+19/04/2025;CMD-100025;CLI-0725;Occitanie;Web;Téléphonie;Coque;2;10;34,20;13,06;5
+14/03/2025;CMD-100026;CLI-0459;Auvergne-Rhône-Alpes;Magasin;Maison;Aspirateur;1;10;224,10;67,77;3
+09/08/2024;CMD-100027;CLI-0033;Auvergne-Rhône-Alpes;Magasin;Maison;Lampe;3;10;105,30;30,90;2
+12/02/2024;CMD-100028;CLI-0201;Auvergne-Rhône-Alpes;Marketplace;Informatique;Ordinateur portable;2;5;1708,10;265,85;5
+30/08/2025;CMD-100029;CLI-0406;Île-de-France;Marketplace;Téléphonie;Écouteurs;1;5;122,55;29,39;5
+06/10/2024;CMD-100030;CLI-0309;Île-de-France;Magasin;Maison;Aspirateur;1;10;224,10;65,70;5
+28/02/2025;CMD-100031;CLI-0881;Île-de-France;Web;Informatique;Ordinateur portable;2;5;1708,10;259,05;4
+02/05/2025;CMD-100032;CLI-0545;Île-de-France;Web;Maison;Cafetière;2;5;169,10;60,23;4
+20/04/2025;CMD-100033;CLI-0564;Grand Est;Magasin;Téléphonie;Smartphone;2;0;1298,00;280,78;4
+01/05/2024;CMD-100034;CLI-0354;Auvergne-Rhône-Alpes;Web;Téléphonie;Écouteurs;1;20;103,20;12,71;4
+15/08/2024;CMD-100035;CLI-0032;Île-de-France;Magasin;Informatique;Ordinateur portable;1;0;899,00;153,12;4
+19/10/2024;CMD-100036;CLI-0768;Hauts-de-France;Web;Maison;Cafetière;2;10;160,20;43,00;4
+07/11/2024;CMD-100037;CLI-0713;Auvergne-Rhône-Alpes;Magasin;Loisirs;Drone;2;0;658,00;178,50;4
+08/12/2024;CMD-100038;CLI-0086;Île-de-France;Magasin;Informatique;Clavier;1;20;47,20;6,22;2
+06/04/2024;CMD-100039;CLI-0016;Île-de-France;Magasin;Téléphonie;Smartphone;2;0;1298,00;283,73;5
+11/04/2025;CMD-100040;CLI-0719;Grand Est;Web;Informatique;Clavier;1;0;59,00;19,21;5
+22/07/2024;CMD-100041;CLI-0818;Nouvelle-Aquitaine;Web;Informatique;Ordinateur portable;2;5;1708,10;264,04;3
+20/07/2025;CMD-100042;CLI-0737;Auvergne-Rhône-Alpes;Web;Loisirs;Jeu vidéo;1;5;56,05;15,41;5
+19/08/2024;CMD-100043;CLI-0465;Auvergne-Rhône-Alpes;Web;Téléphonie;Coque;3;0;57,00;9,40;2
+17/02/2024;CMD-100044;CLI-0343;Auvergne-Rhône-Alpes;Magasin;Téléphonie;Écouteurs;2;0;258,00;59,67;4
+20/10/2024;CMD-100045;CLI-0408;Hauts-de-France;Magasin;Informatique;Ordinateur portable;2;0;1798,00;318,19;5
+13/05/2025;CMD-100046;CLI-0524;Nouvelle-Aquitaine;Magasin;Loisirs;Console;2;10;808,20;184,63;3
+28/04/2024;CMD-100047;CLI-0143;Auvergne-Rhône-Alpes;Magasin;Informatique;Ordinateur portable;2;20;1438,40;108,39;4
+16/10/2024;CMD-100048;CLI-0695;Occitanie;Marketplace;Maison;Aspirateur;3;0;747,00;264,96;5
+05/03/2025;CMD-100049;CLI-0257;Auvergne-Rhône-Alpes;Web;Informatique;Clavier;1;10;53,10;7,00;3
+24/10/2024;CMD-100050;CLI-0171;Île-de-France;Marketplace;Informatique;Clavier;2;5;112,10;15,00;3
+19/12/2024;CMD-100051;CLI-0031;Occitanie;Magasin;Maison;Aspirateur;1;5;236,55;75,80;5
+30/09/2024;CMD-100052;CLI-0670;Occitanie;Magasin;Informatique;Clavier;2;0;118,00;20,75;4
+10/04/2024;CMD-100053;CLI-0146;Île-de-France;Magasin;Maison;Aspirateur;1;20;199,20;45,25;4
+05/06/2025;CMD-100054;CLI-0891;Hauts-de-France;Web;Informatique;Clavier;2;5;112,10;14,16;4
+29/01/2025;CMD-100055;CLI-0182;Bretagne;Marketplace;Maison;Aspirateur;1;5;236,55;69,29;3
+01/03/2024;CMD-100056;CLI-0126;Auvergne-Rhône-Alpes;Web;Maison;Cafetière;1;0;89,00;25,72;5
+14/07/2024;CMD-100057;CLI-0196;Grand Est;Web;Maison;Aspirateur;1;0;249,00;90,27;4
+25/04/2025;CMD-100058;CLI-0466;Île-de-France;Magasin;Informatique;Ordinateur portable;1;0;899,00;166,57;3
+04/06/2025;CMD-100059;CLI-0394;Auvergne-Rhône-Alpes;Web;Maison;Cafetière;2;0;178,00;62,29;4
+29/09/2024;CMD-100060;CLI-0610;Île-de-France;Web;Loisirs;Drone;1;10;296,10;66,08;4
+18/05/2025;CMD-100061;CLI-0843;Bretagne;Web;Informatique;Ordinateur portable;2;10;1618,20;211,61;2
+30/08/2024;CMD-100062;CLI-0560;Auvergne-Rhône-Alpes;Web;Informatique;"Écran 27""";2;0;558,00;93,46;4
+29/05/2024;CMD-100063;CLI-0833;Île-de-France;Magasin;Maison;Aspirateur;1;20;199,20;41,17;4
+03/03/2025;CMD-100064;CLI-0626;Auvergne-Rhône-Alpes;Web;Informatique;Clavier;2;10;106,20;17,19;5
+28/03/2024;CMD-100065;CLI-0888;Auvergne-Rhône-Alpes;Magasin;Maison;Lampe;2;20;62,40;22,97;3
+05/05/2024;CMD-100066;CLI-0675;Grand Est;Web;Maison;Cafetière;2;0;178,00;63,95;4
+13/05/2025;CMD-100067;CLI-0676;Hauts-de-France;Web;Informatique;Clavier;2;10;106,20;13,09;3
+07/05/2025;CMD-100068;CLI-0235;Grand Est;Web;Téléphonie;Smartphone;1;0;649,00;136,73;5
+20/02/2025;CMD-100069;CLI-0516;Nouvelle-Aquitaine;Magasin;Téléphonie;Écouteurs;2;20;206,40;31,68;3
+22/10/2024;CMD-100070;CLI-0061;Île-de-France;Magasin;Informatique;Clavier;2;10;106,20;6,81;4
+17/03/2025;CMD-100071;CLI-0344;Hauts-de-France;Magasin;Loisirs;Console;2;20;718,40;134,72;3
+22/06/2024;CMD-100072;CLI-0536;Bretagne;Web;Informatique;Clavier;3;20;141,60;11,17;3
+13/12/2024;CMD-100073;CLI-0260;Occitanie;Web;Téléphonie;Smartphone;1;0;649,00;139,55;3
+14/10/2024;CMD-100074;CLI-0519;Auvergne-Rhône-Alpes;Web;Maison;Cafetière;1;10;80,10;20,41;4
+12/11/2024;CMD-100075;CLI-0511;Hauts-de-France;Web;Informatique;"Écran 27""";2;20;446,40;43,31;3
+22/12/2024;CMD-100076;CLI-0025;Grand Est;Web;Maison;Aspirateur;2;20;398,40;97,34;5
+24/01/2024;CMD-100077;CLI-0869;Île-de-France;Magasin;Informatique;"Écran 27""";3;0;837,00;148,35;4
+28/03/2024;CMD-100078;CLI-0050;Île-de-France;Web;Téléphonie;Smartphone;2;20;1038,40;124,33;4
+12/03/2024;CMD-100079;CLI-0467;Hauts-de-France;Magasin;Informatique;Clavier;3;0;177,00;37,16;4
+02/10/2024;CMD-100080;CLI-0668;Hauts-de-France;Marketplace;Maison;Lampe;3;5;111,15;29,23;4
+22/02/2025;CMD-100081;CLI-0409;Hauts-de-France;Web;Maison;Aspirateur;3;10;672,30;201,76;4
+21/10/2024;CMD-100082;CLI-0878;Île-de-France;Magasin;Maison;Cafetière;1;20;71,20;13,85;4
+19/06/2025;CMD-100083;CLI-0025;Île-de-France;Magasin;Loisirs;Jeu vidéo;1;5;56,05;0,98;2
+19/12/2024;CMD-100084;CLI-0434;Île-de-France;Magasin;Maison;Lampe;1;20;31,20;17,24;4
+19/02/2024;CMD-100085;CLI-0809;Île-de-France;Web;Maison;Cafetière;2;20;142,40;43,84;5
+23/04/2025;CMD-100086;CLI-0563;Île-de-France;Magasin;Téléphonie;Écouteurs;1;5;122,55;24,28;4
+25/12/2024;CMD-100087;CLI-0178;Île-de-France;Web;Loisirs;Console;2;0;898,00;244,23;5
+01/02/2025;CMD-100088;CLI-0293;Occitanie;Web;Téléphonie;Smartphone;1;0;649,00;136,72;5
+19/12/2024;CMD-100089;CLI-0387;Île-de-France;Web;Loisirs;Jeu vidéo;1;20;47,20;-0,03;4
+12/12/2024;CMD-100090;CLI-0366;Île-de-France;Web;Informatique;Clavier;2;0;118,00;20,61;3
+16/12/2024;CMD-100091;CLI-0729;Hauts-de-France;Marketplace;Téléphonie;Écouteurs;1;0;129,00;21,47;5
+09/07/2024;CMD-100092;CLI-0196;Auvergne-Rhône-Alpes;Magasin;Maison;Aspirateur;2;10;448,20;128,44;3
+12/01/2025;CMD-100093;CLI-0894;Île-de-France;Marketplace;Informatique;Clavier;1;5;56,05;11,02;3
+05/08/2024;CMD-100094;CLI-0188;Nouvelle-Aquitaine;Magasin;Informatique;"Écran 27""";2;20;446,40;47,35;4
+14/05/2024;CMD-100095;CLI-0295;Occitanie;Magasin;Loisirs;Console;1;20;359,20;60,44;4
+22/06/2024;CMD-100096;CLI-0237;Occitanie;Web;Téléphonie;Coque;2;0;38,00;1,25;4
+12/09/2024;CMD-100097;CLI-0231;Occitanie;Web;Informatique;Clavier;1;20;47,20;2,63;3
+13/09/2025;CMD-100098;CLI-0511;Auvergne-Rhône-Alpes;Web;Informatique;Clavier;2;20;94,40;8,50;5
+18/06/2025;CMD-100099;CLI-0478;Hauts-de-France;Marketplace;Téléphonie;Coque;2;0;38,00;7,91;3
+22/01/2024;CMD-100100;CLI-0587;Auvergne-Rhône-Alpes;Web;Téléphonie;Coque;1;0;19,00;10,18;5
+19/06/2025;CMD-100101;CLI-0897;Auvergne-Rhône-Alpes;Web;Loisirs;Console;1;20;359,20;73,91;4
+25/06/2024;CMD-100102;CLI-0599;Île-de-France;Web;Loisirs;Drone;1;5;312,55;82,81;3
+28/07/2025;CMD-100103;CLI-0210;Hauts-de-France;Web;Maison;Cafetière;1;5;84,55;29,76;5
+02/07/2024;CMD-100104;CLI-0086;Grand Est;Magasin;Maison;Aspirateur;2;5;473,10;159,19;4
+18/02/2025;CMD-100105;CLI-0541;Occitanie;Magasin;Informatique;"Écran 27""";2;0;558,00;91,10;5
+20/03/2024;CMD-100106;CLI-0670;Grand Est;Marketplace;Loisirs;Drone;2;0;658,00;181,44;4
+14/12/2024;CMD-100107;CLI-0404;Occitanie;Magasin;Informatique;Clavier;2;0;118,00;24,94;4
+12/11/2024;CMD-100108;CLI-0177;Occitanie;Web;Informatique;"Écran 27""";2;10;502,20;65,46;4
+05/05/2025;CMD-100109;CLI-0584;Auvergne-Rhône-Alpes;Web;Loisirs;Console;2;0;898,00;253,79;3
+15/09/2025;CMD-100110;CLI-0293;Île-de-France;Web;Loisirs;Drone;3;5;937,65;242,64;3
+11/09/2024;CMD-100111;CLI-0363;Île-de-France;Web;Informatique;Ordinateur portable;1;0;899,00;158,79;4
+14/04/2024;CMD-100112;CLI-0244;Occitanie;Web;Maison;Cafetière;2;5;169,10;57,40;3
+28/07/2024;CMD-100113;CLI-0795;Nouvelle-Aquitaine;Magasin;Téléphonie;Écouteurs;1;5;122,55;27,73;4
+07/03/2024;CMD-100114;CLI-0546;Auvergne-Rhône-Alpes;Magasin;Informatique;"Écran 27""";3;20;669,60;56,10;4
+26/02/2024;CMD-100115;CLI-0463;Hauts-de-France;Magasin;Informatique;"Écran 27""";2;5;530,10;76,10;4
+28/03/2025;CMD-100116;CLI-0622;Hauts-de-France;Web;Informatique;Clavier;1;20;47,20;9,53;2
+10/04/2024;CMD-100117;CLI-0471;Île-de-France;Magasin;Téléphonie;Écouteurs;1;0;129,00;32,01;4
+09/11/2024;CMD-100118;CLI-0173;Bretagne;Web;Téléphonie;Smartphone;1;20;519,20;72,13;4
+07/11/2024;CMD-100119;CLI-0545;Hauts-de-France;Web;Téléphonie;Écouteurs;1;10;116,10;19,87;5
+11/03/2025;CMD-100120;CLI-0512;Île-de-France;Magasin;Informatique;"Écran 27""";3;20;669,60;55,76;4
+06/11/2024;CMD-100121;CLI-0791;Île-de-France;Magasin;Loisirs;Drone;3;0;987,00;281,17;4
+06/10/2024;CMD-100122;CLI-0768;Nouvelle-Aquitaine;Magasin;Téléphonie;Écouteurs;2;0;258,00;55,09;3
+14/04/2024;CMD-100123;CLI-0640;Île-de-France;Marketplace;Loisirs;Jeu vidéo;3;20;141,60;29,87;4
+26/08/2024;CMD-100124;CLI-0506;Île-de-France;Web;Informatique;Ordinateur portable;1;10;809,10;104,97;3
+29/05/2024;CMD-100125;CLI-0774;Grand Est;Web;Téléphonie;Coque;1;0;19,00;10,38;3
+07/07/2024;CMD-100126;CLI-0353;Nouvelle-Aquitaine;Magasin;Maison;Aspirateur;2;0;498,00;167,65;5
+15/01/2025;CMD-100127;CLI-0143;Île-de-France;Marketplace;Informatique;Ordinateur portable;1;10;809,10;106,91;4
+24/02/2024;CMD-100128;CLI-0517;Île-de-France;Web;Informatique;Clavier;1;0;59,00;11,55;3
+02/08/2024;CMD-100129;CLI-0581;Bretagne;Magasin;Informatique;Clavier;1;5;56,05;1,64;4
+05/11/2024;CMD-100130;CLI-0411;Nouvelle-Aquitaine;Marketplace;Informatique;"Écran 27""";2;0;558,00;103,02;4
+13/10/2024;CMD-100131;CLI-0066;Hauts-de-France;Web;Téléphonie;Coque;1;0;19,00;4,92;4
+23/04/2025;CMD-100132;CLI-0362;Nouvelle-Aquitaine;Web;Informatique;"Écran 27""";1;0;279,00;47,43;5
+29/08/2025;CMD-100133;CLI-0413;Auvergne-Rhône-Alpes;Web;Informatique;Ordinateur portable;3;0;2697,00;490,01;4
+02/05/2025;CMD-100134;CLI-0657;Auvergne-Rhône-Alpes;Marketplace;Téléphonie;Coque;3;20;45,60;7,65;3
+24/03/2025;CMD-100135;CLI-0191;Grand Est;Web;Informatique;"Écran 27""";1;5;265,05;45,34;4
+06/04/2025;CMD-100136;CLI-0578;Occitanie;Web;Informatique;Clavier;3;0;177,00;32,97;4
+19/02/2024;CMD-100137;CLI-0790;Île-de-France;Web;Maison;Cafetière;1;10;80,10;24,87;3
+01/03/2024;CMD-100138;CLI-0238;Île-de-France;Web;Informatique;Clavier;1;5;56,05;6,25;5
+20/03/2024;CMD-100139;CLI-0440;Auvergne-Rhône-Alpes;Magasin;Informatique;Clavier;2;0;118,00;21,61;4
+12/10/2024;CMD-100140;CLI-0431;Hauts-de-France;Marketplace;Informatique;Ordinateur portable;2;5;1708,10;267,77;4
+06/05/2024;CMD-100141;CLI-0153;Hauts-de-France;Marketplace;Informatique;Ordinateur portable;1;20;719,20;52,18;5
+27/03/2025;CMD-100142;CLI-0483;Grand Est;Magasin;Téléphonie;Smartphone;3;20;1557,60;185,97;3
+10/07/2024;CMD-100143;CLI-0383;Auvergne-Rhône-Alpes;Web;Informatique;Clavier;3;5;168,15;26,43;4
+21/05/2025;CMD-100144;CLI-0108;Hauts-de-France;Magasin;Informatique;Ordinateur portable;1;5;854,05;132,58;4
+28/12/2024;CMD-100145;CLI-0235;Île-de-France;Web;Loisirs;Jeu vidéo;1;20;47,20;1,10;2
+08/12/2024;CMD-100146;CLI-0351;Auvergne-Rhône-Alpes;Marketplace;Loisirs;Drone;3;5;937,65;239,72;5
+20/04/2024;CMD-100147;CLI-0289;Occitanie;Magasin;Informatique;"Écran 27""";1;0;279,00;50,79;3
+20/06/2025;CMD-100148;CLI-0530;Île-de-France;Magasin;Informatique;Clavier;2;20;94,40;12,86;3
+19/04/2025;CMD-100149;CLI-0592;Grand Est;Web;Téléphonie;Smartphone;2;10;1168,20;198,80;5
+04/11/2024;CMD-100150;CLI-0095;Île-de-France;Web;Maison;Aspirateur;1;0;249,00;75,44;3
+27/09/2024;CMD-100151;CLI-0893;Île-de-France;Magasin;Maison;Cafetière;1;10;80,10;21,52;3
+12/07/2024;CMD-100152;CLI-0644;Île-de-France;Web;Informatique;"Écran 27""";2;10;502,20;63,76;5
+28/03/2024;CMD-100153;CLI-0202;Grand Est;Marketplace;Informatique;"Écran 27""";1;0;279,00;56,14;5
+31/12/2024;CMD-100154;CLI-0044;Nouvelle-Aquitaine;Magasin;Téléphonie;Coque;1;10;17,10;5,99;5
+29/02/2024;CMD-100155;CLI-0377;Nouvelle-Aquitaine;Marketplace;Loisirs;Jeu vidéo;1;0;59,00;18,82;3
+17/09/2024;CMD-100156;CLI-0103;Nouvelle-Aquitaine;Web;Loisirs;Jeu vidéo;2;20;94,40;22,75;3
+07/05/2025;CMD-100157;CLI-0857;Île-de-France;Web;Informatique;"Écran 27""";3;5;795,15;125,97;4
+27/01/2024;CMD-100158;CLI-0160;Hauts-de-France;Web;Téléphonie;Smartphone;2;0;1298,00;281,31;4
+05/11/2024;CMD-100159;CLI-0432;Île-de-France;Web;Informatique;"Écran 27""";2;0;558,00;99,21;4
+17/02/2025;CMD-100160;CLI-0495;Hauts-de-France;Web;Maison;Aspirateur;3;0;747,00;258,67;4
+31/03/2024;CMD-100161;CLI-0145;Île-de-France;Marketplace;Loisirs;Drone;1;5;312,55;76,05;4
+28/02/2025;CMD-100162;CLI-0299;Occitanie;Magasin;Téléphonie;Coque;2;20;30,40;1,23;4
+11/05/2025;CMD-100163;CLI-0170;Auvergne-Rhône-Alpes;Magasin;Informatique;"Écran 27""";2;5;530,10;69,37;3
+16/04/2024;CMD-100164;CLI-0559;Occitanie;Magasin;Téléphonie;Coque;3;10;51,30;12,09;4
+06/07/2024;CMD-100165;CLI-0644;Occitanie;Marketplace;Téléphonie;Coque;2;5;36,10;5,21;5
+02/08/2025;CMD-100166;CLI-0054;Auvergne-Rhône-Alpes;Web;Maison;Cafetière;1;20;71,20;15,38;3
+11/09/2025;CMD-100167;CLI-0702;Hauts-de-France;Web;Informatique;Ordinateur portable;1;5;854,05;135,16;3
+29/12/2024;CMD-100168;CLI-0352;Île-de-France;Web;Loisirs;Drone;1;0;329,00;98,97;4
+05/08/2024;CMD-100169;CLI-0117;Île-de-France;Marketplace;Informatique;"Écran 27""";2;0;558,00;101,18;4
+18/01/2025;CMD-100170;CLI-0496;Auvergne-Rhône-Alpes;Magasin;Informatique;Ordinateur portable;3;5;2562,15;394,82;5
+03/07/2024;CMD-100171;CLI-0795;Nouvelle-Aquitaine;Web;Informatique;Clavier;1;0;59,00;17,37;5
+28/10/2024;CMD-100172;CLI-0269;Auvergne-Rhône-Alpes;Marketplace;Informatique;Clavier;3;0;177,00;30,84;4
+04/05/2025;CMD-100173;CLI-0109;Auvergne-Rhône-Alpes;Web;Informatique;Ordinateur portable;1;0;899,00;161,47;3
+10/02/2024;CMD-100174;CLI-0815;Bretagne;Magasin;Maison;Cafetière;2;0;178,00;65,78;4
+21/02/2024;CMD-100175;CLI-0008;Bretagne;Marketplace;Informatique;Ordinateur portable;1;0;899,00;158,09;4
+21/06/2024;CMD-100176;CLI-0233;Grand Est;Web;Informatique;Clavier;1;0;59,00;15,16;3
+24/02/2025;CMD-100177;CLI-0132;Bretagne;Magasin;Informatique;Clavier;1;0;59,00;6,06;5
+03/11/2024;CMD-100178;CLI-0739;Hauts-de-France;Magasin;Informatique;"Écran 27""";3;20;669,60;54,77;4
+03/10/2024;CMD-100179;CLI-0364;Nouvelle-Aquitaine;Marketplace;Loisirs;Jeu vidéo;2;5;112,10;21,98;4
+10/04/2024;CMD-100180;CLI-0807;Bretagne;Magasin;Loisirs;Jeu vidéo;2;5;112,10;27,84;4
+23/12/2024;CMD-100181;CLI-0691;Hauts-de-France;Magasin;Informatique;Clavier;3;5;168,15;24,41;4
+05/12/2024;CMD-100182;CLI-0265;Nouvelle-Aquitaine;Magasin;Maison;Lampe;2;0;78,00;31,06;3
+23/10/2024;CMD-100183;CLI-0096;Île-de-France;Web;Maison;Aspirateur;2;5;473,10;159,63;3
+16/06/2024;CMD-100184;CLI-0044;Grand Est;Magasin;Loisirs;Jeu vidéo;3;20;141,60;30,93;4
+20/08/2025;CMD-100185;CLI-0105;Île-de-France;Web;Informatique;"Écran 27""";2;0;558,00;94,91;5
+07/12/2024;CMD-100186;CLI-0028;Grand Est;Web;Informatique;"Écran 27""";1;0;279,00;47,34;4
+21/11/2024;CMD-100187;CLI-0058;Auvergne-Rhône-Alpes;Web;Téléphonie;Smartphone;1;5;616,55;116,23;4
+15/06/2025;CMD-100188;CLI-0037;Île-de-France;Magasin;Loisirs;Jeu vidéo;2;20;94,40;20,94;4
+01/10/2024;CMD-100189;CLI-0496;Auvergne-Rhône-Alpes;Marketplace;Maison;Aspirateur;1;5;236,55;80,06;3
+27/06/2024;CMD-100190;CLI-0406;Hauts-de-France;Web;Téléphonie;Écouteurs;1;10;116,10;19,11;4
+14/01/2024;CMD-100191;CLI-0157;Bretagne;Web;Informatique;"Écran 27""";3;0;837,00;155,47;4
+15/08/2024;CMD-100192;CLI-0867;Grand Est;Marketplace;Maison;Aspirateur;1;5;236,55;67,64;3
+01/06/2025;CMD-100193;CLI-0765;Île-de-France;Magasin;Loisirs;Jeu vidéo;1;5;56,05;5,34;5
+07/01/2024;CMD-100194;CLI-0332;Île-de-France;Web;Téléphonie;Écouteurs;1;5;122,55;25,05;3
+05/12/2024;CMD-100195;CLI-0526;Auvergne-Rhône-Alpes;Magasin;Maison;Cafetière;1;0;89,00;36,00;3
+08/07/2024;CMD-100196;CLI-0475;Occitanie;Magasin;Téléphonie;Coque;1;0;19,00;8,14;4
+12/12/2024;CMD-100197;CLI-0417;Auvergne-Rhône-Alpes;Magasin;Téléphonie;Smartphone;1;10;584,10;101,45;4
+16/07/2024;CMD-100198;CLI-0212;Île-de-France;Web;Téléphonie;Coque;1;0;19,00;7,15;5
+08/03/2024;CMD-100199;CLI-0394;Île-de-France;Marketplace;Maison;Lampe;2;5;74,10;26,19;4
+20/02/2025;CMD-100200;CLI-0354;Île-de-France;Web;Loisirs;Drone;3;20;789,60;137,25;3
+24/02/2025;CMD-100201;CLI-0394;Auvergne-Rhône-Alpes;Web;Téléphonie;Coque;2;20;30,40;5,14;4
+25/06/2024;CMD-100202;CLI-0396;Île-de-France;Web;Informatique;"Écran 27""";2;0;558,00;101,11;5
+16/02/2025;CMD-100203;CLI-0819;Hauts-de-France;Magasin;Téléphonie;Écouteurs;2;10;232,20;37,08;4
+31/03/2025;CMD-100204;CLI-0730;Grand Est;Web;Informatique;Ordinateur portable;1;5;854,05;129,92;3
+10/08/2025;CMD-100205;CLI-0818;Île-de-France;Web;Informatique;Clavier;1;0;59,00;-2,38;5
+26/04/2025;CMD-100206;CLI-0847;Île-de-France;Web;Informatique;Clavier;1;10;53,10;6,39;4
+08/03/2024;CMD-100207;CLI-0340;Bretagne;Magasin;Téléphonie;Coque;2;0;38,00;11,70;3
+19/01/2025;CMD-100208;CLI-0857;Nouvelle-Aquitaine;Web;Informatique;Clavier;1;10;53,10;0,98;5
+27/07/2025;CMD-100209;CLI-0636;Hauts-de-France;Web;Informatique;"Écran 27""";1;5;265,05;40,86;3
+24/05/2024;CMD-100210;CLI-0868;Nouvelle-Aquitaine;Magasin;Maison;Aspirateur;1;20;199,20;51,07;3
+28/05/2024;CMD-100211;CLI-0451;Île-de-France;Web;Informatique;"Écran 27""";2;0;558,00;99,60;3
+24/01/2024;CMD-100212;CLI-0788;Auvergne-Rhône-Alpes;Web;Téléphonie;Smartphone;1;20;519,20;68,20;3
+13/12/2024;CMD-100213;CLI-0435;Île-de-France;Magasin;Loisirs;Drone;1;10;296,10;66,83;5
+08/12/2024;CMD-100214;CLI-0028;Île-de-France;Magasin;Téléphonie;Smartphone;3;20;1557,60;182,75;4
+13/07/2024;CMD-100215;CLI-0287;Occitanie;Magasin;Informatique;Clavier;2;5;112,10;22,52;3
+03/06/2025;CMD-100216;CLI-0520;Auvergne-Rhône-Alpes;Web;Informatique;Clavier;2;10;106,20;22,79;4
+14/10/2024;CMD-100217;CLI-0132;Hauts-de-France;Web;Téléphonie;Coque;2;5;36,10;0,38;3
+20/05/2025;CMD-100218;CLI-0624;Nouvelle-Aquitaine;Web;Téléphonie;Écouteurs;1;5;122,55;23,20;2
+25/08/2025;CMD-100219;CLI-0295;Grand Est;Web;Informatique;"Écran 27""";2;0;558,00;103,61;4
+17/07/2024;CMD-100220;CLI-0249;Occitanie;Web;Téléphonie;Coque;1;0;19,00;0,23;5
+01/02/2025;CMD-100221;CLI-0755;Occitanie;Web;Téléphonie;Smartphone;2;10;1168,20;197,93;3
+01/07/2024;CMD-100222;CLI-0218;Grand Est;Magasin;Informatique;Ordinateur portable;1;0;899,00;167,00;4
+24/01/2025;CMD-100223;CLI-0450;Hauts-de-France;Web;Téléphonie;Coque;1;20;15,20;0,80;3
+18/11/2024;CMD-100224;CLI-0625;Île-de-France;Web;Informatique;Clavier;2;10;106,20;13,21;2
+20/07/2025;CMD-100225;CLI-0112;Nouvelle-Aquitaine;Magasin;Informatique;"Écran 27""";2;20;446,40;36,99;3
+12/09/2025;CMD-100226;CLI-0027;Auvergne-Rhône-Alpes;Magasin;Maison;Aspirateur;1;5;236,55;80,97;5
+23/04/2024;CMD-100227;CLI-0198;Nouvelle-Aquitaine;Magasin;Informatique;Clavier;1;0;59,00;8,07;4
+29/11/2024;CMD-100228;CLI-0135;Auvergne-Rhône-Alpes;Magasin;Téléphonie;Écouteurs;1;10;116,10;28,52;3
+06/07/2024;CMD-100229;CLI-0275;Auvergne-Rhône-Alpes;Magasin;Téléphonie;Coque;3;20;45,60;12,86;3
+04/04/2024;CMD-100230;CLI-0169;Nouvelle-Aquitaine;Magasin;Informatique;"Écran 27""";3;0;837,00;150,13;3
+12/07/2025;CMD-100231;CLI-0127;Auvergne-Rhône-Alpes;Marketplace;Loisirs;Drone;3;0;987,00;274,75;5
+26/02/2024;CMD-100232;CLI-0046;Bretagne;Web;Informatique;Clavier;3;5;168,15;24,60;4
+13/04/2025;CMD-100233;CLI-0518;Grand Est;Web;Informatique;Clavier;2;20;94,40;12,94;3
+13/06/2025;CMD-100234;CLI-0623;Île-de-France;Magasin;Loisirs;Console;1;0;449,00;115,49;4
+13/07/2025;CMD-100235;CLI-0275;Île-de-France;Web;Maison;Aspirateur;2;0;498,00;167,81;3
+20/11/2024;CMD-100236;CLI-0327;Nouvelle-Aquitaine;Magasin;Maison;Lampe;1;10;35,10;0,37;4
+16/07/2024;CMD-100237;CLI-0373;Île-de-France;Marketplace;Informatique;Clavier;3;0;177,00;29,15;3
+14/01/2024;CMD-100238;CLI-0053;Grand Est;Magasin;Informatique;Ordinateur portable;3;0;2697,00;492,55;4
+29/07/2024;CMD-100239;CLI-0847;Île-de-France;Web;Téléphonie;Écouteurs;1;0;129,00;34,53;4
+18/02/2025;CMD-100240;CLI-0732;Occitanie;Magasin;Informatique;"Écran 27""";1;0;279,00;62,98;3
+06/04/2025;CMD-100241;CLI-0135;Occitanie;Web;Informatique;"Écran 27""";2;0;558,00;99,52;4
+12/04/2025;CMD-100242;CLI-0862;Grand Est;Web;Maison;Lampe;3;5;111,15;34,45;4
+25/08/2024;CMD-100243;CLI-0875;Hauts-de-France;Web;Informatique;"Écran 27""";3;0;837,00;156,52;3
+13/06/2024;CMD-100244;CLI-0771;Occitanie;Marketplace;Informatique;Clavier;2;5;112,10;24,59;3
+04/01/2024;CMD-100245;CLI-0305;Île-de-France;Web;Informatique;"Écran 27""";1;0;279,00;43,40;5
+16/08/2025;CMD-100246;CLI-0808;Île-de-France;Web;Téléphonie;Coque;2;0;38,00;10,72;3
+20/01/2024;CMD-100247;CLI-0733;Grand Est;Magasin;Téléphonie;Écouteurs;2;0;258,00;60,00;3
+17/03/2024;CMD-100248;CLI-0325;Île-de-France;Web;Loisirs;Console;2;0;898,00;252,21;5
+12/02/2024;CMD-100249;CLI-0563;Île-de-France;Web;Informatique;Ordinateur portable;1;5;854,05;138,14;4
+04/06/2025;CMD-100250;CLI-0438;Auvergne-Rhône-Alpes;Magasin;Informatique;"Écran 27""";1;10;251,10;38,60;3
+05/04/2024;CMD-100251;CLI-0328;Occitanie;Web;Téléphonie;Smartphone;2;10;1168,20;198,65;2
+12/04/2025;CMD-100252;CLI-0443;Île-de-France;Magasin;Téléphonie;Coque;1;0;19,00;7,06;4
+17/08/2024;CMD-100253;CLI-0412;Bretagne;Web;Téléphonie;Écouteurs;3;20;309,60;47,74;2
+10/01/2025;CMD-100254;CLI-0623;Auvergne-Rhône-Alpes;Magasin;Loisirs;Console;2;5;853,10;216,37;5
+26/03/2025;CMD-100255;CLI-0530;Occitanie;Web;Téléphonie;Coque;3;0;57,00;6,40;4
+01/07/2025;CMD-100256;CLI-0210;Occitanie;Magasin;Téléphonie;Smartphone;2;0;1298,00;290,87;4
+02/05/2024;CMD-100257;CLI-0372;Île-de-France;Marketplace;Loisirs;Console;1;5;426,55;106,71;4
+24/06/2024;CMD-100258;CLI-0404;Bretagne;Web;Informatique;Clavier;1;0;59,00;10,92;5
+13/07/2024;CMD-100259;CLI-0890;Île-de-France;Magasin;Loisirs;Jeu vidéo;3;10;159,30;29,73;4
+16/09/2025;CMD-100260;CLI-0736;Bretagne;Web;Téléphonie;Coque;1;5;18,05;11,77;3
+01/05/2025;CMD-100261;CLI-0059;Île-de-France;Marketplace;Téléphonie;Smartphone;1;10;584,10;96,67;5
+31/08/2025;CMD-100262;CLI-0476;Auvergne-Rhône-Alpes;Marketplace;Loisirs;Jeu vidéo;1;20;47,20;11,37;3
+08/11/2024;CMD-100263;CLI-0653;Nouvelle-Aquitaine;Web;Téléphonie;Écouteurs;2;0;258,00;55,95;3
+09/11/2024;CMD-100264;CLI-0542;Île-de-France;Web;Téléphonie;Smartphone;2;0;1298,00;288,48;5
+28/09/2024;CMD-100265;CLI-0843;Occitanie;Web;Informatique;Clavier;1;10;53,10;5,14;3
+31/03/2024;CMD-100266;CLI-0521;Hauts-de-France;Web;Maison;Cafetière;1;20;71,20;15,11;2
+19/04/2024;CMD-100267;CLI-0628;Nouvelle-Aquitaine;Web;Téléphonie;Écouteurs;1;10;116,10;17,03;4
+23/05/2024;CMD-100268;CLI-0742;Île-de-France;Web;Informatique;Ordinateur portable;2;0;1798,00;327,37;4
+23/03/2024;CMD-100269;CLI-0291;Île-de-France;Web;Maison;Cafetière;2;0;178,00;60,23;5
+12/01/2024;CMD-100270;CLI-0525;Île-de-France;Web;Téléphonie;Coque;2;10;34,20;3,84;3
+28/02/2025;CMD-100271;CLI-0468;Occitanie;Marketplace;Téléphonie;Écouteurs;2;0;258,00;45,80;3
+04/07/2024;CMD-100272;CLI-0194;Île-de-France;Web;Informatique;Ordinateur portable;3;10;2427,30;314,64;4
+12/11/2024;CMD-100273;CLI-0200;Auvergne-Rhône-Alpes;Magasin;Téléphonie;Smartphone;1;0;649,00;141,44;5
+03/08/2025;CMD-100274;CLI-0354;Bretagne;Magasin;Informatique;Clavier;1;0;59,00;14,44;4
+10/03/2025;CMD-100275;CLI-0804;Nouvelle-Aquitaine;Magasin;Informatique;Ordinateur portable;1;20;719,20;59,33;4
+24/04/2025;CMD-100276;CLI-0680;Occitanie;Web;Téléphonie;Coque;1;20;15,20;2,52;3
+29/12/2024;CMD-100277;CLI-0372;Nouvelle-Aquitaine;Magasin;Informatique;Clavier;1;10;53,10;4,37;5
+18/09/2024;CMD-100278;CLI-0832;Grand Est;Magasin;Informatique;Ordinateur portable;1;10;809,10;111,36;5
+05/05/2024;CMD-100279;CLI-0020;Bretagne;Web;Maison;Lampe;1;0;39,00;9,68;4
+25/06/2025;CMD-100280;CLI-0358;Auvergne-Rhône-Alpes;Magasin;Informatique;Clavier;1;10;53,10;0,77;3
+16/01/2024;CMD-100281;CLI-0601;Nouvelle-Aquitaine;Web;Loisirs;Console;3;10;1212,30;274,96;5
+23/03/2025;CMD-100282;CLI-0373;Hauts-de-France;Web;Loisirs;Console;2;0;898,00;254,51;5
+07/04/2025;CMD-100283;CLI-0241;Île-de-France;Magasin;Téléphonie;Smartphone;3;0;1947,00;429,86;5
+18/03/2024;CMD-100284;CLI-0208;Île-de-France;Marketplace;Loisirs;Jeu vidéo;2;0;118,00;26,12;4
+21/12/2024;CMD-100285;CLI-0832;Occitanie;Magasin;Loisirs;Console;1;20;359,20;54,32;3
+03/08/2025;CMD-100286;CLI-0895;Auvergne-Rhône-Alpes;Marketplace;Informatique;Ordinateur portable;3;0;2697,00;490,47;4
+20/02/2024;CMD-100287;CLI-0352;Île-de-France;Web;Maison;Lampe;1;5;37,05;12,62;3
+05/09/2024;CMD-100288;CLI-0619;Île-de-France;Magasin;Informatique;"Écran 27""";3;0;837,00;145,89;5
+01/09/2025;CMD-100289;CLI-0744;Bretagne;Magasin;Maison;Aspirateur;1;10;224,10;61,80;4
+07/07/2024;CMD-100290;CLI-0658;Auvergne-Rhône-Alpes;Web;Téléphonie;Coque;1;10;17,10;3,89;5
+23/03/2024;CMD-100291;CLI-0240;Auvergne-Rhône-Alpes;Web;Informatique;Clavier;2;20;94,40;19,95;3
+01/11/2024;CMD-100292;CLI-0425;Nouvelle-Aquitaine;Web;Informatique;Clavier;1;5;56,05;8,36;5
+14/11/2024;CMD-100293;CLI-0361;Grand Est;Web;Loisirs;Jeu vidéo;1;0;59,00;36,65;5
+15/07/2024;CMD-100294;CLI-0619;Auvergne-Rhône-Alpes;Magasin;Informatique;Clavier;1;5;56,05;6,01;4
+22/11/2024;CMD-100295;CLI-0634;Auvergne-Rhône-Alpes;Web;Informatique;Ordinateur portable;1;20;719,20;64,22;4
+01/08/2025;CMD-100296;CLI-0622;Nouvelle-Aquitaine;Web;Informatique;Clavier;1;5;56,05;4,56;4
+08/11/2024;CMD-100297;CLI-0028;Auvergne-Rhône-Alpes;Web;Téléphonie;Smartphone;1;0;649,00;140,44;5
+13/12/2024;CMD-100298;CLI-0275;Auvergne-Rhône-Alpes;Web;Maison;Aspirateur;3;10;672,30;206,30;3
+02/04/2024;CMD-100299;CLI-0780;Île-de-France;Magasin;Maison;Lampe;3;5;111,15;42,73;5
+31/01/2025;CMD-100300;CLI-0173;Nouvelle-Aquitaine;Web;Téléphonie;Coque;1;0;19,00;-0,63;5
+07/03/2024;CMD-100301;CLI-0745;Île-de-France;Web;Informatique;Ordinateur portable;2;0;1798,00;331,19;5
+28/03/2025;CMD-100302;CLI-0604;Auvergne-Rhône-Alpes;Magasin;Informatique;Ordinateur portable;2;0;1798,00;323,03;4
+28/03/2024;CMD-100303;CLI-0021;Île-de-France;Marketplace;Téléphonie;Coque;1;0;19,00;3,30;4
+13/04/2025;CMD-100304;CLI-0473;Hauts-de-France;Magasin;Maison;Lampe;1;5;37,05;3,32;4
+19/09/2024;CMD-100305;CLI-0811;Occitanie;Web;Maison;Lampe;1;10;35,10;14,06;5
+27/08/2025;CMD-100306;CLI-0681;Auvergne-Rhône-Alpes;Web;Téléphonie;Coque;1;0;19,00;2,12;4
+23/04/2024;CMD-100307;CLI-0365;Nouvelle-Aquitaine;Magasin;Téléphonie;Smartphone;1;20;519,20;56,12;3
+07/08/2025;CMD-100308;CLI-0381;Occitanie;Magasin;Téléphonie;Écouteurs;1;0;129,00;20,31;4
+07/04/2025;CMD-100309;CLI-0347;Bretagne;Magasin;Téléphonie;Écouteurs;1;0;129,00;23,03;5
+19/10/2024;CMD-100310;CLI-0392;Auvergne-Rhône-Alpes;Magasin;Téléphonie;Smartphone;2;0;1298,00;282,77;5
+01/02/2025;CMD-100311;CLI-0681;Bretagne;Magasin;Maison;Cafetière;2;10;160,20;48,32;4
+06/05/2025;CMD-100312;CLI-0751;Bretagne;Magasin;Téléphonie;Coque;2;5;36,10;5,28;3
+14/06/2025;CMD-100313;CLI-0613;Nouvelle-Aquitaine;Magasin;Loisirs;Drone;3;10;888,30;203,55;4
+09/03/2024;CMD-100314;CLI-0745;Bretagne;Marketplace;Téléphonie;Smartphone;1;0;649,00;137,28;5
+03/06/2025;CMD-100315;CLI-0758;Nouvelle-Aquitaine;Marketplace;Informatique;Ordinateur portable;1;0;899,00;170,70;5
+13/05/2025;CMD-100316;CLI-0211;Bretagne;Magasin;Informatique;"Écran 27""";2;5;530,10;82,69;4
+16/10/2024;CMD-100317;CLI-0581;Hauts-de-France;Magasin;Téléphonie;Écouteurs;3;5;367,65;70,21;4
+28/07/2024;CMD-100318;CLI-0155;Hauts-de-France;Web;Téléphonie;Écouteurs;3;0;387,00;80,15;4
+28/11/2024;CMD-100319;CLI-0020;Auvergne-Rhône-Alpes;Magasin;Téléphonie;Coque;3;10;51,30;3,04;5
+14/01/2025;CMD-100320;CLI-0876;Île-de-France;Web;Maison;Lampe;1;0;39,00;20,21;4
+07/08/2025;CMD-100321;CLI-0496;Grand Est;Magasin;Informatique;"Écran 27""";2;10;502,20;66,66;3
+16/04/2025;CMD-100322;CLI-0453;Auvergne-Rhône-Alpes;Magasin;Maison;Aspirateur;2;5;473,10;155,05;5
+12/01/2025;CMD-100323;CLI-0721;Auvergne-Rhône-Alpes;Web;Maison;Aspirateur;1;0;249,00;89,45;5
+30/06/2024;CMD-100324;CLI-0404;Île-de-France;Magasin;Téléphonie;Écouteurs;2;5;245,10;46,22;5
+15/03/2024;CMD-100325;CLI-0496;Hauts-de-France;Magasin;Téléphonie;Écouteurs;2;10;232,20;38,57;4
+22/08/2024;CMD-100326;CLI-0638;Île-de-France;Marketplace;Informatique;Ordinateur portable;2;0;1798,00;325,98;4
+23/09/2024;CMD-100327;CLI-0474;Île-de-France;Marketplace;Téléphonie;Coque;2;10;34,20;1,44;4
+12/02/2025;CMD-100328;CLI-0700;Île-de-France;Magasin;Maison;Lampe;1;20;31,20;4,81;4
+20/06/2024;CMD-100329;CLI-0216;Bretagne;Marketplace;Loisirs;Console;2;10;808,20;189,03;3
+28/11/2024;CMD-100330;CLI-0864;Auvergne-Rhône-Alpes;Magasin;Téléphonie;Coque;2;0;38,00;4,33;4
+04/06/2024;CMD-100331;CLI-0095;Nouvelle-Aquitaine;Web;Informatique;Clavier;2;0;118,00;23,88;5
+17/06/2024;CMD-100332;CLI-0750;Grand Est;Magasin;Maison;Cafetière;1;0;89,00;33,87;4
+14/09/2025;CMD-100333;CLI-0178;Bretagne;Magasin;Maison;Cafetière;1;20;71,20;29,03;5
+12/04/2025;CMD-100334;CLI-0101;Île-de-France;Web;Informatique;Ordinateur portable;3;10;2427,30;315,07;3
+10/06/2025;CMD-100335;CLI-0308;Occitanie;Magasin;Maison;Lampe;3;20;93,60;20,47;2
+26/05/2025;CMD-100336;CLI-0548;Nouvelle-Aquitaine;Magasin;Informatique;Clavier;2;0;118,00;14,11;4
+23/08/2025;CMD-100337;CLI-0610;Hauts-de-France;Web;Informatique;Clavier;1;0;59,00;-1,32;2
+06/03/2024;CMD-100338;CLI-0223;Auvergne-Rhône-Alpes;Web;Informatique;Clavier;3;0;177,00;30,37;5
+05/07/2025;CMD-100339;CLI-0714;Nouvelle-Aquitaine;Marketplace;Informatique;Clavier;2;0;118,00;18,61;4
+11/02/2024;CMD-100340;CLI-0472;Île-de-France;Web;Loisirs;Jeu vidéo;3;0;177,00;56,48;4
+24/10/2024;CMD-100341;CLI-0326;Occitanie;Web;Téléphonie;Écouteurs;2;0;258,00;66,38;3
+07/01/2025;CMD-100342;CLI-0394;Occitanie;Magasin;Informatique;"Écran 27""";1;0;279,00;51,88;4
+01/04/2024;CMD-100343;CLI-0411;Île-de-France;Magasin;Téléphonie;Écouteurs;3;0;387,00;81,44;4
+30/04/2024;CMD-100344;CLI-0370;Occitanie;Web;Téléphonie;Écouteurs;1;0;129,00;30,87;3
+31/05/2025;CMD-100345;CLI-0377;Île-de-France;Magasin;Informatique;"Écran 27""";2;10;502,20;66,02;4
+18/07/2024;CMD-100346;CLI-0656;Nouvelle-Aquitaine;Web;Informatique;Ordinateur portable;1;0;899,00;166,86;4
+13/07/2024;CMD-100347;CLI-0617;Île-de-France;Magasin;Maison;Lampe;2;0;78,00;30,58;4
+31/03/2024;CMD-100348;CLI-0611;Auvergne-Rhône-Alpes;Web;Informatique;Ordinateur portable;1;10;809,10;106,62;4
+26/07/2025;CMD-100349;CLI-0778;Occitanie;Magasin;Maison;Aspirateur;1;20;199,20;50,03;4
+30/07/2025;CMD-100350;CLI-0431;Île-de-France;Web;Informatique;"Écran 27""";1;0;279,00;46,71;4
+09/01/2025;CMD-100351;CLI-0890;Île-de-France;Web;Maison;Aspirateur;1;5;236,55;81,76;4
+13/04/2024;CMD-100352;CLI-0223;Auvergne-Rhône-Alpes;Magasin;Maison;Cafetière;2;0;178,00;65,84;5
+07/04/2024;CMD-100353;CLI-0108;Auvergne-Rhône-Alpes;Web;Informatique;Clavier;3;5;168,15;31,39;4
+27/06/2024;CMD-100354;CLI-0383;Île-de-France;Web;Informatique;Ordinateur portable;2;20;1438,40;118,79;3
+27/12/2024;CMD-100355;CLI-0591;Auvergne-Rhône-Alpes;Magasin;Loisirs;Drone;1;5;312,55;72,98;4
+13/03/2024;CMD-100356;CLI-0315;Bretagne;Web;Téléphonie;Smartphone;1;0;649,00;142,86;5
+04/12/2024;CMD-100357;CLI-0605;Hauts-de-France;Magasin;Téléphonie;Smartphone;2;0;1298,00;286,59;3
+19/03/2025;CMD-100358;CLI-0779;Île-de-France;Web;Informatique;"Écran 27""";2;0;558,00;99,31;4
+03/02/2024;CMD-100359;CLI-0742;Occitanie;Web;Informatique;Ordinateur portable;1;0;899,00;161,23;4
+25/09/2024;CMD-100360;CLI-0441;Île-de-France;Web;Téléphonie;Smartphone;2;5;1233,10;242,75;5
+05/01/2025;CMD-100361;CLI-0495;Île-de-France;Web;Loisirs;Jeu vidéo;1;0;59,00;23,96;5
+19/11/2024;CMD-100362;CLI-0035;Île-de-France;Web;Informatique;"Écran 27""";1;5;265,05;35,45;4
+02/03/2025;CMD-100363;CLI-0644;Île-de-France;Web;Maison;Cafetière;2;0;178,00;56,44;4
+03/09/2024;CMD-100364;CLI-0036;Hauts-de-France;Web;Maison;Aspirateur;2;20;398,40;89,67;4
+02/06/2025;CMD-100365;CLI-0832;Bretagne;Web;Informatique;Clavier;2;5;112,10;17,34;4
+08/09/2025;CMD-100366;CLI-0478;Auvergne-Rhône-Alpes;Web;Informatique;Ordinateur portable;1;0;899,00;160,85;5
+11/11/2024;CMD-100367;CLI-0302;Hauts-de-France;Magasin;Informatique;Clavier;2;10;106,20;14,31;3
+01/07/2025;CMD-100368;CLI-0652;Occitanie;Web;Téléphonie;Coque;1;10;17,10;7,19;3
+11/05/2025;CMD-100369;CLI-0491;Hauts-de-France;Web;Téléphonie;Smartphone;2;10;1168,20;196,18;5
+16/06/2025;CMD-100370;CLI-0214;Île-de-France;Web;Téléphonie;Smartphone;1;20;519,20;60,78;4
+01/12/2024;CMD-100371;CLI-0092;Île-de-France;Magasin;Informatique;Clavier;2;0;118,00;20,59;4
+28/01/2024;CMD-100372;CLI-0886;Occitanie;Web;Maison;Aspirateur;2;20;398,40;93,56;3
+04/11/2024;CMD-100373;CLI-0677;Nouvelle-Aquitaine;Web;Téléphonie;Écouteurs;2;5;245,10;42,47;4
+23/04/2024;CMD-100374;CLI-0214;Nouvelle-Aquitaine;Web;Téléphonie;Smartphone;3;0;1947,00;419,33;4
+10/07/2025;CMD-100375;CLI-0208;Nouvelle-Aquitaine;Magasin;Téléphonie;Écouteurs;2;0;258,00;51,82;3
+22/05/2024;CMD-100376;CLI-0769;Auvergne-Rhône-Alpes;Magasin;Informatique;Clavier;3;0;177,00;35,39;2
+06/02/2025;CMD-100377;CLI-0540;Île-de-France;Web;Maison;Cafetière;1;5;84,55;26,77;4
+23/12/2024;CMD-100378;CLI-0192;Hauts-de-France;Magasin;Téléphonie;Coque;1;20;15,20;3,83;4
+17/09/2024;CMD-100379;CLI-0792;Grand Est;Marketplace;Téléphonie;Smartphone;3;20;1557,60;195,94;3
+25/06/2024;CMD-100380;CLI-0282;Grand Est;Magasin;Informatique;"Écran 27""";3;0;837,00;148,16;4
+05/01/2024;CMD-100381;CLI-0360;Nouvelle-Aquitaine;Magasin;Téléphonie;Smartphone;1;0;649,00;143,07;4
+21/08/2024;CMD-100382;CLI-0861;Île-de-France;Marketplace;Téléphonie;Smartphone;2;5;1233,10;234,95;5
+23/11/2024;CMD-100383;CLI-0511;Auvergne-Rhône-Alpes;Web;Informatique;"Écran 27""";1;5;265,05;41,99;5
+13/07/2025;CMD-100384;CLI-0625;Île-de-France;Web;Loisirs;Drone;1;5;312,55;80,78;5
+04/03/2024;CMD-100385;CLI-0537;Hauts-de-France;Magasin;Maison;Aspirateur;2;0;498,00;171,38;3
+28/02/2024;CMD-100386;CLI-0135;Île-de-France;Magasin;Informatique;Ordinateur portable;1;0;899,00;159,54;4
+05/06/2025;CMD-100387;CLI-0861;Île-de-France;Web;Maison;Aspirateur;3;0;747,00;255,47;4
+02/02/2024;CMD-100388;CLI-0536;Île-de-France;Web;Téléphonie;Coque;3;5;54,15;8,72;4
+01/08/2025;CMD-100389;CLI-0583;Occitanie;Marketplace;Loisirs;Jeu vidéo;1;5;56,05;13,82;4
+07/03/2025;CMD-100390;CLI-0274;Grand Est;Magasin;Informatique;"Écran 27""";1;20;223,20;18,26;5
+03/03/2024;CMD-100391;CLI-0571;Île-de-France;Web;Informatique;Ordinateur portable;3;20;2157,60;175,84;3
+12/06/2025;CMD-100392;CLI-0699;Île-de-France;Magasin;Téléphonie;Smartphone;2;20;1038,40;131,59;4
+16/05/2025;CMD-100393;CLI-0354;Île-de-France;Web;Informatique;Ordinateur portable;1;0;899,00;159,96;5
+30/05/2024;CMD-100394;CLI-0170;Grand Est;Magasin;Maison;Lampe;1;0;39,00;17,71;5
+05/09/2025;CMD-100395;CLI-0366;Hauts-de-France;Web;Téléphonie;Coque;1;20;15,20;-5,12;3
+17/05/2025;CMD-100396;CLI-0558;Auvergne-Rhône-Alpes;Web;Informatique;Ordinateur portable;2;0;1798,00;322,56;5
+28/12/2024;CMD-100397;CLI-0780;Hauts-de-France;Web;Téléphonie;Coque;1;0;19,00;10,07;4
+02/05/2025;CMD-100398;CLI-0396;Auvergne-Rhône-Alpes;Magasin;Loisirs;Console;1;10;404,10;99,96;4
+28/01/2025;CMD-100399;CLI-0549;Île-de-France;Web;Maison;Lampe;1;20;31,20;12,58;4
+06/02/2025;CMD-100400;CLI-0196;Île-de-France;Web;Téléphonie;Écouteurs;3;20;309,60;40,48;4
+02/05/2025;CMD-100401;CLI-0688;Hauts-de-France;Magasin;Informatique;Ordinateur portable;1;0;899,00;165,77;5
+01/06/2025;CMD-100402;CLI-0142;Île-de-France;Magasin;Informatique;"Écran 27""";1;5;265,05;33,45;3
+01/12/2024;CMD-100403;CLI-0335;Nouvelle-Aquitaine;Magasin;Loisirs;Drone;1;10;296,10;67,95;2
+17/11/2024;CMD-100404;CLI-0338;Nouvelle-Aquitaine;Magasin;Maison;Cafetière;1;20;71,20;22,12;3
+28/08/2025;CMD-100405;CLI-0288;Grand Est;Magasin;Téléphonie;Coque;2;5;36,10;14,13;4
+20/06/2025;CMD-100406;CLI-0051;Île-de-France;Web;Loisirs;Drone;2;20;526,40;96,93;4
+05/06/2025;CMD-100407;CLI-0562;Occitanie;Magasin;Informatique;Clavier;2;0;118,00;20,22;3
+16/10/2024;CMD-100408;CLI-0673;Île-de-France;Marketplace;Maison;Cafetière;2;20;142,40;37,10;4
+05/05/2025;CMD-100409;CLI-0163;Île-de-France;Web;Informatique;Ordinateur portable;3;20;2157,60;170,99;4
+29/08/2024;CMD-100410;CLI-0418;Bretagne;Magasin;Informatique;Ordinateur portable;3;0;2697,00;477,63;5
+05/03/2025;CMD-100411;CLI-0027;Île-de-France;Magasin;Téléphonie;Smartphone;1;5;616,55;126,28;5
+05/06/2024;CMD-100412;CLI-0029;Auvergne-Rhône-Alpes;Magasin;Téléphonie;Coque;2;10;34,20;4,86;4
+15/06/2024;CMD-100413;CLI-0760;Nouvelle-Aquitaine;Web;Loisirs;Console;3;0;1347,00;378,91;4
+08/02/2024;CMD-100414;CLI-0893;Grand Est;Web;Informatique;"Écran 27""";1;0;279,00;59,01;4
+28/03/2024;CMD-100415;CLI-0744;Île-de-France;Web;Maison;Aspirateur;2;0;498,00;178,04;4
+28/09/2024;CMD-100416;CLI-0798;Auvergne-Rhône-Alpes;Web;Maison;Cafetière;1;0;89,00;32,17;5
+26/10/2024;CMD-100417;CLI-0040;Île-de-France;Web;Maison;Lampe;1;0;39,00;7,83;5
+13/04/2024;CMD-100418;CLI-0059;Île-de-France;Web;Loisirs;Console;1;0;449,00;118,20;5
+17/09/2024;CMD-100419;CLI-0523;Grand Est;Magasin;Téléphonie;Écouteurs;1;0;129,00;34,86;5
+13/01/2025;CMD-100420;CLI-0895;Île-de-France;Magasin;Téléphonie;Écouteurs;2;0;258,00;62,93;4
+25/05/2024;CMD-100421;CLI-0709;Île-de-France;Magasin;Informatique;"Écran 27""";1;0;279,00;44,48;5
+30/07/2024;CMD-100422;CLI-0313;Île-de-France;Web;Informatique;Clavier;2;0;118,00;19,33;3
+18/08/2024;CMD-100423;CLI-0114;Hauts-de-France;Magasin;Loisirs;Console;2;5;853,10;214,94;4
+12/11/2024;CMD-100424;CLI-0325;Île-de-France;Web;Téléphonie;Coque;1;5;18,05;2,91;3
+17/08/2024;CMD-100425;CLI-0738;Occitanie;Web;Informatique;"Écran 27""";1;5;265,05;38,58;4
+06/04/2025;CMD-100426;CLI-0201;Nouvelle-Aquitaine;Web;Informatique;Clavier;1;0;59,00;9,82;4
+24/04/2024;CMD-100427;CLI-0283;Occitanie;Web;Téléphonie;Smartphone;3;0;1947,00;422,15;5
+05/03/2025;CMD-100428;CLI-0182;Auvergne-Rhône-Alpes;Magasin;Maison;Lampe;2;0;78,00;26,75;3
+27/05/2024;CMD-100429;CLI-0448;Occitanie;Web;Informatique;Ordinateur portable;1;10;809,10;113,31;4
+27/07/2025;CMD-100430;CLI-0557;Grand Est;Magasin;Maison;Aspirateur;2;20;398,40;103,50;2
+27/04/2025;CMD-100431;CLI-0774;Bretagne;Web;Téléphonie;Coque;1;0;19,00;7,03;5
+15/10/2024;CMD-100432;CLI-0085;Hauts-de-France;Web;Maison;Aspirateur;2;0;498,00;178,77;4
+01/12/2024;CMD-100433;CLI-0446;Nouvelle-Aquitaine;Web;Informatique;"Écran 27""";2;0;558,00;98,97;4
+15/06/2025;CMD-100434;CLI-0205;Nouvelle-Aquitaine;Web;Téléphonie;Smartphone;3;10;1752,30;305,96;5
+02/11/2024;CMD-100435;CLI-0331;Île-de-France;Web;Informatique;Ordinateur portable;1;0;899,00;149,21;4
+12/02/2025;CMD-100436;CLI-0423;Grand Est;Web;Téléphonie;Smartphone;3;10;1752,30;286,75;4
+12/12/2024;CMD-100437;CLI-0293;Grand Est;Magasin;Maison;Aspirateur;1;0;249,00;80,40;5
+29/11/2024;CMD-100438;CLI-0551;Île-de-France;Web;Téléphonie;Smartphone;1;20;519,20;67,49;4
+24/04/2025;CMD-100439;CLI-0023;Île-de-France;Marketplace;Informatique;"Écran 27""";2;5;530,10;74,41;5
+31/01/2025;CMD-100440;CLI-0696;Île-de-France;Web;Loisirs;Console;1;5;426,55;103,12;4
+15/02/2024;CMD-100441;CLI-0678;Bretagne;Magasin;Informatique;Clavier;3;0;177,00;40,09;4
+29/06/2024;CMD-100442;CLI-0418;Île-de-France;Magasin;Téléphonie;Écouteurs;2;10;232,20;40,44;2
+20/04/2024;CMD-100443;CLI-0509;Île-de-France;Web;Loisirs;Console;1;0;449,00;114,51;3
+05/04/2025;CMD-100444;CLI-0402;Auvergne-Rhône-Alpes;Web;Téléphonie;Écouteurs;3;10;348,30;66,34;4
+23/01/2024;CMD-100445;CLI-0221;Hauts-de-France;Marketplace;Maison;Lampe;1;0;39,00;14,16;4
+06/05/2024;CMD-100446;CLI-0006;Hauts-de-France;Marketplace;Téléphonie;Écouteurs;1;0;129,00;42,02;4
+10/03/2025;CMD-100447;CLI-0879;Auvergne-Rhône-Alpes;Web;Maison;Lampe;1;0;39,00;8,50;4
+11/11/2024;CMD-100448;CLI-0897;Hauts-de-France;Magasin;Maison;Lampe;2;20;62,40;15,96;3
+22/06/2025;CMD-100449;CLI-0537;Grand Est;Web;Maison;Cafetière;2;10;160,20;50,25;5
+29/07/2025;CMD-100450;CLI-0709;Bretagne;Web;Informatique;Ordinateur portable;2;0;1798,00;327,08;4
+23/03/2024;CMD-100451;CLI-0534;Occitanie;Web;Maison;Lampe;1;0;39,00;22,47;3
+19/08/2025;CMD-100452;CLI-0309;Nouvelle-Aquitaine;Magasin;Informatique;Ordinateur portable;1;0;899,00;167,99;3
+19/01/2025;CMD-100453;CLI-0810;Auvergne-Rhône-Alpes;Web;Loisirs;Jeu vidéo;2;0;118,00;50,22;4
+02/02/2025;CMD-100454;CLI-0765;Île-de-France;Magasin;Informatique;Clavier;2;0;118,00;23,58;4
+29/02/2024;CMD-100455;CLI-0785;Île-de-France;Magasin;Informatique;"Écran 27""";3;0;837,00;153,86;5
+24/01/2025;CMD-100456;CLI-0041;Grand Est;Web;Loisirs;Drone;2;0;658,00;188,83;5
+30/03/2025;CMD-100457;CLI-0892;Occitanie;Web;Informatique;"Écran 27""";3;0;837,00;137,40;4
+29/12/2024;CMD-100458;CLI-0504;Auvergne-Rhône-Alpes;Web;Téléphonie;Écouteurs;3;0;387,00;82,53;4
+23/11/2024;CMD-100459;CLI-0075;Île-de-France;Web;Maison;Lampe;2;0;78,00;36,67;4
+23/08/2025;CMD-100460;CLI-0086;Hauts-de-France;Web;Informatique;Ordinateur portable;2;5;1708,10;256,90;3
+16/04/2024;CMD-100461;CLI-0419;Grand Est;Marketplace;Informatique;"Écran 27""";1;10;251,10;25,81;4
+16/05/2025;CMD-100462;CLI-0504;Île-de-France;Magasin;Téléphonie;Coque;1;10;17,10;5,20;3
+06/01/2025;CMD-100463;CLI-0303;Hauts-de-France;Web;Informatique;"Écran 27""";3;20;669,60;46,73;4
+05/10/2024;CMD-100464;CLI-0610;Auvergne-Rhône-Alpes;Magasin;Informatique;"Écran 27""";1;0;279,00;48,70;5
+15/09/2025;CMD-100465;CLI-0541;Nouvelle-Aquitaine;Web;Informatique;"Écran 27""";1;20;223,20;17,51;3
+12/05/2025;CMD-100466;CLI-0745;Auvergne-Rhône-Alpes;Magasin;Téléphonie;Écouteurs;2;0;258,00;51,61;4
+15/08/2025;CMD-100467;CLI-0004;Grand Est;Web;Informatique;Ordinateur portable;1;20;719,20;58,00;3
+26/02/2024;CMD-100468;CLI-0750;Nouvelle-Aquitaine;Web;Informatique;Ordinateur portable;1;0;899,00;159,89;4
+27/03/2025;CMD-100469;CLI-0654;Nouvelle-Aquitaine;Web;Téléphonie;Coque;1;10;17,10;-6,05;4
+04/01/2025;CMD-100470;CLI-0063;Île-de-France;Web;Téléphonie;Écouteurs;2;10;232,20;39,88;4
+01/02/2024;CMD-100471;CLI-0237;Nouvelle-Aquitaine;Magasin;Informatique;Ordinateur portable;2;0;1798,00;325,99;4
+21/11/2024;CMD-100472;CLI-0076;Nouvelle-Aquitaine;Marketplace;Informatique;Ordinateur portable;3;20;2157,60;168,94;5
+17/04/2024;CMD-100473;CLI-0158;Auvergne-Rhône-Alpes;Web;Loisirs;Jeu vidéo;3;0;177,00;45,17;4
+21/03/2024;CMD-100474;CLI-0835;Occitanie;Magasin;Téléphonie;Coque;1;5;18,05;4,54;4
+19/12/2024;CMD-100475;CLI-0012;Nouvelle-Aquitaine;Magasin;Téléphonie;Smartphone;1;20;519,20;60,48;5
+24/12/2024;CMD-100476;CLI-0602;Occitanie;Marketplace;Téléphonie;Smartphone;2;0;1298,00;281,69;3
+24/10/2024;CMD-100477;CLI-0596;Occitanie;Web;Informatique;Ordinateur portable;2;10;1618,20;207,65;2
+18/10/2024;CMD-100478;CLI-0114;Nouvelle-Aquitaine;Magasin;Maison;Lampe;1;10;35,10;3,57;5
+23/11/2024;CMD-100479;CLI-0865;Grand Est;Magasin;Loisirs;Console;1;10;404,10;94,23;3
+23/04/2025;CMD-100480;CLI-0878;Île-de-France;Web;Loisirs;Jeu vidéo;2;5;112,10;23,87;5
+15/05/2025;CMD-100481;CLI-0703;Île-de-France;Web;Informatique;Ordinateur portable;2;20;1438,40;119,39;5
+20/11/2024;CMD-100482;CLI-0186;Occitanie;Web;Informatique;Ordinateur portable;1;10;809,10;105,93;3
+04/11/2024;CMD-100483;CLI-0679;Occitanie;Web;Informatique;Clavier;1;5;56,05;7,52;3
+10/01/2025;CMD-100484;CLI-0269;Hauts-de-France;Web;Informatique;"Écran 27""";2;0;558,00;102,60;4
+28/03/2024;CMD-100485;CLI-0313;Bretagne;Web;Informatique;Ordinateur portable;1;0;899,00;165,90;5
+05/08/2025;CMD-100486;CLI-0124;Île-de-France;Web;Téléphonie;Smartphone;2;0;1298,00;276,17;5
+12/06/2025;CMD-100487;CLI-0023;Île-de-France;Web;Informatique;"Écran 27""";3;0;837,00;157,15;5
+15/03/2024;CMD-100488;CLI-0559;Occitanie;Web;Loisirs;Drone;1;20;263,20;42,75;3
+14/03/2024;CMD-100489;CLI-0075;Auvergne-Rhône-Alpes;Marketplace;Informatique;Ordinateur portable;1;10;809,10;108,05;4
+24/02/2024;CMD-100490;CLI-0647;Bretagne;Web;Informatique;"Écran 27""";1;20;223,20;7,71;4
+01/11/2024;CMD-100491;CLI-0227;Nouvelle-Aquitaine;Magasin;Loisirs;Jeu vidéo;2;20;94,40;12,78;4
+01/04/2025;CMD-100492;CLI-0852;Grand Est;Magasin;Maison;Cafetière;1;5;84,55;19,04;4
+30/07/2025;CMD-100493;CLI-0098;Bretagne;Web;Téléphonie;Coque;1;10;17,10;9,97;4
+02/04/2025;CMD-100494;CLI-0186;Occitanie;Magasin;Téléphonie;Écouteurs;2;0;258,00;53,33;4
+27/07/2024;CMD-100495;CLI-0066;Nouvelle-Aquitaine;Web;Informatique;"Écran 27""";2;0;558,00;100,42;5
+07/04/2025;CMD-100496;CLI-0839;Grand Est;Web;Informatique;"Écran 27""";1;5;265,05;43,01;4
+16/07/2025;CMD-100497;CLI-0565;Île-de-France;Magasin;Téléphonie;Coque;3;20;45,60;3,41;3
+26/05/2025;CMD-100498;CLI-0075;Hauts-de-France;Web;Téléphonie;Smartphone;2;0;1298,00;289,23;4
+22/04/2025;CMD-100499;CLI-0444;Grand Est;Web;Téléphonie;Écouteurs;3;0;387,00;89,13;3
+01/02/2025;CMD-100500;CLI-0080;Bretagne;Marketplace;Informatique;Ordinateur portable;2;0;1798,00;327,17;4
+18/06/2024;CMD-100501;CLI-0248;Nouvelle-Aquitaine;Magasin;Maison;Aspirateur;2;0;498,00;175,07;4
+12/05/2025;CMD-100502;CLI-0104;Nouvelle-Aquitaine;Web;Maison;Lampe;3;0;117,00;38,90;4
+15/08/2024;CMD-100503;CLI-0575;Occitanie;Magasin;Informatique;Clavier;1;0;59,00;8,27;4
+29/11/2024;CMD-100504;CLI-0563;Nouvelle-Aquitaine;Magasin;Informatique;"Écran 27""";1;5;265,05;49,03;4
+14/07/2024;CMD-100505;CLI-0569;Île-de-France;Magasin;Téléphonie;Smartphone;1;0;649,00;141,18;3
+08/04/2024;CMD-100506;CLI-0500;Île-de-France;Magasin;Maison;Lampe;1;0;39,00;28,45;4
+24/08/2025;CMD-100507;CLI-0058;Île-de-France;Magasin;Maison;Aspirateur;2;0;498,00;170,89;5
+23/02/2024;CMD-100508;CLI-0475;Hauts-de-France;Web;Maison;Aspirateur;1;0;249,00;91,54;4
+09/08/2025;CMD-100509;CLI-0573;Occitanie;Web;Téléphonie;Smartphone;3;0;1947,00;422,35;5
+13/12/2024;CMD-100510;CLI-0487;Occitanie;Web;Informatique;Clavier;2;5;112,10;20,97;4
+01/10/2024;CMD-100511;CLI-0849;Occitanie;Magasin;Téléphonie;Coque;1;5;18,05;16,91;3
+21/03/2024;CMD-100512;CLI-0625;Nouvelle-Aquitaine;Web;Informatique;"Écran 27""";3;0;837,00;145,85;4
+01/04/2025;CMD-100513;CLI-0064;Nouvelle-Aquitaine;Magasin;Maison;Aspirateur;1;10;224,10;64,56;4
+12/12/2024;CMD-100514;CLI-0669;Hauts-de-France;Magasin;Informatique;"Écran 27""";3;20;669,60;61,16;2
+17/08/2025;CMD-100515;CLI-0595;Hauts-de-France;Marketplace;Informatique;Ordinateur portable;3;5;2562,15;407,33;3
+09/08/2025;CMD-100516;CLI-0022;Occitanie;Magasin;Téléphonie;Smartphone;2;0;1298,00;289,11;4
+13/08/2024;CMD-100517;CLI-0132;Grand Est;Web;Téléphonie;Coque;2;0;38,00;2,52;5
+03/05/2025;CMD-100518;CLI-0451;Île-de-France;Web;Téléphonie;Écouteurs;1;0;129,00;24,01;3
+27/10/2024;CMD-100519;CLI-0606;Grand Est;Magasin;Téléphonie;Smartphone;1;5;616,55;123,71;3
+09/09/2025;CMD-100520;CLI-0356;Auvergne-Rhône-Alpes;Magasin;Loisirs;Drone;3;5;937,65;238,60;3
+18/08/2025;CMD-100521;CLI-0666;Bretagne;Marketplace;Maison;Cafetière;1;20;71,20;19,00;3
+22/09/2024;CMD-100522;CLI-0870;Bretagne;Magasin;Loisirs;Jeu vidéo;1;0;59,00;15,08;5
+15/03/2024;CMD-100523;CLI-0630;Auvergne-Rhône-Alpes;Web;Téléphonie;Smartphone;2;0;1298,00;288,55;4
+03/07/2025;CMD-100524;CLI-0261;Île-de-France;Web;Téléphonie;Coque;3;20;45,60;14,17;3
+02/02/2025;CMD-100525;CLI-0137;Auvergne-Rhône-Alpes;Web;Téléphonie;Écouteurs;1;0;129,00;20,13;5
+17/03/2024;CMD-100526;CLI-0345;Auvergne-Rhône-Alpes;Web;Téléphonie;Coque;2;0;38,00;7,02;3
+26/10/2024;CMD-100527;CLI-0104;Bretagne;Web;Informatique;"Écran 27""";1;10;251,10;29,58;4
+03/01/2025;CMD-100528;CLI-0831;Hauts-de-France;Magasin;Téléphonie;Écouteurs;2;5;245,10;43,00;4
+06/12/2024;CMD-100529;CLI-0718;Île-de-France;Web;Informatique;Ordinateur portable;3;5;2562,15;397,68;3
+08/01/2024;CMD-100530;CLI-0008;Hauts-de-France;Marketplace;Informatique;"Écran 27""";3;0;837,00;145,36;2
+28/03/2025;CMD-100531;CLI-0724;Île-de-France;Web;Loisirs;Console;2;20;718,40;133,98;3
+31/05/2025;CMD-100532;CLI-0339;Bretagne;Web;Informatique;Clavier;1;0;59,00;5,33;5
+26/09/2024;CMD-100533;CLI-0163;Nouvelle-Aquitaine;Magasin;Téléphonie;Écouteurs;1;5;122,55;24,40;4
+03/07/2024;CMD-100534;CLI-0579;Hauts-de-France;Magasin;Téléphonie;Smartphone;2;20;1038,40;127,80;4
+14/10/2024;CMD-100535;CLI-0120;Bretagne;Marketplace;Informatique;"Écran 27""";3;10;753,30;91,13;4
+16/07/2024;CMD-100536;CLI-0395;Hauts-de-France;Magasin;Loisirs;Drone;2;10;592,20;135,33;5
+18/11/2024;CMD-100537;CLI-0034;Hauts-de-France;Web;Informatique;"Écran 27""";3;5;795,15;119,42;3
+28/07/2025;CMD-100538;CLI-0587;Nouvelle-Aquitaine;Web;Loisirs;Drone;1;20;263,20;52,51;2
+07/04/2025;CMD-100539;CLI-0490;Hauts-de-France;Web;Maison;Aspirateur;2;0;498,00;187,81;4
+04/05/2025;CMD-100540;CLI-0733;Île-de-France;Magasin;Informatique;Clavier;2;0;118,00;19,16;2
+07/12/2024;CMD-100541;CLI-0574;Île-de-France;Web;Informatique;Ordinateur portable;2;0;1798,00;317,37;4
+10/03/2024;CMD-100542;CLI-0109;Île-de-France;Web;Informatique;"Écran 27""";1;20;223,20;22,47;2
+01/09/2024;CMD-100543;CLI-0258;Île-de-France;Web;Téléphonie;Coque;1;0;19,00;7,39;5
+04/07/2025;CMD-100544;CLI-0658;Île-de-France;Marketplace;Informatique;Ordinateur portable;2;0;1798,00;327,40;3
+04/03/2025;CMD-100545;CLI-0691;Auvergne-Rhône-Alpes;Web;Loisirs;Console;1;0;449,00;126,00;5
+26/06/2024;CMD-100546;CLI-0157;Île-de-France;Web;Informatique;"Écran 27""";3;0;837,00;148,62;4
+02/05/2025;CMD-100547;CLI-0820;Occitanie;Web;Maison;Lampe;2;20;62,40;15,39;4
+07/06/2025;CMD-100548;CLI-0447;Auvergne-Rhône-Alpes;Magasin;Informatique;Clavier;3;5;168,15;30,84;5
+28/01/2024;CMD-100549;CLI-0639;Grand Est;Web;Loisirs;Drone;2;20;526,40;88,12;4
+20/02/2025;CMD-100550;CLI-0868;Nouvelle-Aquitaine;Web;Informatique;Ordinateur portable;3;5;2562,15;400,23;4
+16/01/2024;CMD-100551;CLI-0498;Grand Est;Web;Téléphonie;Écouteurs;1;5;122,55;24,17;4
+20/02/2025;CMD-100552;CLI-0628;Auvergne-Rhône-Alpes;Web;Téléphonie;Coque;1;5;18,05;9,53;5
+26/03/2024;CMD-100553;CLI-0551;Occitanie;Magasin;Informatique;Clavier;2;0;118,00;23,89;4
+10/02/2025;CMD-100554;CLI-0833;Île-de-France;Web;Maison;Aspirateur;1;5;236,55;76,94;4
+25/01/2025;CMD-100555;CLI-0832;Île-de-France;Magasin;Informatique;Ordinateur portable;1;0;899,00;165,72;3
+02/03/2025;CMD-100556;CLI-0745;Grand Est;Web;Téléphonie;Écouteurs;1;0;129,00;36,46;5
+15/07/2025;CMD-100557;CLI-0582;Auvergne-Rhône-Alpes;Web;Téléphonie;Coque;1;20;15,20;13,08;2
+24/06/2025;CMD-100558;CLI-0036;Grand Est;Magasin;Téléphonie;Écouteurs;2;10;232,20;39,28;4
+19/01/2024;CMD-100559;CLI-0489;Grand Est;Magasin;Informatique;Clavier;3;0;177,00;27,99;5
+02/06/2024;CMD-100560;CLI-0203;Île-de-France;Magasin;Informatique;Ordinateur portable;3;0;2697,00;485,44;5
+30/05/2024;CMD-100561;CLI-0493;Hauts-de-France;Web;Informatique;Ordinateur portable;2;0;1798,00;316,80;5
+30/03/2024;CMD-100562;CLI-0801;Île-de-France;Web;Informatique;"Écran 27""";2;20;446,40;31,94;2
+18/06/2025;CMD-100563;CLI-0098;Grand Est;Web;Informatique;Ordinateur portable;1;0;899,00;164,72;5
+04/05/2024;CMD-100564;CLI-0087;Bretagne;Magasin;Loisirs;Drone;1;0;329,00;89,93;5
+10/01/2024;CMD-100565;CLI-0068;Nouvelle-Aquitaine;Web;Téléphonie;Écouteurs;2;10;232,20;42,44;4
+24/07/2025;CMD-100566;CLI-0256;Île-de-France;Magasin;Téléphonie;Smartphone;1;0;649,00;139,27;4
+29/06/2024;CMD-100567;CLI-0707;Occitanie;Web;Téléphonie;Coque;1;5;18,05;6,76;5
+14/02/2025;CMD-100568;CLI-0568;Occitanie;Web;Informatique;"Écran 27""";1;0;279,00;56,94;3
+23/01/2024;CMD-100569;CLI-0612;Occitanie;Magasin;Téléphonie;Coque;1;0;19,00;3,39;5
+04/01/2024;CMD-100570;CLI-0414;Auvergne-Rhône-Alpes;Web;Informatique;Ordinateur portable;1;0;899,00;155,72;4
+28/05/2025;CMD-100571;CLI-0336;Nouvelle-Aquitaine;Web;Informatique;"Écran 27""";1;0;279,00;47,75;5
+14/01/2025;CMD-100572;CLI-0885;Auvergne-Rhône-Alpes;Magasin;Téléphonie;Coque;1;20;15,20;-7,58;4
+05/09/2025;CMD-100573;CLI-0095;Île-de-France;Web;Téléphonie;Écouteurs;3;0;387,00;83,84;5
+25/08/2025;CMD-100574;CLI-0547;Bretagne;Magasin;Loisirs;Jeu vidéo;2;20;94,40;12,98;5
+29/05/2024;CMD-100575;CLI-0263;Auvergne-Rhône-Alpes;Web;Informatique;"Écran 27""";1;0;279,00;49,24;5
+29/06/2024;CMD-100576;CLI-0279;Île-de-France;Web;Téléphonie;Coque;1;0;19,00;6,24;3
+02/06/2024;CMD-100577;CLI-0183;Île-de-France;Web;Informatique;Ordinateur portable;2;5;1708,10;263,67;4
+05/02/2024;CMD-100578;CLI-0163;Auvergne-Rhône-Alpes;Magasin;Informatique;Ordinateur portable;3;0;2697,00;484,85;4
+16/05/2025;CMD-100579;CLI-0841;Île-de-France;Magasin;Maison;Aspirateur;1;0;249,00;88,31;4
+03/08/2025;CMD-100580;CLI-0153;Île-de-France;Web;Informatique;"Écran 27""";2;10;502,20;56,16;2
+16/03/2024;CMD-100581;CLI-0833;Île-de-France;Marketplace;Téléphonie;Smartphone;1;0;649,00;145,69;3
+28/05/2025;CMD-100582;CLI-0653;Île-de-France;Marketplace;Téléphonie;Smartphone;2;20;1038,40;129,07;4
+08/06/2025;CMD-100583;CLI-0470;Occitanie;Web;Informatique;Clavier;2;10;106,20;5,58;3
+06/10/2024;CMD-100584;CLI-0424;Nouvelle-Aquitaine;Web;Loisirs;Console;1;10;404,10;95,15;4
+26/01/2024;CMD-100585;CLI-0021;Nouvelle-Aquitaine;Web;Téléphonie;Écouteurs;1;10;116,10;13,13;3
+12/10/2024;CMD-100586;CLI-0349;Hauts-de-France;Marketplace;Maison;Cafetière;1;20;71,20;17,17;3
+06/05/2024;CMD-100587;CLI-0064;Occitanie;Marketplace;Téléphonie;Coque;2;5;36,10;6,08;4
+12/03/2024;CMD-100588;CLI-0095;Occitanie;Marketplace;Loisirs;Console;1;0;449,00;128,51;4
+19/03/2024;CMD-100589;CLI-0671;Occitanie;Web;Informatique;"Écran 27""";1;10;251,10;36,38;5
+12/03/2025;CMD-100590;CLI-0203;Île-de-France;Marketplace;Téléphonie;Écouteurs;2;20;206,40;23,19;3
+11/11/2024;CMD-100591;CLI-0746;Île-de-France;Web;Maison;Cafetière;2;20;142,40;37,88;3
+03/12/2024;CMD-100592;CLI-0570;Grand Est;Magasin;Informatique;Ordinateur portable;1;5;854,05;134,95;5
+11/04/2025;CMD-100593;CLI-0210;Bretagne;Magasin;Téléphonie;Coque;1;0;19,00;-1,84;3
+09/12/2024;CMD-100594;CLI-0256;Auvergne-Rhône-Alpes;Marketplace;Loisirs;Drone;2;0;658,00;175,28;3
+16/06/2025;CMD-100595;CLI-0268;Auvergne-Rhône-Alpes;Marketplace;Téléphonie;Écouteurs;1;5;122,55;25,07;3
+07/10/2024;CMD-100596;CLI-0488;Auvergne-Rhône-Alpes;Web;Maison;Cafetière;3;0;267,00;100,62;3
+07/04/2024;CMD-100597;CLI-0114;Île-de-France;Web;Téléphonie;Smartphone;1;0;649,00;143,16;5
+24/05/2025;CMD-100598;CLI-0345;Grand Est;Web;Maison;Lampe;1;0;39,00;10,90;3
+30/04/2024;CMD-100599;CLI-0190;Hauts-de-France;Magasin;Loisirs;Console;2;0;898,00;265,28;3
+18/06/2024;CMD-100600;CLI-0743;Auvergne-Rhône-Alpes;Web;Téléphonie;Coque;1;0;19,00;2,24;4
+03/03/2024;CMD-100601;CLI-0051;Auvergne-Rhône-Alpes;Magasin;Informatique;Clavier;1;0;59,00;2,39;4
+23/11/2024;CMD-100602;CLI-0306;Auvergne-Rhône-Alpes;Web;Informatique;Ordinateur portable;1;0;899,00;157,12;5
+05/09/2025;CMD-100603;CLI-0670;Île-de-France;Magasin;Téléphonie;Écouteurs;1;20;103,20;12,39;4
+14/04/2025;CMD-100604;CLI-0858;Grand Est;Magasin;Maison;Aspirateur;1;10;224,10;68,41;4
+14/11/2024;CMD-100605;CLI-0286;Grand Est;Web;Téléphonie;Écouteurs;2;20;206,40;27,61;3
+04/02/2024;CMD-100606;CLI-0659;Île-de-France;Magasin;Informatique;"Écran 27""";1;5;265,05;30,42;4
+13/02/2024;CMD-100607;CLI-0045;Île-de-France;Web;Informatique;Clavier;1;0;59,00;14,60;5
+20/01/2025;CMD-100608;CLI-0198;Bretagne;Web;Téléphonie;Écouteurs;1;5;122,55;19,99;3
+03/01/2024;CMD-100609;CLI-0828;Île-de-France;Magasin;Maison;Lampe;1;0;39,00;13,21;4
+20/03/2025;CMD-100610;CLI-0692;Auvergne-Rhône-Alpes;Web;Informatique;Clavier;2;20;94,40;13,85;5
+14/09/2024;CMD-100611;CLI-0185;Île-de-France;Web;Téléphonie;Smartphone;2;5;1233,10;239,81;3
+18/04/2024;CMD-100612;CLI-0508;Nouvelle-Aquitaine;Magasin;Maison;Lampe;1;0;39,00;8,80;4
+20/08/2024;CMD-100613;CLI-0628;Hauts-de-France;Magasin;Loisirs;Console;1;0;449,00;129,34;5
+23/08/2024;CMD-100614;CLI-0652;Hauts-de-France;Web;Informatique;Clavier;2;5;112,10;14,24;5
+05/09/2025;CMD-100615;CLI-0686;Auvergne-Rhône-Alpes;Web;Loisirs;Jeu vidéo;2;20;94,40;17,87;4
+05/01/2025;CMD-100616;CLI-0361;Île-de-France;Web;Téléphonie;Écouteurs;1;10;116,10;27,07;3
+14/10/2024;CMD-100617;CLI-0707;Île-de-France;Web;Maison;Aspirateur;1;5;236,55;78,88;5
+05/12/2024;CMD-100618;CLI-0883;Grand Est;Web;Informatique;Ordinateur portable;2;0;1798,00;317,81;4
+05/05/2025;CMD-100619;CLI-0370;Auvergne-Rhône-Alpes;Marketplace;Téléphonie;Smartphone;3;0;1947,00;434,58;4
+08/06/2024;CMD-100620;CLI-0219;Auvergne-Rhône-Alpes;Web;Téléphonie;Smartphone;1;0;649,00;144,38;5
+30/06/2025;CMD-100621;CLI-0201;Nouvelle-Aquitaine;Marketplace;Informatique;"Écran 27""";2;5;530,10;76,91;3
+24/12/2024;CMD-100622;CLI-0121;Hauts-de-France;Web;Téléphonie;Écouteurs;1;0;129,00;30,90;5
+31/03/2024;CMD-100623;CLI-0759;Auvergne-Rhône-Alpes;Marketplace;Téléphonie;Écouteurs;2;0;258,00;52,98;5
+04/12/2024;CMD-100624;CLI-0802;Occitanie;Web;Téléphonie;Smartphone;3;0;1947,00;433,36;4
+27/12/2024;CMD-100625;CLI-0313;Île-de-France;Magasin;Informatique;"Écran 27""";3;20;669,60;55,29;3
+02/12/2024;CMD-100626;CLI-0221;Occitanie;Magasin;Téléphonie;Coque;3;20;45,60;8,92;3
+10/06/2024;CMD-100627;CLI-0457;Île-de-France;Magasin;Informatique;"Écran 27""";2;0;558,00;101,12;4
+10/02/2025;CMD-100628;CLI-0515;Bretagne;Magasin;Loisirs;Jeu vidéo;1;10;53,10;19,85;4
+08/04/2024;CMD-100629;CLI-0876;Auvergne-Rhône-Alpes;Magasin;Loisirs;Console;2;0;898,00;252,10;4
+15/10/2024;CMD-100630;CLI-0197;Île-de-France;Web;Informatique;Clavier;2;0;118,00;16,62;3
+14/11/2024;CMD-100631;CLI-0349;Grand Est;Magasin;Informatique;Ordinateur portable;3;10;2427,30;315,94;5
+09/09/2024;CMD-100632;CLI-0544;Bretagne;Web;Informatique;"Écran 27""";3;5;795,15;118,12;4
+25/07/2025;CMD-100633;CLI-0017;Bretagne;Web;Téléphonie;Écouteurs;3;10;348,30;52,45;4
+23/10/2024;CMD-100634;CLI-0324;Grand Est;Web;Loisirs;Console;2;10;808,20;182,27;3
+21/03/2024;CMD-100635;CLI-0425;Nouvelle-Aquitaine;Web;Téléphonie;Coque;2;0;38,00;10,44;3
+15/03/2024;CMD-100636;CLI-0741;Occitanie;Web;Informatique;Clavier;2;5;112,10;21,38;3
+01/09/2025;CMD-100637;CLI-0713;Auvergne-Rhône-Alpes;Web;Informatique;Clavier;1;20;47,20;10,68;4
+24/03/2024;CMD-100638;CLI-0101;Île-de-France;Magasin;Informatique;Clavier;1;5;56,05;10,87;3
+16/08/2025;CMD-100639;CLI-0470;Île-de-France;Magasin;Maison;Cafetière;1;20;71,20;21,96;4
+23/06/2024;CMD-100640;CLI-0687;Auvergne-Rhône-Alpes;Magasin;Téléphonie;Coque;2;5;36,10;20,13;4
+06/05/2025;CMD-100641;CLI-0615;Bretagne;Magasin;Téléphonie;Coque;1;5;18,05;7,36;4
+17/01/2025;CMD-100642;CLI-0049;Auvergne-Rhône-Alpes;Marketplace;Informatique;"Écran 27""";1;0;279,00;54,69;3
+07/09/2024;CMD-100643;CLI-0455;Occitanie;Web;Loisirs;Drone;1;10;296,10;63,29;4
+01/02/2025;CMD-100644;CLI-0456;Île-de-France;Web;Informatique;"Écran 27""";1;10;251,10;32,34;4
+31/08/2025;CMD-100645;CLI-0424;Île-de-France;Web;Maison;Cafetière;3;20;213,60;51,06;4
+14/09/2024;CMD-100646;CLI-0382;Île-de-France;Magasin;Loisirs;Jeu vidéo;1;0;59,00;18,18;3
+09/06/2025;CMD-100647;CLI-0383;Nouvelle-Aquitaine;Web;Téléphonie;Écouteurs;2;5;245,10;47,75;4
+16/05/2024;CMD-100648;CLI-0268;Bretagne;Web;Loisirs;Console;1;10;404,10;89,11;4
+17/08/2025;CMD-100649;CLI-0274;Auvergne-Rhône-Alpes;Marketplace;Informatique;Clavier;1;0;59,00;4,90;5
+17/07/2024;CMD-100650;CLI-0763;Île-de-France;Web;Maison;Lampe;1;10;35,10;9,30;5
+30/07/2025;CMD-100651;CLI-0711;Île-de-France;Web;Informatique;Clavier;3;0;177,00;31,03;4
+23/01/2024;CMD-100652;CLI-0357;Nouvelle-Aquitaine;Marketplace;Téléphonie;Écouteurs;1;20;103,20;14,68;4
+05/07/2024;CMD-100653;CLI-0226;Grand Est;Web;Informatique;"Écran 27""";2;10;502,20;63,65;4
+23/10/2024;CMD-100654;CLI-0213;Occitanie;Magasin;Informatique;Clavier;1;10;53,10;13,82;4
+02/04/2024;CMD-100655;CLI-0436;Auvergne-Rhône-Alpes;Web;Informatique;Clavier;1;5;56,05;9,66;5
+21/05/2024;CMD-100656;CLI-0716;Nouvelle-Aquitaine;Web;Informatique;Ordinateur portable;1;0;899,00;161,23;4
+29/02/2024;CMD-100657;CLI-0894;Nouvelle-Aquitaine;Web;Téléphonie;Smartphone;1;0;649,00;135,92;5
+24/12/2024;CMD-100658;CLI-0810;Grand Est;Web;Téléphonie;Écouteurs;1;20;103,20;15,26;4
+07/08/2024;CMD-100659;CLI-0329;Île-de-France;Web;Informatique;"Écran 27""";2;0;558,00;93,44;5
+20/12/2024;CMD-100660;CLI-0525;Île-de-France;Web;Loisirs;Jeu vidéo;2;0;118,00;35,69;4
+04/01/2025;CMD-100661;CLI-0147;Auvergne-Rhône-Alpes;Marketplace;Loisirs;Jeu vidéo;2;0;118,00;30,38;5
+15/03/2025;CMD-100662;CLI-0535;Bretagne;Marketplace;Informatique;"Écran 27""";2;0;558,00;85,84;5
+08/12/2024;CMD-100663;CLI-0390;Bretagne;Magasin;Téléphonie;Smartphone;3;0;1947,00;434,83;4
+09/02/2025;CMD-100664;CLI-0059;Auvergne-Rhône-Alpes;Magasin;Téléphonie;Smartphone;2;20;1038,40;127,42;4
+12/02/2025;CMD-100665;CLI-0698;Occitanie;Marketplace;Maison;Aspirateur;2;0;498,00;172,38;3
+03/06/2024;CMD-100666;CLI-0695;Île-de-France;Magasin;Téléphonie;Coque;1;20;15,20;-4,96;3
+07/05/2025;CMD-100667;CLI-0479;Bretagne;Web;Maison;Aspirateur;2;5;473,10;146,70;4
+09/12/2024;CMD-100668;CLI-0827;Auvergne-Rhône-Alpes;Web;Informatique;Ordinateur portable;2;5;1708,10;259,73;3
+03/05/2024;CMD-100669;CLI-0467;Hauts-de-France;Web;Informatique;"Écran 27""";1;20;223,20;17,68;3
+27/11/2024;CMD-100670;CLI-0748;Auvergne-Rhône-Alpes;Marketplace;Maison;Lampe;1;10;35,10;17,05;4
+26/01/2025;CMD-100671;CLI-0361;Hauts-de-France;Magasin;Téléphonie;Écouteurs;1;0;129,00;27,10;5
+25/11/2024;CMD-100672;CLI-0079;Hauts-de-France;Web;Maison;Aspirateur;1;10;224,10;66,82;3
+13/08/2024;CMD-100673;CLI-0615;Nouvelle-Aquitaine;Marketplace;Informatique;Ordinateur portable;1;0;899,00;160,92;4
+16/11/2024;CMD-100674;CLI-0727;Nouvelle-Aquitaine;Web;Informatique;"Écran 27""";1;0;279,00;46,26;3
+20/05/2025;CMD-100675;CLI-0425;Île-de-France;Marketplace;Informatique;Clavier;1;0;59,00;-0,74;4
+15/12/2024;CMD-100676;CLI-0712;Auvergne-Rhône-Alpes;Web;Informatique;Ordinateur portable;3;0;2697,00;475,99;3
+21/03/2024;CMD-100677;CLI-0691;Île-de-France;Web;Informatique;Clavier;3;20;141,60;11,55;4
+30/07/2025;CMD-100678;CLI-0341;Auvergne-Rhône-Alpes;Magasin;Téléphonie;Écouteurs;2;0;258,00;49,91;4
+11/11/2024;CMD-100679;CLI-0397;Grand Est;Magasin;Téléphonie;Coque;1;10;17,10;7,46;3
+04/04/2025;CMD-100680;CLI-0058;Grand Est;Magasin;Maison;Lampe;1;10;35,10;8,27;3
+21/11/2024;CMD-100681;CLI-0571;Nouvelle-Aquitaine;Web;Téléphonie;Coque;3;0;57,00;17,09;4
+17/06/2024;CMD-100682;CLI-0279;Nouvelle-Aquitaine;Magasin;Informatique;Clavier;2;20;94,40;9,85;4
+15/05/2025;CMD-100683;CLI-0289;Occitanie;Magasin;Maison;Cafetière;2;0;178,00;60,95;3
+02/06/2024;CMD-100684;CLI-0400;Hauts-de-France;Web;Informatique;"Écran 27""";2;0;558,00;105,59;4
+15/07/2024;CMD-100685;CLI-0683;Auvergne-Rhône-Alpes;Web;Loisirs;Drone;2;0;658,00;183,58;3
+21/11/2024;CMD-100686;CLI-0700;Île-de-France;Magasin;Informatique;"Écran 27""";3;0;837,00;153,64;4
+28/08/2024;CMD-100687;CLI-0093;Île-de-France;Magasin;Téléphonie;Smartphone;1;10;584,10;95,47;4
+05/11/2024;CMD-100688;CLI-0517;Occitanie;Magasin;Loisirs;Jeu vidéo;3;0;177,00;54,66;4
+27/01/2024;CMD-100689;CLI-0748;Hauts-de-France;Magasin;Téléphonie;Coque;1;5;18,05;-1,28;4
+13/03/2024;CMD-100690;CLI-0786;Occitanie;Marketplace;Téléphonie;Smartphone;2;10;1168,20;194,64;5
+05/02/2024;CMD-100691;CLI-0100;Auvergne-Rhône-Alpes;Magasin;Maison;Aspirateur;2;10;448,20;134,37;3
+15/02/2024;CMD-100692;CLI-0367;Île-de-France;Magasin;Informatique;Ordinateur portable;2;10;1618,20;214,99;4
+27/06/2025;CMD-100693;CLI-0495;Nouvelle-Aquitaine;Magasin;Maison;Cafetière;3;10;240,30;77,29;4
+04/02/2024;CMD-100694;CLI-0159;Nouvelle-Aquitaine;Web;Loisirs;Jeu vidéo;1;20;47,20;8,00;3
+19/12/2024;CMD-100695;CLI-0507;Île-de-France;Web;Loisirs;Console;1;0;449,00;123,41;4
+01/11/2024;CMD-100696;CLI-0898;Hauts-de-France;Magasin;Téléphonie;Écouteurs;3;10;348,30;60,59;4
+15/07/2024;CMD-100697;CLI-0032;Nouvelle-Aquitaine;Marketplace;Informatique;"Écran 27""";2;5;530,10;82,74;5
+09/04/2025;CMD-100698;CLI-0352;Hauts-de-France;Web;Maison;Cafetière;1;20;71,20;12,01;4
+10/01/2024;CMD-100699;CLI-0736;Hauts-de-France;Magasin;Téléphonie;Écouteurs;1;5;122,55;34,45;3
+30/09/2024;CMD-100700;CLI-0144;Auvergne-Rhône-Alpes;Web;Informatique;Clavier;1;0;59,00;13,96;5
+01/06/2025;CMD-100701;CLI-0419;Grand Est;Web;Informatique;Clavier;2;5;112,10;14,64;4
+18/03/2025;CMD-100702;CLI-0617;Île-de-France;Magasin;Informatique;"Écran 27""";1;20;223,20;18,21;4
+20/06/2025;CMD-100703;CLI-0387;Hauts-de-France;Magasin;Téléphonie;Écouteurs;1;5;122,55;25,75;3
+16/09/2024;CMD-100704;CLI-0527;Île-de-France;Web;Informatique;Ordinateur portable;1;20;719,20;58,04;3
+21/08/2024;CMD-100705;CLI-0436;Auvergne-Rhône-Alpes;Magasin;Informatique;"Écran 27""";2;0;558,00;101,11;5
+19/03/2025;CMD-100706;CLI-0124;Île-de-France;Web;Informatique;Clavier;2;0;118,00;22,46;3
+06/04/2024;CMD-100707;CLI-0871;Île-de-France;Magasin;Loisirs;Drone;2;20;526,40;99,90;4
+11/01/2025;CMD-100708;CLI-0781;Île-de-France;Web;Informatique;Ordinateur portable;3;0;2697,00;478,83;5
+22/02/2025;CMD-100709;CLI-0526;Île-de-France;Web;Informatique;"Écran 27""";2;5;530,10;86,76;4
+15/03/2024;CMD-100710;CLI-0527;Auvergne-Rhône-Alpes;Magasin;Téléphonie;Écouteurs;1;5;122,55;20,32;5
+14/11/2024;CMD-100711;CLI-0654;Île-de-France;Web;Informatique;"Écran 27""";2;0;558,00;94,59;5
+16/08/2024;CMD-100712;CLI-0387;Île-de-France;Magasin;Loisirs;Console;1;5;426,55;101,36;4
+10/11/2024;CMD-100713;CLI-0390;Hauts-de-France;Web;Loisirs;Drone;2;20;526,40;97,66;4
+17/02/2024;CMD-100714;CLI-0071;Auvergne-Rhône-Alpes;Magasin;Téléphonie;Écouteurs;1;0;129,00;24,17;3
+08/10/2024;CMD-100715;CLI-0572;Île-de-France;Magasin;Téléphonie;Smartphone;2;5;1233,10;246,89;4
+28/04/2025;CMD-100716;CLI-0050;Hauts-de-France;Magasin;Téléphonie;Coque;2;0;38,00;10,58;5
+22/09/2024;CMD-100717;CLI-0652;Grand Est;Web;Informatique;Ordinateur portable;2;0;1798,00;323,15;5
+13/07/2024;CMD-100718;CLI-0444;Auvergne-Rhône-Alpes;Magasin;Informatique;Clavier;2;0;118,00;19,98;3
+27/04/2025;CMD-100719;CLI-0241;Île-de-France;Web;Informatique;"Écran 27""";2;10;502,20;59,06;3
+17/03/2025;CMD-100720;CLI-0133;Hauts-de-France;Web;Informatique;"Écran 27""";1;20;223,20;23,29;4
+16/04/2025;CMD-100721;CLI-0446;Auvergne-Rhône-Alpes;Magasin;Téléphonie;Smartphone;1;10;584,10;93,34;5
+30/08/2024;CMD-100722;CLI-0207;Occitanie;Magasin;Informatique;"Écran 27""";3;20;669,60;53,65;3
+02/08/2025;CMD-100723;CLI-0218;Grand Est;Web;Informatique;Clavier;1;0;59,00;11,86;5
+05/02/2025;CMD-100724;CLI-0685;Île-de-France;Web;Téléphonie;Écouteurs;1;0;129,00;29,97;4
+26/02/2025;CMD-100725;CLI-0429;Île-de-France;Web;Téléphonie;Coque;1;0;19,00;2,31;4
+10/05/2024;CMD-100726;CLI-0836;Hauts-de-France;Magasin;Informatique;Clavier;2;20;94,40;10,07;4
+24/11/2024;CMD-100727;CLI-0867;Auvergne-Rhône-Alpes;Magasin;Informatique;Clavier;3;0;177,00;28,93;4
+19/10/2024;CMD-100728;CLI-0587;Hauts-de-France;Web;Informatique;Ordinateur portable;2;20;1438,40;111,64;3
+12/04/2024;CMD-100729;CLI-0827;Grand Est;Web;Informatique;"Écran 27""";2;10;502,20;65,79;4
+18/09/2024;CMD-100730;CLI-0455;Auvergne-Rhône-Alpes;Web;Maison;Cafetière;2;0;178,00;60,40;5
+30/07/2025;CMD-100731;CLI-0826;Nouvelle-Aquitaine;Marketplace;Loisirs;Drone;1;0;329,00;84,84;4
+22/08/2025;CMD-100732;CLI-0863;Bretagne;Magasin;Téléphonie;Écouteurs;3;0;387,00;88,73;5
+14/12/2024;CMD-100733;CLI-0844;Auvergne-Rhône-Alpes;Magasin;Téléphonie;Smartphone;1;20;519,20;66,06;5
+05/05/2024;CMD-100734;CLI-0499;Occitanie;Marketplace;Maison;Aspirateur;3;10;672,30;207,34;3
+09/06/2025;CMD-100735;CLI-0620;Occitanie;Web;Téléphonie;Coque;3;0;57,00;13,44;4
+16/05/2025;CMD-100736;CLI-0364;Occitanie;Marketplace;Informatique;Clavier;2;5;112,10;20,00;4
+11/09/2025;CMD-100737;CLI-0252;Auvergne-Rhône-Alpes;Web;Informatique;"Écran 27""";2;5;530,10;84,25;3
+11/02/2025;CMD-100738;CLI-0245;Île-de-France;Web;Téléphonie;Smartphone;1;20;519,20;56,69;3
+29/03/2024;CMD-100739;CLI-0898;Île-de-France;Marketplace;Téléphonie;Smartphone;1;5;616,55;131,83;5
+10/11/2024;CMD-100740;CLI-0163;Grand Est;Magasin;Informatique;"Écran 27""";2;5;530,10;76,18;4
+02/09/2024;CMD-100741;CLI-0818;Hauts-de-France;Web;Informatique;Ordinateur portable;2;0;1798,00;323,82;3
+24/07/2024;CMD-100742;CLI-0108;Hauts-de-France;Magasin;Informatique;Clavier;2;0;118,00;11,88;4
+06/06/2025;CMD-100743;CLI-0767;Nouvelle-Aquitaine;Web;Informatique;"Écran 27""";2;5;530,10;87,61;3
+17/04/2025;CMD-100744;CLI-0363;Île-de-France;Magasin;Téléphonie;Coque;2;20;30,40;-3,00;4
+27/10/2024;CMD-100745;CLI-0691;Île-de-France;Magasin;Maison;Lampe;3;20;93,60;25,14;4
+29/07/2025;CMD-100746;CLI-0843;Auvergne-Rhône-Alpes;Web;Téléphonie;Écouteurs;1;0;129,00;33,04;4
+10/07/2024;CMD-100747;CLI-0820;Occitanie;Web;Informatique;Ordinateur portable;3;0;2697,00;487,96;5
+23/04/2024;CMD-100748;CLI-0296;Hauts-de-France;Web;Informatique;"Écran 27""";3;0;837,00;159,86;4
+01/06/2024;CMD-100749;CLI-0404;Auvergne-Rhône-Alpes;Web;Maison;Lampe;3;10;105,30;31,91;5
+21/07/2025;CMD-100750;CLI-0377;Auvergne-Rhône-Alpes;Magasin;Téléphonie;Smartphone;3;0;1947,00;433,98;4
+28/01/2024;CMD-100751;CLI-0074;Auvergne-Rhône-Alpes;Magasin;Informatique;"Écran 27""";3;5;795,15;116,93;4
+30/04/2024;CMD-100752;CLI-0311;Grand Est;Web;Informatique;"Écran 27""";1;0;279,00;47,44;4
+01/05/2024;CMD-100753;CLI-0106;Grand Est;Web;Maison;Lampe;3;5;111,15;30,83;5
+02/11/2024;CMD-100754;CLI-0468;Île-de-France;Magasin;Maison;Lampe;1;20;31,20;11,33;4
+15/09/2025;CMD-100755;CLI-0638;Auvergne-Rhône-Alpes;Marketplace;Loisirs;Drone;1;10;296,10;65,17;4
+04/11/2024;CMD-100756;CLI-0530;Occitanie;Web;Téléphonie;Écouteurs;3;5;367,65;70,53;4
+17/06/2024;CMD-100757;CLI-0047;Nouvelle-Aquitaine;Web;Téléphonie;Coque;2;0;38,00;7,19;5
+10/06/2025;CMD-100758;CLI-0600;Nouvelle-Aquitaine;Marketplace;Téléphonie;Écouteurs;1;20;103,20;13,92;4
+12/06/2025;CMD-100759;CLI-0386;Auvergne-Rhône-Alpes;Web;Informatique;Ordinateur portable;1;10;809,10;103,88;3
+18/06/2025;CMD-100760;CLI-0587;Occitanie;Web;Maison;Lampe;1;0;39,00;7,95;4
+03/02/2025;CMD-100761;CLI-0810;Occitanie;Magasin;Téléphonie;Coque;2;10;34,20;16,07;3
+14/12/2024;CMD-100762;CLI-0319;Île-de-France;Web;Informatique;"Écran 27""";1;0;279,00;47,60;3
+10/02/2025;CMD-100763;CLI-0164;Bretagne;Magasin;Loisirs;Console;1;5;426,55;106,20;5
+11/09/2024;CMD-100764;CLI-0431;Île-de-France;Web;Téléphonie;Écouteurs;3;0;387,00;88,71;3
+23/02/2025;CMD-100765;CLI-0128;Nouvelle-Aquitaine;Web;Informatique;Ordinateur portable;1;10;809,10;101,79;5
+19/01/2025;CMD-100766;CLI-0126;Île-de-France;Web;Informatique;"Écran 27""";2;10;502,20;65,33;5
+06/02/2024;CMD-100767;CLI-0815;Grand Est;Web;Loisirs;Console;1;20;359,20;63,64;4
+29/03/2025;CMD-100768;CLI-0225;Bretagne;Magasin;Loisirs;Console;2;0;898,00;256,92;4
+17/08/2024;CMD-100769;CLI-0655;Hauts-de-France;Web;Téléphonie;Smartphone;3;0;1947,00;437,07;5
+03/12/2024;CMD-100770;CLI-0522;Occitanie;Web;Loisirs;Drone;3;20;789,60;137,69;4
+06/08/2025;CMD-100771;CLI-0205;Île-de-France;Magasin;Loisirs;Drone;2;0;658,00;193,12;5
+26/07/2024;CMD-100772;CLI-0846;Occitanie;Web;Maison;Aspirateur;1;0;249,00;94,06;4
+28/11/2024;CMD-100773;CLI-0595;Nouvelle-Aquitaine;Magasin;Loisirs;Jeu vidéo;1;10;53,10;3,48;4
+11/11/2024;CMD-100774;CLI-0149;Île-de-France;Magasin;Téléphonie;Smartphone;1;5;616,55;131,60;4
+09/07/2024;CMD-100775;CLI-0107;Île-de-France;Magasin;Maison;Lampe;1;0;39,00;13,34;3
+16/03/2024;CMD-100776;CLI-0554;Hauts-de-France;Web;Téléphonie;Coque;1;0;19,00;9,84;4
+16/06/2025;CMD-100777;CLI-0798;Auvergne-Rhône-Alpes;Magasin;Maison;Lampe;1;0;39,00;14,00;2
+28/08/2024;CMD-100778;CLI-0069;Occitanie;Web;Informatique;"Écran 27""";2;20;446,40;39,97;4
+01/08/2024;CMD-100779;CLI-0607;Hauts-de-France;Web;Maison;Lampe;2;0;78,00;15,52;5
+30/12/2024;CMD-100780;CLI-0666;Nouvelle-Aquitaine;Web;Loisirs;Drone;2;5;625,10;159,67;2
+08/11/2024;CMD-100781;CLI-0713;Île-de-France;Magasin;Informatique;"Écran 27""";1;0;279,00;49,32;3
+14/06/2025;CMD-100782;CLI-0213;Occitanie;Web;Loisirs;Console;1;20;359,20;66,06;3
+28/11/2024;CMD-100783;CLI-0216;Île-de-France;Web;Téléphonie;Smartphone;2;0;1298,00;288,26;5
+19/11/2024;CMD-100784;CLI-0439;Île-de-France;Magasin;Informatique;Clavier;1;0;59,00;11,04;4
+06/09/2024;CMD-100785;CLI-0056;Île-de-France;Magasin;Informatique;Ordinateur portable;1;10;809,10;102,87;4
+16/09/2025;CMD-100786;CLI-0287;Auvergne-Rhône-Alpes;Marketplace;Maison;Cafetière;1;0;89,00;26,86;4
+28/07/2025;CMD-100787;CLI-0121;Île-de-France;Web;Téléphonie;Coque;1;10;17,10;8,57;5
+28/01/2025;CMD-100788;CLI-0452;Île-de-France;Marketplace;Informatique;Ordinateur portable;2;5;1708,10;269,04;4
+29/01/2025;CMD-100789;CLI-0391;Île-de-France;Magasin;Téléphonie;Coque;3;20;45,60;0,86;4
+02/09/2024;CMD-100790;CLI-0440;Grand Est;Magasin;Informatique;"Écran 27""";2;20;446,40;35,80;3
+21/04/2024;CMD-100791;CLI-0450;Bretagne;Marketplace;Téléphonie;Smartphone;2;0;1298,00;290,35;4
+06/01/2024;CMD-100792;CLI-0234;Grand Est;Web;Loisirs;Console;2;5;853,10;223,09;4
+31/07/2024;CMD-100793;CLI-0505;Île-de-France;Web;Maison;Aspirateur;2;20;398,40;106,09;5
+17/07/2024;CMD-100794;CLI-0623;Île-de-France;Web;Maison;Aspirateur;1;0;249,00;81,77;4
+16/01/2024;CMD-100795;CLI-0135;Auvergne-Rhône-Alpes;Magasin;Téléphonie;Écouteurs;3;10;348,30;56,63;3
+08/03/2025;CMD-100796;CLI-0547;Bretagne;Web;Loisirs;Drone;3;20;789,60;140,57;5
+07/10/2024;CMD-100797;CLI-0220;Occitanie;Magasin;Informatique;"Écran 27""";1;0;279,00;51,94;5
+20/09/2024;CMD-100798;CLI-0294;Île-de-France;Magasin;Informatique;Ordinateur portable;1;0;899,00;163,22;5
+30/03/2024;CMD-100799;CLI-0383;Bretagne;Web;Informatique;Ordinateur portable;1;5;854,05;130,32;4
+20/12/2024;CMD-100800;CLI-0416;Île-de-France;Magasin;Téléphonie;Écouteurs;1;0;129,00;29,50;5
+05/01/2024;CMD-100801;CLI-0742;Auvergne-Rhône-Alpes;Marketplace;Téléphonie;Coque;1;20;15,20;-1,29;4
+23/06/2024;CMD-100802;CLI-0155;Hauts-de-France;Magasin;Maison;Lampe;3;5;111,15;40,06;5
+25/11/2024;CMD-100803;CLI-0116;Bretagne;Web;Informatique;Clavier;1;20;47,20;0,37;4
+31/01/2025;CMD-100804;CLI-0537;Île-de-France;Magasin;Informatique;Ordinateur portable;1;0;899,00;157,32;4
+06/09/2025;CMD-100805;CLI-0300;Île-de-France;Web;Téléphonie;Écouteurs;2;0;258,00;52,52;4
+17/05/2025;CMD-100806;CLI-0303;Auvergne-Rhône-Alpes;Magasin;Loisirs;Jeu vidéo;1;10;53,10;10,12;3
+25/10/2024;CMD-100807;CLI-0754;Hauts-de-France;Web;Informatique;"Écran 27""";2;20;446,40;46,37;4
+08/09/2025;CMD-100808;CLI-0149;Île-de-France;Magasin;Informatique;Clavier;2;10;106,20;11,15;3
+19/07/2025;CMD-100809;CLI-0462;Île-de-France;Web;Informatique;"Écran 27""";1;0;279,00;45,68;5
+18/11/2024;CMD-100810;CLI-0852;Hauts-de-France;Magasin;Téléphonie;Smartphone;2;0;1298,00;286,22;3
+27/03/2025;CMD-100811;CLI-0649;Île-de-France;Magasin;Informatique;"Écran 27""";3;20;669,60;69,56;3
+27/06/2024;CMD-100812;CLI-0751;Île-de-France;Web;Informatique;"Écran 27""";2;0;558,00;101,73;4
+04/05/2025;CMD-100813;CLI-0649;Grand Est;Magasin;Téléphonie;Smartphone;1;5;616,55;124,33;3
+15/10/2024;CMD-100814;CLI-0679;Grand Est;Web;Informatique;"Écran 27""";1;0;279,00;49,14;4
+26/06/2025;CMD-100815;CLI-0253;Île-de-France;Magasin;Téléphonie;Coque;1;5;18,05;3,05;4
+12/03/2024;CMD-100816;CLI-0753;Bretagne;Web;Informatique;"Écran 27""";2;0;558,00;97,42;3
+13/11/2024;CMD-100817;CLI-0048;Grand Est;Web;Loisirs;Drone;1;5;312,55;76,72;4
+21/05/2025;CMD-100818;CLI-0261;Grand Est;Magasin;Téléphonie;Coque;2;10;34,20;3,67;3
+02/10/2024;CMD-100819;CLI-0681;Auvergne-Rhône-Alpes;Web;Informatique;Ordinateur portable;2;0;1798,00;327,44;5
+10/02/2025;CMD-100820;CLI-0022;Île-de-France;Marketplace;Informatique;Ordinateur portable;1;0;899,00;160,31;3
+12/12/2024;CMD-100821;CLI-0562;Île-de-France;Magasin;Téléphonie;Écouteurs;2;5;245,10;44,16;4
+24/08/2025;CMD-100822;CLI-0783;Île-de-France;Magasin;Loisirs;Console;3;20;1077,60;195,53;4
+13/02/2025;CMD-100823;CLI-0154;Nouvelle-Aquitaine;Web;Informatique;Clavier;1;20;47,20;4,30;2
+17/09/2024;CMD-100824;CLI-0355;Occitanie;Magasin;Informatique;Ordinateur portable;2;5;1708,10;259,78;3
+08/09/2025;CMD-100825;CLI-0272;Occitanie;Web;Informatique;Clavier;3;0;177,00;30,39;4
+06/04/2024;CMD-100826;CLI-0526;Île-de-France;Web;Téléphonie;Smartphone;3;20;1557,60;182,87;3
+29/05/2025;CMD-100827;CLI-0207;Occitanie;Web;Loisirs;Jeu vidéo;1;5;56,05;16,27;3
+04/04/2025;CMD-100828;CLI-0808;Hauts-de-France;Web;Téléphonie;Écouteurs;1;5;122,55;25,22;4
+30/08/2025;CMD-100829;CLI-0520;Île-de-France;Web;Informatique;"Écran 27""";2;5;530,10;73,64;3
+14/04/2025;CMD-100830;CLI-0449;Île-de-France;Magasin;Maison;Aspirateur;1;5;236,55;81,36;3
+02/02/2025;CMD-100831;CLI-0385;Grand Est;Web;Maison;Cafetière;1;0;89,00;35,12;4
+04/08/2024;CMD-100832;CLI-0249;Nouvelle-Aquitaine;Web;Informatique;"Écran 27""";1;0;279,00;45,33;4
+03/01/2024;CMD-100833;CLI-0633;Auvergne-Rhône-Alpes;Web;Informatique;Clavier;1;20;47,20;-4,37;5
+18/03/2024;CMD-100834;CLI-0764;Occitanie;Web;Téléphonie;Coque;2;0;38,00;9,49;4
+26/01/2024;CMD-100835;CLI-0410;Hauts-de-France;Web;Maison;Lampe;1;10;35,10;17,29;4
+14/11/2024;CMD-100836;CLI-0290;Grand Est;Magasin;Maison;Aspirateur;3;10;672,30;198,90;3
+25/08/2025;CMD-100837;CLI-0598;Occitanie;Web;Maison;Lampe;1;0;39,00;14,53;3
+02/11/2024;CMD-100838;CLI-0779;Bretagne;Magasin;Maison;Lampe;1;20;31,20;19,68;2
+01/07/2025;CMD-100839;CLI-0381;Île-de-France;Marketplace;Informatique;Clavier;1;10;53,10;10,41;4
+22/06/2025;CMD-100840;CLI-0343;Occitanie;Magasin;Informatique;Clavier;1;20;47,20;-4,26;4
+18/10/2024;CMD-100841;CLI-0236;Bretagne;Web;Informatique;Clavier;1;20;47,20;9,77;4
+22/07/2024;CMD-100842;CLI-0083;Île-de-France;Web;Loisirs;Console;1;10;404,10;93,44;4
+04/09/2025;CMD-100843;CLI-0771;Île-de-France;Web;Téléphonie;Coque;2;0;38,00;7,30;4
+31/05/2024;CMD-100844;CLI-0708;Auvergne-Rhône-Alpes;Web;Informatique;"Écran 27""";1;20;223,20;21,13;4
+11/05/2025;CMD-100845;CLI-0189;Bretagne;Web;Informatique;Ordinateur portable;1;5;854,05;135,01;3
+13/12/2024;CMD-100846;CLI-0206;Île-de-France;Web;Maison;Aspirateur;2;0;498,00;173,91;4
+04/12/2024;CMD-100847;CLI-0820;Bretagne;Magasin;Maison;Cafetière;2;0;178,00;67,71;4
+17/05/2025;CMD-100848;CLI-0531;Île-de-France;Magasin;Maison;Aspirateur;2;0;498,00;181,79;3
+05/10/2024;CMD-100849;CLI-0380;Occitanie;Magasin;Informatique;"Écran 27""";3;5;795,15;118,54;5
+29/05/2025;CMD-100850;CLI-0301;Nouvelle-Aquitaine;Web;Loisirs;Console;2;20;718,40;122,38;3
+29/05/2024;CMD-100851;CLI-0271;Auvergne-Rhône-Alpes;Magasin;Maison;Aspirateur;1;0;249,00;84,70;3
+04/02/2024;CMD-100852;CLI-0411;Nouvelle-Aquitaine;Web;Maison;Cafetière;3;0;267,00;94,32;4
+18/08/2024;CMD-100853;CLI-0005;Île-de-France;Web;Maison;Cafetière;2;5;169,10;60,25;4
+26/02/2025;CMD-100854;CLI-0364;Auvergne-Rhône-Alpes;Marketplace;Loisirs;Drone;1;20;263,20;41,65;4
+22/03/2025;CMD-100855;CLI-0179;Île-de-France;Magasin;Loisirs;Jeu vidéo;3;20;141,60;28,26;3
+29/04/2025;CMD-100856;CLI-0180;Île-de-France;Web;Téléphonie;Smartphone;2;0;1298,00;281,15;5
+06/01/2024;CMD-100857;CLI-0737;Hauts-de-France;Web;Téléphonie;Coque;2;5;36,10;4,98;5
+25/06/2025;CMD-100858;CLI-0107;Auvergne-Rhône-Alpes;Magasin;Téléphonie;Coque;2;0;38,00;12,30;5
+08/04/2025;CMD-100859;CLI-0553;Île-de-France;Web;Maison;Lampe;2;0;78,00;21,02;5
+07/04/2025;CMD-100860;CLI-0279;Hauts-de-France;Magasin;Téléphonie;Coque;3;20;45,60;15,86;3
+16/05/2025;CMD-100861;CLI-0533;Auvergne-Rhône-Alpes;Web;Informatique;Ordinateur portable;2;5;1708,10;261,63;5
+27/08/2024;CMD-100862;CLI-0630;Île-de-France;Marketplace;Informatique;Clavier;2;5;112,10;17,46;3
+26/05/2024;CMD-100863;CLI-0752;Grand Est;Magasin;Loisirs;Jeu vidéo;1;0;59,00;10,32;2
+24/01/2025;CMD-100864;CLI-0521;Auvergne-Rhône-Alpes;Marketplace;Loisirs;Console;2;0;898,00;250,11;4
+21/06/2025;CMD-100865;CLI-0260;Île-de-France;Web;Loisirs;Console;3;20;1077,60;194,58;5
+18/11/2024;CMD-100866;CLI-0559;Occitanie;Magasin;Téléphonie;Smartphone;1;10;584,10;101,53;3
+27/02/2025;CMD-100867;CLI-0270;Occitanie;Web;Maison;Aspirateur;1;0;249,00;91,42;4
+28/11/2024;CMD-100868;CLI-0841;Île-de-France;Magasin;Maison;Lampe;1;0;39,00;13,33;4
+08/09/2024;CMD-100869;CLI-0339;Occitanie;Web;Informatique;"Écran 27""";1;10;251,10;32,15;3
+14/03/2025;CMD-100870;CLI-0002;Auvergne-Rhône-Alpes;Web;Informatique;"Écran 27""";1;20;223,20;14,88;4
+14/07/2025;CMD-100871;CLI-0520;Nouvelle-Aquitaine;Magasin;Loisirs;Console;2;20;718,40;128,82;4
+17/01/2025;CMD-100872;CLI-0695;Île-de-France;Magasin;Informatique;"Écran 27""";1;0;279,00;50,17;4
+24/02/2025;CMD-100873;CLI-0602;Hauts-de-France;Web;Téléphonie;Coque;1;0;19,00;10,47;4
+08/06/2024;CMD-100874;CLI-0687;Auvergne-Rhône-Alpes;Magasin;Maison;Cafetière;1;5;84,55;34,14;4
+16/09/2024;CMD-100875;CLI-0550;Occitanie;Web;Maison;Aspirateur;2;10;448,20;130,31;5
+17/06/2025;CMD-100876;CLI-0839;Bretagne;Web;Informatique;Clavier;1;20;47,20;6,56;4
+24/11/2024;CMD-100877;CLI-0043;Auvergne-Rhône-Alpes;Magasin;Maison;Aspirateur;1;20;199,20;57,09;4
+18/06/2025;CMD-100878;CLI-0626;Île-de-France;Web;Informatique;"Écran 27""";2;0;558,00;106,18;4
+18/07/2025;CMD-100879;CLI-0190;Occitanie;Web;Maison;Aspirateur;1;20;199,20;48,60;3
+06/07/2024;CMD-100880;CLI-0830;Nouvelle-Aquitaine;Web;Informatique;Clavier;2;20;94,40;8,61;4
+20/03/2025;CMD-100881;CLI-0481;Auvergne-Rhône-Alpes;Web;Maison;Lampe;2;10;70,20;19,64;4
+04/01/2025;CMD-100882;CLI-0053;Île-de-France;Web;Maison;Aspirateur;1;0;249,00;82,58;4
+08/10/2024;CMD-100883;CLI-0288;Île-de-France;Magasin;Informatique;Ordinateur portable;1;5;854,05;123,69;3
+12/03/2024;CMD-100884;CLI-0895;Grand Est;Magasin;Informatique;"Écran 27""";3;20;669,60;59,54;5
+10/12/2024;CMD-100885;CLI-0706;Île-de-France;Web;Maison;Lampe;1;10;35,10;4,48;3
+01/03/2025;CMD-100886;CLI-0004;Occitanie;Web;Informatique;"Écran 27""";2;5;530,10;76,54;3
+23/02/2024;CMD-100887;CLI-0558;Nouvelle-Aquitaine;Magasin;Informatique;Ordinateur portable;1;10;809,10;108,07;4
+08/10/2024;CMD-100888;CLI-0358;Bretagne;Web;Téléphonie;Coque;1;20;15,20;3,96;4
+25/03/2025;CMD-100889;CLI-0138;Nouvelle-Aquitaine;Magasin;Loisirs;Console;1;0;449,00;123,56;4
+22/09/2024;CMD-100890;CLI-0345;Bretagne;Web;Téléphonie;Coque;1;20;15,20;7,16;3
+30/11/2024;CMD-100891;CLI-0251;Hauts-de-France;Magasin;Téléphonie;Smartphone;1;20;519,20;58,95;3
+04/07/2024;CMD-100892;CLI-0804;Grand Est;Marketplace;Loisirs;Console;2;0;898,00;250,81;3
+30/04/2025;CMD-100893;CLI-0715;Nouvelle-Aquitaine;Marketplace;Téléphonie;Coque;2;5;36,10;2,92;2
+12/09/2024;CMD-100894;CLI-0659;Hauts-de-France;Web;Téléphonie;Coque;2;20;30,40;-3,45;3
+30/11/2024;CMD-100895;CLI-0644;Grand Est;Magasin;Téléphonie;Écouteurs;2;5;245,10;44,00;4
+26/03/2024;CMD-100896;CLI-0798;Nouvelle-Aquitaine;Marketplace;Informatique;"Écran 27""";2;20;446,40;30,55;3
+15/03/2024;CMD-100897;CLI-0216;Île-de-France;Web;Informatique;"Écran 27""";1;0;279,00;50,71;4
+25/12/2024;CMD-100898;CLI-0471;Auvergne-Rhône-Alpes;Marketplace;Maison;Lampe;1;5;37,05;21,09;5
+26/04/2024;CMD-100899;CLI-0760;Nouvelle-Aquitaine;Magasin;Informatique;"Écran 27""";3;0;837,00;150,89;4
+16/09/2025;CMD-100900;CLI-0440;Île-de-France;Magasin;Maison;Cafetière;1;0;89,00;24,79;4
+19/06/2025;CMD-100901;CLI-0648;Île-de-France;Magasin;Informatique;"Écran 27""";1;20;223,20;27,26;4
+14/03/2025;CMD-100902;CLI-0846;Auvergne-Rhône-Alpes;Web;Téléphonie;Coque;1;10;17,10;-0,75;3
+07/01/2025;CMD-100903;CLI-0225;Grand Est;Magasin;Informatique;Clavier;1;10;53,10;3,92;5
+07/02/2024;CMD-100904;CLI-0161;Auvergne-Rhône-Alpes;Web;Téléphonie;Smartphone;1;5;616,55;116,07;3
+02/09/2024;CMD-100905;CLI-0829;Île-de-France;Marketplace;Maison;Lampe;2;20;62,40;27,23;4
+06/11/2024;CMD-100906;CLI-0054;Auvergne-Rhône-Alpes;Magasin;Téléphonie;Écouteurs;2;5;245,10;38,21;4
+26/07/2025;CMD-100907;CLI-0068;Bretagne;Web;Informatique;"Écran 27""";1;20;223,20;18,03;2
+07/11/2024;CMD-100908;CLI-0687;Auvergne-Rhône-Alpes;Marketplace;Informatique;"Écran 27""";3;0;837,00;147,69;4
+25/03/2024;CMD-100909;CLI-0352;Île-de-France;Marketplace;Maison;Cafetière;1;5;84,55;31,21;5
+16/08/2024;CMD-100910;CLI-0249;Auvergne-Rhône-Alpes;Web;Informatique;Clavier;1;20;47,20;4,50;4
+21/02/2024;CMD-100911;CLI-0813;Occitanie;Web;Maison;Cafetière;2;10;160,20;49,02;3
+12/02/2024;CMD-100912;CLI-0693;Île-de-France;Web;Informatique;"Écran 27""";2;5;530,10;86,66;4
+07/08/2024;CMD-100913;CLI-0650;Occitanie;Web;Informatique;Ordinateur portable;2;10;1618,20;215,22;3
+06/05/2024;CMD-100914;CLI-0110;Nouvelle-Aquitaine;Magasin;Maison;Aspirateur;1;10;224,10;66,54;4
+13/12/2024;CMD-100915;CLI-0454;Île-de-France;Web;Téléphonie;Écouteurs;2;0;258,00;53,70;4
+12/01/2024;CMD-100916;CLI-0323;Grand Est;Web;Informatique;Clavier;2;0;118,00;21,51;5
+07/07/2024;CMD-100917;CLI-0630;Hauts-de-France;Web;Loisirs;Console;2;0;898,00;249,13;4
+10/10/2024;CMD-100918;CLI-0078;Nouvelle-Aquitaine;Magasin;Informatique;Clavier;3;0;177,00;28,93;3
+01/02/2025;CMD-100919;CLI-0501;Bretagne;Web;Téléphonie;Coque;1;0;19,00;10,56;4
+05/07/2025;CMD-100920;CLI-0811;Grand Est;Web;Téléphonie;Écouteurs;1;5;122,55;20,63;4
+02/08/2024;CMD-100921;CLI-0566;Île-de-France;Web;Téléphonie;Smartphone;2;0;1298,00;288,89;4
+08/10/2024;CMD-100922;CLI-0264;Auvergne-Rhône-Alpes;Web;Maison;Lampe;1;10;35,10;11,50;4
+20/09/2024;CMD-100923;CLI-0779;Nouvelle-Aquitaine;Web;Informatique;"Écran 27""";1;0;279,00;47,85;4
+09/07/2025;CMD-100924;CLI-0548;Nouvelle-Aquitaine;Magasin;Loisirs;Jeu vidéo;2;0;118,00;39,30;4
+23/08/2025;CMD-100925;CLI-0409;Auvergne-Rhône-Alpes;Magasin;Téléphonie;Smartphone;1;10;584,10;102,77;4
+25/08/2025;CMD-100926;CLI-0344;Hauts-de-France;Web;Loisirs;Drone;1;0;329,00;85,30;4
+15/04/2025;CMD-100927;CLI-0180;Bretagne;Marketplace;Maison;Cafetière;2;0;178,00;69,56;5
+10/11/2024;CMD-100928;CLI-0075;Grand Est;Magasin;Loisirs;Console;2;20;718,40;125,63;5
+04/12/2024;CMD-100929;CLI-0783;Occitanie;Web;Téléphonie;Smartphone;2;0;1298,00;285,60;5
+05/09/2025;CMD-100930;CLI-0346;Nouvelle-Aquitaine;Marketplace;Téléphonie;Coque;2;5;36,10;9,00;4
+27/06/2024;CMD-100931;CLI-0368;Hauts-de-France;Web;Téléphonie;Écouteurs;1;0;129,00;26,92;4
+05/08/2024;CMD-100932;CLI-0738;Occitanie;Magasin;Maison;Cafetière;3;0;267,00;103,54;5
+15/07/2025;CMD-100933;CLI-0108;Bretagne;Web;Téléphonie;Smartphone;2;5;1233,10;240,66;4
+29/08/2024;CMD-100934;CLI-0064;Île-de-France;Web;Maison;Lampe;2;0;78,00;32,73;4
+27/05/2024;CMD-100935;CLI-0467;Grand Est;Web;Informatique;Ordinateur portable;2;0;1798,00;321,37;5
+16/12/2024;CMD-100936;CLI-0396;Grand Est;Web;Maison;Lampe;1;5;37,05;12,39;5
+11/07/2025;CMD-100937;CLI-0837;Nouvelle-Aquitaine;Magasin;Informatique;Ordinateur portable;2;10;1618,20;211,96;4
+23/07/2025;CMD-100938;CLI-0133;Île-de-France;Magasin;Loisirs;Jeu vidéo;1;0;59,00;15,24;3
+10/07/2024;CMD-100939;CLI-0224;Île-de-France;Web;Informatique;Clavier;1;5;56,05;9,17;4
+27/11/2024;CMD-100940;CLI-0767;Hauts-de-France;Magasin;Informatique;"Écran 27""";2;5;530,10;77,66;4
+07/09/2025;CMD-100941;CLI-0371;Auvergne-Rhône-Alpes;Web;Maison;Aspirateur;2;0;498,00;172,92;4
+09/04/2025;CMD-100942;CLI-0607;Grand Est;Web;Maison;Cafetière;1;0;89,00;28,31;4
+04/01/2025;CMD-100943;CLI-0886;Nouvelle-Aquitaine;Magasin;Maison;Cafetière;1;0;89,00;32,13;5
+13/02/2025;CMD-100944;CLI-0060;Île-de-France;Web;Loisirs;Console;2;10;808,20;186,20;4
+16/01/2024;CMD-100945;CLI-0450;Bretagne;Web;Informatique;"Écran 27""";2;0;558,00;96,36;5
+06/07/2024;CMD-100946;CLI-0614;Île-de-France;Marketplace;Maison;Lampe;3;0;117,00;41,76;4
+18/06/2025;CMD-100947;CLI-0462;Grand Est;Marketplace;Téléphonie;Écouteurs;1;0;129,00;34,91;4
+06/07/2024;CMD-100948;CLI-0475;Auvergne-Rhône-Alpes;Web;Téléphonie;Écouteurs;2;5;245,10;47,89;4
+21/04/2024;CMD-100949;CLI-0048;Grand Est;Magasin;Téléphonie;Coque;1;0;19,00;4,46;3
+01/07/2025;CMD-100950;CLI-0376;Auvergne-Rhône-Alpes;Web;Informatique;Clavier;2;10;106,20;18,40;5
+26/06/2024;CMD-100951;CLI-0457;Île-de-France;Web;Téléphonie;Coque;1;0;19,00;5,71;3
+17/12/2024;CMD-100952;CLI-0251;Île-de-France;Magasin;Maison;Cafetière;1;20;71,20;21,75;3
+05/06/2024;CMD-100953;CLI-0478;Nouvelle-Aquitaine;Web;Informatique;Clavier;2;5;112,10;12,71;3
+01/01/2025;CMD-100954;CLI-0565;Île-de-France;Magasin;Loisirs;Jeu vidéo;1;10;53,10;13,12;3
+05/05/2025;CMD-100955;CLI-0624;Hauts-de-France;Web;Téléphonie;Coque;1;0;19,00;4,32;4
+01/02/2025;CMD-100956;CLI-0899;Île-de-France;Web;Informatique;"Écran 27""";2;5;530,10;81,54;4
+22/06/2025;CMD-100957;CLI-0790;Auvergne-Rhône-Alpes;Magasin;Téléphonie;Écouteurs;1;20;103,20;12,29;4
+14/09/2025;CMD-100958;CLI-0590;Auvergne-Rhône-Alpes;Marketplace;Informatique;Ordinateur portable;3;20;2157,60;186,72;3
+03/01/2025;CMD-100959;CLI-0331;Grand Est;Magasin;Informatique;"Écran 27""";2;20;446,40;39,09;2
+09/06/2024;CMD-100960;CLI-0373;Île-de-France;Web;Maison;Cafetière;1;0;89,00;32,43;4
+24/05/2025;CMD-100961;CLI-0130;Île-de-France;Magasin;Informatique;Ordinateur portable;2;20;1438,40;114,79;4
+18/07/2025;CMD-100962;CLI-0271;Île-de-France;Web;Informatique;"Écran 27""";2;0;558,00;94,06;4
+16/06/2024;CMD-100963;CLI-0558;Auvergne-Rhône-Alpes;Marketplace;Maison;Lampe;2;0;78,00;12,43;4
+21/10/2024;CMD-100964;CLI-0378;Île-de-France;Web;Informatique;"Écran 27""";2;5;530,10;84,93;3
+25/04/2024;CMD-100965;CLI-0453;Auvergne-Rhône-Alpes;Magasin;Maison;Lampe;3;20;93,60;15,67;3
+17/04/2024;CMD-100966;CLI-0215;Bretagne;Marketplace;Maison;Cafetière;3;0;267,00;90,54;4
+17/12/2024;CMD-100967;CLI-0559;Bretagne;Marketplace;Informatique;Ordinateur portable;1;10;809,10;100,73;5
+04/03/2024;CMD-100968;CLI-0212;Grand Est;Web;Téléphonie;Smartphone;2;5;1233,10;238,13;4
+24/09/2024;CMD-100969;CLI-0171;Île-de-France;Marketplace;Informatique;"Écran 27""";1;0;279,00;51,27;4
+12/02/2025;CMD-100970;CLI-0380;Hauts-de-France;Web;Téléphonie;Smartphone;2;0;1298,00;281,66;4
+18/07/2024;CMD-100971;CLI-0527;Hauts-de-France;Magasin;Informatique;"Écran 27""";1;0;279,00;43,66;4
+21/08/2025;CMD-100972;CLI-0049;Île-de-France;Web;Loisirs;Console;2;0;898,00;258,35;5
+16/11/2024;CMD-100973;CLI-0604;Hauts-de-France;Magasin;Informatique;Clavier;2;10;106,20;15,23;3
+28/09/2024;CMD-100974;CLI-0475;Île-de-France;Magasin;Maison;Lampe;2;5;74,10;26,10;4
+28/03/2024;CMD-100975;CLI-0823;Bretagne;Magasin;Informatique;Ordinateur portable;2;10;1618,20;219,08;4
+23/01/2024;CMD-100976;CLI-0574;Île-de-France;Web;Informatique;Clavier;1;20;47,20;4,82;3
+10/08/2025;CMD-100977;CLI-0212;Île-de-France;Magasin;Téléphonie;Smartphone;1;20;519,20;61,24;2
+02/07/2024;CMD-100978;CLI-0234;Grand Est;Web;Téléphonie;Écouteurs;1;0;129,00;21,39;5
+02/02/2024;CMD-100979;CLI-0087;Île-de-France;Magasin;Loisirs;Console;2;20;718,40;126,53;3
+24/12/2024;CMD-100980;CLI-0389;Île-de-France;Web;Informatique;Ordinateur portable;2;5;1708,10;263,53;3
+11/02/2024;CMD-100981;CLI-0729;Auvergne-Rhône-Alpes;Web;Informatique;"Écran 27""";2;5;530,10;79,25;4
+08/09/2025;CMD-100982;CLI-0475;Grand Est;Web;Téléphonie;Écouteurs;2;10;232,20;42,14;3
+11/10/2024;CMD-100983;CLI-0727;Auvergne-Rhône-Alpes;Web;Téléphonie;Écouteurs;1;0;129,00;23,63;3
+14/06/2024;CMD-100984;CLI-0259;Île-de-France;Web;Loisirs;Jeu vidéo;2;0;118,00;37,64;3
+19/11/2024;CMD-100985;CLI-0195;Île-de-France;Magasin;Loisirs;Jeu vidéo;1;10;53,10;15,29;4
+30/01/2024;CMD-100986;CLI-0869;Occitanie;Marketplace;Loisirs;Console;2;10;808,20;188,00;3
+01/02/2024;CMD-100987;CLI-0526;Nouvelle-Aquitaine;Web;Informatique;Clavier;2;10;106,20;11,65;4
+17/06/2025;CMD-100988;CLI-0001;Île-de-France;Web;Téléphonie;Coque;1;5;18,05;-5,46;4
+10/03/2024;CMD-100989;CLI-0410;Auvergne-Rhône-Alpes;Web;Maison;Aspirateur;3;0;747,00;256,79;3
+01/02/2025;CMD-100990;CLI-0219;Grand Est;Magasin;Informatique;"Écran 27""";1;0;279,00;47,82;4
+28/08/2024;CMD-100991;CLI-0769;Nouvelle-Aquitaine;Web;Maison;Lampe;2;0;78,00;32,64;4
+01/05/2025;CMD-100992;CLI-0458;Hauts-de-France;Magasin;Informatique;Ordinateur portable;2;5;1708,10;262,75;3
+07/02/2024;CMD-100993;CLI-0361;Occitanie;Marketplace;Informatique;Ordinateur portable;1;20;719,20;52,90;3
+16/07/2025;CMD-100994;CLI-0642;Île-de-France;Magasin;Loisirs;Console;1;0;449,00;128,40;4
+08/10/2024;CMD-100995;CLI-0338;Occitanie;Web;Informatique;"Écran 27""";2;0;558,00;106,60;4
+03/09/2025;CMD-100996;CLI-0769;Nouvelle-Aquitaine;Web;Loisirs;Console;2;0;898,00;247,07;5
+03/11/2024;CMD-100997;CLI-0388;Hauts-de-France;Magasin;Informatique;"Écran 27""";2;0;558,00;102,18;5
+04/04/2024;CMD-100998;CLI-0481;Auvergne-Rhône-Alpes;Magasin;Informatique;Clavier;1;0;59,00;9,79;3
+02/01/2024;CMD-100999;CLI-0075;Auvergne-Rhône-Alpes;Magasin;Informatique;Clavier;1;20;47,20;4,27;4
+30/06/2024;CMD-101000;CLI-0671;Bretagne;Web;Informatique;"Écran 27""";1;20;223,20;18,91;3
+11/03/2024;CMD-101001;CLI-0891;Auvergne-Rhône-Alpes;Magasin;Téléphonie;Coque;1;0;19,00;5,86;4
+16/09/2024;CMD-101002;CLI-0547;Auvergne-Rhône-Alpes;Web;Informatique;Ordinateur portable;1;10;809,10;93,40;4
+24/06/2025;CMD-101003;CLI-0144;Île-de-France;Magasin;Téléphonie;Smartphone;1;20;519,20;62,24;4
+11/04/2024;CMD-101004;CLI-0054;Occitanie;Magasin;Loisirs;Console;1;5;426,55;110,61;4
+01/01/2024;CMD-101005;CLI-0704;Auvergne-Rhône-Alpes;Magasin;Téléphonie;Coque;3;0;57,00;21,01;3
+10/03/2024;CMD-101006;CLI-0583;Auvergne-Rhône-Alpes;Magasin;Informatique;Clavier;1;5;56,05;10,58;5
+14/11/2024;CMD-101007;CLI-0184;Hauts-de-France;Magasin;Téléphonie;Coque;1;0;19,00;3,25;3
+02/11/2024;CMD-101008;CLI-0615;Île-de-France;Web;Maison;Aspirateur;3;5;709,65;233,88;4
+19/01/2024;CMD-101009;CLI-0501;Occitanie;Web;Téléphonie;Coque;2;0;38,00;12,87;5
+27/07/2024;CMD-101010;CLI-0692;Occitanie;Marketplace;Informatique;Clavier;2;5;112,10;10,61;4
+13/09/2024;CMD-101011;CLI-0254;Hauts-de-France;Web;Téléphonie;Coque;1;20;15,20;-5,15;4
+27/09/2024;CMD-101012;CLI-0088;Nouvelle-Aquitaine;Web;Téléphonie;Coque;1;0;19,00;6,54;4
+11/12/2024;CMD-101013;CLI-0512;Occitanie;Web;Informatique;Ordinateur portable;1;10;809,10;106,72;4
+03/05/2025;CMD-101014;CLI-0122;Auvergne-Rhône-Alpes;Web;Informatique;Clavier;3;10;159,30;18,99;4
+10/06/2025;CMD-101015;CLI-0094;Nouvelle-Aquitaine;Web;Loisirs;Jeu vidéo;2;0;118,00;35,86;3
+27/11/2024;CMD-101016;CLI-0853;Île-de-France;Marketplace;Informatique;Ordinateur portable;2;5;1708,10;260,11;4
+11/06/2024;CMD-101017;CLI-0180;Auvergne-Rhône-Alpes;Web;Informatique;Ordinateur portable;2;0;1798,00;327,25;5
+23/05/2024;CMD-101018;CLI-0247;Bretagne;Web;Informatique;"Écran 27""";3;10;753,30;95,29;4
+09/01/2025;CMD-101019;CLI-0085;Nouvelle-Aquitaine;Web;Téléphonie;Smartphone;1;5;616,55;116,70;3
+26/07/2025;CMD-101020;CLI-0032;Île-de-France;Web;Téléphonie;Coque;1;20;15,20;-2,67;2
+27/10/2024;CMD-101021;CLI-0132;Nouvelle-Aquitaine;Web;Informatique;Ordinateur portable;1;0;899,00;165,20;3
+24/06/2025;CMD-101022;CLI-0461;Hauts-de-France;Magasin;Téléphonie;Smartphone;1;10;584,10;99,18;4
+27/07/2024;CMD-101023;CLI-0482;Hauts-de-France;Magasin;Maison;Lampe;2;0;78,00;22,15;4
+03/06/2024;CMD-101024;CLI-0213;Île-de-France;Web;Informatique;Ordinateur portable;2;0;1798,00;323,45;4
+31/01/2024;CMD-101025;CLI-0591;Occitanie;Web;Loisirs;Jeu vidéo;1;20;47,20;9,40;4
+05/11/2024;CMD-101026;CLI-0359;Île-de-France;Web;Informatique;Clavier;2;0;118,00;16,90;4
+15/10/2024;CMD-101027;CLI-0087;Île-de-France;Marketplace;Informatique;Clavier;3;0;177,00;34,75;4
+24/06/2025;CMD-101028;CLI-0841;Île-de-France;Web;Loisirs;Drone;2;0;658,00;177,19;4
+29/04/2024;CMD-101029;CLI-0283;Bretagne;Web;Maison;Lampe;3;10;105,30;27,83;4
+04/04/2024;CMD-101030;CLI-0185;Occitanie;Magasin;Informatique;Clavier;1;0;59,00;9,72;5
+12/01/2025;CMD-101031;CLI-0366;Auvergne-Rhône-Alpes;Marketplace;Maison;Lampe;1;10;35,10;10,32;3
+30/01/2024;CMD-101032;CLI-0835;Hauts-de-France;Web;Téléphonie;Écouteurs;1;5;122,55;26,65;4
+18/07/2024;CMD-101033;CLI-0735;Occitanie;Web;Informatique;"Écran 27""";1;5;265,05;38,75;5
+13/01/2024;CMD-101034;CLI-0097;Auvergne-Rhône-Alpes;Magasin;Maison;Cafetière;1;0;89,00;30,36;3
+29/07/2025;CMD-101035;CLI-0626;Île-de-France;Web;Maison;Aspirateur;1;0;249,00;81,74;5
+06/01/2024;CMD-101036;CLI-0422;Hauts-de-France;Web;Informatique;"Écran 27""";1;0;279,00;43,92;3
+06/08/2025;CMD-101037;CLI-0539;Auvergne-Rhône-Alpes;Magasin;Téléphonie;Écouteurs;2;20;206,40;26,07;3
+27/04/2024;CMD-101038;CLI-0588;Île-de-France;Web;Téléphonie;Smartphone;1;0;649,00;142,66;5
+06/04/2024;CMD-101039;CLI-0787;Île-de-France;Magasin;Informatique;Ordinateur portable;2;10;1618,20;210,07;3
+10/03/2024;CMD-101040;CLI-0093;Île-de-France;Magasin;Loisirs;Console;2;5;853,10;226,12;4
+18/03/2025;CMD-101041;CLI-0853;Île-de-France;Magasin;Téléphonie;Smartphone;3;5;1849,65;359,58;4
+24/10/2024;CMD-101042;CLI-0186;Auvergne-Rhône-Alpes;Marketplace;Téléphonie;Coque;1;20;15,20;-3,74;4
+22/12/2024;CMD-101043;CLI-0173;Île-de-France;Web;Téléphonie;Coque;2;0;38,00;9,64;4
+06/03/2025;CMD-101044;CLI-0784;Île-de-France;Magasin;Téléphonie;Coque;3;5;54,15;11,02;5
+05/11/2024;CMD-101045;CLI-0045;Île-de-France;Web;Informatique;Clavier;2;0;118,00;21,08;4
+03/01/2024;CMD-101046;CLI-0451;Bretagne;Magasin;Loisirs;Jeu vidéo;1;10;53,10;10,73;3
+18/06/2025;CMD-101047;CLI-0162;Occitanie;Web;Téléphonie;Coque;1;5;18,05;0,11;4
+29/11/2024;CMD-101048;CLI-0639;Bretagne;Web;Maison;Lampe;2;10;70,20;21,58;4
+13/10/2024;CMD-101049;CLI-0707;Occitanie;Magasin;Téléphonie;Smartphone;1;20;519,20;62,64;3
+11/04/2024;CMD-101050;CLI-0552;Grand Est;Web;Informatique;Ordinateur portable;1;0;899,00;160,47;4
+15/07/2025;CMD-101051;CLI-0811;Île-de-France;Web;Informatique;"Écran 27""";1;5;265,05;43,13;5
+28/04/2025;CMD-101052;CLI-0720;Île-de-France;Magasin;Téléphonie;Écouteurs;1;20;103,20;18,13;5
+14/09/2025;CMD-101053;CLI-0287;Grand Est;Marketplace;Informatique;"Écran 27""";2;0;558,00;111,06;5
+19/06/2025;CMD-101054;CLI-0803;Auvergne-Rhône-Alpes;Magasin;Maison;Cafetière;1;20;71,20;12,36;4
+01/07/2024;CMD-101055;CLI-0562;Nouvelle-Aquitaine;Web;Loisirs;Console;1;0;449,00;121,64;4
+08/06/2024;CMD-101056;CLI-0218;Hauts-de-France;Magasin;Informatique;"Écran 27""";1;0;279,00;54,21;4
+04/06/2024;CMD-101057;CLI-0688;Nouvelle-Aquitaine;Web;Informatique;Ordinateur portable;3;0;2697,00;486,32;4
+14/12/2024;CMD-101058;CLI-0261;Bretagne;Web;Maison;Aspirateur;1;20;199,20;54,23;4
+11/10/2024;CMD-101059;CLI-0255;Nouvelle-Aquitaine;Magasin;Informatique;"Écran 27""";3;20;669,60;56,51;3
+29/08/2025;CMD-101060;CLI-0854;Île-de-France;Magasin;Loisirs;Console;1;10;404,10;95,71;5
+12/01/2025;CMD-101061;CLI-0496;Occitanie;Web;Téléphonie;Écouteurs;2;5;245,10;43,36;5
+08/09/2025;CMD-101062;CLI-0291;Auvergne-Rhône-Alpes;Magasin;Informatique;Ordinateur portable;1;0;899,00;152,04;4
+19/02/2024;CMD-101063;CLI-0547;Grand Est;Magasin;Informatique;Ordinateur portable;1;0;899,00;158,64;4
+09/12/2024;CMD-101064;CLI-0236;Grand Est;Web;Loisirs;Drone;2;0;658,00;183,99;3
+15/05/2025;CMD-101065;CLI-0824;Auvergne-Rhône-Alpes;Web;Informatique;Clavier;2;0;118,00;24,62;3
+11/03/2024;CMD-101066;CLI-0135;Nouvelle-Aquitaine;Magasin;Maison;Lampe;3;0;117,00;39,57;5
+11/01/2025;CMD-101067;CLI-0525;Île-de-France;Web;Informatique;"Écran 27""";2;20;446,40;30,65;4
+04/07/2024;CMD-101068;CLI-0746;Grand Est;Web;Informatique;Ordinateur portable;1;0;899,00;164,14;4
+15/05/2024;CMD-101069;CLI-0135;Hauts-de-France;Web;Loisirs;Drone;1;0;329,00;83,74;3
+18/11/2024;CMD-101070;CLI-0623;Grand Est;Web;Informatique;Clavier;1;0;59,00;10,76;5
+17/07/2024;CMD-101071;CLI-0382;Auvergne-Rhône-Alpes;Web;Informatique;Clavier;1;10;53,10;2,81;4
+30/05/2025;CMD-101072;CLI-0319;Grand Est;Magasin;Téléphonie;Coque;3;0;57,00;13,19;3
+18/02/2024;CMD-101073;CLI-0434;Auvergne-Rhône-Alpes;Magasin;Loisirs;Drone;2;0;658,00;187,77;4
+23/06/2025;CMD-101074;CLI-0408;Nouvelle-Aquitaine;Marketplace;Informatique;"Écran 27""";1;20;223,20;18,68;5
+15/03/2025;CMD-101075;CLI-0620;Auvergne-Rhône-Alpes;Web;Informatique;Clavier;1;20;47,20;15,34;3
+13/04/2024;CMD-101076;CLI-0547;Île-de-France;Web;Loisirs;Drone;1;20;263,20;44,95;2
+16/02/2025;CMD-101077;CLI-0220;Auvergne-Rhône-Alpes;Web;Maison;Aspirateur;1;0;249,00;96,49;5
+29/03/2025;CMD-101078;CLI-0005;Nouvelle-Aquitaine;Marketplace;Loisirs;Drone;1;10;296,10;60,67;3
+13/06/2025;CMD-101079;CLI-0878;Auvergne-Rhône-Alpes;Web;Maison;Cafetière;3;0;267,00;89,80;5
+19/03/2025;CMD-101080;CLI-0562;Nouvelle-Aquitaine;Marketplace;Maison;Aspirateur;2;5;473,10;149,23;4
+07/04/2025;CMD-101081;CLI-0131;Auvergne-Rhône-Alpes;Web;Téléphonie;Smartphone;2;0;1298,00;276,47;4
+02/04/2024;CMD-101082;CLI-0361;Occitanie;Web;Informatique;Ordinateur portable;2;20;1438,40;112,02;5
+27/05/2024;CMD-101083;CLI-0315;Île-de-France;Magasin;Maison;Cafetière;3;20;213,60;49,74;3
+01/05/2025;CMD-101084;CLI-0595;Île-de-France;Magasin;Maison;Aspirateur;2;0;498,00;185,16;4
+30/03/2024;CMD-101085;CLI-0443;Hauts-de-France;Magasin;Loisirs;Drone;3;0;987,00;283,71;4
+07/02/2024;CMD-101086;CLI-0254;Nouvelle-Aquitaine;Web;Téléphonie;Écouteurs;1;20;103,20;17,95;4
+12/05/2025;CMD-101087;CLI-0776;Grand Est;Web;Informatique;Ordinateur portable;1;10;809,10;98,11;5
+13/11/2024;CMD-101088;CLI-0351;Occitanie;Web;Téléphonie;Écouteurs;2;5;245,10;43,86;4
+16/03/2024;CMD-101089;CLI-0032;Île-de-France;Web;Téléphonie;Smartphone;1;20;519,20;55,01;2
+12/09/2025;CMD-101090;CLI-0772;Auvergne-Rhône-Alpes;Magasin;Téléphonie;Écouteurs;2;5;245,10;47,84;3
+14/06/2024;CMD-101091;CLI-0048;Île-de-France;Web;Maison;Cafetière;1;20;71,20;12,95;3
+03/01/2024;CMD-101092;CLI-0484;Nouvelle-Aquitaine;Web;Téléphonie;Smartphone;3;0;1947,00;430,29;4
+01/08/2025;CMD-101093;CLI-0840;Île-de-France;Magasin;Informatique;Clavier;3;20;141,60;10,75;4
+11/01/2024;CMD-101094;CLI-0588;Hauts-de-France;Web;Téléphonie;Coque;1;5;18,05;2,17;5
+12/12/2024;CMD-101095;CLI-0099;Île-de-France;Web;Téléphonie;Écouteurs;3;0;387,00;88,60;4
+13/09/2025;CMD-101096;CLI-0166;Hauts-de-France;Web;Loisirs;Drone;1;20;263,20;46,26;3
+27/12/2024;CMD-101097;CLI-0459;Île-de-France;Magasin;Téléphonie;Smartphone;1;10;584,10;98,42;4
+31/12/2024;CMD-101098;CLI-0818;Hauts-de-France;Web;Téléphonie;Smartphone;2;0;1298,00;290,73;4
+24/12/2024;CMD-101099;CLI-0021;Île-de-France;Magasin;Téléphonie;Coque;1;0;19,00;1,97;4
+27/02/2024;CMD-101100;CLI-0166;Auvergne-Rhône-Alpes;Web;Téléphonie;Smartphone;2;10;1168,20;190,85;5
+05/07/2025;CMD-101101;CLI-0765;Occitanie;Web;Informatique;Ordinateur portable;1;0;899,00;154,32;4
+01/12/2024;CMD-101102;CLI-0211;Bretagne;Web;Loisirs;Drone;1;0;329,00;87,33;3
+24/01/2025;CMD-101103;CLI-0536;Île-de-France;Web;Loisirs;Drone;1;0;329,00;99,86;3
+20/06/2024;CMD-101104;CLI-0254;Bretagne;Web;Téléphonie;Coque;2;10;34,20;2,25;5
+27/03/2025;CMD-101105;CLI-0009;Auvergne-Rhône-Alpes;Magasin;Téléphonie;Écouteurs;3;5;367,65;71,70;4
+01/02/2024;CMD-101106;CLI-0372;Auvergne-Rhône-Alpes;Web;Informatique;Clavier;1;20;47,20;2,85;3
+07/01/2025;CMD-101107;CLI-0654;Auvergne-Rhône-Alpes;Web;Téléphonie;Coque;3;0;57,00;13,22;5
+07/06/2025;CMD-101108;CLI-0842;Occitanie;Magasin;Téléphonie;Smartphone;1;20;519,20;61,07;4
+28/04/2024;CMD-101109;CLI-0589;Île-de-France;Magasin;Maison;Lampe;2;0;78,00;33,14;4
+12/01/2024;CMD-101110;CLI-0162;Hauts-de-France;Web;Informatique;Clavier;2;0;118,00;26,53;4
+02/02/2024;CMD-101111;CLI-0674;Île-de-France;Web;Maison;Cafetière;2;0;178,00;65,39;3
+07/01/2025;CMD-101112;CLI-0118;Auvergne-Rhône-Alpes;Marketplace;Informatique;"Écran 27""";1;10;251,10;31,85;4
+07/04/2024;CMD-101113;CLI-0867;Île-de-France;Marketplace;Maison;Cafetière;3;0;267,00;92,11;4
+24/05/2024;CMD-101114;CLI-0366;Île-de-France;Magasin;Téléphonie;Écouteurs;1;5;122,55;25,55;3
+14/06/2025;CMD-101115;CLI-0042;Grand Est;Web;Informatique;"Écran 27""";2;0;558,00;103,12;3
+01/07/2025;CMD-101116;CLI-0179;Occitanie;Magasin;Téléphonie;Écouteurs;1;10;116,10;23,20;3
+07/06/2024;CMD-101117;CLI-0271;Nouvelle-Aquitaine;Marketplace;Maison;Lampe;2;10;70,20;17,28;5
+25/04/2024;CMD-101118;CLI-0477;Bretagne;Web;Téléphonie;Coque;3;10;51,30;13,53;3
+12/12/2024;CMD-101119;CLI-0897;Île-de-France;Marketplace;Informatique;Ordinateur portable;1;5;854,05;134,22;4
+24/11/2024;CMD-101120;CLI-0511;Bretagne;Magasin;Téléphonie;Smartphone;3;20;1557,60;187,91;3
+15/04/2025;CMD-101121;CLI-0010;Île-de-France;Web;Informatique;Ordinateur portable;1;0;899,00;160,02;4
+28/02/2025;CMD-101122;CLI-0590;Grand Est;Marketplace;Téléphonie;Écouteurs;2;20;206,40;25,49;5
+29/11/2024;CMD-101123;CLI-0849;Île-de-France;Web;Téléphonie;Écouteurs;1;0;129,00;27,37;5
+30/03/2025;CMD-101124;CLI-0012;Hauts-de-France;Web;Informatique;"Écran 27""";2;5;530,10;86,59;5
+20/12/2024;CMD-101125;CLI-0684;Île-de-France;Web;Téléphonie;Coque;1;5;18,05;4,51;4
+07/09/2025;CMD-101126;CLI-0593;Nouvelle-Aquitaine;Marketplace;Maison;Cafetière;3;0;267,00;93,65;4
+19/09/2024;CMD-101127;CLI-0235;Auvergne-Rhône-Alpes;Web;Maison;Lampe;2;10;70,20;17,24;5
+01/08/2025;CMD-101128;CLI-0102;Grand Est;Magasin;Informatique;"Écran 27""";1;20;223,20;12,93;5
+18/11/2024;CMD-101129;CLI-0056;Île-de-France;Web;Informatique;Ordinateur portable;1;0;899,00;165,09;5
+08/01/2024;CMD-101130;CLI-0553;Hauts-de-France;Magasin;Téléphonie;Smartphone;2;0;1298,00;284,28;5
+23/01/2024;CMD-101131;CLI-0723;Occitanie;Web;Informatique;Clavier;2;0;118,00;17,10;3
+13/05/2025;CMD-101132;CLI-0153;Île-de-France;Web;Téléphonie;Écouteurs;1;10;116,10;11,42;4
+12/08/2024;CMD-101133;CLI-0363;Auvergne-Rhône-Alpes;Magasin;Informatique;Clavier;1;20;47,20;4,90;4
+21/11/2024;CMD-101134;CLI-0033;Nouvelle-Aquitaine;Marketplace;Informatique;Clavier;2;10;106,20;12,78;4
+11/08/2025;CMD-101135;CLI-0713;Grand Est;Web;Maison;Lampe;2;0;78,00;21,58;5
+28/02/2024;CMD-101136;CLI-0593;Auvergne-Rhône-Alpes;Web;Informatique;Clavier;1;0;59,00;7,67;5
+28/04/2025;CMD-101137;CLI-0714;Grand Est;Magasin;Maison;Cafetière;3;10;240,30;83,45;4
+10/07/2025;CMD-101138;CLI-0549;Île-de-France;Web;Informatique;"Écran 27""";1;0;279,00;57,07;3
+15/02/2025;CMD-101139;CLI-0068;Occitanie;Web;Téléphonie;Smartphone;2;5;1233,10;243,09;5
+03/03/2025;CMD-101140;CLI-0723;Île-de-France;Magasin;Téléphonie;Écouteurs;1;20;103,20;10,08;3
+20/10/2024;CMD-101141;CLI-0792;Auvergne-Rhône-Alpes;Web;Maison;Lampe;1;0;39,00;12,55;4
+03/04/2024;CMD-101142;CLI-0891;Occitanie;Web;Maison;Lampe;2;0;78,00;18,21;5
+13/08/2024;CMD-101143;CLI-0161;Bretagne;Marketplace;Téléphonie;Smartphone;1;0;649,00;145,55;5
+21/06/2025;CMD-101144;CLI-0746;Occitanie;Web;Téléphonie;Écouteurs;2;5;245,10;50,41;4
+07/09/2025;CMD-101145;CLI-0700;Île-de-France;Web;Informatique;Clavier;1;0;59,00;11,35;4
+25/07/2025;CMD-101146;CLI-0114;Grand Est;Web;Téléphonie;Smartphone;3;20;1557,60;190,39;4
+01/06/2024;CMD-101147;CLI-0481;Île-de-France;Magasin;Informatique;Ordinateur portable;1;0;899,00;162,45;4
+12/05/2024;CMD-101148;CLI-0434;Île-de-France;Web;Téléphonie;Coque;2;0;38,00;13,26;4
+02/08/2024;CMD-101149;CLI-0070;Île-de-France;Magasin;Informatique;Ordinateur portable;2;0;1798,00;320,57;5
+04/04/2025;CMD-101150;CLI-0656;Île-de-France;Web;Loisirs;Drone;2;20;526,40;98,78;4
+07/02/2025;CMD-101151;CLI-0582;Hauts-de-France;Marketplace;Téléphonie;Smartphone;1;0;649,00;139,25;5
+08/02/2025;CMD-101152;CLI-0134;Auvergne-Rhône-Alpes;Marketplace;Téléphonie;Coque;1;20;15,20;0,52;4
+25/08/2024;CMD-101153;CLI-0892;Île-de-France;Magasin;Téléphonie;Smartphone;2;0;1298,00;281,74;3
+15/09/2024;CMD-101154;CLI-0389;Île-de-France;Web;Informatique;Ordinateur portable;2;10;1618,20;208,81;3
+19/11/2024;CMD-101155;CLI-0277;Occitanie;Web;Informatique;Clavier;2;10;106,20;13,76;3
+25/02/2024;CMD-101156;CLI-0703;Île-de-France;Magasin;Loisirs;Console;1;0;449,00;119,36;5
+30/11/2024;CMD-101157;CLI-0459;Île-de-France;Marketplace;Maison;Cafetière;2;0;178,00;53,97;3
+22/12/2024;CMD-101158;CLI-0516;Nouvelle-Aquitaine;Magasin;Informatique;Ordinateur portable;1;20;719,20;55,61;3
+06/03/2024;CMD-101159;CLI-0091;Hauts-de-France;Web;Maison;Lampe;1;20;31,20;-0,32;3
+02/05/2025;CMD-101160;CLI-0068;Île-de-France;Marketplace;Téléphonie;Smartphone;2;5;1233,10;248,35;5
+19/07/2025;CMD-101161;CLI-0812;Île-de-France;Marketplace;Informatique;Ordinateur portable;2;0;1798,00;316,11;5
+13/03/2025;CMD-101162;CLI-0240;Île-de-France;Magasin;Téléphonie;Écouteurs;1;0;129,00;19,19;5
+25/06/2025;CMD-101163;CLI-0251;Île-de-France;Magasin;Informatique;Ordinateur portable;1;0;899,00;166,06;5
+23/06/2025;CMD-101164;CLI-0107;Occitanie;Marketplace;Informatique;Clavier;3;20;141,60;19,14;3
+14/05/2025;CMD-101165;CLI-0062;Hauts-de-France;Web;Maison;Aspirateur;1;10;224,10;64,59;5
+10/11/2024;CMD-101166;CLI-0129;Auvergne-Rhône-Alpes;Marketplace;Informatique;"Écran 27""";1;0;279,00;54,76;3
+03/03/2024;CMD-101167;CLI-0612;Occitanie;Magasin;Loisirs;Jeu vidéo;3;0;177,00;53,31;3
+03/01/2024;CMD-101168;CLI-0253;Auvergne-Rhône-Alpes;Web;Maison;Lampe;3;5;111,15;33,39;4
+07/05/2024;CMD-101169;CLI-0869;Occitanie;Magasin;Maison;Lampe;2;20;62,40;17,03;4
+10/04/2025;CMD-101170;CLI-0592;Nouvelle-Aquitaine;Web;Téléphonie;Coque;1;5;18,05;2,21;5
+15/01/2024;CMD-101171;CLI-0741;Auvergne-Rhône-Alpes;Magasin;Loisirs;Drone;1;5;312,55;85,04;5
+11/05/2024;CMD-101172;CLI-0201;Île-de-France;Magasin;Téléphonie;Coque;1;0;19,00;3,73;5
+04/09/2025;CMD-101173;CLI-0269;Grand Est;Web;Téléphonie;Coque;1;10;17,10;-7,54;3
+10/09/2025;CMD-101174;CLI-0117;Île-de-France;Marketplace;Téléphonie;Coque;3;0;57,00;11,72;4
+26/03/2025;CMD-101175;CLI-0497;Hauts-de-France;Marketplace;Loisirs;Console;2;10;808,20;182,19;5
+09/07/2025;CMD-101176;CLI-0276;Grand Est;Web;Informatique;Clavier;2;5;112,10;16,25;5
+28/01/2025;CMD-101177;CLI-0090;Hauts-de-France;Web;Téléphonie;Smartphone;3;20;1557,60;186,53;4
+04/09/2024;CMD-101178;CLI-0127;Île-de-France;Magasin;Maison;Aspirateur;3;5;709,65;228,97;4
+27/01/2025;CMD-101179;CLI-0715;Nouvelle-Aquitaine;Magasin;Téléphonie;Smartphone;1;0;649,00;133,41;5
+05/08/2024;CMD-101180;CLI-0239;Île-de-France;Web;Loisirs;Jeu vidéo;2;5;112,10;33,91;5
+16/01/2025;CMD-101181;CLI-0435;Nouvelle-Aquitaine;Web;Téléphonie;Écouteurs;3;0;387,00;76,10;5
+23/12/2024;CMD-101182;CLI-0371;Hauts-de-France;Web;Informatique;Clavier;3;0;177,00;24,43;3
+29/12/2024;CMD-101183;CLI-0640;Grand Est;Marketplace;Téléphonie;Écouteurs;2;0;258,00;46,02;5
+28/08/2024;CMD-101184;CLI-0895;Occitanie;Web;Téléphonie;Smartphone;2;20;1038,40;119,80;4
+07/01/2024;CMD-101185;CLI-0134;Île-de-France;Magasin;Informatique;Ordinateur portable;1;0;899,00;153,30;4
+11/01/2025;CMD-101186;CLI-0291;Auvergne-Rhône-Alpes;Web;Informatique;Clavier;2;10;106,20;14,29;5
+26/12/2024;CMD-101187;CLI-0198;Île-de-France;Web;Informatique;Ordinateur portable;1;5;854,05;135,08;5
+08/08/2025;CMD-101188;CLI-0056;Grand Est;Web;Maison;Cafetière;1;0;89,00;44,30;4
+11/11/2024;CMD-101189;CLI-0696;Île-de-France;Web;Loisirs;Drone;1;0;329,00;94,86;4
+03/05/2024;CMD-101190;CLI-0540;Bretagne;Web;Téléphonie;Coque;1;20;15,20;4,41;3
+24/08/2024;CMD-101191;CLI-0228;Nouvelle-Aquitaine;Web;Informatique;Ordinateur portable;2;20;1438,40;116,27;2
+26/07/2024;CMD-101192;CLI-0673;Grand Est;Marketplace;Téléphonie;Smartphone;2;10;1168,20;190,35;4
+11/04/2024;CMD-101193;CLI-0814;Nouvelle-Aquitaine;Web;Loisirs;Drone;1;0;329,00;94,00;4
+11/07/2024;CMD-101194;CLI-0727;Occitanie;Web;Maison;Cafetière;3;0;267,00;89,67;4
+04/03/2025;CMD-101195;CLI-0538;Nouvelle-Aquitaine;Magasin;Informatique;Clavier;2;10;106,20;11,37;4
+31/07/2024;CMD-101196;CLI-0398;Île-de-France;Magasin;Informatique;Ordinateur portable;3;10;2427,30;322,35;4
+15/01/2024;CMD-101197;CLI-0084;Île-de-France;Marketplace;Loisirs;Jeu vidéo;3;10;159,30;38,91;3
+20/08/2025;CMD-101198;CLI-0378;Auvergne-Rhône-Alpes;Magasin;Loisirs;Drone;1;0;329,00;93,17;4
+31/03/2025;CMD-101199;CLI-0559;Nouvelle-Aquitaine;Web;Informatique;Ordinateur portable;2;0;1798,00;329,38;5
+02/03/2024;CMD-101200;CLI-0356;Nouvelle-Aquitaine;Magasin;Maison;Lampe;3;20;93,60;23,49;5
+23/10/2024;CMD-101201;CLI-0758;Île-de-France;Magasin;Informatique;Ordinateur portable;1;5;854,05;131,44;4
+16/04/2025;CMD-101202;CLI-0010;Grand Est;Magasin;Informatique;"Écran 27""";2;5;530,10;87,62;5
+31/12/2024;CMD-101203;CLI-0565;Auvergne-Rhône-Alpes;Marketplace;Maison;Aspirateur;1;0;249,00;87,80;4
+03/08/2024;CMD-101204;CLI-0573;Île-de-France;Web;Téléphonie;Smartphone;1;5;616,55;122,05;5
+23/06/2024;CMD-101205;CLI-0694;Île-de-France;Magasin;Téléphonie;Smartphone;1;10;584,10;96,32;4
+26/10/2024;CMD-101206;CLI-0278;Nouvelle-Aquitaine;Marketplace;Loisirs;Console;1;5;426,55;113,49;3
+26/04/2024;CMD-101207;CLI-0602;Occitanie;Marketplace;Maison;Lampe;2;0;78,00;27,17;5
+26/10/2024;CMD-101208;CLI-0725;Bretagne;Marketplace;Informatique;Clavier;1;0;59,00;8,75;5
+22/11/2024;CMD-101209;CLI-0610;Auvergne-Rhône-Alpes;Magasin;Téléphonie;Smartphone;1;10;584,10;100,12;4
+20/10/2024;CMD-101210;CLI-0039;Auvergne-Rhône-Alpes;Magasin;Maison;Lampe;1;20;31,20;11,43;3
+11/10/2024;CMD-101211;CLI-0335;Occitanie;Magasin;Téléphonie;Coque;2;10;34,20;-0,44;2
+29/01/2024;CMD-101212;CLI-0550;Hauts-de-France;Web;Loisirs;Console;2;0;898,00;250,62;5
+06/01/2024;CMD-101213;CLI-0221;Occitanie;Web;Maison;Cafetière;3;0;267,00;93,05;5
+28/10/2024;CMD-101214;CLI-0513;Grand Est;Web;Informatique;"Écran 27""";1;0;279,00;49,79;5
+26/02/2024;CMD-101215;CLI-0748;Auvergne-Rhône-Alpes;Web;Informatique;Ordinateur portable;1;0;899,00;159,70;5
+23/08/2025;CMD-101216;CLI-0819;Auvergne-Rhône-Alpes;Web;Maison;Lampe;1;20;31,20;9,24;4
+25/02/2025;CMD-101217;CLI-0249;Île-de-France;Web;Loisirs;Jeu vidéo;2;0;118,00;30,72;5
+06/11/2024;CMD-101218;CLI-0176;Occitanie;Web;Informatique;Ordinateur portable;2;20;1438,40;115,22;4
+07/07/2025;CMD-101219;CLI-0810;Nouvelle-Aquitaine;Web;Informatique;"Écran 27""";3;5;795,15;125,10;4
+10/03/2024;CMD-101220;CLI-0431;Île-de-France;Magasin;Maison;Cafetière;3;10;240,30;72,83;5
+07/06/2024;CMD-101221;CLI-0503;Auvergne-Rhône-Alpes;Magasin;Informatique;Clavier;1;5;56,05;6,35;4
+25/03/2024;CMD-101222;CLI-0842;Auvergne-Rhône-Alpes;Web;Informatique;Clavier;1;0;59,00;13,68;5
+03/07/2024;CMD-101223;CLI-0013;Grand Est;Web;Loisirs;Jeu vidéo;2;0;118,00;30,10;5
+14/07/2024;CMD-101224;CLI-0857;Hauts-de-France;Magasin;Maison;Cafetière;1;0;89,00;27,22;5
+23/04/2025;CMD-101225;CLI-0463;Auvergne-Rhône-Alpes;Web;Loisirs;Drone;2;0;658,00;190,41;5
+28/04/2025;CMD-101226;CLI-0498;Occitanie;Web;Maison;Cafetière;3;20;213,60;52,94;4
+06/03/2024;CMD-101227;CLI-0295;Nouvelle-Aquitaine;Marketplace;Informatique;"Écran 27""";3;5;795,15;122,71;2
+19/01/2025;CMD-101228;CLI-0187;Île-de-France;Magasin;Loisirs;Jeu vidéo;2;5;112,10;22,04;4
+06/09/2025;CMD-101229;CLI-0401;Grand Est;Magasin;Informatique;Clavier;3;20;141,60;12,31;4
+19/08/2025;CMD-101230;CLI-0566;Île-de-France;Web;Informatique;Clavier;3;0;177,00;31,76;4
+03/01/2025;CMD-101231;CLI-0185;Grand Est;Web;Loisirs;Console;3;5;1279,65;324,02;5
+14/02/2024;CMD-101232;CLI-0627;Île-de-France;Magasin;Maison;Lampe;1;5;37,05;8,63;4
+13/09/2024;CMD-101233;CLI-0388;Île-de-France;Magasin;Loisirs;Console;1;0;449,00;124,82;5
+27/03/2024;CMD-101234;CLI-0818;Nouvelle-Aquitaine;Web;Informatique;Clavier;3;0;177,00;29,22;5
+12/08/2025;CMD-101235;CLI-0340;Île-de-France;Marketplace;Loisirs;Console;3;10;1212,30;278,07;3
+19/05/2024;CMD-101236;CLI-0502;Auvergne-Rhône-Alpes;Web;Téléphonie;Smartphone;1;0;649,00;147,88;4
+12/12/2024;CMD-101237;CLI-0224;Auvergne-Rhône-Alpes;Magasin;Maison;Lampe;1;0;39,00;20,56;5
+23/09/2024;CMD-101238;CLI-0036;Grand Est;Marketplace;Loisirs;Drone;1;0;329,00;89,56;4
+26/05/2025;CMD-101239;CLI-0804;Auvergne-Rhône-Alpes;Magasin;Téléphonie;Écouteurs;2;0;258,00;48,30;4
+13/06/2025;CMD-101240;CLI-0340;Île-de-France;Web;Maison;Cafetière;1;20;71,20;22,69;3
+10/04/2025;CMD-101241;CLI-0640;Auvergne-Rhône-Alpes;Magasin;Téléphonie;Smartphone;1;0;649,00;134,37;4
+05/12/2024;CMD-101242;CLI-0658;Hauts-de-France;Web;Maison;Lampe;2;5;74,10;25,52;3
+22/11/2024;CMD-101243;CLI-0525;Nouvelle-Aquitaine;Marketplace;Loisirs;Drone;1;10;296,10;65,61;5
+13/04/2024;CMD-101244;CLI-0497;Grand Est;Magasin;Maison;Cafetière;1;0;89,00;24,49;4
+21/02/2024;CMD-101245;CLI-0893;Bretagne;Web;Informatique;"Écran 27""";1;0;279,00;52,32;5
+07/06/2024;CMD-101246;CLI-0855;Grand Est;Web;Informatique;"Écran 27""";3;5;795,15;129,56;4
+11/10/2024;CMD-101247;CLI-0111;Île-de-France;Web;Loisirs;Jeu vidéo;1;0;59,00;21,91;4
+10/04/2024;CMD-101248;CLI-0393;Nouvelle-Aquitaine;Marketplace;Loisirs;Jeu vidéo;1;5;56,05;14,68;4
+07/03/2024;CMD-101249;CLI-0647;Nouvelle-Aquitaine;Web;Loisirs;Jeu vidéo;2;5;112,10;25,48;5
+17/06/2025;CMD-101250;CLI-0244;Auvergne-Rhône-Alpes;Web;Informatique;Ordinateur portable;1;20;719,20;63,74;4
+22/08/2024;CMD-101251;CLI-0636;Auvergne-Rhône-Alpes;Web;Téléphonie;Écouteurs;1;20;103,20;19,28;5
+31/12/2024;CMD-101252;CLI-0445;Occitanie;Marketplace;Maison;Aspirateur;1;0;249,00;89,35;4
+24/11/2024;CMD-101253;CLI-0714;Île-de-France;Marketplace;Maison;Cafetière;1;0;89,00;29,81;5
+08/04/2025;CMD-101254;CLI-0815;Bretagne;Marketplace;Informatique;"Écran 27""";1;5;265,05;46,19;4
+04/07/2024;CMD-101255;CLI-0346;Nouvelle-Aquitaine;Marketplace;Téléphonie;Écouteurs;1;0;129,00;25,25;5
+14/06/2025;CMD-101256;CLI-0363;Île-de-France;Marketplace;Informatique;"Écran 27""";1;0;279,00;51,48;3
+20/08/2024;CMD-101257;CLI-0429;Île-de-France;Web;Téléphonie;Smartphone;1;20;519,20;58,55;4
+06/06/2025;CMD-101258;CLI-0299;Occitanie;Marketplace;Informatique;"Écran 27""";3;20;669,60;56,23;4
+10/09/2024;CMD-101259;CLI-0762;Occitanie;Magasin;Informatique;Ordinateur portable;3;0;2697,00;500,96;3
+19/01/2024;CMD-101260;CLI-0226;Hauts-de-France;Magasin;Informatique;"Écran 27""";3;0;837,00;154,18;4
+28/04/2025;CMD-101261;CLI-0512;Grand Est;Web;Loisirs;Console;2;5;853,10;215,11;4
+09/05/2024;CMD-101262;CLI-0246;Auvergne-Rhône-Alpes;Marketplace;Maison;Aspirateur;2;5;473,10;148,08;4
+12/08/2025;CMD-101263;CLI-0669;Grand Est;Magasin;Loisirs;Drone;2;5;625,10;156,26;5
+12/09/2024;CMD-101264;CLI-0763;Nouvelle-Aquitaine;Web;Téléphonie;Écouteurs;2;10;232,20;44,35;3
+16/03/2024;CMD-101265;CLI-0489;Hauts-de-France;Magasin;Téléphonie;Écouteurs;2;0;258,00;56,22;5
+25/05/2024;CMD-101266;CLI-0205;Occitanie;Magasin;Téléphonie;Écouteurs;2;20;206,40;22,09;5
+30/03/2025;CMD-101267;CLI-0439;Grand Est;Magasin;Téléphonie;Écouteurs;1;0;129,00;33,05;5
+28/08/2024;CMD-101268;CLI-0294;Auvergne-Rhône-Alpes;Magasin;Téléphonie;Écouteurs;1;0;129,00;24,40;3
+13/06/2025;CMD-101269;CLI-0648;Grand Est;Marketplace;Maison;Aspirateur;2;0;498,00;174,81;4
+21/01/2025;CMD-101270;CLI-0842;Nouvelle-Aquitaine;Magasin;Maison;Aspirateur;1;0;249,00;90,16;4
+11/02/2025;CMD-101271;CLI-0682;Bretagne;Web;Loisirs;Console;1;20;359,20;56,49;4
+08/02/2024;CMD-101272;CLI-0078;Île-de-France;Web;Informatique;"Écran 27""";2;20;446,40;38,27;4
+08/10/2024;CMD-101273;CLI-0661;Île-de-France;Web;Téléphonie;Smartphone;2;20;1038,40;131,69;5
+25/04/2024;CMD-101274;CLI-0381;Bretagne;Web;Informatique;Ordinateur portable;3;0;2697,00;490,93;4
+20/03/2025;CMD-101275;CLI-0828;Île-de-France;Magasin;Informatique;Ordinateur portable;1;20;719,20;62,48;4
+25/12/2024;CMD-101276;CLI-0850;Occitanie;Magasin;Maison;Cafetière;1;5;84,55;26,69;3
+01/07/2025;CMD-101277;CLI-0737;Île-de-France;Web;Téléphonie;Smartphone;1;5;616,55;111,75;3
+30/11/2024;CMD-101278;CLI-0004;Auvergne-Rhône-Alpes;Magasin;Maison;Aspirateur;1;0;249,00;94,44;5
+28/11/2024;CMD-101279;CLI-0817;Bretagne;Web;Informatique;"Écran 27""";1;0;279,00;63,18;3
+26/03/2025;CMD-101280;CLI-0487;Nouvelle-Aquitaine;Web;Loisirs;Drone;3;20;789,60;139,41;3
+04/07/2024;CMD-101281;CLI-0749;Grand Est;Magasin;Loisirs;Drone;2;20;526,40;97,31;4
+10/04/2024;CMD-101282;CLI-0794;Bretagne;Web;Téléphonie;Coque;2;5;36,10;10,85;5
+23/01/2024;CMD-101283;CLI-0573;Auvergne-Rhône-Alpes;Web;Loisirs;Jeu vidéo;1;20;47,20;15,44;5
+11/08/2025;CMD-101284;CLI-0479;Île-de-France;Magasin;Informatique;Ordinateur portable;2;20;1438,40;109,33;3
+09/07/2025;CMD-101285;CLI-0795;Auvergne-Rhône-Alpes;Magasin;Maison;Aspirateur;1;5;236,55;77,63;4
+02/01/2024;CMD-101286;CLI-0086;Occitanie;Marketplace;Loisirs;Console;1;10;404,10;96,18;4
+01/05/2025;CMD-101287;CLI-0838;Occitanie;Web;Maison;Cafetière;1;0;89,00;35,17;5
+24/07/2024;CMD-101288;CLI-0032;Île-de-France;Magasin;Maison;Lampe;1;10;35,10;5,34;3
+20/11/2024;CMD-101289;CLI-0554;Hauts-de-France;Magasin;Téléphonie;Écouteurs;1;0;129,00;30,22;4
+25/06/2024;CMD-101290;CLI-0777;Auvergne-Rhône-Alpes;Web;Maison;Lampe;2;10;70,20;20,45;2
+03/11/2024;CMD-101291;CLI-0869;Île-de-France;Web;Maison;Aspirateur;1;10;224,10;79,07;3
+09/10/2024;CMD-101292;CLI-0058;Île-de-France;Web;Informatique;"Écran 27""";1;20;223,20;21,04;5
+27/11/2024;CMD-101293;CLI-0540;Auvergne-Rhône-Alpes;Web;Informatique;Clavier;1;0;59,00;11,82;4
+01/12/2024;CMD-101294;CLI-0010;Grand Est;Marketplace;Maison;Lampe;1;10;35,10;21,67;4
+29/09/2024;CMD-101295;CLI-0516;Île-de-France;Marketplace;Téléphonie;Smartphone;2;5;1233,10;242,66;4
+14/08/2024;CMD-101296;CLI-0114;Auvergne-Rhône-Alpes;Web;Téléphonie;Écouteurs;3;0;387,00;86,32;5
+23/03/2024;CMD-101297;CLI-0233;Hauts-de-France;Marketplace;Loisirs;Jeu vidéo;2;5;112,10;30,40;4
+13/08/2024;CMD-101298;CLI-0575;Auvergne-Rhône-Alpes;Marketplace;Maison;Cafetière;3;20;213,60;65,80;4
+25/02/2024;CMD-101299;CLI-0256;Nouvelle-Aquitaine;Marketplace;Téléphonie;Écouteurs;1;20;103,20;4,91;3
+28/10/2024;CMD-101300;CLI-0637;Île-de-France;Web;Téléphonie;Coque;1;10;17,10;1,79;3
+19/08/2025;CMD-101301;CLI-0301;Île-de-France;Magasin;Téléphonie;Écouteurs;1;20;103,20;9,71;4
+01/04/2024;CMD-101302;CLI-0664;Île-de-France;Magasin;Maison;Cafetière;3;10;240,30;72,48;3
+12/04/2024;CMD-101303;CLI-0114;Île-de-France;Marketplace;Téléphonie;Écouteurs;2;0;258,00;64,95;5
+21/08/2024;CMD-101304;CLI-0282;Nouvelle-Aquitaine;Web;Téléphonie;Smartphone;3;10;1752,30;304,37;3
+13/12/2024;CMD-101305;CLI-0085;Hauts-de-France;Web;Maison;Aspirateur;1;0;249,00;78,62;2
+23/08/2025;CMD-101306;CLI-0372;Île-de-France;Marketplace;Maison;Aspirateur;2;10;448,20;129,72;4
+10/05/2024;CMD-101307;CLI-0194;Auvergne-Rhône-Alpes;Web;Maison;Aspirateur;3;20;597,60;154,51;3
+12/04/2024;CMD-101308;CLI-0724;Grand Est;Web;Informatique;Clavier;2;5;112,10;18,04;4
+07/06/2024;CMD-101309;CLI-0335;Nouvelle-Aquitaine;Web;Maison;Lampe;2;20;62,40;13,41;4
+01/07/2025;CMD-101310;CLI-0553;Auvergne-Rhône-Alpes;Magasin;Téléphonie;Coque;1;0;19,00;1,38;3
+19/01/2024;CMD-101311;CLI-0714;Grand Est;Web;Informatique;Ordinateur portable;2;10;1618,20;205,47;3
+15/03/2024;CMD-101312;CLI-0237;Île-de-France;Magasin;Maison;Cafetière;1;10;80,10;31,35;4
+02/01/2024;CMD-101313;CLI-0591;Île-de-France;Magasin;Maison;Lampe;2;20;62,40;12,85;4
+15/01/2025;CMD-101314;CLI-0271;Bretagne;Web;Téléphonie;Écouteurs;1;10;116,10;21,29;4
+14/02/2024;CMD-101315;CLI-0363;Hauts-de-France;Web;Maison;Cafetière;1;0;89,00;34,09;4
+18/10/2024;CMD-101316;CLI-0708;Nouvelle-Aquitaine;Marketplace;Informatique;Clavier;1;10;53,10;8,49;4
+26/11/2024;CMD-101317;CLI-0152;Hauts-de-France;Web;Informatique;"Écran 27""";2;5;530,10;86,03;4
+28/11/2024;CMD-101318;CLI-0795;Grand Est;Web;Téléphonie;Smartphone;2;5;1233,10;241,26;3
+17/02/2025;CMD-101319;CLI-0426;Grand Est;Web;Téléphonie;Smartphone;1;5;616,55;116,01;2
+09/06/2025;CMD-101320;CLI-0559;Nouvelle-Aquitaine;Magasin;Maison;Lampe;3;0;117,00;45,15;4
+30/03/2024;CMD-101321;CLI-0860;Bretagne;Magasin;Maison;Lampe;3;0;117,00;40,26;4
+27/05/2025;CMD-101322;CLI-0551;Île-de-France;Web;Maison;Aspirateur;2;0;498,00;169,06;5
+20/08/2024;CMD-101323;CLI-0174;Hauts-de-France;Marketplace;Informatique;Ordinateur portable;1;5;854,05;132,54;4
+20/10/2024;CMD-101324;CLI-0196;Île-de-France;Web;Téléphonie;Écouteurs;3;0;387,00;79,80;4
+09/06/2025;CMD-101325;CLI-0821;Nouvelle-Aquitaine;Web;Informatique;Ordinateur portable;1;20;719,20;54,41;3
+02/06/2025;CMD-101326;CLI-0712;Bretagne;Magasin;Maison;Lampe;2;10;70,20;21,24;4
+30/07/2025;CMD-101327;CLI-0452;Île-de-France;Web;Informatique;Clavier;2;10;106,20;16,24;3
+02/03/2025;CMD-101328;CLI-0381;Hauts-de-France;Magasin;Téléphonie;Coque;1;0;19,00;7,56;4
+01/08/2024;CMD-101329;CLI-0132;Auvergne-Rhône-Alpes;Magasin;Maison;Cafetière;3;5;253,65;77,03;3
+16/12/2024;CMD-101330;CLI-0656;Occitanie;Magasin;Maison;Aspirateur;2;5;473,10;153,14;4
+01/02/2024;CMD-101331;CLI-0881;Auvergne-Rhône-Alpes;Web;Informatique;Clavier;3;0;177,00;38,83;2
+12/05/2025;CMD-101332;CLI-0583;Île-de-France;Web;Informatique;Ordinateur portable;1;0;899,00;159,64;4
+15/02/2025;CMD-101333;CLI-0424;Nouvelle-Aquitaine;Magasin;Maison;Aspirateur;1;0;249,00;89,84;3
+15/04/2025;CMD-101334;CLI-0580;Auvergne-Rhône-Alpes;Marketplace;Téléphonie;Smartphone;1;0;649,00;150,45;4
+11/05/2024;CMD-101335;CLI-0123;Nouvelle-Aquitaine;Web;Informatique;Ordinateur portable;3;0;2697,00;487,60;4
+01/08/2025;CMD-101336;CLI-0649;Grand Est;Magasin;Loisirs;Jeu vidéo;2;20;94,40;11,38;4
+28/11/2024;CMD-101337;CLI-0207;Occitanie;Magasin;Téléphonie;Coque;3;10;51,30;4,60;4
+01/10/2024;CMD-101338;CLI-0308;Île-de-France;Magasin;Téléphonie;Écouteurs;1;10;116,10;16,96;3
+04/02/2025;CMD-101339;CLI-0366;Île-de-France;Magasin;Informatique;"Écran 27""";2;5;530,10;80,80;3
+16/04/2025;CMD-101340;CLI-0887;Île-de-France;Magasin;Téléphonie;Smartphone;2;20;1038,40;126,00;3
+11/12/2024;CMD-101341;CLI-0191;Île-de-France;Magasin;Informatique;Clavier;1;10;53,10;0,77;3
+24/06/2024;CMD-101342;CLI-0664;Occitanie;Web;Informatique;"Écran 27""";2;20;446,40;35,42;4
+03/07/2025;CMD-101343;CLI-0587;Hauts-de-France;Web;Téléphonie;Smartphone;2;5;1233,10;236,47;4
+08/02/2024;CMD-101344;CLI-0804;Nouvelle-Aquitaine;Magasin;Téléphonie;Écouteurs;3;0;387,00;94,84;5
+05/09/2024;CMD-101345;CLI-0074;Île-de-France;Marketplace;Loisirs;Drone;2;20;526,40;99,21;5
+21/03/2024;CMD-101346;CLI-0581;Occitanie;Magasin;Loisirs;Drone;1;5;312,55;78,72;4
+28/09/2024;CMD-101347;CLI-0050;Grand Est;Web;Informatique;"Écran 27""";1;0;279,00;63,66;4
+30/01/2025;CMD-101348;CLI-0485;Auvergne-Rhône-Alpes;Marketplace;Informatique;"Écran 27""";1;0;279,00;54,58;4
+06/11/2024;CMD-101349;CLI-0115;Nouvelle-Aquitaine;Marketplace;Maison;Cafetière;2;20;142,40;32,13;5
+16/09/2024;CMD-101350;CLI-0355;Bretagne;Web;Loisirs;Jeu vidéo;2;5;112,10;25,51;4
+30/03/2025;CMD-101351;CLI-0824;Île-de-France;Magasin;Loisirs;Console;3;5;1279,65;323,87;4
+26/03/2025;CMD-101352;CLI-0164;Grand Est;Web;Informatique;Ordinateur portable;2;0;1798,00;325,22;5
+08/07/2024;CMD-101353;CLI-0530;Île-de-France;Web;Informatique;Ordinateur portable;2;5;1708,10;262,26;3
+16/02/2025;CMD-101354;CLI-0477;Nouvelle-Aquitaine;Web;Informatique;"Écran 27""";1;5;265,05;51,98;5
+10/01/2025;CMD-101355;CLI-0593;Île-de-France;Magasin;Maison;Lampe;1;0;39,00;6,59;4
+15/02/2024;CMD-101356;CLI-0790;Île-de-France;Magasin;Téléphonie;Coque;1;5;18,05;14,08;4
+22/10/2024;CMD-101357;CLI-0479;Île-de-France;Marketplace;Téléphonie;Coque;2;20;30,40;-10,29;5
+19/01/2025;CMD-101358;CLI-0124;Hauts-de-France;Magasin;Téléphonie;Coque;1;20;15,20;3,25;2
+17/08/2025;CMD-101359;CLI-0314;Hauts-de-France;Magasin;Informatique;Clavier;2;10;106,20;13,11;4
+25/11/2024;CMD-101360;CLI-0844;Hauts-de-France;Web;Téléphonie;Smartphone;2;10;1168,20;193,27;3
+02/08/2024;CMD-101361;CLI-0172;Île-de-France;Web;Informatique;Clavier;3;10;159,30;20,41;3
+13/12/2024;CMD-101362;CLI-0248;Grand Est;Web;Téléphonie;Écouteurs;2;0;258,00;60,22;4
+20/04/2024;CMD-101363;CLI-0505;Île-de-France;Web;Maison;Lampe;2;0;78,00;31,47;4
+26/02/2024;CMD-101364;CLI-0288;Île-de-France;Magasin;Maison;Lampe;1;10;35,10;9,31;3
+28/02/2025;CMD-101365;CLI-0078;Hauts-de-France;Web;Informatique;Clavier;2;20;94,40;2,75;4
+31/12/2024;CMD-101366;CLI-0560;Occitanie;Magasin;Maison;Lampe;2;20;62,40;11,14;4
+26/01/2024;CMD-101367;CLI-0799;Occitanie;Magasin;Maison;Cafetière;3;0;267,00;92,77;4
+10/09/2025;CMD-101368;CLI-0373;Nouvelle-Aquitaine;Web;Informatique;Clavier;3;5;168,15;21,56;5
+08/10/2024;CMD-101369;CLI-0053;Nouvelle-Aquitaine;Web;Informatique;Clavier;2;0;118,00;17,08;5
+12/07/2025;CMD-101370;CLI-0466;Île-de-France;Magasin;Téléphonie;Smartphone;2;20;1038,40;125,28;3
+14/04/2025;CMD-101371;CLI-0784;Île-de-France;Web;Informatique;"Écran 27""";1;10;251,10;25,81;4
+22/06/2024;CMD-101372;CLI-0469;Auvergne-Rhône-Alpes;Web;Informatique;Ordinateur portable;3;0;2697,00;480,16;4
+12/09/2025;CMD-101373;CLI-0432;Hauts-de-France;Magasin;Informatique;"Écran 27""";3;0;837,00;153,46;5
+10/10/2024;CMD-101374;CLI-0382;Occitanie;Marketplace;Informatique;Ordinateur portable;3;20;2157,60;175,26;3
+28/11/2024;CMD-101375;CLI-0534;Auvergne-Rhône-Alpes;Magasin;Téléphonie;Écouteurs;1;0;129,00;24,66;3
+15/04/2025;CMD-101376;CLI-0302;Nouvelle-Aquitaine;Web;Téléphonie;Écouteurs;1;20;103,20;9,66;5
+08/07/2024;CMD-101377;CLI-0222;Île-de-France;Magasin;Informatique;Clavier;1;20;47,20;11,74;4
+14/08/2024;CMD-101378;CLI-0769;Nouvelle-Aquitaine;Magasin;Maison;Lampe;1;5;37,05;7,42;3
+16/08/2025;CMD-101379;CLI-0214;Nouvelle-Aquitaine;Web;Informatique;"Écran 27""";1;10;251,10;34,96;4
+23/03/2025;CMD-101380;CLI-0396;Île-de-France;Magasin;Informatique;Clavier;1;5;56,05;5,79;4
+04/04/2025;CMD-101381;CLI-0782;Occitanie;Web;Informatique;"Écran 27""";3;5;795,15;117,28;4
+03/09/2024;CMD-101382;CLI-0090;Hauts-de-France;Web;Maison;Cafetière;1;0;89,00;30,61;4
+09/09/2024;CMD-101383;CLI-0703;Nouvelle-Aquitaine;Magasin;Loisirs;Console;1;10;404,10;97,41;5
+17/12/2024;CMD-101384;CLI-0896;Auvergne-Rhône-Alpes;Web;Téléphonie;Écouteurs;1;20;103,20;16,62;4
+26/03/2025;CMD-101385;CLI-0055;Île-de-France;Web;Informatique;"Écran 27""";3;0;837,00;147,25;5
+14/11/2024;CMD-101386;CLI-0082;Auvergne-Rhône-Alpes;Web;Informatique;Clavier;1;0;59,00;11,65;4
+21/07/2025;CMD-101387;CLI-0378;Nouvelle-Aquitaine;Web;Informatique;Ordinateur portable;1;0;899,00;162,81;5
+19/09/2024;CMD-101388;CLI-0028;Île-de-France;Magasin;Maison;Cafetière;1;5;84,55;19,45;3
+09/02/2025;CMD-101389;CLI-0426;Hauts-de-France;Web;Informatique;"Écran 27""";1;20;223,20;23,76;4
+09/09/2024;CMD-101390;CLI-0423;Hauts-de-France;Web;Loisirs;Console;2;5;853,10;219,51;4
+02/08/2024;CMD-101391;CLI-0747;Île-de-France;Marketplace;Téléphonie;Smartphone;1;10;584,10;96,33;4
+12/03/2025;CMD-101392;CLI-0701;Île-de-France;Magasin;Téléphonie;Coque;1;10;17,10;7,93;4
+12/09/2024;CMD-101393;CLI-0717;Auvergne-Rhône-Alpes;Web;Maison;Lampe;1;0;39,00;22,62;5
+02/10/2024;CMD-101394;CLI-0682;Nouvelle-Aquitaine;Web;Informatique;Ordinateur portable;1;0;899,00;157,87;5
+19/03/2024;CMD-101395;CLI-0153;Auvergne-Rhône-Alpes;Marketplace;Maison;Aspirateur;1;20;199,20;53,13;5
+22/07/2024;CMD-101396;CLI-0050;Bretagne;Magasin;Informatique;"Écran 27""";1;20;223,20;22,87;4
+03/04/2025;CMD-101397;CLI-0719;Bretagne;Magasin;Maison;Aspirateur;1;10;224,10;62,51;4
+18/02/2025;CMD-101398;CLI-0080;Hauts-de-France;Web;Téléphonie;Coque;3;20;45,60;-0,03;4
+13/01/2024;CMD-101399;CLI-0023;Hauts-de-France;Marketplace;Informatique;"Écran 27""";2;0;558,00;100,99;5
+23/07/2024;CMD-101400;CLI-0775;Auvergne-Rhône-Alpes;Web;Maison;Lampe;2;10;70,20;29,83;4
+03/05/2024;CMD-101401;CLI-0164;Auvergne-Rhône-Alpes;Magasin;Informatique;Ordinateur portable;1;5;854,05;127,55;5
+11/04/2024;CMD-101402;CLI-0313;Île-de-France;Web;Informatique;Clavier;3;0;177,00;25,72;5
+03/06/2024;CMD-101403;CLI-0282;Bretagne;Web;Maison;Lampe;1;20;31,20;11,62;4
+25/07/2025;CMD-101404;CLI-0733;Hauts-de-France;Web;Téléphonie;Smartphone;1;5;616,55;119,23;4
+22/02/2025;CMD-101405;CLI-0029;Auvergne-Rhône-Alpes;Marketplace;Loisirs;Console;3;5;1279,65;328,56;4
+17/04/2024;CMD-101406;CLI-0734;Nouvelle-Aquitaine;Web;Téléphonie;Smartphone;2;20;1038,40;115,92;4
+21/03/2024;CMD-101407;CLI-0796;Occitanie;Web;Téléphonie;Smartphone;2;0;1298,00;280,97;5
+21/06/2024;CMD-101408;CLI-0782;Île-de-France;Web;Informatique;Ordinateur portable;1;10;809,10;102,94;3
+24/04/2025;CMD-101409;CLI-0091;Occitanie;Magasin;Informatique;Ordinateur portable;2;0;1798,00;324,86;4
+27/03/2024;CMD-101410;CLI-0593;Bretagne;Magasin;Loisirs;Drone;1;0;329,00;86,01;4
+24/06/2024;CMD-101411;CLI-0772;Grand Est;Magasin;Informatique;"Écran 27""";2;0;558,00;106,82;4
+26/06/2024;CMD-101412;CLI-0264;Bretagne;Magasin;Téléphonie;Coque;1;0;19,00;9,21;4
+26/02/2025;CMD-101413;CLI-0745;Hauts-de-France;Web;Informatique;Ordinateur portable;2;20;1438,40;110,46;3
+26/07/2025;CMD-101414;CLI-0157;Nouvelle-Aquitaine;Magasin;Informatique;Clavier;3;20;141,60;11,34;2
+09/04/2025;CMD-101415;CLI-0563;Île-de-France;Web;Téléphonie;Coque;2;10;34,20;10,96;4
+24/08/2025;CMD-101416;CLI-0286;Grand Est;Web;Maison;Cafetière;2;10;160,20;46,79;4
+05/12/2024;CMD-101417;CLI-0289;Nouvelle-Aquitaine;Web;Maison;Aspirateur;2;5;473,10;155,62;4
+07/12/2024;CMD-101418;CLI-0640;Nouvelle-Aquitaine;Magasin;Loisirs;Console;3;20;1077,60;204,93;4
+26/04/2025;CMD-101419;CLI-0669;Île-de-France;Web;Informatique;Ordinateur portable;1;5;854,05;134,42;3
+19/08/2025;CMD-101420;CLI-0418;Grand Est;Web;Téléphonie;Coque;1;20;15,20;9,57;2
+30/12/2024;CMD-101421;CLI-0031;Occitanie;Web;Informatique;"Écran 27""";3;5;795,15;118,67;3
+08/06/2024;CMD-101422;CLI-0246;Occitanie;Web;Maison;Aspirateur;1;0;249,00;92,98;3
+19/07/2024;CMD-101423;CLI-0756;Île-de-France;Web;Informatique;"Écran 27""";2;5;530,10;86,84;4
+25/03/2025;CMD-101424;CLI-0715;Occitanie;Magasin;Téléphonie;Coque;1;5;18,05;0,74;3
+21/11/2024;CMD-101425;CLI-0680;Auvergne-Rhône-Alpes;Magasin;Informatique;Clavier;1;0;59,00;11,84;5
+07/09/2024;CMD-101426;CLI-0325;Île-de-France;Marketplace;Maison;Aspirateur;1;5;236,55;73,52;3
+02/10/2024;CMD-101427;CLI-0032;Bretagne;Magasin;Maison;Cafetière;3;5;253,65;90,42;5
+05/03/2025;CMD-101428;CLI-0288;Auvergne-Rhône-Alpes;Magasin;Loisirs;Drone;2;0;658,00;183,56;4
+06/12/2024;CMD-101429;CLI-0457;Île-de-France;Web;Informatique;Ordinateur portable;1;0;899,00;163,93;3
+15/01/2024;CMD-101430;CLI-0361;Nouvelle-Aquitaine;Web;Loisirs;Console;2;0;898,00;245,49;5
+03/12/2024;CMD-101431;CLI-0242;Île-de-France;Magasin;Informatique;Clavier;3;20;141,60;3,73;4
+07/09/2024;CMD-101432;CLI-0712;Nouvelle-Aquitaine;Marketplace;Informatique;Ordinateur portable;2;10;1618,20;216,06;3
+14/03/2025;CMD-101433;CLI-0199;Île-de-France;Web;Informatique;Clavier;2;10;106,20;10,16;3
+01/07/2025;CMD-101434;CLI-0534;Hauts-de-France;Marketplace;Informatique;Clavier;1;5;56,05;14,11;4
+17/01/2025;CMD-101435;CLI-0089;Auvergne-Rhône-Alpes;Magasin;Téléphonie;Écouteurs;2;0;258,00;53,81;5
+14/08/2024;CMD-101436;CLI-0581;Grand Est;Web;Informatique;Clavier;2;0;118,00;21,24;4
+20/04/2024;CMD-101437;CLI-0559;Nouvelle-Aquitaine;Web;Téléphonie;Smartphone;1;20;519,20;59,17;3
+08/08/2025;CMD-101438;CLI-0001;Occitanie;Web;Maison;Aspirateur;2;5;473,10;154,89;5
+14/06/2025;CMD-101439;CLI-0488;Auvergne-Rhône-Alpes;Web;Maison;Lampe;2;5;74,10;25,70;4
+24/07/2024;CMD-101440;CLI-0796;Île-de-France;Magasin;Maison;Cafetière;2;10;160,20;45,27;5
+20/07/2024;CMD-101441;CLI-0560;Hauts-de-France;Web;Téléphonie;Écouteurs;2;0;258,00;47,21;5
+20/06/2025;CMD-101442;CLI-0862;Grand Est;Marketplace;Informatique;Ordinateur portable;1;0;899,00;158,03;4
+06/12/2024;CMD-101443;CLI-0109;Hauts-de-France;Web;Maison;Aspirateur;2;10;448,20;138,56;5
+17/03/2025;CMD-101444;CLI-0168;Île-de-France;Web;Informatique;"Écran 27""";2;0;558,00;95,75;4
+02/11/2024;CMD-101445;CLI-0235;Île-de-France;Web;Informatique;Ordinateur portable;1;5;854,05;125,03;5
+04/10/2024;CMD-101446;CLI-0093;Auvergne-Rhône-Alpes;Magasin;Informatique;Clavier;1;0;59,00;15,28;3
+30/01/2025;CMD-101447;CLI-0793;Île-de-France;Magasin;Maison;Lampe;2;20;62,40;24,34;3
+28/07/2024;CMD-101448;CLI-0112;Bretagne;Magasin;Téléphonie;Coque;2;20;30,40;8,47;5
+21/05/2025;CMD-101449;CLI-0140;Hauts-de-France;Web;Maison;Cafetière;3;0;267,00;86,89;5
+20/08/2025;CMD-101450;CLI-0461;Grand Est;Web;Informatique;"Écran 27""";2;0;558,00;110,22;5
+01/08/2025;CMD-101451;CLI-0882;Île-de-France;Web;Téléphonie;Écouteurs;1;0;129,00;25,91;5
+16/07/2024;CMD-101452;CLI-0605;Auvergne-Rhône-Alpes;Magasin;Téléphonie;Smartphone;1;10;584,10;98,32;4
+11/06/2025;CMD-101453;CLI-0779;Auvergne-Rhône-Alpes;Magasin;Informatique;Ordinateur portable;2;10;1618,20;205,22;3
+08/08/2025;CMD-101454;CLI-0055;Auvergne-Rhône-Alpes;Web;Téléphonie;Écouteurs;2;0;258,00;52,11;3
+04/09/2025;CMD-101455;CLI-0069;Bretagne;Web;Téléphonie;Écouteurs;1;0;129,00;26,59;4
+14/01/2024;CMD-101456;CLI-0239;Grand Est;Magasin;Téléphonie;Smartphone;2;20;1038,40;124,36;3
+11/04/2025;CMD-101457;CLI-0014;Nouvelle-Aquitaine;Web;Informatique;Ordinateur portable;1;20;719,20;56,90;3
+15/09/2025;CMD-101458;CLI-0881;Occitanie;Web;Maison;Aspirateur;1;0;249,00;86,02;3
+23/04/2025;CMD-101459;CLI-0383;Auvergne-Rhône-Alpes;Web;Informatique;Ordinateur portable;1;0;899,00;163,28;3
+06/03/2024;CMD-101460;CLI-0662;Île-de-France;Web;Informatique;Clavier;3;0;177,00;32,14;5
+27/10/2024;CMD-101461;CLI-0261;Grand Est;Web;Informatique;Clavier;2;10;106,20;10,34;4
+27/01/2025;CMD-101462;CLI-0807;Hauts-de-France;Magasin;Téléphonie;Smartphone;2;0;1298,00;282,75;4
+12/10/2024;CMD-101463;CLI-0049;Bretagne;Web;Informatique;Ordinateur portable;3;5;2562,15;401,78;5
+30/05/2024;CMD-101464;CLI-0033;Auvergne-Rhône-Alpes;Marketplace;Maison;Lampe;3;10;105,30;33,65;4
+14/01/2025;CMD-101465;CLI-0747;Île-de-France;Magasin;Informatique;Ordinateur portable;3;0;2697,00;480,32;5
+07/02/2025;CMD-101466;CLI-0112;Auvergne-Rhône-Alpes;Web;Maison;Cafetière;2;0;178,00;67,36;5
+31/01/2025;CMD-101467;CLI-0833;Grand Est;Web;Informatique;"Écran 27""";1;0;279,00;52,80;4
+30/06/2024;CMD-101468;CLI-0347;Île-de-France;Magasin;Téléphonie;Écouteurs;1;0;129,00;26,42;4
+10/07/2024;CMD-101469;CLI-0154;Auvergne-Rhône-Alpes;Web;Maison;Cafetière;1;10;80,10;30,02;3
+16/10/2024;CMD-101470;CLI-0673;Île-de-France;Web;Téléphonie;Smartphone;2;0;1298,00;289,85;3
+01/01/2025;CMD-101471;CLI-0009;Nouvelle-Aquitaine;Web;Informatique;Ordinateur portable;1;0;899,00;158,98;4
+14/08/2024;CMD-101472;CLI-0354;Grand Est;Magasin;Téléphonie;Écouteurs;2;10;232,20;40,87;4
+13/09/2024;CMD-101473;CLI-0597;Bretagne;Magasin;Loisirs;Console;2;20;718,40;124,10;4
+28/06/2024;CMD-101474;CLI-0454;Bretagne;Magasin;Loisirs;Jeu vidéo;1;0;59,00;20,44;5
+17/05/2024;CMD-101475;CLI-0240;Grand Est;Web;Informatique;Ordinateur portable;2;5;1708,10;263,93;3
+25/05/2025;CMD-101476;CLI-0239;Auvergne-Rhône-Alpes;Magasin;Maison;Cafetière;3;0;267,00;93,35;5
+30/06/2024;CMD-101477;CLI-0699;Auvergne-Rhône-Alpes;Web;Informatique;Clavier;3;10;159,30;25,07;3
+22/06/2025;CMD-101478;CLI-0698;Île-de-France;Magasin;Informatique;Ordinateur portable;2;10;1618,20;206,54;4
+23/12/2024;CMD-101479;CLI-0115;Île-de-France;Web;Maison;Aspirateur;1;0;249,00;88,17;4
+14/04/2024;CMD-101480;CLI-0472;Occitanie;Web;Téléphonie;Écouteurs;3;0;387,00;87,91;5
+05/01/2024;CMD-101481;CLI-0088;Île-de-France;Magasin;Téléphonie;Écouteurs;1;0;129,00;28,31;5
+25/01/2024;CMD-101482;CLI-0107;Nouvelle-Aquitaine;Web;Maison;Cafetière;2;0;178,00;63,98;3
+11/10/2024;CMD-101483;CLI-0806;Auvergne-Rhône-Alpes;Web;Informatique;Clavier;1;0;59,00;12,77;3
+14/05/2025;CMD-101484;CLI-0317;Île-de-France;Magasin;Maison;Aspirateur;1;5;236,55;70,67;3
+25/03/2024;CMD-101485;CLI-0159;Hauts-de-France;Marketplace;Téléphonie;Smartphone;3;20;1557,60;190,17;5
+26/05/2024;CMD-101486;CLI-0078;Nouvelle-Aquitaine;Marketplace;Informatique;"Écran 27""";1;20;223,20;25,62;4
+30/04/2024;CMD-101487;CLI-0512;Île-de-France;Magasin;Téléphonie;Smartphone;2;0;1298,00;289,80;5
+06/04/2024;CMD-101488;CLI-0115;Nouvelle-Aquitaine;Magasin;Loisirs;Drone;1;0;329,00;95,80;4
+21/09/2024;CMD-101489;CLI-0257;Bretagne;Marketplace;Téléphonie;Écouteurs;2;5;245,10;43,60;5
+06/08/2025;CMD-101490;CLI-0096;Occitanie;Web;Informatique;Clavier;2;5;112,10;22,78;3
+10/08/2025;CMD-101491;CLI-0458;Île-de-France;Magasin;Maison;Cafetière;1;5;84,55;22,47;3
+27/03/2024;CMD-101492;CLI-0319;Hauts-de-France;Magasin;Loisirs;Jeu vidéo;2;20;94,40;20,75;4
+03/01/2025;CMD-101493;CLI-0586;Nouvelle-Aquitaine;Magasin;Loisirs;Jeu vidéo;2;20;94,40;5,08;3
+05/06/2024;CMD-101494;CLI-0866;Île-de-France;Marketplace;Téléphonie;Smartphone;1;10;584,10;88,02;3
+07/07/2025;CMD-101495;CLI-0739;Hauts-de-France;Magasin;Téléphonie;Écouteurs;2;10;232,20;32,94;4
+19/05/2024;CMD-101496;CLI-0856;Île-de-France;Magasin;Téléphonie;Coque;1;20;15,20;2,19;4
+19/02/2025;CMD-101497;CLI-0043;Occitanie;Web;Maison;Cafetière;3;0;267,00;85,24;5
+11/03/2024;CMD-101498;CLI-0098;Hauts-de-France;Magasin;Loisirs;Jeu vidéo;2;0;118,00;26,46;4
+21/03/2025;CMD-101499;CLI-0718;Occitanie;Web;Maison;Cafetière;1;10;80,10;21,12;5
+26/12/2024;CMD-101500;CLI-0032;Île-de-France;Web;Téléphonie;Coque;2;10;34,20;-2,38;4
+07/04/2024;CMD-101501;CLI-0195;Nouvelle-Aquitaine;Web;Informatique;"Écran 27""";1;10;251,10;28,32;4
+22/09/2024;CMD-101502;CLI-0468;Île-de-France;Magasin;Téléphonie;Coque;1;20;15,20;0,40;3
+13/11/2024;CMD-101503;CLI-0029;Nouvelle-Aquitaine;Magasin;Informatique;Ordinateur portable;2;10;1618,20;204,61;5
+11/12/2024;CMD-101504;CLI-0275;Grand Est;Web;Informatique;Ordinateur portable;1;20;719,20;56,48;2
+01/06/2024;CMD-101505;CLI-0494;Auvergne-Rhône-Alpes;Magasin;Téléphonie;Smartphone;1;10;584,10;96,55;3
+09/11/2024;CMD-101506;CLI-0472;Île-de-France;Marketplace;Maison;Cafetière;2;5;169,10;55,14;4
+03/07/2024;CMD-101507;CLI-0221;Auvergne-Rhône-Alpes;Web;Loisirs;Console;2;0;898,00;249,33;4
+05/03/2025;CMD-101508;CLI-0004;Grand Est;Web;Maison;Cafetière;1;5;84,55;27,43;4
+13/05/2025;CMD-101509;CLI-0153;Nouvelle-Aquitaine;Magasin;Loisirs;Console;2;5;853,10;226,96;3
+12/02/2025;CMD-101510;CLI-0547;Île-de-France;Magasin;Maison;Lampe;1;0;39,00;16,67;4
+13/09/2025;CMD-101511;CLI-0526;Grand Est;Magasin;Maison;Aspirateur;3;0;747,00;259,00;4
+17/09/2025;CMD-101512;CLI-0880;Île-de-France;Web;Informatique;Ordinateur portable;2;5;1708,10;263,80;4
+20/01/2024;CMD-101513;CLI-0482;Île-de-France;Web;Téléphonie;Coque;2;0;38,00;3,55;4
+19/11/2024;CMD-101514;CLI-0659;Nouvelle-Aquitaine;Web;Informatique;"Écran 27""";2;20;446,40;38,09;4
+07/03/2024;CMD-101515;CLI-0253;Bretagne;Web;Informatique;Ordinateur portable;1;5;854,05;131,87;3
+03/03/2025;CMD-101516;CLI-0145;Auvergne-Rhône-Alpes;Magasin;Informatique;Clavier;1;20;47,20;4,44;4
+31/03/2025;CMD-101517;CLI-0016;Nouvelle-Aquitaine;Web;Maison;Lampe;3;5;111,15;34,26;4
+22/09/2024;CMD-101518;CLI-0745;Nouvelle-Aquitaine;Web;Maison;Lampe;1;0;39,00;19,41;5
+02/02/2024;CMD-101519;CLI-0002;Bretagne;Web;Loisirs;Jeu vidéo;1;0;59,00;19,29;3
+22/04/2025;CMD-101520;CLI-0272;Île-de-France;Magasin;Loisirs;Drone;2;10;592,20;123,97;3
+07/05/2025;CMD-101521;CLI-0016;Grand Est;Magasin;Loisirs;Console;3;5;1279,65;321,82;5
+02/03/2025;CMD-101522;CLI-0595;Bretagne;Marketplace;Informatique;Clavier;1;5;56,05;11,21;4
+29/05/2025;CMD-101523;CLI-0624;Grand Est;Magasin;Loisirs;Console;1;5;426,55;117,16;4
+09/08/2025;CMD-101524;CLI-0445;Occitanie;Magasin;Maison;Cafetière;1;0;89,00;30,48;5
+04/09/2024;CMD-101525;CLI-0162;Occitanie;Magasin;Loisirs;Jeu vidéo;1;10;53,10;10,26;4
+20/07/2024;CMD-101526;CLI-0447;Occitanie;Web;Informatique;Ordinateur portable;2;0;1798,00;322,81;4
+27/05/2024;CMD-101527;CLI-0637;Île-de-France;Web;Informatique;"Écran 27""";1;0;279,00;55,34;4
+13/04/2025;CMD-101528;CLI-0348;Île-de-France;Web;Loisirs;Jeu vidéo;2;5;112,10;34,60;5
+23/03/2025;CMD-101529;CLI-0862;Île-de-France;Magasin;Informatique;Ordinateur portable;2;10;1618,20;215,39;5
+03/11/2024;CMD-101530;CLI-0065;Bretagne;Magasin;Téléphonie;Smartphone;3;0;1947,00;427,56;4
+18/05/2024;CMD-101531;CLI-0445;Île-de-France;Web;Téléphonie;Smartphone;2;0;1298,00;286,41;3
+13/07/2025;CMD-101532;CLI-0706;Hauts-de-France;Marketplace;Informatique;Clavier;1;0;59,00;7,12;4
+16/06/2024;CMD-101533;CLI-0618;Île-de-France;Magasin;Informatique;Clavier;1;20;47,20;3,89;4
+31/03/2024;CMD-101534;CLI-0509;Auvergne-Rhône-Alpes;Marketplace;Loisirs;Jeu vidéo;2;10;106,20;34,29;3
+22/12/2024;CMD-101535;CLI-0020;Île-de-France;Web;Loisirs;Drone;2;0;658,00;185,46;5
+04/07/2025;CMD-101536;CLI-0875;Île-de-France;Magasin;Loisirs;Drone;1;20;263,20;55,33;4
+27/07/2025;CMD-101537;CLI-0655;Hauts-de-France;Web;Informatique;Clavier;1;10;53,10;5,88;5
+01/03/2024;CMD-101538;CLI-0554;Auvergne-Rhône-Alpes;Marketplace;Informatique;"Écran 27""";1;5;265,05;33,44;3
+30/11/2024;CMD-101539;CLI-0304;Bretagne;Magasin;Téléphonie;Écouteurs;2;0;258,00;58,00;5
+24/06/2024;CMD-101540;CLI-0789;Bretagne;Magasin;Téléphonie;Smartphone;1;0;649,00;144,91;4
+12/02/2024;CMD-101541;CLI-0076;Bretagne;Web;Informatique;Ordinateur portable;1;0;899,00;168,33;4
+15/11/2024;CMD-101542;CLI-0848;Auvergne-Rhône-Alpes;Web;Maison;Aspirateur;3;5;709,65;224,38;4
+03/02/2024;CMD-101543;CLI-0811;Hauts-de-France;Web;Loisirs;Jeu vidéo;3;0;177,00;41,37;3
+21/05/2024;CMD-101544;CLI-0793;Auvergne-Rhône-Alpes;Marketplace;Téléphonie;Smartphone;1;0;649,00;143,52;5
+01/01/2024;CMD-101545;CLI-0045;Auvergne-Rhône-Alpes;Marketplace;Téléphonie;Écouteurs;1;5;122,55;30,66;2
+24/02/2024;CMD-101546;CLI-0598;Bretagne;Magasin;Téléphonie;Coque;1;10;17,10;4,51;3
+30/09/2024;CMD-101547;CLI-0704;Île-de-France;Web;Informatique;Clavier;2;20;94,40;5,93;4
+30/07/2024;CMD-101548;CLI-0553;Bretagne;Web;Informatique;"Écran 27""";2;0;558,00;104,80;5
+12/02/2025;CMD-101549;CLI-0567;Auvergne-Rhône-Alpes;Magasin;Téléphonie;Coque;1;20;15,20;0,17;4
+30/05/2025;CMD-101550;CLI-0164;Île-de-France;Web;Téléphonie;Smartphone;1;5;616,55;119,55;3
+02/08/2024;CMD-101551;CLI-0853;Grand Est;Web;Téléphonie;Coque;3;0;57,00;9,44;4
+15/04/2024;CMD-101552;CLI-0385;Bretagne;Magasin;Maison;Aspirateur;1;5;236,55;78,01;4
+01/04/2024;CMD-101553;CLI-0054;Hauts-de-France;Web;Informatique;Ordinateur portable;3;0;2697,00;484,29;4
+10/02/2024;CMD-101554;CLI-0667;Île-de-France;Magasin;Informatique;Ordinateur portable;1;5;854,05;128,59;3
+22/06/2025;CMD-101555;CLI-0616;Auvergne-Rhône-Alpes;Web;Informatique;Ordinateur portable;2;20;1438,40;114,50;5
+17/06/2024;CMD-101556;CLI-0860;Auvergne-Rhône-Alpes;Web;Informatique;"Écran 27""";1;20;223,20;15,37;4
+30/05/2025;CMD-101557;CLI-0138;Auvergne-Rhône-Alpes;Magasin;Téléphonie;Coque;2;0;38,00;8,41;3
+12/12/2024;CMD-101558;CLI-0189;Île-de-France;Web;Maison;Lampe;1;0;39,00;6,40;4
+03/12/2024;CMD-101559;CLI-0160;Occitanie;Web;Loisirs;Console;2;0;898,00;254,47;4
+27/05/2025;CMD-101560;CLI-0586;Île-de-France;Web;Téléphonie;Smartphone;2;0;1298,00;285,44;5
+28/02/2024;CMD-101561;CLI-0877;Auvergne-Rhône-Alpes;Magasin;Téléphonie;Écouteurs;2;10;232,20;37,82;5
+07/12/2024;CMD-101562;CLI-0554;Île-de-France;Magasin;Informatique;Ordinateur portable;1;0;899,00;157,09;5
+06/04/2025;CMD-101563;CLI-0564;Auvergne-Rhône-Alpes;Marketplace;Téléphonie;Écouteurs;2;0;258,00;50,98;3
+10/06/2024;CMD-101564;CLI-0188;Nouvelle-Aquitaine;Web;Informatique;"Écran 27""";1;20;223,20;17,21;3
+06/05/2024;CMD-101565;CLI-0521;Île-de-France;Web;Loisirs;Drone;2;0;658,00;180,03;4
+11/11/2024;CMD-101566;CLI-0538;Occitanie;Magasin;Téléphonie;Écouteurs;1;0;129,00;23,15;5
+03/12/2024;CMD-101567;CLI-0403;Nouvelle-Aquitaine;Web;Informatique;Ordinateur portable;2;5;1708,10;261,35;4
+14/04/2025;CMD-101568;CLI-0709;Île-de-France;Magasin;Informatique;Clavier;3;20;141,60;16,47;3
+23/03/2025;CMD-101569;CLI-0646;Île-de-France;Magasin;Informatique;"Écran 27""";1;10;251,10;33,79;4
+17/10/2024;CMD-101570;CLI-0636;Bretagne;Web;Loisirs;Drone;2;10;592,20;143,72;5
+12/07/2024;CMD-101571;CLI-0866;Bretagne;Magasin;Informatique;Ordinateur portable;2;10;1618,20;220,44;4
+18/08/2024;CMD-101572;CLI-0825;Grand Est;Web;Informatique;Ordinateur portable;1;0;899,00;166,19;4
+17/05/2024;CMD-101573;CLI-0210;Auvergne-Rhône-Alpes;Magasin;Informatique;"Écran 27""";3;10;753,30;92,47;3
+10/05/2024;CMD-101574;CLI-0172;Île-de-France;Magasin;Maison;Cafetière;1;10;80,10;24,71;4
+10/02/2025;CMD-101575;CLI-0810;Hauts-de-France;Magasin;Téléphonie;Smartphone;1;0;649,00;139,20;5
+15/04/2025;CMD-101576;CLI-0381;Bretagne;Marketplace;Téléphonie;Écouteurs;2;5;245,10;57,28;4
+15/03/2024;CMD-101577;CLI-0457;Île-de-France;Magasin;Téléphonie;Coque;1;10;17,10;9,24;3
+23/02/2024;CMD-101578;CLI-0149;Grand Est;Web;Informatique;Ordinateur portable;3;5;2562,15;393,18;4
+30/07/2024;CMD-101579;CLI-0409;Auvergne-Rhône-Alpes;Magasin;Loisirs;Drone;1;0;329,00;87,15;4
+20/04/2024;CMD-101580;CLI-0092;Île-de-France;Web;Informatique;Clavier;1;0;59,00;11,94;4
+11/04/2024;CMD-101581;CLI-0681;Occitanie;Web;Informatique;Ordinateur portable;3;0;2697,00;485,91;4
+19/04/2024;CMD-101582;CLI-0225;Bretagne;Web;Téléphonie;Smartphone;1;10;584,10;102,33;3
+28/01/2024;CMD-101583;CLI-0354;Île-de-France;Web;Informatique;"Écran 27""";1;0;279,00;56,19;3
+30/05/2025;CMD-101584;CLI-0277;Auvergne-Rhône-Alpes;Magasin;Informatique;"Écran 27""";1;0;279,00;50,47;4
+08/02/2024;CMD-101585;CLI-0782;Grand Est;Magasin;Maison;Aspirateur;2;5;473,10;156,06;4
+06/09/2024;CMD-101586;CLI-0022;Auvergne-Rhône-Alpes;Web;Téléphonie;Écouteurs;3;0;387,00;76,88;4
+11/09/2025;CMD-101587;CLI-0266;Bretagne;Web;Informatique;Ordinateur portable;2;5;1708,10;263,47;3
+18/06/2025;CMD-101588;CLI-0795;Auvergne-Rhône-Alpes;Web;Informatique;Clavier;2;20;94,40;3,89;3
+10/09/2025;CMD-101589;CLI-0304;Île-de-France;Web;Maison;Cafetière;3;20;213,60;61,13;5
+13/02/2025;CMD-101590;CLI-0156;Bretagne;Magasin;Informatique;Clavier;1;0;59,00;14,75;4
+02/09/2024;CMD-101591;CLI-0647;Île-de-France;Web;Informatique;Clavier;3;20;141,60;6,93;5
+01/07/2025;CMD-101592;CLI-0207;Île-de-France;Web;Téléphonie;Écouteurs;1;10;116,10;30,91;4
+30/06/2025;CMD-101593;CLI-0229;Grand Est;Marketplace;Téléphonie;Smartphone;2;10;1168,20;190,31;4
+11/10/2024;CMD-101594;CLI-0561;Île-de-France;Web;Loisirs;Console;1;5;426,55;104,46;2
+21/01/2025;CMD-101595;CLI-0233;Bretagne;Magasin;Téléphonie;Coque;2;5;36,10;14,00;4
+18/05/2024;CMD-101596;CLI-0823;Hauts-de-France;Magasin;Informatique;Ordinateur portable;1;0;899,00;166,80;4
+14/02/2025;CMD-101597;CLI-0830;Hauts-de-France;Web;Téléphonie;Smartphone;3;5;1849,65;357,35;4
+15/08/2025;CMD-101598;CLI-0536;Hauts-de-France;Marketplace;Téléphonie;Écouteurs;1;5;122,55;26,52;3
+29/06/2024;CMD-101599;CLI-0890;Hauts-de-France;Web;Informatique;"Écran 27""";1;20;223,20;12,71;5
+06/06/2024;CMD-101600;CLI-0167;Île-de-France;Web;Téléphonie;Smartphone;1;20;519,20;60,72;4
+04/04/2025;CMD-101601;CLI-0511;Occitanie;Marketplace;Informatique;"Écran 27""";2;10;502,20;58,95;4
+05/01/2024;CMD-101602;CLI-0663;Occitanie;Web;Maison;Cafetière;1;10;80,10;24,09;5
+20/12/2024;CMD-101603;CLI-0599;Auvergne-Rhône-Alpes;Magasin;Maison;Lampe;2;20;62,40;18,42;4
+10/12/2024;CMD-101604;CLI-0463;Grand Est;Web;Téléphonie;Smartphone;2;10;1168,20;202,13;5
+28/08/2024;CMD-101605;CLI-0218;Grand Est;Web;Loisirs;Jeu vidéo;3;5;168,15;36,78;5
+17/10/2024;CMD-101606;CLI-0885;Île-de-France;Magasin;Loisirs;Jeu vidéo;1;0;59,00;10,10;2
+28/11/2024;CMD-101607;CLI-0494;Grand Est;Marketplace;Informatique;Clavier;3;0;177,00;31,41;4
+31/01/2024;CMD-101608;CLI-0481;Île-de-France;Web;Téléphonie;Coque;1;5;18,05;9,43;5
+11/01/2025;CMD-101609;CLI-0414;Île-de-France;Web;Téléphonie;Coque;2;10;34,20;7,22;5
+20/08/2024;CMD-101610;CLI-0740;Hauts-de-France;Web;Informatique;"Écran 27""";1;5;265,05;41,68;3
+31/10/2024;CMD-101611;CLI-0855;Île-de-France;Magasin;Téléphonie;Smartphone;1;5;616,55;117,09;5
+22/01/2025;CMD-101612;CLI-0880;Bretagne;Web;Informatique;Ordinateur portable;3;10;2427,30;318,45;4
+11/06/2024;CMD-101613;CLI-0134;Bretagne;Magasin;Loisirs;Jeu vidéo;1;0;59,00;22,44;3
+19/09/2024;CMD-101614;CLI-0278;Occitanie;Magasin;Téléphonie;Écouteurs;2;0;258,00;51,99;3
+10/06/2024;CMD-101615;CLI-0039;Occitanie;Web;Maison;Aspirateur;2;0;498,00;177,08;4
+05/03/2024;CMD-101616;CLI-0386;Auvergne-Rhône-Alpes;Web;Téléphonie;Coque;2;5;36,10;4,56;5
+06/08/2024;CMD-101617;CLI-0171;Nouvelle-Aquitaine;Web;Informatique;Clavier;1;10;53,10;10,36;4
+17/12/2024;CMD-101618;CLI-0468;Auvergne-Rhône-Alpes;Marketplace;Loisirs;Drone;2;0;658,00;185,46;5
+08/04/2024;CMD-101619;CLI-0809;Bretagne;Web;Informatique;"Écran 27""";2;5;530,10;69,78;4
+17/04/2025;CMD-101620;CLI-0303;Hauts-de-France;Magasin;Informatique;Ordinateur portable;1;0;899,00;154,65;5
+23/03/2024;CMD-101621;CLI-0447;Occitanie;Magasin;Téléphonie;Smartphone;1;0;649,00;141,90;5
+22/11/2024;CMD-101622;CLI-0546;Bretagne;Magasin;Maison;Aspirateur;1;20;199,20;54,91;5
+11/04/2024;CMD-101623;CLI-0802;Occitanie;Web;Informatique;Clavier;1;0;59,00;9,64;5
+16/07/2024;CMD-101624;CLI-0009;Nouvelle-Aquitaine;Web;Informatique;Ordinateur portable;1;0;899,00;158,24;4
+08/10/2024;CMD-101625;CLI-0333;Île-de-France;Web;Informatique;"Écran 27""";3;0;837,00;148,59;4
+19/12/2024;CMD-101626;CLI-0364;Hauts-de-France;Web;Informatique;"Écran 27""";2;5;530,10;81,64;4
+04/02/2025;CMD-101627;CLI-0282;Grand Est;Web;Informatique;"Écran 27""";1;20;223,20;15,07;4
+12/06/2025;CMD-101628;CLI-0451;Auvergne-Rhône-Alpes;Web;Téléphonie;Coque;1;10;17,10;7,33;4
+11/02/2024;CMD-101629;CLI-0585;Nouvelle-Aquitaine;Magasin;Informatique;Clavier;3;20;141,60;12,91;4
+14/08/2024;CMD-101630;CLI-0315;Bretagne;Web;Informatique;"Écran 27""";1;0;279,00;59,03;2
+01/01/2024;CMD-101631;CLI-0316;Île-de-France;Web;Téléphonie;Smartphone;1;5;616,55;119,05;5
+06/01/2024;CMD-101632;CLI-0814;Occitanie;Marketplace;Maison;Lampe;3;0;117,00;47,90;4
+12/05/2024;CMD-101633;CLI-0524;Occitanie;Magasin;Informatique;Ordinateur portable;1;0;899,00;163,86;4
+09/01/2025;CMD-101634;CLI-0502;Occitanie;Web;Informatique;Clavier;2;0;118,00;24,44;4
+29/04/2025;CMD-101635;CLI-0429;Île-de-France;Magasin;Informatique;"Écran 27""";2;0;558,00;98,04;5
+08/02/2025;CMD-101636;CLI-0589;Occitanie;Magasin;Loisirs;Jeu vidéo;2;10;106,20;20,71;4
+17/04/2024;CMD-101637;CLI-0648;Nouvelle-Aquitaine;Web;Informatique;"Écran 27""";3;10;753,30;103,28;4
+09/06/2025;CMD-101638;CLI-0113;Île-de-France;Web;Informatique;Clavier;1;0;59,00;10,72;3
+03/06/2025;CMD-101639;CLI-0814;Île-de-France;Magasin;Téléphonie;Écouteurs;2;10;232,20;42,22;3
+25/10/2024;CMD-101640;CLI-0341;Île-de-France;Marketplace;Informatique;Clavier;1;5;56,05;4,44;5
+24/10/2024;CMD-101641;CLI-0579;Auvergne-Rhône-Alpes;Web;Informatique;"Écran 27""";1;0;279,00;50,17;4
+07/02/2024;CMD-101642;CLI-0656;Île-de-France;Web;Informatique;Ordinateur portable;2;5;1708,10;261,19;3
+31/07/2024;CMD-101643;CLI-0804;Grand Est;Web;Téléphonie;Smartphone;2;10;1168,20;198,99;4
+14/05/2024;CMD-101644;CLI-0054;Auvergne-Rhône-Alpes;Magasin;Téléphonie;Coque;1;0;19,00;9,89;5
+01/01/2025;CMD-101645;CLI-0248;Auvergne-Rhône-Alpes;Magasin;Maison;Lampe;1;20;31,20;-1,24;3
+17/10/2024;CMD-101646;CLI-0705;Grand Est;Web;Maison;Lampe;2;20;62,40;12,17;4
+02/05/2024;CMD-101647;CLI-0741;Occitanie;Web;Informatique;Clavier;2;0;118,00;18,78;5
+07/07/2024;CMD-101648;CLI-0885;Occitanie;Web;Loisirs;Jeu vidéo;2;5;112,10;18,40;4
+01/03/2025;CMD-101649;CLI-0599;Île-de-France;Web;Maison;Cafetière;2;10;160,20;53,37;4
+17/01/2024;CMD-101650;CLI-0228;Grand Est;Web;Maison;Aspirateur;3;5;709,65;230,05;5
+14/05/2024;CMD-101651;CLI-0714;Île-de-France;Web;Maison;Cafetière;1;20;71,20;21,61;2
+03/03/2024;CMD-101652;CLI-0150;Auvergne-Rhône-Alpes;Magasin;Téléphonie;Coque;1;5;18,05;-4,26;3
+16/09/2024;CMD-101653;CLI-0484;Occitanie;Magasin;Informatique;"Écran 27""";2;0;558,00;104,84;4
+09/05/2024;CMD-101654;CLI-0056;Occitanie;Magasin;Téléphonie;Smartphone;2;20;1038,40;122,37;3
+06/03/2024;CMD-101655;CLI-0034;Occitanie;Web;Informatique;Clavier;1;0;59,00;15,84;5
+21/09/2024;CMD-101656;CLI-0148;Auvergne-Rhône-Alpes;Marketplace;Téléphonie;Smartphone;1;0;649,00;140,57;5
+22/11/2024;CMD-101657;CLI-0450;Auvergne-Rhône-Alpes;Marketplace;Informatique;Clavier;3;5;168,15;24,74;3
+20/04/2024;CMD-101658;CLI-0434;Île-de-France;Web;Informatique;"Écran 27""";1;20;223,20;26,05;2
+18/02/2024;CMD-101659;CLI-0078;Île-de-France;Magasin;Loisirs;Console;3;5;1279,65;326,71;4
+11/02/2025;CMD-101660;CLI-0322;Île-de-France;Magasin;Maison;Aspirateur;2;0;498,00;168,30;5
+22/06/2025;CMD-101661;CLI-0463;Grand Est;Web;Téléphonie;Smartphone;1;0;649,00;143,88;3
+22/04/2024;CMD-101662;CLI-0136;Grand Est;Web;Informatique;"Écran 27""";2;5;530,10;79,09;5
+19/07/2024;CMD-101663;CLI-0036;Hauts-de-France;Marketplace;Téléphonie;Smartphone;1;0;649,00;142,00;5
+03/08/2024;CMD-101664;CLI-0028;Hauts-de-France;Marketplace;Loisirs;Jeu vidéo;3;10;159,30;33,31;4
+13/08/2024;CMD-101665;CLI-0637;Île-de-France;Web;Maison;Lampe;3;10;105,30;32,02;2
+01/06/2024;CMD-101666;CLI-0160;Grand Est;Magasin;Téléphonie;Écouteurs;1;20;103,20;7,46;5
+04/02/2024;CMD-101667;CLI-0102;Nouvelle-Aquitaine;Web;Téléphonie;Coque;1;10;17,10;7,15;4
+24/11/2024;CMD-101668;CLI-0769;Auvergne-Rhône-Alpes;Web;Informatique;Ordinateur portable;1;0;899,00;169,70;4
+14/06/2024;CMD-101669;CLI-0740;Nouvelle-Aquitaine;Marketplace;Maison;Lampe;1;0;39,00;7,24;4
+04/08/2025;CMD-101670;CLI-0416;Nouvelle-Aquitaine;Magasin;Loisirs;Console;2;0;898,00;251,77;5
+17/01/2025;CMD-101671;CLI-0488;Île-de-France;Web;Téléphonie;Écouteurs;1;10;116,10;18,78;4
+19/09/2024;CMD-101672;CLI-0120;Occitanie;Web;Téléphonie;Smartphone;1;10;584,10;104,68;5
+08/05/2024;CMD-101673;CLI-0375;Auvergne-Rhône-Alpes;Web;Téléphonie;Écouteurs;1;0;129,00;40,87;4
+16/05/2025;CMD-101674;CLI-0322;Nouvelle-Aquitaine;Web;Téléphonie;Smartphone;2;0;1298,00;296,91;4
+10/07/2025;CMD-101675;CLI-0706;Hauts-de-France;Web;Loisirs;Drone;1;10;296,10;75,71;4
+21/01/2024;CMD-101676;CLI-0188;Nouvelle-Aquitaine;Web;Maison;Aspirateur;1;5;236,55;72,88;5
+04/08/2025;CMD-101677;CLI-0460;Nouvelle-Aquitaine;Web;Téléphonie;Smartphone;1;10;584,10;90,78;4
+03/03/2024;CMD-101678;CLI-0475;Bretagne;Marketplace;Téléphonie;Smartphone;1;10;584,10;104,40;2
+08/03/2024;CMD-101679;CLI-0828;Hauts-de-France;Web;Téléphonie;Coque;2;0;38,00;7,68;4
+01/02/2024;CMD-101680;CLI-0549;Auvergne-Rhône-Alpes;Magasin;Informatique;Ordinateur portable;1;0;899,00;163,95;4
+13/03/2024;CMD-101681;CLI-0244;Occitanie;Magasin;Téléphonie;Coque;3;0;57,00;10,67;5
+14/10/2024;CMD-101682;CLI-0135;Grand Est;Web;Maison;Lampe;2;0;78,00;24,89;3
+22/01/2025;CMD-101683;CLI-0842;Auvergne-Rhône-Alpes;Web;Maison;Lampe;2;0;78,00;19,76;4
+11/09/2024;CMD-101684;CLI-0384;Auvergne-Rhône-Alpes;Web;Informatique;Clavier;1;20;47,20;5,82;5
+17/03/2024;CMD-101685;CLI-0442;Auvergne-Rhône-Alpes;Magasin;Maison;Cafetière;1;20;71,20;26,85;4
+04/05/2024;CMD-101686;CLI-0248;Nouvelle-Aquitaine;Web;Maison;Lampe;2;20;62,40;21,77;4
+17/06/2025;CMD-101687;CLI-0142;Hauts-de-France;Web;Informatique;Clavier;1;0;59,00;6,40;5
+17/04/2025;CMD-101688;CLI-0734;Île-de-France;Magasin;Téléphonie;Écouteurs;3;10;348,30;61,00;5
+05/03/2024;CMD-101689;CLI-0849;Nouvelle-Aquitaine;Marketplace;Téléphonie;Écouteurs;1;10;116,10;13,27;3
+28/05/2025;CMD-101690;CLI-0581;Grand Est;Magasin;Maison;Lampe;2;10;70,20;17,48;3
+09/03/2025;CMD-101691;CLI-0854;Nouvelle-Aquitaine;Magasin;Informatique;Clavier;1;0;59,00;4,83;4
+25/11/2024;CMD-101692;CLI-0608;Nouvelle-Aquitaine;Web;Informatique;Ordinateur portable;1;10;809,10;105,40;4
+30/03/2024;CMD-101693;CLI-0766;Grand Est;Magasin;Téléphonie;Coque;1;20;15,20;6,14;4
+04/10/2024;CMD-101694;CLI-0892;Île-de-France;Magasin;Informatique;Clavier;3;0;177,00;34,62;4
+28/01/2024;CMD-101695;CLI-0839;Bretagne;Web;Téléphonie;Coque;3;5;54,15;15,47;4
+11/05/2024;CMD-101696;CLI-0391;Occitanie;Web;Maison;Aspirateur;2;20;398,40;106,33;4
+24/02/2024;CMD-101697;CLI-0144;Occitanie;Magasin;Informatique;"Écran 27""";1;0;279,00;42,25;4
+27/12/2024;CMD-101698;CLI-0219;Nouvelle-Aquitaine;Magasin;Téléphonie;Coque;2;0;38,00;11,26;5
+27/07/2025;CMD-101699;CLI-0515;Occitanie;Web;Loisirs;Drone;2;20;526,40;98,27;5
+19/05/2025;CMD-101700;CLI-0395;Île-de-France;Magasin;Téléphonie;Coque;1;10;17,10;3,54;4
+16/04/2024;CMD-101701;CLI-0044;Nouvelle-Aquitaine;Web;Téléphonie;Smartphone;2;5;1233,10;235,87;3
+16/05/2025;CMD-101702;CLI-0511;Grand Est;Magasin;Téléphonie;Coque;3;0;57,00;12,53;5
+04/09/2025;CMD-101703;CLI-0595;Auvergne-Rhône-Alpes;Marketplace;Informatique;Clavier;3;5;168,15;21,95;4
+23/07/2024;CMD-101704;CLI-0497;Hauts-de-France;Web;Informatique;Clavier;1;0;59,00;9,72;3
+08/11/2024;CMD-101705;CLI-0620;Île-de-France;Magasin;Maison;Cafetière;1;0;89,00;24,89;5
+28/11/2024;CMD-101706;CLI-0362;Auvergne-Rhône-Alpes;Marketplace;Téléphonie;Coque;2;0;38,00;7,73;4
+05/11/2024;CMD-101707;CLI-0591;Hauts-de-France;Web;Informatique;Clavier;1;5;56,05;8,49;3
+30/06/2024;CMD-101708;CLI-0366;Hauts-de-France;Magasin;Informatique;Clavier;1;0;59,00;14,61;4
+21/08/2025;CMD-101709;CLI-0354;Île-de-France;Magasin;Maison;Lampe;2;20;62,40;13,72;3
+19/05/2025;CMD-101710;CLI-0799;Île-de-France;Web;Informatique;Ordinateur portable;2;10;1618,20;218,11;3
+05/09/2024;CMD-101711;CLI-0516;Île-de-France;Magasin;Maison;Aspirateur;1;0;249,00;82,21;5
+12/05/2025;CMD-101712;CLI-0864;Nouvelle-Aquitaine;Web;Téléphonie;Smartphone;1;5;616,55;119,01;4
+01/01/2025;CMD-101713;CLI-0554;Île-de-France;Web;Téléphonie;Coque;1;0;19,00;17,35;4
+21/10/2024;CMD-101714;CLI-0235;Nouvelle-Aquitaine;Marketplace;Informatique;"Écran 27""";2;20;446,40;27,08;3
+15/05/2024;CMD-101715;CLI-0297;Auvergne-Rhône-Alpes;Web;Informatique;Clavier;1;20;47,20;14,16;4
+30/04/2024;CMD-101716;CLI-0897;Bretagne;Web;Téléphonie;Écouteurs;2;10;232,20;40,32;4
+14/05/2025;CMD-101717;CLI-0774;Île-de-France;Web;Maison;Aspirateur;2;5;473,10;159,19;4
+20/01/2024;CMD-101718;CLI-0650;Auvergne-Rhône-Alpes;Web;Informatique;Clavier;1;10;53,10;9,79;4
+27/12/2024;CMD-101719;CLI-0389;Île-de-France;Web;Téléphonie;Coque;2;20;30,40;3,75;3
+21/02/2025;CMD-101720;CLI-0621;Hauts-de-France;Magasin;Téléphonie;Smartphone;1;5;616,55;131,08;5
+12/09/2024;CMD-101721;CLI-0242;Île-de-France;Web;Informatique;"Écran 27""";3;10;753,30;95,83;5
+02/10/2024;CMD-101722;CLI-0477;Nouvelle-Aquitaine;Magasin;Téléphonie;Smartphone;1;0;649,00;141,58;5
+16/05/2025;CMD-101723;CLI-0077;Grand Est;Magasin;Informatique;Clavier;3;10;159,30;13,02;3
+03/08/2025;CMD-101724;CLI-0761;Grand Est;Web;Téléphonie;Écouteurs;3;5;367,65;66,91;5
+17/05/2025;CMD-101725;CLI-0744;Bretagne;Magasin;Informatique;Ordinateur portable;3;0;2697,00;485,54;4
+02/04/2025;CMD-101726;CLI-0426;Hauts-de-France;Web;Téléphonie;Smartphone;1;10;584,10;97,19;5
+02/09/2024;CMD-101727;CLI-0797;Nouvelle-Aquitaine;Magasin;Informatique;Clavier;1;5;56,05;9,85;4
+28/04/2025;CMD-101728;CLI-0484;Hauts-de-France;Marketplace;Téléphonie;Écouteurs;1;0;129,00;29,49;4
+25/07/2024;CMD-101729;CLI-0135;Île-de-France;Magasin;Téléphonie;Smartphone;3;10;1752,30;296,09;3
+09/10/2024;CMD-101730;CLI-0185;Île-de-France;Web;Loisirs;Drone;2;0;658,00;180,48;5
+29/08/2025;CMD-101731;CLI-0418;Occitanie;Magasin;Téléphonie;Smartphone;1;20;519,20;58,87;3
+21/12/2024;CMD-101732;CLI-0616;Île-de-France;Web;Maison;Lampe;2;0;78,00;21,82;4
+28/08/2024;CMD-101733;CLI-0509;Nouvelle-Aquitaine;Web;Informatique;"Écran 27""";1;5;265,05;42,44;5
+16/10/2024;CMD-101734;CLI-0173;Hauts-de-France;Web;Téléphonie;Coque;2;0;38,00;7,31;4
+16/02/2025;CMD-101735;CLI-0149;Bretagne;Magasin;Informatique;Ordinateur portable;1;20;719,20;62,17;4
+07/08/2024;CMD-101736;CLI-0436;Nouvelle-Aquitaine;Web;Téléphonie;Coque;2;20;30,40;-5,97;4
+13/12/2024;CMD-101737;CLI-0719;Île-de-France;Web;Maison;Cafetière;1;0;89,00;33,46;4
+19/08/2024;CMD-101738;CLI-0755;Hauts-de-France;Web;Maison;Aspirateur;2;5;473,10;149,88;4
+19/07/2024;CMD-101739;CLI-0678;Bretagne;Web;Téléphonie;Écouteurs;1;5;122,55;25,20;2
+30/08/2025;CMD-101740;CLI-0715;Île-de-France;Web;Téléphonie;Écouteurs;1;20;103,20;11,03;3
+04/08/2024;CMD-101741;CLI-0778;Auvergne-Rhône-Alpes;Web;Informatique;Clavier;1;20;47,20;4,33;4
+14/02/2024;CMD-101742;CLI-0259;Occitanie;Web;Informatique;Clavier;2;0;118,00;23,17;3
+29/11/2024;CMD-101743;CLI-0404;Bretagne;Web;Maison;Lampe;1;10;35,10;15,83;3
+29/02/2024;CMD-101744;CLI-0263;Île-de-France;Web;Informatique;Ordinateur portable;3;5;2562,15;398,38;3
+10/07/2024;CMD-101745;CLI-0224;Île-de-France;Web;Informatique;"Écran 27""";3;10;753,30;96,21;4
+13/04/2024;CMD-101746;CLI-0711;Grand Est;Web;Loisirs;Drone;1;20;263,20;44,16;1
+09/11/2024;CMD-101747;CLI-0842;Grand Est;Web;Loisirs;Jeu vidéo;1;10;53,10;21,05;4
+28/03/2025;CMD-101748;CLI-0614;Île-de-France;Marketplace;Téléphonie;Coque;2;5;36,10;8,45;5
+24/06/2025;CMD-101749;CLI-0669;Auvergne-Rhône-Alpes;Magasin;Téléphonie;Smartphone;3;0;1947,00;421,27;5
+03/05/2025;CMD-101750;CLI-0585;Grand Est;Marketplace;Maison;Aspirateur;1;0;249,00;79,94;4
+18/12/2024;CMD-101751;CLI-0003;Auvergne-Rhône-Alpes;Magasin;Informatique;Clavier;3;5;168,15;23,94;5
+17/04/2025;CMD-101752;CLI-0707;Île-de-France;Magasin;Téléphonie;Écouteurs;1;5;122,55;25,74;5
+29/11/2024;CMD-101753;CLI-0702;Auvergne-Rhône-Alpes;Web;Téléphonie;Coque;3;10;51,30;16,76;3
+25/11/2024;CMD-101754;CLI-0853;Auvergne-Rhône-Alpes;Magasin;Loisirs;Console;1;0;449,00;126,22;4
+01/06/2025;CMD-101755;CLI-0148;Bretagne;Web;Loisirs;Console;3;0;1347,00;379,41;3
+30/08/2025;CMD-101756;CLI-0171;Nouvelle-Aquitaine;Web;Maison;Aspirateur;2;0;498,00;158,63;4
+08/01/2025;CMD-101757;CLI-0625;Bretagne;Magasin;Informatique;Ordinateur portable;1;20;719,20;66,26;5
+22/02/2025;CMD-101758;CLI-0786;Île-de-France;Magasin;Téléphonie;Coque;1;20;15,20;-4,62;5
+13/09/2025;CMD-101759;CLI-0494;Grand Est;Marketplace;Informatique;Ordinateur portable;2;0;1798,00;311,42;4
+15/02/2025;CMD-101760;CLI-0385;Île-de-France;Magasin;Loisirs;Console;2;0;898,00;254,74;5
+14/08/2025;CMD-101761;CLI-0659;Île-de-France;Magasin;Informatique;Clavier;1;0;59,00;19,77;5
+01/08/2025;CMD-101762;CLI-0336;Auvergne-Rhône-Alpes;Magasin;Informatique;Ordinateur portable;1;20;719,20;59,31;2
+28/12/2024;CMD-101763;CLI-0754;Île-de-France;Magasin;Maison;Cafetière;1;0;89,00;28,83;5
+04/09/2025;CMD-101764;CLI-0097;Île-de-France;Magasin;Téléphonie;Coque;3;5;54,15;9,13;4
+03/01/2024;CMD-101765;CLI-0142;Grand Est;Magasin;Maison;Lampe;1;10;35,10;0,20;4
+25/07/2025;CMD-101766;CLI-0798;Île-de-France;Magasin;Informatique;Ordinateur portable;3;0;2697,00;486,79;3
+18/12/2024;CMD-101767;CLI-0805;Île-de-France;Marketplace;Maison;Cafetière;3;0;267,00;85,91;4
+22/02/2024;CMD-101768;CLI-0457;Bretagne;Web;Informatique;Clavier;2;5;112,10;17,69;5
+17/01/2024;CMD-101769;CLI-0075;Auvergne-Rhône-Alpes;Magasin;Informatique;Ordinateur portable;2;20;1438,40;113,36;5
+29/07/2024;CMD-101770;CLI-0642;Île-de-France;Web;Téléphonie;Écouteurs;1;0;129,00;32,08;3
+29/05/2024;CMD-101771;CLI-0167;Grand Est;Magasin;Informatique;"Écran 27""";2;0;558,00;106,63;4
+06/11/2024;CMD-101772;CLI-0640;Occitanie;Web;Téléphonie;Écouteurs;1;10;116,10;19,30;3
+07/05/2024;CMD-101773;CLI-0101;Nouvelle-Aquitaine;Magasin;Informatique;Ordinateur portable;2;5;1708,10;269,40;4
+18/10/2024;CMD-101774;CLI-0322;Hauts-de-France;Magasin;Informatique;Ordinateur portable;1;0;899,00;171,33;3
+10/10/2024;CMD-101775;CLI-0625;Auvergne-Rhône-Alpes;Web;Maison;Lampe;1;0;39,00;20,34;5
+04/01/2024;CMD-101776;CLI-0559;Auvergne-Rhône-Alpes;Web;Informatique;Ordinateur portable;2;10;1618,20;202,87;5
+21/12/2024;CMD-101777;CLI-0004;Île-de-France;Magasin;Maison;Lampe;2;0;78,00;26,29;5
+09/08/2025;CMD-101778;CLI-0587;Île-de-France;Magasin;Maison;Cafetière;1;20;71,20;14,80;5
+26/07/2024;CMD-101779;CLI-0026;Île-de-France;Marketplace;Informatique;Clavier;1;5;56,05;13,56;4
+05/07/2025;CMD-101780;CLI-0157;Occitanie;Magasin;Maison;Aspirateur;3;5;709,65;220,72;4
+04/07/2025;CMD-101781;CLI-0175;Bretagne;Web;Informatique;Clavier;2;10;106,20;13,41;5
+10/09/2025;CMD-101782;CLI-0359;Île-de-France;Web;Téléphonie;Smartphone;1;0;649,00;141,27;4
+21/08/2024;CMD-101783;CLI-0412;Grand Est;Marketplace;Informatique;Ordinateur portable;2;10;1618,20;203,35;5
+16/06/2025;CMD-101784;CLI-0834;Nouvelle-Aquitaine;Web;Maison;Cafetière;3;10;240,30;76,98;4
+19/12/2024;CMD-101785;CLI-0801;Hauts-de-France;Web;Téléphonie;Smartphone;2;0;1298,00;285,22;5
+18/06/2024;CMD-101786;CLI-0643;Bretagne;Web;Téléphonie;Coque;1;0;19,00;2,11;4
+24/02/2025;CMD-101787;CLI-0456;Île-de-France;Web;Loisirs;Console;3;20;1077,60;194,04;3
+10/04/2024;CMD-101788;CLI-0756;Île-de-France;Magasin;Informatique;"Écran 27""";1;0;279,00;54,13;4
+29/09/2024;CMD-101789;CLI-0134;Occitanie;Web;Loisirs;Jeu vidéo;2;10;106,20;34,27;4
+30/04/2025;CMD-101790;CLI-0249;Nouvelle-Aquitaine;Web;Maison;Aspirateur;1;20;199,20;50,53;4
+06/11/2024;CMD-101791;CLI-0494;Occitanie;Web;Loisirs;Jeu vidéo;1;10;53,10;20,06;4
+01/12/2024;CMD-101792;CLI-0791;Bretagne;Web;Loisirs;Console;2;20;718,40;136,32;3
+30/05/2024;CMD-101793;CLI-0041;Grand Est;Web;Loisirs;Jeu vidéo;2;0;118,00;29,09;4
+27/08/2025;CMD-101794;CLI-0398;Hauts-de-France;Web;Informatique;Ordinateur portable;1;0;899,00;157,36;5
+18/02/2024;CMD-101795;CLI-0714;Hauts-de-France;Web;Maison;Lampe;3;0;117,00;44,00;5
+26/08/2025;CMD-101796;CLI-0722;Île-de-France;Web;Maison;Lampe;3;0;117,00;33,90;5
+27/04/2024;CMD-101797;CLI-0878;Occitanie;Web;Téléphonie;Smartphone;2;10;1168,20;201,94;4
+07/01/2025;CMD-101798;CLI-0812;Île-de-France;Magasin;Informatique;Ordinateur portable;2;5;1708,10;260,11;5
+25/08/2025;CMD-101799;CLI-0687;Occitanie;Web;Loisirs;Console;3;0;1347,00;378,19;3
+28/12/2024;CMD-101800;CLI-0293;Bretagne;Magasin;Informatique;Ordinateur portable;1;5;854,05;138,99;5
+04/03/2024;CMD-101801;CLI-0220;Nouvelle-Aquitaine;Web;Téléphonie;Écouteurs;1;10;116,10;28,00;4
+22/05/2025;CMD-101802;CLI-0489;Occitanie;Magasin;Téléphonie;Écouteurs;1;10;116,10;24,75;4
+12/11/2024;CMD-101803;CLI-0836;Occitanie;Web;Informatique;"Écran 27""";3;0;837,00;158,73;4
+02/06/2024;CMD-101804;CLI-0152;Île-de-France;Web;Maison;Cafetière;1;10;80,10;27,62;3
+19/12/2024;CMD-101805;CLI-0385;Île-de-France;Marketplace;Informatique;"Écran 27""";1;0;279,00;53,69;5
+03/02/2025;CMD-101806;CLI-0632;Hauts-de-France;Web;Maison;Cafetière;2;20;142,40;23,67;4
+06/09/2025;CMD-101807;CLI-0314;Auvergne-Rhône-Alpes;Web;Maison;Aspirateur;2;0;498,00;171,48;3
+01/04/2025;CMD-101808;CLI-0829;Hauts-de-France;Magasin;Informatique;"Écran 27""";1;0;279,00;49,23;3
+23/07/2025;CMD-101809;CLI-0225;Bretagne;Web;Maison;Lampe;2;0;78,00;27,31;4
+08/08/2025;CMD-101810;CLI-0327;Hauts-de-France;Web;Informatique;"Écran 27""";1;10;251,10;30,32;3
+19/08/2024;CMD-101811;CLI-0557;Occitanie;Magasin;Maison;Aspirateur;2;10;448,20;130,32;2
+20/03/2024;CMD-101812;CLI-0546;Auvergne-Rhône-Alpes;Web;Loisirs;Drone;2;5;625,10;157,66;2
+21/03/2024;CMD-101813;CLI-0024;Occitanie;Web;Informatique;"Écran 27""";3;0;837,00;148,01;5
+15/03/2024;CMD-101814;CLI-0066;Occitanie;Web;Maison;Aspirateur;2;0;498,00;169,89;4
+05/07/2025;CMD-101815;CLI-0219;Auvergne-Rhône-Alpes;Marketplace;Téléphonie;Smartphone;1;0;649,00;135,59;5
+18/05/2024;CMD-101816;CLI-0582;Nouvelle-Aquitaine;Web;Téléphonie;Écouteurs;1;20;103,20;16,72;5
+08/06/2025;CMD-101817;CLI-0191;Occitanie;Web;Maison;Lampe;2;5;74,10;32,98;4
+18/03/2025;CMD-101818;CLI-0008;Auvergne-Rhône-Alpes;Magasin;Téléphonie;Écouteurs;2;5;245,10;45,86;5
+09/07/2024;CMD-101819;CLI-0780;Auvergne-Rhône-Alpes;Marketplace;Téléphonie;Écouteurs;1;10;116,10;19,69;4
+02/04/2025;CMD-101820;CLI-0609;Hauts-de-France;Web;Informatique;Ordinateur portable;1;10;809,10;112,89;4
+01/07/2025;CMD-101821;CLI-0643;Île-de-France;Magasin;Téléphonie;Smartphone;2;0;1298,00;284,41;3
+16/01/2024;CMD-101822;CLI-0274;Auvergne-Rhône-Alpes;Magasin;Loisirs;Console;1;20;359,20;63,90;3
+11/08/2025;CMD-101823;CLI-0488;Île-de-France;Web;Informatique;Ordinateur portable;2;5;1708,10;265,00;5
+21/11/2024;CMD-101824;CLI-0101;Île-de-France;Marketplace;Téléphonie;Coque;1;5;18,05;4,89;4
+13/11/2024;CMD-101825;CLI-0085;Hauts-de-France;Marketplace;Informatique;Ordinateur portable;2;10;1618,20;200,51;5
+17/10/2024;CMD-101826;CLI-0225;Occitanie;Web;Maison;Cafetière;1;10;80,10;27,36;5
+08/03/2025;CMD-101827;CLI-0529;Hauts-de-France;Magasin;Téléphonie;Smartphone;1;5;616,55;119,29;5
+28/12/2024;CMD-101828;CLI-0555;Auvergne-Rhône-Alpes;Web;Téléphonie;Coque;1;5;18,05;6,65;4
+27/01/2025;CMD-101829;CLI-0152;Bretagne;Marketplace;Informatique;Ordinateur portable;1;5;854,05;129,93;5
+22/02/2025;CMD-101830;CLI-0644;Occitanie;Web;Téléphonie;Smartphone;1;5;616,55;123,30;4
+12/03/2024;CMD-101831;CLI-0046;Bretagne;Web;Loisirs;Console;1;20;359,20;60,09;3
+23/08/2024;CMD-101832;CLI-0160;Île-de-France;Web;Téléphonie;Écouteurs;1;0;129,00;28,96;5
+09/05/2025;CMD-101833;CLI-0630;Auvergne-Rhône-Alpes;Web;Téléphonie;Écouteurs;1;0;129,00;24,27;4
+26/03/2024;CMD-101834;CLI-0315;Nouvelle-Aquitaine;Marketplace;Maison;Cafetière;2;0;178,00;66,74;4
+26/01/2024;CMD-101835;CLI-0064;Île-de-France;Magasin;Téléphonie;Smartphone;1;0;649,00;145,33;5
+29/12/2024;CMD-101836;CLI-0371;Grand Est;Marketplace;Téléphonie;Smartphone;2;10;1168,20;196,21;4
+16/10/2024;CMD-101837;CLI-0161;Grand Est;Marketplace;Informatique;Clavier;2;5;112,10;14,79;5
+22/11/2024;CMD-101838;CLI-0863;Grand Est;Magasin;Informatique;"Écran 27""";1;0;279,00;51,95;4
+07/10/2024;CMD-101839;CLI-0147;Île-de-France;Magasin;Maison;Aspirateur;3;10;672,30;198,05;3
+28/03/2024;CMD-101840;CLI-0049;Hauts-de-France;Web;Loisirs;Drone;2;0;658,00;190,49;5
+25/12/2024;CMD-101841;CLI-0533;Auvergne-Rhône-Alpes;Web;Loisirs;Jeu vidéo;2;20;94,40;22,68;5
+04/11/2024;CMD-101842;CLI-0123;Hauts-de-France;Web;Loisirs;Jeu vidéo;1;5;56,05;18,68;5
+16/11/2024;CMD-101843;CLI-0462;Nouvelle-Aquitaine;Magasin;Téléphonie;Coque;1;0;19,00;9,55;4
+16/08/2025;CMD-101844;CLI-0639;Auvergne-Rhône-Alpes;Magasin;Informatique;Clavier;1;20;47,20;-1,47;4
+10/09/2024;CMD-101845;CLI-0835;Auvergne-Rhône-Alpes;Web;Téléphonie;Smartphone;2;0;1298,00;284,16;3
+21/05/2025;CMD-101846;CLI-0236;Île-de-France;Magasin;Loisirs;Console;1;5;426,55;110,95;4
+16/09/2024;CMD-101847;CLI-0880;Occitanie;Web;Maison;Cafetière;1;0;89,00;34,36;5
+02/06/2024;CMD-101848;CLI-0649;Occitanie;Magasin;Téléphonie;Smartphone;2;20;1038,40;130,58;4
+20/02/2024;CMD-101849;CLI-0739;Auvergne-Rhône-Alpes;Magasin;Maison;Cafetière;1;0;89,00;39,77;5
+30/12/2024;CMD-101850;CLI-0858;Occitanie;Marketplace;Maison;Cafetière;2;0;178,00;61,47;5
+11/02/2025;CMD-101851;CLI-0441;Occitanie;Web;Loisirs;Jeu vidéo;2;20;94,40;25,43;5
+29/06/2025;CMD-101852;CLI-0630;Auvergne-Rhône-Alpes;Web;Maison;Aspirateur;1;20;199,20;43,32;2
+07/07/2025;CMD-101853;CLI-0891;Auvergne-Rhône-Alpes;Web;Téléphonie;Smartphone;3;10;1752,30;293,10;4
+01/02/2025;CMD-101854;CLI-0839;Bretagne;Web;Informatique;"Écran 27""";1;0;279,00;43,41;5
+25/09/2024;CMD-101855;CLI-0162;Hauts-de-France;Web;Téléphonie;Smartphone;2;0;1298,00;286,02;4
+16/08/2024;CMD-101856;CLI-0829;Hauts-de-France;Magasin;Informatique;Ordinateur portable;2;5;1708,10;266,21;5
+30/11/2024;CMD-101857;CLI-0851;Île-de-France;Web;Loisirs;Drone;1;5;312,55;77,72;5
+19/08/2024;CMD-101858;CLI-0219;Île-de-France;Magasin;Téléphonie;Écouteurs;3;20;309,60;37,35;4
+26/01/2024;CMD-101859;CLI-0122;Auvergne-Rhône-Alpes;Web;Téléphonie;Écouteurs;1;5;122,55;20,78;4
+07/12/2024;CMD-101860;CLI-0817;Auvergne-Rhône-Alpes;Magasin;Informatique;Clavier;2;20;94,40;15,09;4
+07/07/2024;CMD-101861;CLI-0522;Auvergne-Rhône-Alpes;Web;Téléphonie;Smartphone;1;0;649,00;139,75;5
+22/11/2024;CMD-101862;CLI-0240;Bretagne;Web;Téléphonie;Smartphone;3;20;1557,60;194,04;4
+31/08/2024;CMD-101863;CLI-0750;Île-de-France;Marketplace;Informatique;Clavier;1;5;56,05;3,85;5
+13/07/2024;CMD-101864;CLI-0617;Occitanie;Marketplace;Loisirs;Jeu vidéo;1;20;47,20;1,89;4
+08/08/2025;CMD-101865;CLI-0521;Grand Est;Web;Téléphonie;Smartphone;2;0;1298,00;275,33;3
+21/04/2025;CMD-101866;CLI-0157;Grand Est;Web;Téléphonie;Écouteurs;3;0;387,00;87,01;3
+08/06/2025;CMD-101867;CLI-0428;Auvergne-Rhône-Alpes;Magasin;Informatique;"Écran 27""";3;5;795,15;127,49;5
+14/03/2024;CMD-101868;CLI-0402;Auvergne-Rhône-Alpes;Magasin;Téléphonie;Smartphone;1;20;519,20;70,28;4
+07/02/2024;CMD-101869;CLI-0492;Grand Est;Web;Maison;Cafetière;3;0;267,00;88,70;4
+06/06/2025;CMD-101870;CLI-0616;Île-de-France;Magasin;Loisirs;Console;1;10;404,10;92,51;4
+09/08/2025;CMD-101871;CLI-0018;Auvergne-Rhône-Alpes;Web;Informatique;Clavier;2;5;112,10;27,02;5
+07/04/2024;CMD-101872;CLI-0707;Occitanie;Magasin;Loisirs;Console;1;5;426,55;104,83;4
+28/03/2025;CMD-101873;CLI-0082;Occitanie;Web;Maison;Cafetière;1;5;84,55;26,59;5
+30/11/2024;CMD-101874;CLI-0674;Île-de-France;Magasin;Informatique;Clavier;1;10;53,10;8,53;2
+27/07/2025;CMD-101875;CLI-0791;Hauts-de-France;Web;Informatique;Clavier;2;0;118,00;22,22;4
+29/06/2025;CMD-101876;CLI-0262;Île-de-France;Magasin;Informatique;Clavier;2;10;106,20;13,06;4
+21/12/2024;CMD-101877;CLI-0306;Nouvelle-Aquitaine;Web;Loisirs;Drone;3;10;888,30;200,58;4
+19/03/2025;CMD-101878;CLI-0138;Occitanie;Web;Informatique;"Écran 27""";3;5;795,15;121,72;3
+11/05/2025;CMD-101879;CLI-0342;Occitanie;Magasin;Téléphonie;Smartphone;1;10;584,10;102,35;5
+09/02/2024;CMD-101880;CLI-0127;Auvergne-Rhône-Alpes;Marketplace;Maison;Aspirateur;1;10;224,10;62,63;3
+17/04/2024;CMD-101881;CLI-0854;Île-de-France;Magasin;Loisirs;Jeu vidéo;3;20;141,60;23,66;5
+29/08/2025;CMD-101882;CLI-0871;Île-de-France;Magasin;Maison;Lampe;1;0;39,00;13,31;4
+29/06/2024;CMD-101883;CLI-0678;Bretagne;Magasin;Maison;Lampe;2;0;78,00;36,02;4
+13/07/2024;CMD-101884;CLI-0422;Auvergne-Rhône-Alpes;Magasin;Informatique;Ordinateur portable;3;0;2697,00;484,16;2
+17/11/2024;CMD-101885;CLI-0216;Bretagne;Marketplace;Loisirs;Console;1;0;449,00;117,70;3
+03/05/2024;CMD-101886;CLI-0349;Grand Est;Magasin;Informatique;Clavier;1;0;59,00;11,36;4
+05/05/2024;CMD-101887;CLI-0075;Bretagne;Web;Informatique;"Écran 27""";1;0;279,00;45,03;3
+29/02/2024;CMD-101888;CLI-0352;Hauts-de-France;Magasin;Loisirs;Jeu vidéo;2;10;106,20;24,18;4
+19/03/2025;CMD-101889;CLI-0652;Grand Est;Web;Informatique;"Écran 27""";1;0;279,00;52,74;3
+04/12/2024;CMD-101890;CLI-0868;Hauts-de-France;Web;Informatique;Clavier;3;5;168,15;29,84;5
+03/06/2025;CMD-101891;CLI-0603;Bretagne;Magasin;Téléphonie;Smartphone;1;0;649,00;151,56;4
+20/03/2024;CMD-101892;CLI-0355;Grand Est;Web;Informatique;Ordinateur portable;3;0;2697,00;484,93;4
+02/09/2025;CMD-101893;CLI-0279;Île-de-France;Magasin;Informatique;Ordinateur portable;2;0;1798,00;319,07;4
+22/01/2025;CMD-101894;CLI-0828;Grand Est;Magasin;Téléphonie;Écouteurs;3;20;309,60;43,09;5
+11/06/2025;CMD-101895;CLI-0494;Bretagne;Magasin;Maison;Cafetière;3;5;253,65;81,24;4
+14/08/2024;CMD-101896;CLI-0249;Nouvelle-Aquitaine;Marketplace;Maison;Aspirateur;1;20;199,20;49,90;5
+31/07/2025;CMD-101897;CLI-0255;Île-de-France;Web;Informatique;"Écran 27""";2;0;558,00;99,45;5
+06/07/2024;CMD-101898;CLI-0284;Île-de-France;Magasin;Téléphonie;Smartphone;3;0;1947,00;438,10;5
+07/12/2024;CMD-101899;CLI-0686;Grand Est;Web;Maison;Lampe;3;10;105,30;39,17;5
+06/12/2024;CMD-101900;CLI-0777;Auvergne-Rhône-Alpes;Web;Informatique;Ordinateur portable;2;0;1798,00;320,88;5
+27/08/2025;CMD-101901;CLI-0360;Nouvelle-Aquitaine;Magasin;Informatique;"Écran 27""";3;0;837,00;149,69;3
+16/07/2025;CMD-101902;CLI-0610;Grand Est;Marketplace;Informatique;"Écran 27""";1;20;223,20;24,19;4
+14/05/2024;CMD-101903;CLI-0599;Île-de-France;Marketplace;Téléphonie;Coque;2;0;38,00;20,79;4
+01/10/2024;CMD-101904;CLI-0001;Occitanie;Magasin;Informatique;"Écran 27""";1;20;223,20;7,07;4
+17/03/2025;CMD-101905;CLI-0834;Occitanie;Web;Maison;Lampe;1;10;35,10;9,57;5
+23/04/2025;CMD-101906;CLI-0481;Nouvelle-Aquitaine;Magasin;Loisirs;Jeu vidéo;1;20;47,20;13,58;4
+29/10/2024;CMD-101907;CLI-0018;Île-de-France;Web;Informatique;Ordinateur portable;3;10;2427,30;320,03;5
+24/06/2024;CMD-101908;CLI-0738;Hauts-de-France;Web;Téléphonie;Écouteurs;3;20;309,60;30,08;3
+01/05/2024;CMD-101909;CLI-0654;Île-de-France;Magasin;Informatique;Ordinateur portable;2;10;1618,20;205,40;4
+02/09/2024;CMD-101910;CLI-0862;Auvergne-Rhône-Alpes;Web;Informatique;Clavier;2;10;106,20;4,24;5
+26/02/2024;CMD-101911;CLI-0438;Île-de-France;Marketplace;Maison;Cafetière;1;20;71,20;18,96;5
+21/12/2024;CMD-101912;CLI-0618;Bretagne;Web;Téléphonie;Coque;3;10;51,30;15,05;4
+03/05/2025;CMD-101913;CLI-0334;Hauts-de-France;Magasin;Loisirs;Jeu vidéo;1;10;53,10;7,09;4
+29/03/2025;CMD-101914;CLI-0114;Île-de-France;Magasin;Téléphonie;Smartphone;1;5;616,55;117,89;4
+01/05/2024;CMD-101915;CLI-0585;Île-de-France;Web;Informatique;Ordinateur portable;1;20;719,20;62,35;4
+05/08/2025;CMD-101916;CLI-0403;Nouvelle-Aquitaine;Magasin;Téléphonie;Smartphone;1;5;616,55;128,04;3
+23/01/2024;CMD-101917;CLI-0314;Île-de-France;Web;Informatique;"Écran 27""";2;20;446,40;39,00;4
+16/07/2024;CMD-101918;CLI-0632;Nouvelle-Aquitaine;Web;Loisirs;Console;1;20;359,20;65,38;5
+08/04/2024;CMD-101919;CLI-0459;Auvergne-Rhône-Alpes;Web;Maison;Lampe;2;10;70,20;22,89;4
+22/06/2025;CMD-101920;CLI-0008;Île-de-France;Web;Informatique;"Écran 27""";2;0;558,00;106,93;4
+08/05/2024;CMD-101921;CLI-0891;Occitanie;Web;Téléphonie;Écouteurs;1;0;129,00;27,76;3
+25/06/2024;CMD-101922;CLI-0075;Hauts-de-France;Web;Maison;Aspirateur;3;0;747,00;258,30;3
+02/09/2025;CMD-101923;CLI-0780;Hauts-de-France;Web;Maison;Aspirateur;3;0;747,00;262,79;5
+27/05/2025;CMD-101924;CLI-0273;Hauts-de-France;Magasin;Informatique;Clavier;1;10;53,10;11,60;5
+16/05/2024;CMD-101925;CLI-0667;Bretagne;Magasin;Informatique;Clavier;2;0;118,00;18,32;4
+28/08/2024;CMD-101926;CLI-0644;Hauts-de-France;Magasin;Informatique;"Écran 27""";3;20;669,60;51,51;4
+18/11/2024;CMD-101927;CLI-0822;Auvergne-Rhône-Alpes;Web;Téléphonie;Écouteurs;3;10;348,30;62,33;3
+09/08/2025;CMD-101928;CLI-0763;Auvergne-Rhône-Alpes;Web;Téléphonie;Coque;3;0;57,00;12,16;4
+03/09/2025;CMD-101929;CLI-0126;Auvergne-Rhône-Alpes;Magasin;Informatique;Ordinateur portable;2;5;1708,10;266,27;5
+26/01/2024;CMD-101930;CLI-0091;Île-de-France;Web;Téléphonie;Coque;3;20;45,60;4,04;3
+27/05/2024;CMD-101931;CLI-0060;Grand Est;Web;Téléphonie;Smartphone;1;5;616,55;125,15;5
+18/12/2024;CMD-101932;CLI-0091;Île-de-France;Web;Informatique;Clavier;1;20;47,20;-1,68;4
+31/01/2024;CMD-101933;CLI-0028;Île-de-France;Magasin;Loisirs;Jeu vidéo;1;0;59,00;14,89;3
+07/08/2025;CMD-101934;CLI-0787;Nouvelle-Aquitaine;Web;Téléphonie;Écouteurs;3;0;387,00;85,48;5
+09/02/2024;CMD-101935;CLI-0702;Île-de-France;Marketplace;Téléphonie;Coque;2;20;30,40;-5,86;4
+02/05/2024;CMD-101936;CLI-0325;Île-de-France;Magasin;Téléphonie;Coque;1;20;15,20;-0,44;3
+03/04/2024;CMD-101937;CLI-0674;Nouvelle-Aquitaine;Magasin;Informatique;Ordinateur portable;2;10;1618,20;211,79;4
+21/12/2024;CMD-101938;CLI-0026;Auvergne-Rhône-Alpes;Web;Loisirs;Drone;1;20;263,20;39,16;2
+16/08/2024;CMD-101939;CLI-0706;Nouvelle-Aquitaine;Magasin;Téléphonie;Écouteurs;1;20;103,20;15,22;4
+12/06/2024;CMD-101940;CLI-0165;Occitanie;Web;Téléphonie;Coque;1;10;17,10;0,30;3
+02/12/2024;CMD-101941;CLI-0477;Auvergne-Rhône-Alpes;Magasin;Loisirs;Jeu vidéo;1;0;59,00;19,15;4
+17/02/2025;CMD-101942;CLI-0414;Auvergne-Rhône-Alpes;Magasin;Maison;Lampe;2;5;74,10;24,22;3
+13/05/2025;CMD-101943;CLI-0611;Île-de-France;Marketplace;Maison;Cafetière;1;0;89,00;32,76;4
+13/11/2024;CMD-101944;CLI-0262;Auvergne-Rhône-Alpes;Magasin;Informatique;Clavier;1;5;56,05;13,62;4
+24/06/2025;CMD-101945;CLI-0298;Bretagne;Web;Informatique;Clavier;1;5;56,05;6,15;5
+21/01/2025;CMD-101946;CLI-0741;Île-de-France;Marketplace;Maison;Cafetière;1;0;89,00;18,21;3
+12/02/2025;CMD-101947;CLI-0306;Bretagne;Marketplace;Téléphonie;Smartphone;3;0;1947,00;427,49;3
+24/06/2025;CMD-101948;CLI-0176;Hauts-de-France;Web;Maison;Aspirateur;2;0;498,00;170,11;4
+16/08/2025;CMD-101949;CLI-0665;Nouvelle-Aquitaine;Web;Maison;Cafetière;2;10;160,20;46,66;2
+05/08/2024;CMD-101950;CLI-0291;Nouvelle-Aquitaine;Web;Informatique;Clavier;1;0;59,00;14,27;5
+11/03/2024;CMD-101951;CLI-0873;Auvergne-Rhône-Alpes;Web;Informatique;"Écran 27""";1;0;279,00;50,67;4
+26/02/2024;CMD-101952;CLI-0392;Auvergne-Rhône-Alpes;Magasin;Téléphonie;Écouteurs;2;10;232,20;41,88;4
+21/05/2024;CMD-101953;CLI-0300;Île-de-France;Magasin;Informatique;"Écran 27""";1;0;279,00;57,95;3
+11/09/2024;CMD-101954;CLI-0428;Auvergne-Rhône-Alpes;Magasin;Maison;Cafetière;1;10;80,10;27,46;3
+23/01/2025;CMD-101955;CLI-0670;Île-de-France;Magasin;Maison;Aspirateur;1;0;249,00;84,68;4
+15/08/2025;CMD-101956;CLI-0661;Île-de-France;Web;Téléphonie;Coque;2;0;38,00;10,53;4
+15/06/2025;CMD-101957;CLI-0405;Auvergne-Rhône-Alpes;Web;Maison;Aspirateur;2;10;448,20;136,46;2
+24/08/2024;CMD-101958;CLI-0108;Nouvelle-Aquitaine;Magasin;Téléphonie;Coque;1;0;19,00;7,84;4
+22/07/2024;CMD-101959;CLI-0340;Bretagne;Magasin;Maison;Cafetière;1;0;89,00;33,08;5
+27/04/2025;CMD-101960;CLI-0202;Bretagne;Web;Informatique;Ordinateur portable;2;0;1798,00;322,86;4
+18/03/2024;CMD-101961;CLI-0410;Bretagne;Marketplace;Maison;Cafetière;2;10;160,20;46,92;4
+04/12/2024;CMD-101962;CLI-0547;Nouvelle-Aquitaine;Web;Maison;Aspirateur;1;0;249,00;83,27;3
+21/09/2024;CMD-101963;CLI-0748;Île-de-France;Web;Informatique;"Écran 27""";2;5;530,10;85,67;5
+24/04/2024;CMD-101964;CLI-0752;Occitanie;Web;Téléphonie;Coque;1;20;15,20;1,04;3
+20/01/2025;CMD-101965;CLI-0382;Île-de-France;Web;Loisirs;Drone;2;0;658,00;194,16;5
+19/07/2024;CMD-101966;CLI-0409;Île-de-France;Magasin;Informatique;Clavier;1;20;47,20;5,40;4
+26/04/2024;CMD-101967;CLI-0450;Île-de-France;Magasin;Maison;Cafetière;1;0;89,00;28,82;3
+12/02/2025;CMD-101968;CLI-0027;Nouvelle-Aquitaine;Web;Loisirs;Console;3;0;1347,00;375,30;5
+19/04/2024;CMD-101969;CLI-0843;Occitanie;Magasin;Loisirs;Drone;3;10;888,30;205,10;3
+29/09/2024;CMD-101970;CLI-0530;Grand Est;Magasin;Téléphonie;Écouteurs;2;5;245,10;40,20;4
+20/05/2025;CMD-101971;CLI-0149;Bretagne;Web;Téléphonie;Smartphone;1;10;584,10;95,88;3
+23/05/2024;CMD-101972;CLI-0055;Occitanie;Web;Loisirs;Jeu vidéo;2;0;118,00;36,29;3
+27/03/2025;CMD-101973;CLI-0837;Nouvelle-Aquitaine;Magasin;Téléphonie;Smartphone;1;5;616,55;120,88;5
+19/07/2025;CMD-101974;CLI-0276;Grand Est;Magasin;Informatique;Clavier;2;5;112,10;18,83;4
+15/04/2024;CMD-101975;CLI-0420;Hauts-de-France;Web;Informatique;"Écran 27""";1;0;279,00;49,50;5
+23/03/2025;CMD-101976;CLI-0376;Auvergne-Rhône-Alpes;Magasin;Maison;Cafetière;3;5;253,65;87,68;4
+09/08/2025;CMD-101977;CLI-0216;Bretagne;Magasin;Téléphonie;Smartphone;2;5;1233,10;244,03;2
+29/05/2025;CMD-101978;CLI-0332;Auvergne-Rhône-Alpes;Magasin;Informatique;"Écran 27""";2;0;558,00;98,57;5
+08/03/2024;CMD-101979;CLI-0197;Occitanie;Web;Informatique;Ordinateur portable;3;10;2427,30;317,09;4
+03/01/2025;CMD-101980;CLI-0824;Auvergne-Rhône-Alpes;Magasin;Maison;Aspirateur;1;0;249,00;95,22;4
+07/11/2024;CMD-101981;CLI-0500;Auvergne-Rhône-Alpes;Magasin;Téléphonie;Écouteurs;3;0;387,00;75,64;3
+28/11/2024;CMD-101982;CLI-0598;Hauts-de-France;Web;Loisirs;Drone;2;0;658,00;183,36;5
+21/11/2024;CMD-101983;CLI-0458;Bretagne;Web;Maison;Cafetière;2;5;169,10;54,53;4
+14/11/2024;CMD-101984;CLI-0870;Nouvelle-Aquitaine;Web;Loisirs;Jeu vidéo;2;0;118,00;35,43;5
+22/06/2024;CMD-101985;CLI-0116;Occitanie;Web;Loisirs;Console;3;10;1212,30;279,56;5
+14/09/2025;CMD-101986;CLI-0029;Bretagne;Marketplace;Informatique;Ordinateur portable;2;0;1798,00;329,81;5
+02/03/2024;CMD-101987;CLI-0061;Auvergne-Rhône-Alpes;Magasin;Maison;Aspirateur;1;10;224,10;70,30;5
+31/10/2024;CMD-101988;CLI-0637;Hauts-de-France;Magasin;Informatique;Clavier;2;0;118,00;24,20;4
+16/11/2024;CMD-101989;CLI-0729;Auvergne-Rhône-Alpes;Magasin;Loisirs;Drone;1;10;296,10;71,24;5
+31/07/2025;CMD-101990;CLI-0625;Grand Est;Magasin;Informatique;"Écran 27""";1;10;251,10;32,51;5
+21/09/2024;CMD-101991;CLI-0679;Auvergne-Rhône-Alpes;Magasin;Maison;Aspirateur;1;0;249,00;95,35;4
+01/09/2025;CMD-101992;CLI-0541;Nouvelle-Aquitaine;Web;Maison;Aspirateur;2;20;398,40;103,27;3
+04/04/2025;CMD-101993;CLI-0550;Auvergne-Rhône-Alpes;Magasin;Informatique;Clavier;2;0;118,00;23,86;4
+06/01/2025;CMD-101994;CLI-0078;Grand Est;Web;Maison;Aspirateur;2;20;398,40;107,60;3
+30/05/2024;CMD-101995;CLI-0896;Auvergne-Rhône-Alpes;Web;Informatique;Ordinateur portable;1;20;719,20;53,72;4
+03/02/2025;CMD-101996;CLI-0005;Auvergne-Rhône-Alpes;Web;Téléphonie;Écouteurs;1;0;129,00;26,86;2
+01/02/2024;CMD-101997;CLI-0064;Île-de-France;Web;Téléphonie;Écouteurs;1;0;129,00;31,12;3
+06/09/2025;CMD-101998;CLI-0236;Île-de-France;Magasin;Téléphonie;Écouteurs;3;5;367,65;84,49;3
+11/01/2024;CMD-101999;CLI-0644;Bretagne;Marketplace;Téléphonie;Coque;2;5;36,10;4,03;5
+05/11/2024;CMD-102000;CLI-0799;Occitanie;Web;Loisirs;Jeu vidéo;1;10;53,10;11,77;3
+15/07/2025;CMD-102001;CLI-0730;Île-de-France;Magasin;Informatique;Clavier;2;0;118,00;20,28;3
+24/03/2025;CMD-102002;CLI-0299;Auvergne-Rhône-Alpes;Web;Téléphonie;Coque;1;0;19,00;0,78;3
+29/05/2025;CMD-102003;CLI-0663;Hauts-de-France;Web;Loisirs;Drone;1;5;312,55;79,83;4
+09/02/2025;CMD-102004;CLI-0728;Occitanie;Marketplace;Maison;Lampe;2;5;74,10;22,15;4
+04/05/2025;CMD-102005;CLI-0265;Nouvelle-Aquitaine;Web;Informatique;Clavier;2;10;106,20;5,08;4
+19/07/2025;CMD-102006;CLI-0170;Nouvelle-Aquitaine;Magasin;Loisirs;Jeu vidéo;1;0;59,00;12,65;3
+25/09/2024;CMD-102007;CLI-0548;Grand Est;Web;Informatique;Clavier;3;5;168,15;18,53;4
+12/10/2024;CMD-102008;CLI-0090;Occitanie;Magasin;Téléphonie;Smartphone;2;10;1168,20;193,44;4
+19/06/2025;CMD-102009;CLI-0783;Nouvelle-Aquitaine;Magasin;Téléphonie;Coque;1;20;15,20;6,08;3
+27/04/2025;CMD-102010;CLI-0577;Bretagne;Web;Maison;Aspirateur;1;20;199,20;49,84;3
+30/01/2025;CMD-102011;CLI-0576;Bretagne;Magasin;Informatique;"Écran 27""";2;20;446,40;36,34;4
+07/07/2024;CMD-102012;CLI-0209;Île-de-France;Magasin;Informatique;Clavier;3;10;159,30;20,87;3
+05/08/2024;CMD-102013;CLI-0294;Nouvelle-Aquitaine;Web;Maison;Lampe;1;10;35,10;14,32;4

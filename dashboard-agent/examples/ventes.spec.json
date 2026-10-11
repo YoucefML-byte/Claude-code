@@ -1,0 +1,133 @@
+{
+  "title": "Performance commerciale",
+  "subtitle": "Ventes janvier 2024 – septembre 2025, pour la direction commerciale",
+  "currency": "EUR",
+  "locale": "fr-FR",
+  "kpis": [
+    {
+      "label": "Chiffre d'affaires",
+      "measure": {"column": "chiffre_affaires", "aggregation": "sum"},
+      "format": "currency",
+      "trend_date_column": "date_commande",
+      "trend_grain": "month",
+      "rationale": "Indicateur de volume principal suivi par la direction."
+    },
+    {
+      "label": "Taux de marge",
+      "measure": {"column": "marge", "aggregation": "sum"},
+      "denominator": {"column": "chiffre_affaires", "aggregation": "sum"},
+      "format": "percent",
+      "trend_date_column": "date_commande",
+      "trend_grain": "month",
+      "rationale": "Mesure la rentabilité, indépendamment du volume."
+    },
+    {
+      "label": "Panier moyen",
+      "measure": {"column": "chiffre_affaires", "aggregation": "sum"},
+      "denominator": {"column": "commande_id", "aggregation": "count_distinct"},
+      "format": "currency",
+      "trend_date_column": "date_commande",
+      "trend_grain": "month",
+      "rationale": "Valeur moyenne d'une commande : levier prix et ventes additionnelles."
+    },
+    {
+      "label": "Clients actifs",
+      "measure": {"column": "client_id", "aggregation": "count_distinct"},
+      "format": "number",
+      "trend_date_column": "date_commande",
+      "trend_grain": "month",
+      "rationale": "Taille de la base clients qui achète réellement."
+    },
+    {
+      "label": "Satisfaction moyenne",
+      "measure": {"column": "note_satisfaction", "aggregation": "mean"},
+      "format": "decimal",
+      "trend_date_column": "date_commande",
+      "trend_grain": "month",
+      "rationale": "Qualité perçue, note sur 5."
+    }
+  ],
+  "charts": [
+    {
+      "type": "line",
+      "title": "Comment évolue le chiffre d'affaires mois par mois ?",
+      "rationale": "Une courbe montre la tendance et la saisonnalité d'une série temporelle.",
+      "dimension": "date_commande",
+      "time_grain": "month",
+      "measure": {"column": "chiffre_affaires", "aggregation": "sum"},
+      "format": "currency",
+      "width": "full"
+    },
+    {
+      "type": "horizontal_bar",
+      "title": "Quelles régions génèrent le plus de chiffre d'affaires ?",
+      "rationale": "Barres horizontales triées : comparaison facile de catégories aux noms longs.",
+      "dimension": "region",
+      "measure": {"column": "chiffre_affaires", "aggregation": "sum"},
+      "format": "currency"
+    },
+    {
+      "type": "stacked_bar",
+      "title": "Quel canal porte chaque catégorie ?",
+      "rationale": "Barres empilées : composition de chaque catégorie par canal (partie d'un tout).",
+      "dimension": "categorie",
+      "series": "canal",
+      "measure": {"column": "chiffre_affaires", "aggregation": "sum"},
+      "format": "currency"
+    },
+    {
+      "type": "donut",
+      "title": "Quelle part du chiffre d'affaires par canal ?",
+      "rationale": "Trois parts seulement : un donut lisible pour une répartition simple.",
+      "dimension": "canal",
+      "measure": {"column": "chiffre_affaires", "aggregation": "sum"},
+      "format": "currency"
+    },
+    {
+      "type": "bar",
+      "title": "Quelles catégories sont les plus rentables ?",
+      "rationale": "Peu de catégories à comparer : des barres verticales triées suffisent.",
+      "dimension": "categorie",
+      "measure": {"column": "marge", "aggregation": "sum"},
+      "format": "currency"
+    },
+    {
+      "type": "heatmap",
+      "title": "Où se concentrent les ventes : région × catégorie",
+      "rationale": "Une heatmap révèle les combinaisons fortes et faibles d'un croisement de deux dimensions.",
+      "dimension": "categorie",
+      "series": "region",
+      "measure": {"column": "chiffre_affaires", "aggregation": "sum"},
+      "format": "currency",
+      "width": "full"
+    },
+    {
+      "type": "histogram",
+      "title": "Comment se répartit le montant des commandes ?",
+      "rationale": "Un histogramme montre la distribution et les valeurs extrêmes d'une mesure continue.",
+      "measure": {"column": "chiffre_affaires", "aggregation": "sum"},
+      "bins": 20,
+      "format": "currency"
+    },
+    {
+      "type": "scatter",
+      "title": "Les remises dégradent-elles la satisfaction ?",
+      "rationale": "Un nuage de points teste la relation entre deux mesures, ici par produit.",
+      "dimension": "produit",
+      "x_measure": {"column": "remise_pct", "aggregation": "mean"},
+      "measure": {"column": "note_satisfaction", "aggregation": "mean"},
+      "format": "decimal"
+    },
+    {
+      "type": "table",
+      "title": "Top 10 produits par chiffre d'affaires",
+      "rationale": "Un tableau classé donne les valeurs exactes pour le détail opérationnel.",
+      "dimension": "produit",
+      "measure": {"column": "chiffre_affaires", "aggregation": "sum"},
+      "top_n": 10,
+      "format": "currency",
+      "width": "full"
+    }
+  ],
+  "insights": []
+}
