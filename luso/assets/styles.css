@@ -365,8 +365,8 @@ ul, ol { padding: 0; list-style: none; }
 .chip input:checked + span { background: var(--brand); border-color: var(--brand); color: var(--brand-ink); }
 .chip input:focus-visible + span { outline: 2px solid var(--brand); outline-offset: 2px; }
 .form .btn { justify-self: start; }
-.form-status { font-size: .9375rem; color: var(--ink-soft); }
-.form-status b { color: var(--ink); font-family: var(--mono); font-weight: 500; }
+.form-status { font-size: .9375rem; color: var(--ink); }
+.form-status b { color: var(--ink); font-weight: 600; }
 @media (max-width: 900px) { .contact-grid { grid-template-columns: minmax(0, 1fr); } }
 @media (max-width: 560px) { .form-row { grid-template-columns: minmax(0, 1fr); } }
 
@@ -382,6 +382,11 @@ ul, ol { padding: 0; list-style: none; }
 /* Mentions RGPD du formulaire */
 .form-hint { font-size: .875rem; color: var(--ink-soft); }
 .form-status:empty { display: none; }
+.form-status { padding: 12px 14px; border-radius: 10px; border: 1px solid var(--line); background: var(--bg); }
+.form-status.is-success { border-color: color-mix(in srgb, #1F9D55 55%, transparent); background: color-mix(in srgb, #1F9D55 12%, var(--surface)); }
+.form-status.is-error { border-color: color-mix(in srgb, #D9483B 55%, transparent); background: color-mix(in srgb, #D9483B 10%, var(--surface)); }
+.form .btn:disabled { opacity: .7; cursor: progress; }
+.hp { position: absolute; left: -10000px; width: 1px; height: 1px; overflow: hidden; }
 .form-notice { font-size: .8125rem; line-height: 1.55; color: var(--ink-soft); padding-top: 16px; border-top: 1px solid var(--line); }
 .form-notice a { color: var(--brand); font-weight: 600; }
 .legal-links { display: flex; flex-wrap: wrap; gap: .5rem 1.25rem; }

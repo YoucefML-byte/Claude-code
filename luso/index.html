@@ -380,12 +380,16 @@
         </ul>
         <div class="mail">
           <span>Ou écrivez-nous directement</span>
-          <a href="mailto:contact@luso.fr" id="mail-link">contact@luso.fr</a>
+          <a href="mailto:youcefmlpro@gmail.com" id="mail-link">youcefmlpro@gmail.com</a>
           <button type="button" id="copy-mail">Copier</button>
         </div>
       </div>
 
-      <form class="form" id="quote-form" novalidate>
+      <form class="form" id="quote-form" action="contact.php" method="post" novalidate>
+        <div class="hp" aria-hidden="true">
+          <label for="f-website">Ne pas remplir ce champ</label>
+          <input id="f-website" name="website" type="text" tabindex="-1" autocomplete="off">
+        </div>
         <div class="form-row">
           <div class="field">
             <label for="f-name">Nom et prénom</label>
@@ -434,7 +438,7 @@
         <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
         <p class="form-notice" id="form-notice">
           Luso utilise les informations de ce formulaire uniquement pour répondre à votre demande et établir un devis (base légale&#8239;: mesures précontractuelles prises à votre demande). Elles ne sont ni vendues ni utilisées pour de la prospection sans votre accord, et sont supprimées 3 ans après notre dernier échange.
-          Vous pouvez accéder à vos données, les rectifier, les effacer, en limiter l'usage ou vous opposer à leur traitement en écrivant à contact@luso.fr. Vous pouvez aussi adresser une réclamation à la CNIL.
+          Vous pouvez accéder à vos données, les rectifier, les effacer, en limiter l'usage ou vous opposer à leur traitement en écrivant à youcefmlpro@gmail.com. Vous pouvez aussi adresser une réclamation à la CNIL.
           Si vous indiquez votre numéro de téléphone, sachez que vous pouvez vous inscrire gratuitement sur la liste d'opposition au démarchage téléphonique Bloctel (bloctel.gouv.fr).
           <a href="confidentialite.html">Lire notre politique de confidentialité</a>
         </p>
@@ -476,7 +480,7 @@
 
 <script>
 (function () {
-  var CONTACT_EMAIL = "contact@luso.fr";
+  var CONTACT_EMAIL = "youcefmlpro@gmail.com";
 
   // Menu mobile
   var toggle = document.getElementById("menu-toggle");
@@ -522,34 +526,58 @@
     } else { fallback(); }
   });
 
-  // Formulaire : prépare un email avec la demande
+  // Formulaire : envoi de la demande par email via contact.php
   var form = document.getElementById("quote-form");
   var status = document.getElementById("form-status");
+  var submitBtn = form.querySelector('button[type="submit"]');
+  var submitLabel = submitBtn.innerHTML;
+  var loadedAt = Date.now();
+  var FALLBACK = " Vous pouvez aussi nous écrire directement à <b>" + CONTACT_EMAIL + "</b>.";
+
+  function showStatus(kind, html) {
+    status.className = "form-status is-" + kind;
+    status.innerHTML = html;
+  }
+
   form.addEventListener("submit", function (e) {
     e.preventDefault();
     var invalid = form.querySelector(":invalid");
     if (invalid) {
-      status.textContent = invalid.type === "email" && invalid.value
+      showStatus("error", invalid.type === "email" && invalid.value
         ? "L'adresse email semble incomplète. Vérifiez-la puis réessayez."
-        : "Merci de renseigner votre nom, votre email et votre message.";
+        : "Merci de renseigner votre nom, votre email et votre message.");
       invalid.focus();
       return;
     }
-    var d = new FormData(form);
-    var subject = "Demande de devis : " + d.get("project");
-    var body = [
-      "Nom : " + d.get("name"),
-      d.get("company") ? "Entreprise : " + d.get("company") : "",
-      "Email : " + d.get("email"),
-      d.get("phone") ? "Téléphone : " + d.get("phone") : "",
-      "Projet : " + d.get("project"),
-      "Budget : " + d.get("budget"),
-      "",
-      d.get("message")
-    ].filter(function (l, i) { return l !== "" || i === 6; }).join("\n");
-    window.location.href = "mailto:" + CONTACT_EMAIL + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
-    status.innerHTML = "Votre messagerie s'ouvre avec la demande pré-remplie : vérifiez-la puis envoyez-la. Si rien ne s'ouvre, écrivez-nous à <b>" + CONTACT_EMAIL + "</b>.";
+    var data = new FormData(form);
+    data.set("elapsed", String(Date.now() - loadedAt));
+    submitBtn.disabled = true;
+    submitBtn.textContent = "Envoi en cours…";
+    showStatus("info", "");
+
+    fetch(form.getAttribute("action"), { method: "POST", body: data, headers: { Accept: "application/json" } })
+      .then(function (res) {
+        return res.json().catch(function () { return {}; }).then(function (json) {
+          if (!res.ok || !json.ok) throw new Error(json.message || "HTTP " + res.status);
+        });
+      })
+      .then(function () {
+        form.reset();
+        loadedAt = Date.now();
+        showStatus("success", "<b>Merci, votre demande a bien été envoyée.</b> Nous vous répondons sous 24&nbsp;h ouvrées.");
+      })
+      .catch(function () {
+        showStatus("error", "Votre demande n'a pas pu être envoyée." + FALLBACK);
+      })
+      .then(function () {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = submitLabel;
+      });
   });
+
+  // Retour de contact.php quand JavaScript est désactivé
+  if (location.hash === "#demande-envoyee") showStatus("success", "<b>Merci, votre demande a bien été envoyée.</b> Nous vous répondons sous 24&nbsp;h ouvrées.");
+  if (location.hash === "#demande-erreur") showStatus("error", "Votre demande n'a pas pu être envoyée." + FALLBACK);
 })();
 </script>
 </body>
