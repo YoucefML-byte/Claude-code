@@ -1,6 +1,8 @@
 /* Polices hébergées sur le site (aucune requête vers un serveur tiers). Licence SIL OFL 1.1, voir fonts/OFL.txt. */
 @font-face { font-family: "Bricolage Grotesque"; font-style: normal; font-weight: 200 800; font-display: swap; src: url("fonts/bricolage-grotesque-latin-opsz-normal.woff2") format("woff2"); }
 @font-face { font-family: "Instrument Sans"; font-style: normal; font-weight: 400 700; font-display: swap; src: url("fonts/instrument-sans-latin-wght-normal.woff2") format("woff2"); }
+@font-face { font-family: "Fraunces"; font-style: normal; font-weight: 100 900; font-display: swap; src: url("fonts/fraunces-latin-opsz-normal.woff2") format("woff2"); }
+@font-face { font-family: "Fraunces"; font-style: italic; font-weight: 100 900; font-display: swap; src: url("fonts/fraunces-latin-opsz-italic.woff2") format("woff2"); }
 @font-face { font-family: "JetBrains Mono"; font-style: normal; font-weight: 100 800; font-display: swap; src: url("fonts/jetbrains-mono-latin-wght-normal.woff2") format("woff2"); }
 
 /* Layout : agence numérique — promesse à gauche, maquette navigateur + mobile à droite ; services en grille 3 → 2 → 1 ; méthode en frise ; formules en 3 colonnes. Motif « carreau » (quarts de cercle) repris du logo. */
@@ -422,6 +424,66 @@ ul, ol { padding: 0; list-style: none; }
 .doc .callout { padding: 16px 20px; border-radius: var(--r-md); background: var(--tint); }
 mark.todo { background: color-mix(in srgb, var(--sun) 38%, transparent); color: var(--ink); padding: .05em .35em; border-radius: 4px; font-weight: 500; }
 @media (max-width: 560px) { .doc dl.facts { grid-template-columns: minmax(0, 1fr); } .doc dl.facts dd { border-top: 0; padding-top: 0; } }
+
+/* Démos */
+.demos-band { padding-top: 0; }
+.demos { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+.demo-card { display: grid; grid-template-rows: auto 1fr; text-decoration: none; color: var(--ink); background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-lg); overflow: hidden; transition: border-color .25s var(--ease), transform .25s var(--ease); min-width: 0; }
+.demo-card:hover { border-color: var(--brand); transform: translateY(-3px); }
+.demo-card:hover .demo-link svg { transform: translateX(4px); }
+.demo-body { display: grid; gap: .6rem; align-content: start; padding: 24px 28px 28px; }
+.demo-type { font-family: var(--mono); font-size: .75rem; letter-spacing: .08em; text-transform: uppercase; color: var(--brand); }
+.demo-body h3 { font-size: 1.5rem; }
+.demo-body p { color: var(--ink-soft); }
+.demo-link { display: inline-flex; align-items: center; gap: .5rem; font-weight: 600; color: var(--brand); margin-top: .4rem; }
+.demo-link svg { width: 18px; height: 18px; transition: transform .2s var(--ease); }
+.demos-band .note { margin-top: 20px; font-size: .9375rem; color: var(--ink-soft); }
+
+/* Les aperçus reprennent l'identité du client fictif : couleurs fixes, identiques dans les deux thèmes. */
+.demo-preview { position: relative; aspect-ratio: 16 / 10; max-width: 100%; overflow: hidden; display: grid; place-items: center; font-family: "Instrument Sans", var(--body); color: #1E2414; }
+.dp-site { background: #E9ECDB; }
+.mini-browser { width: 86%; font-size: clamp(6px, 1.05vw, 10.5px); background: #FBFBF6; border-radius: 1.2em; box-shadow: 0 1.6em 3em -1.4em rgba(30, 36, 20, .45); overflow: hidden; transform: translateY(8%); }
+.mb-bar { display: flex; align-items: center; gap: .5em; padding: .8em 1.1em; background: #FFFFFF; border-bottom: 1px solid #DCDFCC; }
+.mb-bar i { width: .8em; height: .8em; border-radius: 50%; background: #DCDFCC; }
+.mb-bar span { margin-left: .8em; font-size: 1em; color: #5D6450; background: #F1F2EA; padding: .2em 1em; border-radius: 99px; }
+.mb-page { padding: 1.2em 1.8em 1.8em; display: grid; gap: 1.4em; }
+.mb-nav { display: flex; align-items: center; gap: 1.2em; }
+.mb-nav b { font-family: "Fraunces", Georgia, serif; font-style: italic; font-size: 1.7em; font-weight: 600; flex: 1; }
+.mb-nav span { width: 4em; height: .6em; border-radius: 99px; background: #DCDFCC; }
+.mb-nav em { font-style: normal; font-weight: 600; background: #1E2414; color: #FBFBF6; padding: .4em 1.1em; border-radius: 99px; }
+.mb-hero { display: grid; grid-template-columns: 1.2fr .8fr; gap: 1.5em; align-items: center; }
+.mb-copy { display: grid; gap: .7em; justify-items: start; }
+.mb-copy small { font-size: 1em; padding: .2em .8em; border-radius: 99px; border: 1px solid #DCDFCC; background: #FFFFFF; }
+.mb-copy strong { font-family: "Fraunces", Georgia, serif; font-weight: 500; font-size: 2.6em; line-height: 1.02; letter-spacing: -.02em; }
+.mb-copy strong em { color: #4E5D2B; }
+.mb-btn { font-weight: 600; background: #1E2414; color: #FBFBF6; padding: .5em 1.2em; border-radius: 99px; }
+.mb-hero svg { width: 100%; }
+.mb-menu { display: grid; gap: .5em; padding-top: 1em; border-top: 1px solid #DCDFCC; }
+.mb-menu span { display: flex; justify-content: space-between; gap: 1em; font-size: 1.1em; }
+.mb-menu b { font-family: "Fraunces", Georgia, serif; font-weight: 500; }
+.mb-menu i { font-style: normal; }
+
+.dp-app { background: #4E5D2B; }
+.dp-app::before { content: ""; position: absolute; right: -12%; top: -30%; width: 55%; aspect-ratio: 1; border-radius: 50%; background: #F3CF45; }
+.mini-phone { position: relative; width: 36%; font-size: clamp(5px, .8vw, 8.5px); background: #14180D; padding: .9em; border-radius: 3.4em; transform: translateY(18%); box-shadow: 0 2em 4em -1.5em rgba(0, 0, 0, .5); }
+.mp-screen { background: #FBFBF6; border-radius: 2.6em; padding: 2.4em 1.5em 0; display: grid; gap: .9em; }
+.mp-screen > small { font-size: 1.1em; color: #5D6450; }
+.mp-screen > strong { font-family: "Fraunces", Georgia, serif; font-weight: 500; font-size: 2.1em; line-height: 1; margin-top: -.4em; }
+.mp-promo { background: #F3CF45; border-radius: 1.4em; padding: 1.2em; }
+.mp-promo b { font-family: "Fraunces", Georgia, serif; font-weight: 500; font-size: 1.45em; line-height: 1.1; display: block; }
+.mp-item { display: flex; align-items: center; gap: .9em; padding-block: .5em; border-bottom: 1px solid #DCDFCC; }
+.mp-item i { width: 3.6em; height: 3.6em; border-radius: 50%; border: .35em solid #FFFFFF; box-shadow: 0 0 0 1px #DCDFCC; flex: none; }
+.mp-item span { flex: 1; display: grid; }
+.mp-item b { font-size: 1.15em; }
+.mp-item em { font-style: normal; font-size: 1.05em; color: #5D6450; }
+.mp-item u { text-decoration: none; width: 2.6em; height: 2.6em; border-radius: 50%; background: #1E2414; color: #FBFBF6; display: grid; place-items: center; font-weight: 700; font-size: 1.1em; }
+.mp-cta { background: #1E2414; color: #FBFBF6; text-align: center; font-weight: 700; padding: 1em; border-radius: 1.2em; font-size: 1.15em; }
+.mp-tabs { display: flex; justify-content: space-around; padding: 1em 0 1.4em; border-top: 1px solid #DCDFCC; }
+.mp-tabs i { width: 1.8em; height: 1.8em; border-radius: .5em; background: #DCDFCC; }
+.mp-tabs i:first-child { background: #4E5D2B; }
+.mp-notif { position: absolute; left: 8%; top: 14%; z-index: 1; display: grid; gap: .1em; padding: .7em 1em; border-radius: 14px; background: #FFFFFF; color: #1E2414; font-size: clamp(.6875rem, 1.1vw, .8125rem); box-shadow: 0 12px 30px -10px rgba(0, 0, 0, .45); max-width: 46%; }
+.mp-notif b { font-size: .9em; }
+@media (max-width: 860px) { .demos { grid-template-columns: minmax(0, 1fr); } .mini-browser { font-size: clamp(5.5px, 1.9vw, 10.5px); } .mini-phone { font-size: clamp(5px, 1.5vw, 8.5px); } }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }

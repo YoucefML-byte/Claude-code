@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="robots" content="noindex">
+<title>Citrine · Démo application</title>
+<meta name="description" content="Démo Luso : application mobile de commande à emporter pour un restaurant fictif, Citrine. Menu, panier, créneau de retrait, suivi de commande et fidélité.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='15' fill='%23F3CF45'/%3E%3Ccircle cx='16' cy='16' r='11' fill='%23FBE68A'/%3E%3Cpath d='M16 5v22M5 16h22M8.2 8.2l15.6 15.6M23.8 8.2L8.2 23.8' stroke='%23fff' stroke-width='1.6'/%3E%3C/svg%3E">
+<style>
+/* Polices hébergées sur le site Luso (aucun appel à un service tiers). */
+@font-face { font-family: "Fraunces"; font-style: normal; font-weight: 100 900; font-display: swap; src: url("../assets/fonts/fraunces-latin-opsz-normal.woff2") format("woff2"); }
+@font-face { font-family: "Fraunces"; font-style: italic; font-weight: 100 900; font-display: swap; src: url("../assets/fonts/fraunces-latin-opsz-italic.woff2") format("woff2"); }
+@font-face { font-family: "Instrument Sans"; font-style: normal; font-weight: 400 700; font-display: swap; src: url("../assets/fonts/instrument-sans-latin-wght-normal.woff2") format("woff2"); }
+@font-face { font-family: "Bricolage Grotesque"; font-style: normal; font-weight: 200 800; font-display: swap; src: url("../assets/fonts/bricolage-grotesque-latin-opsz-normal.woff2") format("woff2"); }
+
+/* Layout : explication à gauche, téléphone interactif à droite (collant) ; sur mobile, le téléphone occupe la largeur. Identité Citrine en clair uniquement, choix de marque. */
+:root {
+  --paper: #FBFBF6;
+  --surface: #FFFFFF;
+  --ink: #1E2414;
+  --muted: #5D6450;
+  --line: #DCDFCC;
+  --olive: #4E5D2B;
+  --olive-soft: #E9ECDB;
+  --lemon: #F3CF45;
+  --lemon-soft: #FBF1C4;
+  --ok: #3F9A3A;
+  --stage: #E9ECDB;
+  --luso: #101733;
+  --luso-ink: #FFFFFF;
+  --luso-accent: #8299FF;
+  --display: "Fraunces", Georgia, "Times New Roman", serif;
+  --body: "Instrument Sans", "Helvetica Neue", Arial, sans-serif;
+  color-scheme: light;
+}
+*, *::before, *::after { box-sizing: border-box; }
+body { margin: 0; background: var(--stage); color: var(--ink); font-family: var(--body); font-size: 1.0625rem; line-height: 1.55; -webkit-font-smoothing: antialiased; }
+h1, h2, h3 { font-family: var(--display); font-weight: 500; line-height: 1.08; margin: 0; text-wrap: balance; }
+p, ul, ol { margin: 0; }
+ul, ol { padding: 0; list-style: none; }
+a { color: inherit; }
+button { font: inherit; color: inherit; cursor: pointer; }
+svg { display: block; max-width: 100%; }
+:focus-visible { outline: 2px solid var(--olive); outline-offset: 2px; border-radius: 6px; }
+[hidden] { display: none !important; }
+.wrap { width: 100%; max-width: 1180px; margin-inline: auto; padding-inline: clamp(16px, 4vw, 40px); }
+
+/* Bandeau Luso */
+.demo-bar { background: var(--luso); color: var(--luso-ink); font-family: "Bricolage Grotesque", var(--body); font-size: .875rem; }
+.demo-bar .wrap { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .4rem 1.25rem; padding-block: 10px; }
+.demo-bar p { display: flex; align-items: center; gap: .55rem; }
+.demo-bar svg { width: 20px; height: 20px; flex: none; }
+.demo-bar nav { display: flex; gap: 1.1rem; }
+.demo-bar a { color: var(--luso-ink); text-decoration: none; font-weight: 600; }
+.demo-bar a:hover { color: var(--luso-accent); }
+.demo-bar .tag { font-weight: 400; opacity: .75; }
+
+/* Mise en page de la démo */
+.layout { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: clamp(32px, 6vw, 88px); align-items: start; padding-block: clamp(32px, 6vw, 72px); }
+.intro { display: grid; gap: 1.25rem; max-width: 34rem; padding-top: clamp(0px, 3vw, 40px); }
+.kicker { font-size: .8125rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--olive); }
+.intro h1 { font-size: clamp(2.3rem, 5vw, 3.8rem); letter-spacing: -.02em; }
+.intro h1 em { font-style: italic; color: var(--olive); }
+.intro > p { color: var(--muted); font-size: 1.125rem; }
+.try { display: grid; gap: .8rem; counter-reset: s; padding: 20px 22px; border-radius: 20px; background: var(--surface); }
+.try strong { font-size: .8125rem; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+.try li { counter-increment: s; display: grid; grid-template-columns: 28px minmax(0, 1fr); gap: .7rem; align-items: start; }
+.try li::before { content: counter(s); width: 28px; height: 28px; border-radius: 50%; background: var(--lemon); display: grid; place-items: center; font-weight: 700; font-size: .875rem; }
+.features { display: flex; flex-wrap: wrap; gap: .5rem; }
+.features li { padding: .35rem .8rem; border-radius: 99px; background: var(--surface); border: 1px solid var(--line); font-size: .9375rem; }
+.cta { display: flex; flex-wrap: wrap; gap: .75rem; }
+.btn { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0 1.3rem; border-radius: 999px; border: 1.5px solid var(--ink); font-weight: 600; text-decoration: none; background: transparent; }
+.btn-fill { background: var(--ink); color: var(--paper); }
+.btn-fill:hover { background: var(--olive); border-color: var(--olive); }
+.btn-line:hover { background: var(--ink); color: var(--paper); }
+.note { font-size: .875rem; color: var(--muted); }
+
+/* Téléphone */
+.device { position: sticky; top: 24px; width: min(392px, 100%); height: 800px; padding: 12px; border-radius: 56px; background: #14180D; box-shadow: 0 2px 4px rgba(20, 24, 13, .2), 0 40px 80px -30px rgba(20, 24, 13, .55); }
+.app { position: relative; height: 100%; border-radius: 44px; overflow: hidden; background: var(--paper); display: flex; flex-direction: column; }
+.statusbar { flex: none; display: flex; justify-content: space-between; align-items: center; padding: 14px 26px 6px; font-size: .875rem; font-weight: 600; font-variant-numeric: tabular-nums; }
+.statusbar .icons { display: flex; gap: 6px; align-items: center; }
+.notch { position: absolute; top: 10px; left: 50%; transform: translateX(-50%); width: 104px; height: 28px; border-radius: 20px; background: #14180D; z-index: 3; }
+.screen { flex: 1; overflow-y: auto; overscroll-behavior: contain; padding: 8px 18px 24px; scrollbar-width: none; }
+.screen::-webkit-scrollbar { display: none; }
+@media (max-width: 900px) {
+  .layout { grid-template-columns: minmax(0, 1fr); }
+  .device { position: relative; top: 0; justify-self: center; }
+}
+@media (max-width: 480px) {
+  .device { width: 100%; height: min(760px, calc(100svh - 40px)); min-height: 600px; padding: 8px; border-radius: 40px; }
+  .app { border-radius: 32px; }
+}
+
+/* Barre d'onglets */
+.tabbar { flex: none; display: grid; grid-template-columns: repeat(4, 1fr); padding: 8px 10px 18px; background: var(--surface); border-top: 1px solid var(--line); }
+.tabbar button { border: 0; background: none; display: grid; justify-items: center; gap: 2px; padding: 6px 0; font-size: .6875rem; font-weight: 600; color: var(--muted); position: relative; }
+.tabbar svg { width: 24px; height: 24px; }
+.tabbar button[aria-current="page"] { color: var(--ink); }
+.tabbar button[aria-current="page"] svg { color: var(--olive); }
+.badge { position: absolute; top: 0; left: calc(50% + 6px); min-width: 18px; height: 18px; padding: 0 5px; border-radius: 9px; background: var(--lemon); color: var(--ink); font-size: .6875rem; line-height: 18px; text-align: center; font-variant-numeric: tabular-nums; }
+
+/* Éléments d'interface */
+.h-greet { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding-block: 6px 16px; }
+.h-greet small { display: block; color: var(--muted); font-size: .8125rem; }
+.h-greet h2 { font-size: 1.7rem; }
+.avatar { width: 40px; height: 40px; border-radius: 50%; background: var(--lemon); display: grid; place-items: center; font-weight: 700; flex: none; }
+.pill { display: inline-flex; align-items: center; gap: .4rem; padding: .25rem .7rem; border-radius: 99px; background: var(--surface); border: 1px solid var(--line); font-size: .8125rem; font-weight: 600; }
+.pill i { width: 7px; height: 7px; border-radius: 50%; background: var(--ok); }
+.promo { margin-top: 14px; padding: 18px; border-radius: 22px; background: var(--lemon); display: grid; grid-template-columns: minmax(0, 1fr) 76px; gap: 10px; align-items: center; }
+.promo h3 { font-size: 1.35rem; }
+.promo p { font-size: .8125rem; }
+.sec-title { display: flex; justify-content: space-between; align-items: baseline; margin: 24px 0 12px; }
+.sec-title h3 { font-size: 1.2rem; }
+.sec-title button { border: 0; background: none; font-size: .8125rem; font-weight: 600; color: var(--olive); padding: 0; }
+.scroller { display: flex; gap: 12px; overflow-x: auto; margin-inline: -18px; padding: 2px 18px 6px; scroll-snap-type: x mandatory; scrollbar-width: none; }
+.scroller::-webkit-scrollbar { display: none; }
+.pop { flex: none; width: 150px; scroll-snap-align: start; background: var(--surface); border-radius: 20px; padding: 12px; display: grid; gap: 6px; border: 1px solid var(--line); text-align: left; }
+.pop .plate { width: 100%; }
+.pop b { font-size: .9375rem; line-height: 1.2; }
+.pop .bottom { display: flex; justify-content: space-between; align-items: center; }
+.price { font-weight: 700; font-variant-numeric: tabular-nums; }
+.add { width: 32px; height: 32px; border-radius: 50%; border: 0; background: var(--ink); color: var(--paper); display: grid; place-items: center; flex: none; }
+.add svg { width: 16px; height: 16px; }
+.cats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
+.cat { border: 1px solid var(--line); background: var(--surface); border-radius: 18px; padding: 14px; display: flex; align-items: center; gap: 10px; font-weight: 600; text-align: left; }
+.cat .plate { width: 40px; flex: none; }
+.order-card { margin-top: 14px; width: 100%; border: 0; text-align: left; padding: 14px 16px; border-radius: 18px; background: var(--ink); color: var(--paper); display: flex; justify-content: space-between; align-items: center; gap: 10px; }
+.order-card small { display: block; opacity: .75; font-size: .8125rem; }
+
+.chips { position: sticky; top: -8px; z-index: 2; display: flex; gap: 8px; overflow-x: auto; margin: -8px -18px 6px; padding: 10px 18px; background: var(--paper); scrollbar-width: none; }
+.chips::-webkit-scrollbar { display: none; }
+.chips button { flex: none; border: 1.5px solid var(--line); background: var(--surface); padding: .4rem .9rem; border-radius: 99px; font-size: .875rem; font-weight: 600; }
+.chips button[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); color: var(--paper); }
+.cat-h { font-size: 1.15rem; margin: 18px 0 4px; }
+.item { display: grid; grid-template-columns: 64px minmax(0, 1fr) auto; gap: 12px; align-items: center; padding-block: 12px; border-bottom: 1px solid var(--line); }
+.item .open { grid-column: 1 / 3; border: 0; background: none; padding: 0; display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 12px; align-items: center; text-align: left; min-width: 0; }
+.item .plate { width: 64px; }
+.item b { display: block; font-size: .9688rem; line-height: 1.25; }
+.item small { display: block; color: var(--muted); font-size: .8125rem; line-height: 1.35; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+.item .price { font-size: .875rem; margin-top: 2px; display: block; }
+.step { display: inline-flex; align-items: center; gap: 2px; background: var(--olive-soft); border-radius: 99px; padding: 3px; }
+.step button { width: 28px; height: 28px; border: 0; border-radius: 50%; background: var(--surface); font-weight: 700; line-height: 1; }
+.step output { min-width: 22px; text-align: center; font-weight: 700; font-size: .875rem; font-variant-numeric: tabular-nums; }
+
+.empty { display: grid; justify-items: center; gap: 12px; text-align: center; padding: 60px 12px; color: var(--muted); }
+.empty .plate { width: 120px; opacity: .5; }
+.btn-app { width: 100%; min-height: 52px; border: 0; border-radius: 16px; background: var(--ink); color: var(--paper); font-weight: 700; font-size: 1rem; display: flex; justify-content: center; align-items: center; gap: .5rem; }
+.btn-app.alt { background: var(--surface); color: var(--ink); border: 1.5px solid var(--line); }
+.btn-app:disabled { opacity: .45; cursor: not-allowed; }
+.slots { display: flex; flex-wrap: wrap; gap: 8px; }
+.slots button { border: 1.5px solid var(--line); background: var(--surface); border-radius: 12px; padding: .5rem .8rem; font-weight: 600; font-size: .875rem; font-variant-numeric: tabular-nums; }
+.slots button[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); color: var(--paper); }
+.summary { margin-top: 18px; padding: 14px 16px; border-radius: 18px; background: var(--surface); border: 1px solid var(--line); display: grid; gap: 6px; font-size: .9375rem; font-variant-numeric: tabular-nums; }
+.summary div { display: flex; justify-content: space-between; gap: 12px; }
+.summary .disc { color: var(--olive); }
+.summary .tot { font-weight: 700; font-size: 1.0625rem; padding-top: 8px; margin-top: 4px; border-top: 1px dashed var(--line); }
+.pay { margin-top: 14px; display: flex; gap: 10px; align-items: center; font-size: .875rem; color: var(--muted); }
+.pay svg { width: 22px; height: 22px; flex: none; color: var(--olive); }
+
+.track-head { text-align: center; display: grid; gap: 6px; justify-items: center; padding-block: 18px 8px; }
+.track-head .big { width: 84px; height: 84px; border-radius: 50%; background: var(--lemon); display: grid; place-items: center; }
+.track-head h2 { font-size: 1.6rem; }
+.track-head p { color: var(--muted); font-size: .9375rem; }
+.steps { margin-top: 16px; display: grid; gap: 0; }
+.steps li { display: grid; grid-template-columns: 30px minmax(0, 1fr); gap: 12px; position: relative; padding-bottom: 18px; }
+.steps li:not(:last-child)::after { content: ""; position: absolute; left: 14px; top: 30px; bottom: 0; width: 2px; background: var(--line); }
+.steps li.done:not(:last-child)::after { background: var(--olive); }
+.dot { width: 30px; height: 30px; border-radius: 50%; border: 2px solid var(--line); background: var(--surface); display: grid; place-items: center; }
+.steps li.done .dot { background: var(--olive); border-color: var(--olive); color: #fff; }
+.steps li.now .dot { border-color: var(--olive); }
+.steps li.now .dot::after { content: ""; width: 10px; height: 10px; border-radius: 50%; background: var(--olive); animation: pulse 1.2s infinite ease-in-out; }
+.steps b { display: block; font-size: .9688rem; padding-top: 4px; }
+.steps small { color: var(--muted); font-size: .8125rem; }
+@keyframes pulse { 50% { transform: scale(.6); opacity: .5; } }
+.ticket { margin-top: 8px; padding: 14px 16px; border-radius: 18px; background: var(--surface); border: 1px solid var(--line); display: grid; gap: 4px; font-size: .875rem; }
+.ticket div { display: flex; justify-content: space-between; gap: 10px; font-variant-numeric: tabular-nums; }
+
+.card-fid { border-radius: 24px; padding: 20px; background: var(--olive); color: #fff; display: grid; gap: 10px; position: relative; overflow: hidden; }
+.card-fid::after { content: ""; position: absolute; right: -40px; top: -40px; width: 150px; height: 150px; border-radius: 50%; background: var(--lemon); opacity: .9; }
+.card-fid > * { position: relative; z-index: 1; }
+.card-fid .pts { font-family: var(--display); font-size: 3rem; line-height: 1; font-variant-numeric: tabular-nums; }
+.bar { height: 10px; border-radius: 99px; background: rgba(255, 255, 255, .25); overflow: hidden; }
+.bar span { display: block; height: 100%; background: var(--lemon); border-radius: 99px; transition: width .6s ease; }
+.rewards { display: grid; gap: 10px; margin-top: 4px; }
+.reward { display: flex; justify-content: space-between; align-items: center; gap: 10px; padding: 12px 14px; border-radius: 16px; background: var(--surface); border: 1px solid var(--line); font-size: .9375rem; }
+.reward small { color: var(--muted); display: block; font-size: .8125rem; }
+.reward .tag { font-size: .75rem; font-weight: 700; padding: .2rem .55rem; border-radius: 99px; background: var(--olive-soft); color: var(--olive); white-space: nowrap; }
+.reward .tag.ok { background: var(--lemon); color: var(--ink); }
+.history li { display: flex; justify-content: space-between; padding-block: 10px; border-bottom: 1px solid var(--line); font-size: .875rem; font-variant-numeric: tabular-nums; }
+.history span:last-child { font-weight: 700; color: var(--olive); }
+
+/* Fiche produit */
+.sheet-wrap { position: absolute; inset: 0; z-index: 5; background: rgba(20, 24, 13, .45); display: flex; align-items: flex-end; }
+.sheet { width: 100%; background: var(--paper); border-radius: 28px 28px 0 0; padding: 10px 20px 24px; display: grid; gap: 12px; animation: up .25s ease; max-height: 88%; overflow-y: auto; }
+.sheet .grab { width: 40px; height: 5px; border-radius: 3px; background: var(--line); justify-self: center; }
+.sheet .plate { width: 62%; justify-self: center; }
+.sheet h3 { font-size: 1.5rem; }
+.sheet p { color: var(--muted); font-size: .9375rem; }
+.labels { display: flex; gap: 6px; flex-wrap: wrap; }
+.labels span { font-size: .75rem; font-weight: 700; padding: .15rem .55rem; border-radius: 99px; background: var(--olive-soft); color: var(--olive); }
+.sheet-actions { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 12px; align-items: center; }
+.sheet-actions .step { padding: 6px; }
+.sheet-actions .step button { width: 36px; height: 36px; }
+@keyframes up { from { transform: translateY(40%); } }
+
+/* Notifications */
+.notif { position: absolute; top: 46px; left: 10px; right: 10px; z-index: 6; padding: 12px 14px; border-radius: 20px; background: rgba(255, 255, 255, .96); box-shadow: 0 10px 30px rgba(20, 24, 13, .25); display: grid; grid-template-columns: 38px minmax(0, 1fr); gap: 10px; align-items: center; animation: drop .35s ease; border: 0; text-align: left; width: auto; }
+.notif .ic { width: 38px; height: 38px; border-radius: 10px; background: var(--lemon); display: grid; place-items: center; }
+.notif b { display: block; font-size: .875rem; }
+.notif small { font-size: .8125rem; color: var(--muted); }
+.toast { position: absolute; left: 50%; top: 48px; transform: translateX(-50%); z-index: 4; background: var(--ink); color: var(--paper); padding: .55rem 1rem; border-radius: 99px; font-size: .875rem; font-weight: 600; white-space: nowrap; animation: fade .2s ease; }
+@keyframes drop { from { transform: translateY(-120%); } }
+@keyframes fade { from { opacity: 0; transform: translate(-50%, -8px); } }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } }
+</style>
+</head>
+<body>
+
+<div class="demo-bar" role="note">
+  <div class="wrap">
+    <p>
+      <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#2443D6"/><path d="M16 6a10 10 0 0 1 10 10H16z" fill="#F2AE3A"/><path d="M16 26A10 10 0 0 1 6 16h10z" fill="#fff"/></svg>
+      <span>Démo réalisée par Luso <span class="tag">· Citrine est une entreprise fictive</span></span>
+    </p>
+    <nav aria-label="Navigation Luso">
+      <a href="citrine-site.html">Voir le site vitrine</a>
+      <a href="../index.html#demos">Retour à Luso</a>
+    </nav>
+  </div>
+</div>
+
+<main class="wrap layout">
+  <div class="intro">
+    <span class="kicker">Démo · application mobile</span>
+    <h1>Citrine, l'application de <em>commande à emporter</em></h1>
+    <p>Le restaurant Citrine propose à ses clients de commander depuis leur téléphone, de choisir l'heure de retrait et de cumuler des points de fidélité. Une seule application, publiée sur iPhone et Android.</p>
+    <div class="try">
+      <strong>Essayez-la</strong>
+      <ol>
+        <li>Ajoutez un ou deux plats depuis l'accueil ou la carte.</li>
+        <li>Ouvrez le panier et choisissez un créneau de retrait.</li>
+        <li>Validez la commande et suivez sa préparation jusqu'à la notification.</li>
+      </ol>
+    </div>
+    <ul class="features" aria-label="Fonctionnalités montrées">
+      <li>iOS et Android</li><li>Panier et créneaux</li><li>Suivi en temps réel</li><li>Notifications</li><li>Programme de fidélité</li>
+    </ul>
+    <div class="cta">
+      <a class="btn btn-fill" href="../index.html#contact">Je veux mon application</a>
+      <a class="btn btn-line" href="citrine-site.html">Voir le site vitrine</a>
+    </div>
+    <p class="note">Démo interactive : aucune commande n'est envoyée et aucun paiement n'est demandé.</p>
+  </div>
+
+  <div class="device" aria-label="Démo de l'application Citrine">
+    <div class="app" id="app">
+      <span class="notch" aria-hidden="true"></span>
+      <div class="statusbar" aria-hidden="true">
+        <span id="clock">12:30</span>
+        <span class="icons">
+          <svg width="18" height="12" viewBox="0 0 18 12" fill="currentColor"><rect x="0" y="8" width="3" height="4" rx="1"/><rect x="5" y="5" width="3" height="7" rx="1"/><rect x="10" y="2.5" width="3" height="9.5" rx="1"/><rect x="15" y="0" width="3" height="12" rx="1"/></svg>
+          <svg width="26" height="12" viewBox="0 0 26 12" fill="none"><rect x=".5" y=".5" width="22" height="11" rx="3" stroke="currentColor"/><rect x="2" y="2" width="16" height="8" rx="2" fill="currentColor"/><rect x="24" y="4" width="2" height="4" rx="1" fill="currentColor"/></svg>
+        </span>
+      </div>
+      <div class="screen" id="screen" tabindex="-1"></div>
+      <nav class="tabbar" aria-label="Onglets de l'application">
+        <button data-tab="home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5L12 4l8 6.5V19a1 1 0 0 1-1 1h-4.5v-5.5h-5V20H5a1 1 0 0 1-1-1z"/></svg>Accueil</button>
+        <button data-tab="menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4"/></svg>Carte</button>
+        <button data-tab="cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.1a1 1 0 0 1-1 .9H7.2a1 1 0 0 1-1-.9z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg>Panier<span class="badge" id="badge" hidden>0</span></button>
+        <button data-tab="loyalty"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9z"/></svg>Fidélité</button>
+      </nav>
+    </div>
+  </div>
+</main>
+
+<script>
+(function () {
+  var PRODUCTS = [
+    { id: "burrata", cat: "Entrées", n: "Burrata, tomates anciennes", d: "Basilic, huile d'olive de Nyons, pain grillé.", p: 12, v: 1, c: ["#F6F2E6", "#E46C4F", "#C93C2B"] },
+    { id: "houmous", cat: "Entrées", n: "Houmous rôti", d: "Pois chiches croquants, za'atar, galette chaude.", p: 9, v: 1, g: 1, c: ["#ECDCAB", "#D9BF7E", "#E2B65A"] },
+    { id: "poulpe", cat: "Entrées", n: "Poulpe grillé", d: "Pommes de terre fumées, citron confit, paprika.", p: 15, g: 1, c: ["#E9C4B4", "#B5482E", "#F3CF45"] },
+    { id: "dorade", cat: "Plats", n: "Dorade au four", d: "Fenouil rôti, agrumes, herbes fraîches.", p: 24, g: 1, c: ["#E7E3D3", "#C9B994", "#F3CF45"] },
+    { id: "agneau", cat: "Plats", n: "Agneau confit sept heures", d: "Semoule aux herbes, jus aux épices douces.", p: 22, c: ["#E8D7A4", "#8B4A2B", "#6E3A20"] },
+    { id: "risotto", cat: "Plats", n: "Risotto à l'artichaut", d: "Pecorino, citron, roquette.", p: 17, v: 1, g: 1, c: ["#EFE4C2", "#A8B66A", "#6B7A34"] },
+    { id: "orecchiette", cat: "Plats", n: "Orecchiette au brocoli", d: "Piment doux, chapelure à l'ail.", p: 15, v: 1, c: ["#EADFB8", "#5E7A2E", "#3F5420"] },
+    { id: "tarte", cat: "Desserts", n: "Tarte au citron", d: "Meringue brûlée, zestes confits.", p: 7.5, v: 1, c: ["#F7E7A0", "#F3CF45", "#FFFFFF"] },
+    { id: "panna", cat: "Desserts", n: "Panna cotta aux figues", d: "Figues rôties, miel de thym.", p: 7, v: 1, g: 1, c: ["#F7F1E3", "#8E4F7A", "#6A2F5C"] },
+    { id: "glace", cat: "Desserts", n: "Glace à l'huile d'olive", d: "Fleur de sel, biscuit aux amandes.", p: 6, v: 1, c: ["#E6E9C7", "#B9C27A", "#FFFFFF"] },
+    { id: "citronnade", cat: "Boissons", n: "Citronnade maison", d: "Citrons pressés, menthe fraîche. 33 cl.", p: 4.5, v: 1, g: 1, c: ["#FBEA94", "#F3CF45", "#FFFFFF"] },
+    { id: "the", cat: "Boissons", n: "Thé glacé à la menthe", d: "Infusé à froid, peu sucré. 33 cl.", p: 4.5, v: 1, g: 1, c: ["#D8C27A", "#7FA35A", "#FFFFFF"] }
+  ];
+  var CATS = ["Entrées", "Plats", "Desserts", "Boissons"];
+  var POPULAR = ["burrata", "dorade", "tarte", "risotto", "citronnade"];
+  var byId = {};
+  PRODUCTS.forEach(function (p) { byId[p.id] = p; });
+
+  var state = { tab: "home", cat: "Entrées", cart: {}, slot: null, order: null, points: 128, history: [["12 sept.", 36], ["28 août", 52], ["9 août", 40]] };
+  var screen = document.getElementById("screen");
+  var app = document.getElementById("app");
+  var badge = document.getElementById("badge");
+  var tabButtons = Array.prototype.slice.call(document.querySelectorAll(".tabbar button"));
+
+  var ICON_PLUS = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>';
+  var ICON_CHECK = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>';
+
+  function euro(n) { return n.toLocaleString("fr-FR", { style: "currency", currency: "EUR" }); }
+  function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
+  function plate(p) {
+    var c = p.c;
+    return '<svg class="plate" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="48" fill="#FFFFFF" stroke="#DCDFCC" stroke-width="1.5"/>' +
+      '<circle cx="50" cy="50" r="36" fill="' + c[0] + '"/><circle cx="50" cy="50" r="24" fill="none" stroke="' + c[1] + '" stroke-width="7" stroke-dasharray="22 9" stroke-linecap="round"/>' +
+      '<g fill="' + c[2] + '"><circle cx="36" cy="38" r="4.5"/><circle cx="62" cy="36" r="4"/><circle cx="66" cy="60" r="4.5"/><circle cx="40" cy="64" r="4"/><circle cx="51" cy="50" r="5"/></g>' +
+      '<g fill="#5E7A2E"><ellipse cx="46" cy="30" rx="4" ry="1.8" transform="rotate(-20 46 30)"/><ellipse cx="70" cy="47" rx="4" ry="1.8" transform="rotate(60 70 47)"/></g></svg>';
+  }
+  function count() { var n = 0; for (var k in state.cart) n += state.cart[k]; return n; }
+  function subtotal() { var s = 0; for (var k in state.cart) s += byId[k].p * state.cart[k]; return s; }
+  function discount() { return state.usedPromo ? 0 : Math.round(subtotal() * 10) / 100; }
+  function setQty(id, q) {
+    if (q <= 0) delete state.cart[id]; else state.cart[id] = Math.min(q, 20);
+    render(true);
+  }
+  function stepper(id) {
+    var q = state.cart[id] || 0;
+    if (!q) return '<button class="add" data-add="' + id + '" aria-label="Ajouter ' + esc(byId[id].n) + '">' + ICON_PLUS + "</button>";
+    return '<span class="step"><button data-dec="' + id + '" aria-label="Retirer un ' + esc(byId[id].n) + '">−</button><output>' + q + '</output><button data-inc="' + id + '" aria-label="Ajouter un ' + esc(byId[id].n) + '">+</button></span>';
+  }
+  // Créneaux de retrait : au plus tôt dans 20 minutes, pendant le service (12h00–21h45), sinon le lendemain.
+  function slots() {
+    var now = new Date();
+    var d = new Date(now.getTime() + 20 * 60000);
+    d.setMinutes(Math.ceil(d.getMinutes() / 15) * 15, 0, 0);
+    if (d.getHours() < 12) d.setHours(12, 0, 0, 0);
+    if (d.getHours() > 21 || (d.getHours() === 21 && d.getMinutes() > 45)) { d.setDate(d.getDate() + 1); d.setHours(12, 0, 0, 0); }
+    var out = [];
+    for (var i = 0; i < 6 && (d.getHours() < 21 || (d.getHours() === 21 && d.getMinutes() <= 45)); i++) {
+      var day = d.toDateString() === now.toDateString() ? "" : "Demain ";
+      out.push(day + String(d.getHours()).padStart(2, "0") + ":" + String(d.getMinutes()).padStart(2, "0"));
+      d.setMinutes(d.getMinutes() + 15);
+    }
+    return out;
+  }
+
+  var views = {
+    home: function () {
+      var h = '<div class="h-greet"><div><small>Bonjour Camille</small><h2>On mange quoi&#8239;?</h2></div><span class="avatar" aria-hidden="true">C</span></div>' +
+        '<span class="pill"><i></i>Citrine · Lyon 2e · retrait en 20 min</span>';
+      if (state.order) {
+        h += '<button class="order-card" data-go="track"><span><small>Commande n° ' + state.order.num + '</small>' + statusLabel() + '</span>' + ICON_PLUS.replace("M12 5v14M5 12h14", "M9 6l6 6-6 6") + "</button>";
+      }
+      h += (state.usedPromo ? "" : '<div class="promo"><div><h3>−10 % sur votre première commande</h3><p>Appliqué automatiquement dans le panier.</p></div>' + plate(byId.tarte) + "</div>");
+      h += '<div class="sec-title"><h3>Les plus commandés</h3><button data-tab-go="menu">Tout voir</button></div><div class="scroller">';
+      POPULAR.forEach(function (id) {
+        var p = byId[id];
+        h += '<div class="pop"><button class="open" data-open="' + id + '" style="border:0;background:none;padding:0;display:grid;gap:6px;text-align:left">' + plate(p) + "<b>" + esc(p.n) + '</b></button><div class="bottom"><span class="price">' + euro(p.p) + "</span>" + stepper(id) + "</div></div>";
+      });
+      h += '</div><div class="sec-title"><h3>Catégories</h3></div><div class="cats">';
+      CATS.forEach(function (c) {
+        var sample = PRODUCTS.filter(function (p) { return p.cat === c; })[0];
+        h += '<button class="cat" data-cat="' + c + '">' + plate(sample) + c + "</button>";
+      });
+      return h + "</div>";
+    },
+    menu: function () {
+      var h = '<div class="chips">' + CATS.map(function (c) { return '<button data-jump="' + c + '" aria-pressed="' + (c === state.cat) + '">' + c + "</button>"; }).join("") + "</div>";
+      CATS.forEach(function (c) {
+        h += '<h3 class="cat-h" id="cat-' + c + '">' + c + "</h3>";
+        PRODUCTS.filter(function (p) { return p.cat === c; }).forEach(function (p) {
+          h += '<div class="item"><button class="open" data-open="' + p.id + '">' + plate(p) + '<span><b>' + esc(p.n) + "</b><small>" + esc(p.d) + '</small><span class="price">' + euro(p.p) + "</span></span></button>" + stepper(p.id) + "</div>";
+        });
+      });
+      return h;
+    },
+    cart: function () {
+      if (!count()) {
+        return '<div class="h-greet"><div><h2>Panier</h2></div></div><div class="empty">' + plate(byId.houmous) + '<p>Votre panier est vide pour le moment.</p><button class="btn-app" data-tab-go="menu" style="max-width:220px">Voir la carte</button></div>';
+      }
+      var h = '<div class="h-greet"><div><small>À emporter · Citrine Lyon 2e</small><h2>Panier</h2></div></div>';
+      Object.keys(state.cart).forEach(function (id) {
+        var p = byId[id];
+        h += '<div class="item">' + plate(p) + '<span><b>' + esc(p.n) + '</b><span class="price">' + euro(p.p * state.cart[id]) + "</span></span>" + stepper(id) + "</div>";
+      });
+      var s = slots();
+      if (s.indexOf(state.slot) < 0) state.slot = s[0];
+      h += '<div class="sec-title"><h3>Heure de retrait</h3></div><div class="slots">' +
+        s.map(function (t) { return '<button data-slot="' + t + '" aria-pressed="' + (t === state.slot) + '">' + t.replace(":", "h") + "</button>"; }).join("") + "</div>";
+      var sub = subtotal(), dis = discount();
+      h += '<div class="summary"><div><span>Sous-total</span><span>' + euro(sub) + "</span></div>" +
+        (dis ? '<div class="disc"><span>Bienvenue −10 %</span><span>−' + euro(dis) + "</span></div>" : "") +
+        '<div class="tot"><span>Total</span><span>' + euro(sub - dis) + "</span></div></div>";
+      h += '<p class="pay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><rect x="3" y="6" width="18" height="13" rx="2.5"/><path d="M3 10h18"/></svg>Paiement au retrait, par carte ou en espèces.</p>';
+      h += '<div style="margin-top:16px"><button class="btn-app" data-order>Commander · ' + euro(sub - dis) + "</button></div>";
+      return h;
+    },
+    track: function () {
+      var o = state.order;
+      var st = o.stage;
+      function li(i, title, sub) {
+        var cls = st > i ? "done" : st === i ? "now" : "";
+        return '<li class="' + cls + '"><span class="dot">' + (st > i ? ICON_CHECK.replace('width="20" height="20"', 'width="16" height="16"') : "") + "</span><span><b>" + title + "</b><small>" + sub + "</small></span></li>";
+      }
+      var h = '<div class="track-head"><span class="big">' + plate(byId[Object.keys(o.items)[0]]) + "</span><h2>" + (st === 2 ? "Votre commande est prête" : "Commande n° " + o.num) + "</h2><p>Retrait " + slotText(o.slot) + " · Citrine, 12 rue des Oliviers</p></div>";
+      h += '<ol class="steps">' +
+        li(0, "Commande reçue", "Le restaurant a bien reçu votre commande.") +
+        li(1, "En préparation", "La cuisine prépare vos plats.") +
+        '<li class="' + (st === 2 ? "done" : "") + '"><span class="dot">' + (st === 2 ? ICON_CHECK.replace('width="20" height="20"', 'width="16" height="16"') : "") + "</span><span><b>Prête à retirer</b><small>Présentez le n° " + o.num + " au comptoir.</small></span></li></ol>";
+      h += '<div class="ticket">';
+      Object.keys(o.items).forEach(function (id) { h += "<div><span>" + o.items[id] + " × " + esc(byId[id].n) + "</span><span>" + euro(byId[id].p * o.items[id]) + "</span></div>"; });
+      h += '<div style="font-weight:700;border-top:1px dashed var(--line);padding-top:6px;margin-top:4px"><span>Total à régler</span><span>' + euro(o.total) + "</span></div></div>";
+      h += '<p class="pay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M12 3.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9z"/></svg>+' + Math.floor(o.total) + " points de fidélité " + (st === 2 ? "crédités" : "au retrait") + ".</p>";
+      h += '<div style="margin-top:16px;display:grid;gap:10px">' + (st === 2 ? '<button class="btn-app" data-new>Nouvelle commande</button>' : "") + '<button class="btn-app alt" data-tab-go="home">Retour à l\'accueil</button></div>';
+      return h;
+    },
+    loyalty: function () {
+      var goal = 200, pts = state.points;
+      var h = '<div class="h-greet"><div><small>Programme fidélité</small><h2>Vos points</h2></div></div>';
+      h += '<div class="card-fid"><small style="opacity:.85">Carte Citrine · Camille</small><span class="pts">' + pts + '</span><div class="bar" aria-hidden="true"><span style="width:' + Math.min(100, pts / goal * 100) + '%"></span></div><small>' +
+        (pts >= goal ? "Un dessert vous attend à votre prochain retrait." : "Plus que " + (goal - pts) + " points avant un dessert offert.") + "</small></div>";
+      h += '<div class="sec-title"><h3>Récompenses</h3></div><div class="rewards">' +
+        '<div class="reward"><span>Boisson maison offerte<small>100 points</small></span><span class="tag ok">Disponible</span></div>' +
+        '<div class="reward"><span>Dessert au choix offert<small>200 points</small></span><span class="tag' + (pts >= 200 ? " ok" : "") + '">' + (pts >= 200 ? "Disponible" : "Bientôt") + "</span></div>" +
+        '<div class="reward"><span>Entrée à partager offerte<small>350 points</small></span><span class="tag">Bientôt</span></div></div>';
+      h += '<div class="sec-title"><h3>Historique</h3></div><ul class="history">' + state.history.map(function (r) { return "<li><span>Commande du " + r[0] + "</span><span>+" + r[1] + " pts</span></li>"; }).join("") + "</ul>";
+      h += '<p class="pay" style="margin-top:12px">1 € dépensé = 1 point. Les points sont valables 12 mois.</p>';
+      return h;
+    }
+  };
+
+  function slotText(slot) {
+    var t = slot.replace("Demain ", "").replace(":", "h");
+    return slot.indexOf("Demain") === 0 ? "demain à " + t : "à " + t;
+  }
+  function statusLabel() {
+    return ["Commande reçue", "En préparation", "Prête à retirer"][state.order.stage];
+  }
+
+  function render(keepScroll) {
+    var top = screen.scrollTop;
+    screen.innerHTML = views[state.tab]();
+    if (keepScroll) screen.scrollTop = top; else screen.scrollTop = 0;
+    var n = count();
+    badge.hidden = !n;
+    badge.textContent = n;
+    var active = state.tab === "track" ? "home" : state.tab;
+    tabButtons.forEach(function (b) {
+      if (b.getAttribute("data-tab") === active) b.setAttribute("aria-current", "page"); else b.removeAttribute("aria-current");
+    });
+  }
+  function go(tab) { state.tab = tab; render(false); }
+
+  function toast(text) {
+    var old = app.querySelector(".toast"); if (old) old.remove();
+    var t = document.createElement("div");
+    t.className = "toast"; t.setAttribute("role", "status"); t.textContent = text;
+    app.appendChild(t);
+    setTimeout(function () { t.remove(); }, 1600);
+  }
+  function notify(title, text) {
+    var old = app.querySelector(".notif"); if (old) old.remove();
+    var n = document.createElement("button");
+    n.className = "notif"; n.setAttribute("role", "alert");
+    n.innerHTML = '<span class="ic">' + plate(byId.tarte).replace('class="plate"', 'width="28" height="28"') + "</span><span><b>" + title + "</b><small>" + text + "</small></span>";
+    n.addEventListener("click", function () { n.remove(); go("track"); });
+    app.appendChild(n);
+    setTimeout(function () { n.remove(); }, 5000);
+  }
+
+  function openSheet(id) {
+    var p = byId[id];
+    var qty = Math.max(1, state.cart[id] || 1);
+    var wrap = document.createElement("div");
+    wrap.className = "sheet-wrap";
+    function draw() {
+      wrap.innerHTML = '<div class="sheet" role="dialog" aria-modal="true" aria-label="' + esc(p.n) + '"><span class="grab"></span>' + plate(p) +
+        "<h3>" + esc(p.n) + "</h3><p>" + esc(p.d) + "</p>" +
+        '<div class="labels">' + (p.v ? "<span>Végétarien</span>" : "") + (p.g ? "<span>Sans gluten</span>" : "") + "<span>" + p.cat + "</span></div>" +
+        '<div class="sheet-actions"><span class="step"><button data-s="-1" aria-label="Moins">−</button><output>' + qty + '</output><button data-s="1" aria-label="Plus">+</button></span>' +
+        '<button class="btn-app" data-s-add>' + (state.cart[id] ? "Mettre à jour" : "Ajouter") + " · " + euro(p.p * qty) + "</button></div></div>";
+    }
+    draw();
+    wrap.addEventListener("click", function (e) {
+      if (e.target === wrap) { wrap.remove(); return; }
+      var s = e.target.closest("[data-s]");
+      if (s) { qty = Math.min(20, Math.max(1, qty + +s.getAttribute("data-s"))); draw(); wrap.querySelector("[data-s-add]").focus(); return; }
+      if (e.target.closest("[data-s-add]")) {
+        var had = state.cart[id];
+        wrap.remove(); setQty(id, qty);
+        toast(had ? "Panier mis à jour" : "Ajouté au panier");
+      }
+    });
+    wrap.addEventListener("keydown", function (e) { if (e.key === "Escape") wrap.remove(); });
+    app.appendChild(wrap);
+    wrap.querySelector("[data-s-add]").focus();
+  }
+
+  function placeOrder() {
+    var total = subtotal() - discount();
+    state.order = { num: String(Math.floor(1000 + Math.random() * 9000)), slot: state.slot, items: Object.assign({}, state.cart), total: total, stage: 0 };
+    state.usedPromo = true;
+    state.cart = {};
+    go("track");
+    var o = state.order;
+    setTimeout(function () { if (state.order === o) { o.stage = 1; if (state.tab === "track" || state.tab === "home") render(true); } }, 3000);
+    setTimeout(function () {
+      if (state.order !== o) return;
+      o.stage = 2;
+      state.points += Math.floor(o.total);
+      state.history.unshift(["aujourd'hui", Math.floor(o.total)]);
+      if (state.tab === "track" || state.tab === "home" || state.tab === "loyalty") render(true);
+      notify("Citrine", "Votre commande n° " + o.num + " est prête. À tout de suite !");
+    }, 9000);
+  }
+
+  screen.addEventListener("click", function (e) {
+    var t = e.target.closest("button");
+    if (!t) return;
+    if (t.hasAttribute("data-add")) { setQty(t.getAttribute("data-add"), 1); toast("Ajouté au panier"); }
+    else if (t.hasAttribute("data-inc")) { var a = t.getAttribute("data-inc"); setQty(a, (state.cart[a] || 0) + 1); }
+    else if (t.hasAttribute("data-dec")) { var b = t.getAttribute("data-dec"); setQty(b, (state.cart[b] || 0) - 1); }
+    else if (t.hasAttribute("data-open")) openSheet(t.getAttribute("data-open"));
+    else if (t.hasAttribute("data-tab-go")) go(t.getAttribute("data-tab-go"));
+    else if (t.hasAttribute("data-go")) go(t.getAttribute("data-go"));
+    else if (t.hasAttribute("data-cat")) { state.cat = t.getAttribute("data-cat"); go("menu"); jump(state.cat); }
+    else if (t.hasAttribute("data-jump")) { state.cat = t.getAttribute("data-jump"); render(true); jump(state.cat); }
+    else if (t.hasAttribute("data-slot")) { state.slot = t.getAttribute("data-slot"); render(true); }
+    else if (t.hasAttribute("data-order")) placeOrder();
+    else if (t.hasAttribute("data-new")) { state.order = null; go("menu"); }
+  });
+  function jump(cat) {
+    var h = document.getElementById("cat-" + cat);
+    if (h) screen.scrollTop = h.offsetTop - 56;
+  }
+  tabButtons.forEach(function (b) {
+    b.addEventListener("click", function () {
+      go(b.getAttribute("data-tab"));
+    });
+  });
+
+  function tick() {
+    var d = new Date();
+    document.getElementById("clock").textContent = String(d.getHours()).padStart(2, "0") + ":" + String(d.getMinutes()).padStart(2, "0");
+  }
+  tick(); setInterval(tick, 15000);
+  render(false);
+})();
+</script>
+</body>
+</html>
